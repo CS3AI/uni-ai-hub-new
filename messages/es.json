@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "information": "Noticias",
+    "courses": "Cursos",
+    "internship": "Prácticas"
+  },
+  "home": {
+    "eyebrow": "University High School · Club de IA",
+    "subtitle": "Un hub todo-en-uno para estudiantes y entusiastas de la IA: noticias del sector, cursos universitarios y empresariales, y oportunidades de prácticas — actualizados en tiempo real.",
+    "viewMore": "Ver →",
+    "sections": {
+      "information": {
+        "tag": "Actualización automática",
+        "desc": "Lo último en IA: computación, datos, modelos, algoritmos, aplicaciones industriales y herramientas para startups. Agregación automática desde papers, blogs de investigación y medios tecnológicos."
+      },
+      "courses": {
+        "tag": "Actualización regular",
+        "desc": "Cursos abiertos universitarios, certificaciones empresariales y competencias estudiantiles — todo para aprender IA por tu cuenta."
+      },
+      "internship": {
+        "tag": "Datos en vivo",
+        "desc": "Listados de prácticas en tiempo real, oportunidades de recomendación, plantillas de CV y cartas de presentación IA/CS, y cronograma de solicitudes para estudiantes de secundaria."
+      }
+    },
+    "about": {
+      "title": "Sobre este proyecto",
+      "desc": "Uni AI Hub fue creado en el verano de 2026 por el Coordinador de Currículo del Club de IA de la University High School. El objetivo: mantener a los estudiantes y entusiastas de la IA informados sobre noticias del sector, recursos de aprendizaje y oportunidades de prácticas. En móvil, pulsa «Agregar a pantalla de inicio» para una experiencia casi nativa."
+    }
+  },
+  "information": {
+    "eyebrow": "Noticias",
+    "title": "Noticias de la industria IA",
+    "desc": "Agregación automática desde arXiv, blogs de investigación empresarial, medios tecnológicos y comunidades de desarrolladores. Se actualiza cada 30 minutos. Filtra por fuente o tema a continuación.",
+    "allSources": "Todas las fuentes",
+    "allTopics": "Todos los temas",
+    "empty": "Sin contenido coincidente. Prueba otro filtro.",
+    "itemCount": "{count} artículos · Fuentes configuradas en src/lib/feeds.js"
+  },
+  "courses": {
+    "eyebrow": "Cursos",
+    "title": "Aprendizaje & Formación",
+    "desc": "Cursos abiertos universitarios, certificaciones en línea empresariales y oportunidades de competencias / proyectos de código abierto para estudiantes.",
+    "lastUpdated": "Última actualización",
+    "universities": "Universidades",
+    "companies": "Empresas",
+    "competitions": "Competencias & Código Abierto",
+    "audience": "Para"
+  },
+  "internship": {
+    "eyebrow": "Prácticas",
+    "title": "Prácticas & Recomendaciones",
+    "desc": "Sincronización en tiempo real desde bases de datos de prácticas mantenidas por estudiantes (puestos de IA/ML). También incluye recomendaciones, plantillas de CV y cronogramas de solicitudes.",
+    "listingsMeta": "{count} puestos disponibles · se actualiza cada 6 horas",
+    "liveListings": "Listados de prácticas en vivo (IA / ML)",
+    "referralOpportunities": "Oportunidades de recomendación",
+    "searchPlaceholder": "Buscar por empresa o rol, ej. Google, Research, NLP...",
+    "searchEmpty": "Sin puestos coincidentes. Prueba otra palabra clave."
+  },
+  "sourceTypes": {
+    "preprint": "Preimpresión",
+    "gov-research": "Gob / Investigación",
+    "industry-lab": "Lab industrial",
+    "dev-community": "Comunidad dev",
+    "vc-media": "VC / Medios"
+  },
+  "internshipResources": {
+    "blizzardNote": "Prácticas / programas campus en la industria del videojuego. Consulta su página de Careers y University Program.",
+    "rivianNote": "Prácticas relacionadas con vehículos eléctricos y conducción autónoma. Sigue su University Program.",
+    "resumeTitle": "A. Plantillas de CV y correos de presentación IA/CS",
+    "resumeDesc": "Estructura de CV y consejos de cold email para estudiantes de secundaria que buscan puestos en IA/CS.",
+    "resumeLabel": "Estructura de CV IA/CS",
+    "resumeDetail": "Formación / Habilidades técnicas (lenguajes · frameworks · herramientas) / Experiencia en proyectos (método STAR + resultados cuantificados) / Investigación o competencia / Actividades extracurriculares & Liderazgo",
+    "professorLabel": "Consejos para cold email a profesores",
+    "professorDetail": "Saludo + intro de una frase → Por qué te interesa la investigación de este profesor (cita artículos/proyectos concretos) → Lo que puedes aportar → Cierre breve + nota sobre CV adjunto",
+    "industryLabel": "Outreach para recomendaciones / reclutamiento empresarial",
+    "industryDetail": "Solicita amablemente una recomendación por LinkedIn o correo. Incluye tu enlace de CV + 1–2 puntos fuertes personales. Evita un tono demasiado genérico.",
+    "timelineTitle": "B. Cronograma de competencias tech & prácticas para bachillerato",
+    "timelineDesc": "Hitos clave por mes — confirma las fechas exactas en los sitios oficiales cada año.",
+    "period0": "Sep–Nov",
+    "period0item0": "Estar atento a la apertura de solicitudes de programas de investigación del próximo verano (ej. Stanford HAI/AIMI)",
+    "period0item1": "Empezar a preparar / actualizar tu CV y portafolio",
+    "period1": "Dic–Feb",
+    "period1item0": "Apple Swift Student Challenge suele abrir inscripciones",
+    "period1item1": "Temporada alta de solicitudes de investigación y summer schools para bachillerato",
+    "period2": "Mar–May",
+    "period2item0": "Ventana de solicitud estudiantil de Google Summer of Code (verifica requisitos de edad y elegibilidad)",
+    "period2item1": "Las empresas publican ofertas de prácticas de verano / programas campus",
+    "period3": "Jun–Ago",
+    "period3item0": "Cursos de verano, investigación y prácticas a pleno rendimiento",
+    "period3item1": "Las competencias de Kaggle funcionan todo el año — únete cuando quieras"
+  },
+  "tags": {
+    "compute": "Cómputo / Hardware",
+    "data": "Infraestructura de datos",
+    "models": "Modelos & Frameworks",
+    "networking": "Energía & Redes",
+    "algorithms": "Algoritmos",
+    "toolkits": "Herramientas IA",
+    "applications": "Aplicaciones",
+    "healthcare": "Salud & Biotech",
+    "finance": "Finanzas & Fintech",
+    "entertainment": "Entretenimiento & Arte",
+    "av": "Vehículos autónomos & Robótica",
+    "agriculture": "Agricultura & Clima",
+    "validation": "Validación de idea & Estrategia",
+    "branding": "Marca & Pitch",
+    "vibecoding": "Producto Vibe Coding",
+    "growth": "Crecimiento & Automatización"
+  }
+}

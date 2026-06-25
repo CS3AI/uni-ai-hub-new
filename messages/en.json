@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "information": "Information",
+    "courses": "Courses",
+    "internship": "Internship"
+  },
+  "home": {
+    "eyebrow": "University High School · AI Club",
+    "subtitle": "A one-stop hub for students and AI enthusiasts: industry news, university & company courses, and internship opportunities — kept as real-time as possible.",
+    "viewMore": "View →",
+    "sections": {
+      "information": {
+        "tag": "Auto-updated",
+        "desc": "Cutting-edge AI insights: compute, data, models, algorithms, industry applications, and startup tools. Auto-aggregated from papers, research blogs, and tech media."
+      },
+      "courses": {
+        "tag": "Regularly updated",
+        "desc": "University open courses, company certification programs, and student competitions — curated for anyone learning AI."
+      },
+      "internship": {
+        "tag": "Live data",
+        "desc": "Real-time internship listings, referral opportunities, AI/CS resume & outreach templates, and a high-schooler application timeline."
+      }
+    },
+    "about": {
+      "title": "About this project",
+      "desc": "Uni AI Hub was built in summer 2026 by the Curriculum Coordinator of University High School's AI Club. The goal: keep students and AI enthusiasts informed with industry news, learning resources, and internship opportunities. On mobile, tap \"Add to Home Screen\" for a near-native app experience."
+    }
+  },
+  "information": {
+    "eyebrow": "Information",
+    "title": "AI Industry News",
+    "desc": "Auto-aggregated from arXiv papers, company research blogs, tech media, and developer communities. Refreshes every 30 minutes. Filter by source or topic below.",
+    "allSources": "All Sources",
+    "allTopics": "All Topics",
+    "empty": "No matching content. Try a different filter.",
+    "itemCount": "{count} items · Sources configured in src/lib/feeds.js"
+  },
+  "courses": {
+    "eyebrow": "Courses",
+    "title": "Learning & Training",
+    "desc": "University open courses, company self-paced certification programs, and student competition / open-source opportunities.",
+    "lastUpdated": "Last updated",
+    "universities": "Universities",
+    "companies": "Companies",
+    "competitions": "Competitions & Open Source",
+    "audience": "For"
+  },
+  "internship": {
+    "eyebrow": "Internship",
+    "title": "Internship & Referrals",
+    "desc": "Real-time sync from student-maintained internship databases (AI/ML roles). Also includes club-curated referral info, resume templates, and application timelines.",
+    "listingsMeta": "{count} open positions · refreshes every 6 hours",
+    "liveListings": "Live Internship Listings (AI / ML)",
+    "referralOpportunities": "Referral Opportunities",
+    "searchPlaceholder": "Search by company or role, e.g. Google, Research, NLP...",
+    "searchEmpty": "No matching positions. Try a different keyword."
+  },
+  "sourceTypes": {
+    "preprint": "Preprint",
+    "gov-research": "Gov / Research",
+    "industry-lab": "Industry Lab",
+    "dev-community": "Dev Community",
+    "vc-media": "VC / Media"
+  },
+  "internshipResources": {
+    "blizzardNote": "Gaming industry internships / campus programs. Monitor their Careers page and University Program.",
+    "rivianNote": "EV and autonomous driving internships. Follow their University Program.",
+    "resumeTitle": "A. AI/CS Resume & Outreach Templates",
+    "resumeDesc": "Curated resume structure and cold email tips for high school students pursuing AI/CS roles.",
+    "resumeLabel": "AI/CS Resume Structure",
+    "resumeDetail": "Education / Technical Skills (languages · frameworks · tools) / Project Experience (STAR method + quantified results) / Research or Competition / Extracurriculars & Leadership",
+    "professorLabel": "Professor Cold Email Tips",
+    "professorDetail": "Greeting + one-sentence intro → Why this professor's research interests you (cite specific papers/projects) → What you can contribute → Brief closing + resume attachment note",
+    "industryLabel": "Industry Referral / Recruiting Outreach",
+    "industryDetail": "Politely request a referral via LinkedIn or email. Include your resume link + 1–2 personal highlights. Avoid overly generic template vibes.",
+    "timelineTitle": "B. High School Tech Competition & Internship Timeline",
+    "timelineDesc": "Key milestones by month — confirm exact dates on official websites each year.",
+    "period0": "Sep–Nov",
+    "period0item0": "Watch for next summer's research program applications (e.g. Stanford HAI/AIMI)",
+    "period0item1": "Start preparing / updating your resume and portfolio",
+    "period1": "Dec–Feb",
+    "period1item0": "Apple Swift Student Challenge typically opens",
+    "period1item1": "Peak season for high school research & summer school applications",
+    "period2": "Mar–May",
+    "period2item0": "Google Summer of Code student application window (verify age & eligibility requirements)",
+    "period2item1": "Companies release summer internship / campus program offers",
+    "period3": "Jun–Aug",
+    "period3item0": "Summer courses, research, and internships in full swing",
+    "period3item1": "Kaggle competitions run year-round — join anytime"
+  },
+  "tags": {
+    "compute": "Compute / Hardware",
+    "data": "Data Infrastructure",
+    "models": "Models & Frameworks",
+    "networking": "Energy & Networking",
+    "algorithms": "Algorithms",
+    "toolkits": "AI Toolkits",
+    "applications": "Applications",
+    "healthcare": "Healthcare & BioTech",
+    "finance": "Finance & FinTech",
+    "entertainment": "Entertainment & Creative Arts",
+    "av": "Autonomous Vehicles & Robotics",
+    "agriculture": "Agriculture & Climate",
+    "validation": "Idea Validation & Strategy",
+    "branding": "Branding & Pitching",
+    "vibecoding": "Vibe Coding Product",
+    "growth": "Growth & Automation"
+  }
+}

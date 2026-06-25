@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "首页",
+    "information": "资讯",
+    "courses": "课程",
+    "internship": "实习"
+  },
+  "home": {
+    "eyebrow": "University High School · AI 社团",
+    "subtitle": "为同学们和 AI 爱好者打造的一站式枢纽：行业前沿信息、大学与企业自学课程、实习与内推机会，全部尽量做到实时更新。",
+    "viewMore": "查看 →",
+    "sections": {
+      "information": {
+        "tag": "实时自动抓取",
+        "desc": "AI 行业前沿动态：技术基建（算力/数据/模型/算法）、产业应用、创业赋能，实时聚合论文、企业研究、科技媒体。"
+      },
+      "courses": {
+        "tag": "持续更新",
+        "desc": "大学公开课、企业自学认证课程、学生竞赛与开源项目机会，一站式整理给想自学 AI 的同学。"
+      },
+      "internship": {
+        "tag": "实时数据源",
+        "desc": "真实自动刷新的实习清单、内推机会、AI/CS 简历与套磁信模板、高中生竞赛与实习 Timeline。"
+      }
+    },
+    "about": {
+      "title": "关于这个项目",
+      "desc": "Uni AI Hub 由 University High School AI Club 的 Curriculum Coordinator 在 2026 年暑假发起搭建，目标是让全校同学和更多 AI 爱好者能持续获取行业信息、自学资源与实习机会。手机上选择「添加到主屏幕」，体验接近原生 App。"
+    }
+  },
+  "information": {
+    "eyebrow": "资讯",
+    "title": "AI 行业前沿信息",
+    "desc": "自动聚合 arXiv 论文、企业研究博客、科技媒体与开发者社区的最新内容，每 30 分钟刷新一次。点击标签可按技术方向/产业应用/创业赋能筛选。",
+    "allSources": "全部来源",
+    "allTopics": "全部主题",
+    "empty": "没有匹配当前筛选的内容，换个标签试试。",
+    "itemCount": "本次共 {count} 条内容 · 数据源见 src/lib/feeds.js"
+  },
+  "courses": {
+    "eyebrow": "课程",
+    "title": "学习与培训",
+    "desc": "大学公开课、企业自学认证课程，以及面向学生的竞赛与开源项目机会。",
+    "lastUpdated": "最近更新",
+    "universities": "大学课程",
+    "companies": "企业培训",
+    "competitions": "竞赛与开源项目机会",
+    "audience": "适合"
+  },
+  "internship": {
+    "eyebrow": "实习",
+    "title": "实习与内推机会",
+    "desc": "实时同步自学生社区每日维护的实习数据库（AI/ML 相关职位），并附上社团整理的内推信息、简历模板与申请 Timeline。",
+    "listingsMeta": "当前共 {count} 条在招职位 · 数据每 6 小时自动刷新",
+    "liveListings": "实时实习清单（AI / ML 相关）",
+    "referralOpportunities": "内推机会",
+    "searchPlaceholder": "搜索公司或职位关键词，例如 Google、Research、NLP...",
+    "searchEmpty": "没有匹配的职位，换个关键词试试。"
+  },
+  "sourceTypes": {
+    "preprint": "预印本论文",
+    "gov-research": "政府/高校研究",
+    "industry-lab": "企业研究院",
+    "dev-community": "开发者社区",
+    "vc-media": "科技/创投媒体"
+  },
+  "internshipResources": {
+    "blizzardNote": "游戏行业实习/校园项目，关注 Careers 页面与 University Program",
+    "rivianNote": "电动车与自动驾驶相关实习，关注 University Program",
+    "resumeTitle": "A. AI/CS 专属简历模板与套磁信",
+    "resumeDesc": "为 AI/CS 方向高中生定制的简历结构与套磁信（Cold Email）要点，可直接套用。",
+    "resumeLabel": "AI/CS 简历模板结构建议",
+    "resumeDetail": "教育背景 / 技术技能（编程语言·框架·工具） / 项目经历（STAR 法则 + 量化结果） / 科研或竞赛经历 / 课外活动与领导力",
+    "professorLabel": "教授套磁信模板要点",
+    "professorDetail": "称呼 + 一句话自我介绍 → 为什么对该教授的研究方向感兴趣（引用具体论文/项目） → 你能贡献什么 → 简洁结尾 + 简历附件说明",
+    "industryLabel": "企业内推/招聘套磁信模板要点",
+    "industryDetail": "在领英/邮件中礼貌请求内推，附简历链接与 1-2 句个人亮点，避免群发模板痕迹太重",
+    "timelineTitle": "B. 高中生科技竞赛与实习 Timeline 看板",
+    "timelineDesc": "按月份整理的关键节点示例，具体日期请以官网当年公告为准。",
+    "period0": "9–11 月",
+    "period0item0": "关注次年暑期科研项目开放申请（如 Stanford HAI/AIMI 等）",
+    "period0item1": "开始准备/更新简历与作品集",
+    "period1": "12–2 月",
+    "period1item0": "Apple Swift Student Challenge 通常开放报名",
+    "period1item1": "高中生科研/夏校申请高峰期",
+    "period2": "3–5 月",
+    "period2item0": "Google Summer of Code 学生申请窗口（请核实年龄与身份要求）",
+    "period2item1": "公司暑期实习/校园项目密集发放 offer",
+    "period3": "6–8 月",
+    "period3item0": "暑期课程、科研、实习集中进行",
+    "period3item1": "Kaggle 等竞赛全年滚动，可随时参加"
+  },
+  "tags": {
+    "compute": "算力 / 硬件",
+    "data": "数据基础设施",
+    "models": "模型与框架",
+    "networking": "能源与网络",
+    "algorithms": "算法演进",
+    "toolkits": "AI 工具包",
+    "applications": "应用层开发",
+    "healthcare": "医疗 & 生物科技",
+    "finance": "金融 & 金融科技",
+    "entertainment": "娱乐 & 创意",
+    "av": "自动驾驶 & 机器人",
+    "agriculture": "农业 & 气候",
+    "validation": "创意验证与战略",
+    "branding": "品牌 & 路演",
+    "vibecoding": "Vibe Coding 产品",
+    "growth": "增长 & 自动化"
+  }
+}

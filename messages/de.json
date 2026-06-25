@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Start",
+    "information": "Aktuelles",
+    "courses": "Kurse",
+    "internship": "Praktikum"
+  },
+  "home": {
+    "eyebrow": "University High School · KI-Club",
+    "subtitle": "Ein All-in-One-Hub für Studierende und KI-Enthusiasten: Branchennews, Uni- und Firmenkurse sowie Praktikumsangebote — so aktuell wie möglich.",
+    "viewMore": "Ansehen →",
+    "sections": {
+      "information": {
+        "tag": "Automatisch aktuell",
+        "desc": "Neueste KI-Entwicklungen: Compute, Daten, Modelle, Algorithmen, Industrieanwendungen und Startup-Tools. Automatisch aus Papers, Forschungsblogs und Tech-Medien aggregiert."
+      },
+      "courses": {
+        "tag": "Regelmäßig aktualisiert",
+        "desc": "Offene Universitätskurse, Firmenzertifizierungen und studentische Wettbewerbe — alles für das Selbststudium von KI."
+      },
+      "internship": {
+        "tag": "Live-Daten",
+        "desc": "Echtzeit-Praktikumslisten, Empfehlungsoptionen, KI/CS-Lebenslauf- und Anschreibenvorlagen sowie ein Bewerbungskalender für Schüler."
+      }
+    },
+    "about": {
+      "title": "Über dieses Projekt",
+      "desc": "Uni AI Hub wurde im Sommer 2026 vom Curriculum-Koordinator des KI-Clubs der University High School entwickelt. Ziel: Schüler und KI-Enthusiasten mit Branchennews, Lernressourcen und Praktikumsangeboten versorgen. Auf dem Smartphone \"Zum Startbildschirm hinzufügen\" wählen für ein App-ähnliches Erlebnis."
+    }
+  },
+  "information": {
+    "eyebrow": "Aktuelles",
+    "title": "KI-Branchennews",
+    "desc": "Automatisch aggregiert aus arXiv, Unternehmensforschungsblogs, Tech-Medien und Entwickler-Communities. Aktualisierung alle 30 Minuten. Filtern nach Quelle oder Thema.",
+    "allSources": "Alle Quellen",
+    "allTopics": "Alle Themen",
+    "empty": "Keine passenden Inhalte. Anderen Filter ausprobieren.",
+    "itemCount": "{count} Einträge · Quellen konfiguriert in src/lib/feeds.js"
+  },
+  "courses": {
+    "eyebrow": "Kurse",
+    "title": "Lernen & Training",
+    "desc": "Offene Universitätskurse, Firmenzertifizierungen und studentische Wettbewerbs- / Open-Source-Projekte.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "universities": "Universitäten",
+    "companies": "Unternehmen",
+    "competitions": "Wettbewerbe & Open Source",
+    "audience": "Für"
+  },
+  "internship": {
+    "eyebrow": "Praktikum",
+    "title": "Praktika & Empfehlungen",
+    "desc": "Echtzeit-Synchronisation aus studentisch gepflegten Praktikumsdatenbanken (KI/ML-Stellen). Auch Empfehlungsinfos, Lebenslaufvorlagen und Bewerbungskalender.",
+    "listingsMeta": "{count} offene Stellen · aktualisiert alle 6 Stunden",
+    "liveListings": "Live-Praktikumsliste (KI / ML)",
+    "referralOpportunities": "Empfehlungsoptionen",
+    "searchPlaceholder": "Nach Unternehmen oder Stelle suchen, z. B. Google, Research, NLP...",
+    "searchEmpty": "Keine passenden Stellen. Anderen Suchbegriff probieren."
+  },
+  "sourceTypes": {
+    "preprint": "Preprint",
+    "gov-research": "Behörde / Forschung",
+    "industry-lab": "Industrielabor",
+    "dev-community": "Entwickler-Community",
+    "vc-media": "VC / Medien"
+  },
+  "internshipResources": {
+    "blizzardNote": "Praktika / Campus-Programme in der Gaming-Branche. Verfolge ihre Careers-Seite und das University Program.",
+    "rivianNote": "Praktika im Bereich Elektrofahrzeuge und autonomes Fahren. Folge ihrem University Program.",
+    "resumeTitle": "A. KI/CS Lebenslauf- & Anschreibenvorlagen",
+    "resumeDesc": "Lebenslaufstruktur und Cold-E-Mail-Tipps für Schüler auf der Suche nach KI/CS-Stellen.",
+    "resumeLabel": "KI/CS Lebenslaufstruktur",
+    "resumeDetail": "Bildung / Technische Fähigkeiten (Sprachen · Frameworks · Tools) / Projekterfahrung (STAR-Methode + quantifizierte Ergebnisse) / Forschung oder Wettbewerb / Außerschulische Aktivitäten & Führung",
+    "professorLabel": "Tipps für Cold-E-Mails an Professoren",
+    "professorDetail": "Anrede + Einleitung in einem Satz → Warum dich die Forschung dieses Professors interessiert (konkrete Artikel/Projekte zitieren) → Was du beitragen kannst → Kurzer Schluss + Hinweis auf Lebenslauf-Anhang",
+    "industryLabel": "Empfehlung / Recruiting-Anschreiben Unternehmen",
+    "industryDetail": "Bitte höflich um eine Empfehlung per LinkedIn oder E-Mail. Füge deinen Lebenslauf-Link + 1–2 persönliche Stärken hinzu. Vermeide zu generische Vorlagen.",
+    "timelineTitle": "B. Zeitplan Tech-Wettbewerbe & Praktika für Schüler",
+    "timelineDesc": "Wichtige Meilensteine nach Monat — genaue Termine jedes Jahr auf offiziellen Websites prüfen.",
+    "period0": "Sep–Nov",
+    "period0item0": "Auf Bewerbungsöffnungen für Forschungsprogramme im nächsten Sommer achten (z. B. Stanford HAI/AIMI)",
+    "period0item1": "Lebenslauf und Portfolio vorbereiten / aktualisieren",
+    "period1": "Dez–Feb",
+    "period1item0": "Apple Swift Student Challenge öffnet typischerweise die Anmeldungen",
+    "period1item1": "Hochsaison für Schüler-Forschungs- und Summerschool-Bewerbungen",
+    "period2": "Mär–Mai",
+    "period2item0": "Google Summer of Code Studentenbewerbungsfenster (Alters- und Zulassungsanforderungen prüfen)",
+    "period2item1": "Unternehmen veröffentlichen Sommer-Praktikums- / Campus-Programm-Angebote",
+    "period3": "Jun–Aug",
+    "period3item0": "Sommerkurse, Forschung und Praktika in vollem Gange",
+    "period3item1": "Kaggle-Wettbewerbe laufen ganzjährig — jederzeit teilnehmen"
+  },
+  "tags": {
+    "compute": "Rechenleistung / Hardware",
+    "data": "Dateninfrastruktur",
+    "models": "Modelle & Frameworks",
+    "networking": "Energie & Netzwerk",
+    "algorithms": "Algorithmen",
+    "toolkits": "KI-Werkzeuge",
+    "applications": "Anwendungen",
+    "healthcare": "Gesundheit & Biotech",
+    "finance": "Finanzen & Fintech",
+    "entertainment": "Unterhaltung & Kunst",
+    "av": "Autonome Fahrzeuge & Robotik",
+    "agriculture": "Landwirtschaft & Klima",
+    "validation": "Ideenvalidierung & Strategie",
+    "branding": "Marke & Pitch",
+    "vibecoding": "Vibe-Coding-Produkt",
+    "growth": "Wachstum & Automatisierung"
+  }
+}

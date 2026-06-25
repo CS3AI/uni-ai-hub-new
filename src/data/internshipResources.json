@@ -1,0 +1,26 @@
+{
+  "note": "以下为精选示例内容，来自 AI Club 整理的资料；具体年度时间节点请以各官网当年公告为准。",
+  "referralOpportunities": [
+    { "company": "Blizzard Entertainment", "note": "游戏行业实习/校园项目，关注 Careers 页面与 University Program", "url": "https://careers.blizzard.com/" },
+    { "company": "Rivian", "note": "电动车与自动驾驶相关实习，关注 University Program", "url": "https://www.rivian.com/careers" }
+  ],
+  "resumeAndOutreach": {
+    "title": "A. AI/CS 专属简历模板与套磁信",
+    "description": "为 AI/CS 方向高中生定制的简历结构与套磁信（Cold Email）要点，可直接套用。",
+    "resources": [
+      { "label": "AI/CS 简历模板结构建议", "detail": "教育背景 / 技术技能（编程语言·框架·工具） / 项目经历（STAR 法则 + 量化结果） / 科研或竞赛经历 / 课外活动与领导力" },
+      { "label": "教授套磁信模板要点", "detail": "称呼 + 一句话自我介绍 → 为什么对该教授的研究方向感兴趣（引用具体论文/项目） → 你能贡献什么 → 简洁结尾 + 简历附件说明" },
+      { "label": "企业内推/招聘套磁信模板要点", "detail": "在领英/邮件中礼貌请求内推，附简历链接与 1-2 句个人亮点，避免群发模板痕迹太重" }
+    ]
+  },
+  "timeline": {
+    "title": "B. 高中生科技竞赛与实习 Timeline 看板",
+    "description": "按月份整理的关键节点示例，具体日期请以官网当年公告为准。",
+    "milestones": [
+      { "period": "9–11 月", "items": ["关注次年暑期科研项目开放申请（如 Stanford HAI/AIMI 等）", "开始准备/更新简历与作品集"] },
+      { "period": "12–2 月", "items": ["Apple Swift Student Challenge 通常开放报名", "高中生科研/夏校申请高峰期"] },
+      { "period": "3–5 月", "items": ["Google Summer of Code 学生申请窗口（请核实年龄与身份要求）", "公司暑期实习/校园项目密集发放 offer"] },
+      { "period": "6–8 月", "items": ["暑期课程、科研、实习集中进行", "Kaggle 等竞赛全年滚动，可随时参加"] }
+    ]
+  }
+}

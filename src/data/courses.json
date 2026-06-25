@@ -1,0 +1,98 @@
+{
+  "lastUpdated": "2026-06-24",
+  "universities": [
+    {
+      "name": "Stanford University",
+      "courses": [
+        { "code": "CS224N", "title": "Natural Language Processing with Deep Learning", "url": "https://web.stanford.edu/class/cs224n/", "level": "Advanced", "format": "Open Course Materials" },
+        { "code": "CS231N", "title": "Deep Learning for Computer Vision", "url": "http://cs231n.stanford.edu/", "level": "Advanced", "format": "Open Course Materials" },
+        { "code": "CRAFT", "title": "CRAFT / Code in Place", "url": "https://craft.stanford.edu/", "level": "Beginner–Advanced", "format": "Teaching Program" }
+      ]
+    },
+    {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "courses": [
+        { "code": "OCW", "title": "OpenCourseWare · Artificial Intelligence", "url": "https://ocw.mit.edu/", "level": "All Ages", "format": "Open Courseware" },
+        { "code": "OLL", "title": "Open Learning Library", "url": "https://openlearninglibrary.mit.edu/", "level": "All Ages", "format": "Open Courseware" },
+        { "code": "Horizon", "title": "Horizon · AI Frontiers Seminar", "url": "https://horizon.mit.edu/", "level": "Advanced", "format": "Seminar Program" }
+      ]
+    },
+    {
+      "name": "University of California, Berkeley",
+      "courses": [
+        { "code": "CS188", "title": "Introduction to Artificial Intelligence", "url": "https://inst.eecs.berkeley.edu/~cs188/", "level": "Beginner–Advanced", "format": "Open Course Materials" }
+      ]
+    },
+    {
+      "name": "University of California, Los Angeles (UCLA)",
+      "courses": [
+        { "code": "CS M146", "title": "Machine Learning", "url": "https://uclaml.github.io/", "level": "Intermediate–Advanced", "format": "Open Course Materials" },
+        { "code": "CS 161", "title": "Fundamentals of Artificial Intelligence", "url": "https://www.cs.ucla.edu/", "level": "Intermediate", "format": "Open Course Materials" },
+        { "code": "IPAM", "title": "IPAM Machine Learning Programs & Research Workshops", "url": "https://www.ipam.ucla.edu/", "level": "Advanced", "format": "Research Program / Workshop" }
+      ]
+    },
+    {
+      "name": "University of California, San Diego (UCSD)",
+      "courses": [
+        { "code": "CSE 150A", "title": "Introduction to AI: Probabilistic Reasoning and Decision-Making", "url": "https://cse.ucsd.edu/", "level": "Intermediate", "format": "Open Course Materials" },
+        { "code": "CSE 158", "title": "Recommender Systems and Web Mining", "url": "https://cseweb.ucsd.edu/classes/fa23/cse258-a/", "level": "Advanced", "format": "Open Course Materials" },
+        { "code": "HDSI", "title": "Halicioglu Data Science Institute — Programs & Resources", "url": "https://hdsi.ucsd.edu/", "level": "Beginner–Advanced", "format": "Research Program / Open Resources" }
+      ]
+    },
+    {
+      "name": "Harvard University",
+      "courses": [
+        { "code": "CS50 AI", "title": "CS50's Introduction to Artificial Intelligence with Python", "url": "https://cs50.harvard.edu/ai/", "level": "Beginner", "format": "Free Online Course (edX)" }
+      ]
+    },
+    {
+      "name": "Stanford HAI / AIMI",
+      "courses": [
+        { "code": "HAI/AIMI", "title": "Human-Centered AI & AI in Medicine and Imaging — Research Lectures & Summer Program", "url": "https://hai.stanford.edu/", "level": "High School Research", "format": "Research Program / Lecture" }
+      ]
+    },
+    {
+      "name": "University of California, Irvine",
+      "courses": [
+        { "code": "ICS", "title": "UCI ICS Open AI Resources & Summer School", "url": "https://www.ics.uci.edu/", "level": "High School", "format": "Summer School / Open Resources" }
+      ]
+    },
+    {
+      "name": "Spirit AI",
+      "courses": [
+        { "code": "Spirit AI", "title": "Spirit AI High School Research Program", "url": "", "level": "High School Research", "format": "Research Program" }
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "name": "NVIDIA",
+      "programs": [
+        { "title": "NVIDIA Deep Learning Institute (DLI)", "url": "https://www.nvidia.com/en-us/training/", "format": "Self-Paced Online + Certificate" }
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "programs": [
+        { "title": "Microsoft Learn · AI School", "url": "https://learn.microsoft.com/training/", "format": "Free Online Course" }
+      ]
+    },
+    {
+      "name": "Google",
+      "programs": [
+        { "title": "Google Cloud Skills Boost (Google AI Learning Path)", "url": "https://www.cloudskillsboost.google/", "format": "Free / Paid Online Course" }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "programs": [
+        { "title": "AWS Educate & AWS Academy", "url": "https://aws.amazon.com/education/awseducate/", "format": "Free Education Program" }
+      ]
+    }
+  ],
+  "competitions": [
+    { "name": "Apple Swift Student Challenge", "host": "Apple", "url": "https://developer.apple.com/swift-student-challenge/", "type": "Competition / Challenge", "audience": "High school and above" },
+    { "name": "Google Summer of Code", "host": "Google", "url": "https://summerofcode.withgoogle.com/", "type": "Open Source Internship", "audience": "Must be 18+, see annual official rules" },
+    { "name": "Kaggle Competitions", "host": "Kaggle (Google)", "url": "https://www.kaggle.com/competitions", "type": "Data Science Competition", "audience": "All ages" }
+  ]
+}

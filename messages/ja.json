@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "information": "ニュース",
+    "courses": "コース",
+    "internship": "インターン"
+  },
+  "home": {
+    "eyebrow": "University High School · AI クラブ",
+    "subtitle": "学生と AI 愛好家のためのオールインワンハブ：業界の最新ニュース、大学・企業のコース、インターンシップの機会をリアルタイムで提供します。",
+    "viewMore": "詳細 →",
+    "sections": {
+      "information": {
+        "tag": "自動更新",
+        "desc": "AI 業界の最前線：コンピューティング、データ、モデル、アルゴリズム、産業応用、スタートアップ支援。論文・研究ブログ・テックメディアから自動集約。"
+      },
+      "courses": {
+        "tag": "定期更新",
+        "desc": "大学のオープンコース、企業の自己学習認定プログラム、学生向けコンテストや OSS 機会を一覧にまとめました。"
+      },
+      "internship": {
+        "tag": "ライブデータ",
+        "desc": "リアルタイムのインターンシップ一覧、リファラル情報、AI/CS 履歴書・アウトリーチテンプレート、高校生向けタイムライン。"
+      }
+    },
+    "about": {
+      "title": "このプロジェクトについて",
+      "desc": "Uni AI Hub は 2026 年夏に University High School AI クラブのカリキュラムコーディネーターが作成しました。目標は、生徒や AI 愛好家が業界ニュース、学習リソース、インターンシップ情報を継続的に入手できるようにすること。スマートフォンでは「ホーム画面に追加」でネイティブアプリに近い体験ができます。"
+    }
+  },
+  "information": {
+    "eyebrow": "ニュース",
+    "title": "AI 業界の最新情報",
+    "desc": "arXiv 論文、企業研究ブログ、テックメディア、開発者コミュニティから自動集約。30 分ごとに更新されます。ソースやトピックでフィルタリングできます。",
+    "allSources": "すべてのソース",
+    "allTopics": "すべてのトピック",
+    "empty": "一致するコンテンツがありません。フィルターを変えてお試しください。",
+    "itemCount": "計 {count} 件 · ソースは src/lib/feeds.js で設定"
+  },
+  "courses": {
+    "eyebrow": "コース",
+    "title": "学習とトレーニング",
+    "desc": "大学のオープンコース、企業の自己学習認定プログラム、学生向けコンテスト・OSS 機会を網羅しています。",
+    "lastUpdated": "最終更新",
+    "universities": "大学",
+    "companies": "企業",
+    "competitions": "コンテスト & オープンソース",
+    "audience": "対象"
+  },
+  "internship": {
+    "eyebrow": "インターン",
+    "title": "インターンシップ & リファラル",
+    "desc": "学生コミュニティが毎日メンテナンスするインターンデータベース（AI/ML 職）をリアルタイム同期。リファラル情報・履歴書テンプレート・応募タイムラインも掲載。",
+    "listingsMeta": "現在 {count} 件の求人 · 6 時間ごとに自動更新",
+    "liveListings": "インターン一覧（AI / ML）",
+    "referralOpportunities": "リファラル機会",
+    "searchPlaceholder": "企業名や職種で検索（例：Google、Research、NLP）...",
+    "searchEmpty": "一致する求人がありません。別のキーワードをお試しください。"
+  },
+  "sourceTypes": {
+    "preprint": "プレプリント",
+    "gov-research": "政府・研究機関",
+    "industry-lab": "企業研究所",
+    "dev-community": "開発者コミュニティ",
+    "vc-media": "VC・テックメディア"
+  },
+  "internshipResources": {
+    "blizzardNote": "ゲーム業界のインターン / キャンパスプログラム。Careers ページと University Program を定期チェック。",
+    "rivianNote": "EV・自動運転関連のインターン。University Program をフォロー。",
+    "resumeTitle": "A. AI/CS 専用履歴書・アウトリーチテンプレート",
+    "resumeDesc": "AI/CS 職を目指す高校生向けに厳選した履歴書構成とコールドメールのコツ。",
+    "resumeLabel": "AI/CS 履歴書の構成",
+    "resumeDetail": "学歴 / 技術スキル（言語・フレームワーク・ツール） / プロジェクト経験（STAR 法 + 数値化された成果） / 研究・競技経験 / 課外活動とリーダーシップ",
+    "professorLabel": "教授へのコールドメールのコツ",
+    "professorDetail": "宛名 + 一言自己紹介 → その教授の研究に興味を持った理由（論文/プロジェクトを具体的に引用） → あなたが貢献できること → 簡潔な締め + 履歴書添付の案内",
+    "industryLabel": "企業リファラル / 採用アウトリーチ",
+    "industryDetail": "LinkedIn またはメールで丁重にリファラルを依頼。履歴書リンク + 個人の強み 1〜2 点を添えて。汎用テンプレート感が出すぎないよう注意。",
+    "timelineTitle": "B. 高校生向けテックコンペ & インターン タイムライン",
+    "timelineDesc": "月別の重要マイルストーン例。正確な日程は毎年公式サイトで確認してください。",
+    "period0": "9〜11 月",
+    "period0item0": "翌夏の研究プログラム応募開始を確認（例: Stanford HAI/AIMI）",
+    "period0item1": "履歴書・ポートフォリオの準備 / 更新を開始",
+    "period1": "12〜2 月",
+    "period1item0": "Apple Swift Student Challenge の募集が通常開始",
+    "period1item1": "高校生の研究 / サマースクール応募ピーク",
+    "period2": "3〜5 月",
+    "period2item0": "Google Summer of Code 学生応募ウィンドウ（年齢・資格要件を確認）",
+    "period2item1": "各社が夏季インターン / キャンパスプログラムのオファーを発行",
+    "period3": "6〜8 月",
+    "period3item0": "夏期講習・研究・インターンが本格化",
+    "period3item1": "Kaggle コンペは通年開催 — いつでも参加可"
+  },
+  "tags": {
+    "compute": "コンピューティング / ハードウェア",
+    "data": "データインフラ",
+    "models": "モデル & フレームワーク",
+    "networking": "エネルギー & ネットワーク",
+    "algorithms": "アルゴリズム",
+    "toolkits": "AI ツール",
+    "applications": "アプリケーション",
+    "healthcare": "医療 & バイオテック",
+    "finance": "金融 & フィンテック",
+    "entertainment": "エンタメ & クリエイティブ",
+    "av": "自動運転 & ロボティクス",
+    "agriculture": "農業 & 気候",
+    "validation": "アイデア検証 & 戦略",
+    "branding": "ブランディング & ピッチ",
+    "vibecoding": "Vibe コーディング製品",
+    "growth": "成長 & 自動化"
+  }
+}

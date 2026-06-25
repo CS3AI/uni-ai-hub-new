@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "information": "Actualités",
+    "courses": "Cours",
+    "internship": "Stages"
+  },
+  "home": {
+    "eyebrow": "University High School · Club IA",
+    "subtitle": "Un hub tout-en-un pour les étudiants et passionnés d'IA : actualités du secteur, cours universitaires et en entreprise, offres de stages — mis à jour en temps réel.",
+    "viewMore": "Voir →",
+    "sections": {
+      "information": {
+        "tag": "Mis à jour auto",
+        "desc": "Les dernières avancées en IA : calcul, données, modèles, algorithmes, applications industrielles et outils startup. Agrégation automatique depuis des articles, blogs et médias tech."
+      },
+      "courses": {
+        "tag": "Mise à jour régulière",
+        "desc": "Cours ouverts universitaires, certifications en entreprise et compétitions étudiantes — tout pour apprendre l'IA par soi-même."
+      },
+      "internship": {
+        "tag": "Données en direct",
+        "desc": "Offres de stages en temps réel, opportunités de recommandation, modèles de CV et de lettres de motivation IA/CS, et calendrier de candidature pour lycéens."
+      }
+    },
+    "about": {
+      "title": "À propos de ce projet",
+      "desc": "Uni AI Hub a été créé en été 2026 par le Coordinateur Pédagogique du Club IA de l'University High School. Objectif : garder les étudiants et passionnés d'IA informés des actualités, ressources d'apprentissage et opportunités de stages. Sur mobile, appuyez sur « Ajouter à l'écran d'accueil » pour une expérience quasi-native."
+    }
+  },
+  "information": {
+    "eyebrow": "Actualités",
+    "title": "Actualités de l'industrie IA",
+    "desc": "Agrégation automatique depuis arXiv, blogs de recherche d'entreprises, médias tech et communautés de développeurs. Rafraîchissement toutes les 30 minutes. Filtrez par source ou thème ci-dessous.",
+    "allSources": "Toutes les sources",
+    "allTopics": "Tous les thèmes",
+    "empty": "Aucun contenu correspondant. Essayez un autre filtre.",
+    "itemCount": "{count} articles · Sources configurées dans src/lib/feeds.js"
+  },
+  "courses": {
+    "eyebrow": "Cours",
+    "title": "Apprentissage & Formation",
+    "desc": "Cours ouverts universitaires, certifications en ligne en entreprise et opportunités de compétitions / projets open source pour étudiants.",
+    "lastUpdated": "Dernière mise à jour",
+    "universities": "Universités",
+    "companies": "Entreprises",
+    "competitions": "Compétitions & Open Source",
+    "audience": "Pour"
+  },
+  "internship": {
+    "eyebrow": "Stages",
+    "title": "Stages & Recommandations",
+    "desc": "Synchronisation en temps réel depuis des bases de données de stages maintenues par des étudiants (postes IA/ML). Inclut aussi des recommandations, modèles de CV et calendriers de candidature.",
+    "listingsMeta": "{count} postes ouverts · mis à jour toutes les 6 heures",
+    "liveListings": "Offres de stages en direct (IA / ML)",
+    "referralOpportunities": "Opportunités de recommandation",
+    "searchPlaceholder": "Rechercher par entreprise ou rôle, ex. Google, Research, NLP...",
+    "searchEmpty": "Aucun poste correspondant. Essayez un autre mot-clé."
+  },
+  "sourceTypes": {
+    "preprint": "Prépublication",
+    "gov-research": "Gouv / Recherche",
+    "industry-lab": "Labo industriel",
+    "dev-community": "Communauté dev",
+    "vc-media": "VC / Médias"
+  },
+  "internshipResources": {
+    "blizzardNote": "Stages / programmes campus dans l'industrie du jeu vidéo. Surveillez leur page Carrières et University Program.",
+    "rivianNote": "Stages liés aux véhicules électriques et à la conduite autonome. Suivez leur University Program.",
+    "resumeTitle": "A. Modèles de CV & e-mails de démarchage IA/CS",
+    "resumeDesc": "Structure de CV et conseils d'e-mail à froid pour lycéens visant des postes en IA/CS.",
+    "resumeLabel": "Structure de CV IA/CS",
+    "resumeDetail": "Formation / Compétences techniques (langages · frameworks · outils) / Expériences de projet (méthode STAR + résultats chiffrés) / Recherche ou compétition / Activités extra-scolaires & Leadership",
+    "professorLabel": "Conseils d'e-mail de démarchage professorat",
+    "professorDetail": "Salutation + intro en une phrase → Pourquoi les recherches de ce professeur vous intéressent (citez des articles/projets spécifiques) → Ce que vous pouvez apporter → Conclusion courte + note sur la pièce jointe CV",
+    "industryLabel": "Démarchage recommandation / recrutement entreprise",
+    "industryDetail": "Demandez poliment une recommandation via LinkedIn ou e-mail. Incluez votre lien CV + 1 à 2 points forts personnels. Évitez un ton trop générique.",
+    "timelineTitle": "B. Calendrier compétitions tech & stages lycée",
+    "timelineDesc": "Jalons clés par mois — confirmez les dates exactes sur les sites officiels chaque année.",
+    "period0": "Sep–Nov",
+    "period0item0": "Guetter l'ouverture des candidatures aux programmes de recherche de l'été suivant (ex. Stanford HAI/AIMI)",
+    "period0item1": "Commencer à préparer / mettre à jour votre CV et portfolio",
+    "period1": "Déc–Fév",
+    "period1item0": "Apple Swift Student Challenge ouvre généralement les inscriptions",
+    "period1item1": "Pic des candidatures lycée pour la recherche et les summer schools",
+    "period2": "Mar–Mai",
+    "period2item0": "Fenêtre de candidature étudiant Google Summer of Code (vérifier les conditions d'âge et d'éligibilité)",
+    "period2item1": "Les entreprises publient les offres de stage d'été / programmes campus",
+    "period3": "Jun–Août",
+    "period3item0": "Cours d'été, recherche et stages en plein essor",
+    "period3item1": "Les compétitions Kaggle sont ouvertes toute l'année — participez à tout moment"
+  },
+  "tags": {
+    "compute": "Calcul / Matériel",
+    "data": "Infrastructure de données",
+    "models": "Modèles & Frameworks",
+    "networking": "Énergie & Réseau",
+    "algorithms": "Algorithmes",
+    "toolkits": "Outils IA",
+    "applications": "Applications",
+    "healthcare": "Santé & Biotech",
+    "finance": "Finance & Fintech",
+    "entertainment": "Divertissement & Arts",
+    "av": "Véhicules autonomes & Robotique",
+    "agriculture": "Agriculture & Climat",
+    "validation": "Validation d'idée & Stratégie",
+    "branding": "Marque & Pitch",
+    "vibecoding": "Produit Vibe Coding",
+    "growth": "Croissance & Automatisation"
+  }
+}
