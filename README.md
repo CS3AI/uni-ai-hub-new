@@ -3,7 +3,7 @@
 University High School AI Club 出品的一站式枢纽：**Information（行业前沿信息）/ Courses（学习与培训）/ Internship（实习与内推）**。
 技术栈：Next.js（App Router）+ Tailwind CSS，网站本身支持 PWA（手机可"添加到主屏幕"，体验接近原生 App），免费部署在 Vercel 即可上线。
 
-live demo: uni-ai-hub-new.vercel.app
+Live demo: uni-ai-hub-new.vercel.app
 
 ## 三大板块怎么做到"实时"
 
