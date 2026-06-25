@@ -37,25 +37,105 @@ export const SOURCE_TYPES = [
 
 export const ALL_TAGS = [...TECH_TAGS, ...INDUSTRY_TAGS, ...STARTUP_TAGS];
 
-// 关键词启发式打标签：抓回来的真实新闻/论文标题+摘要里包含这些词，就打上对应标签。
-// 这是"尽量自动"而不是"完全精准"的方案——人工运营时可以在 lib/feeds.js 里继续扩充关键词。
+// 关键词启发式打标签 — 大幅扩充覆盖范围，确保每个 topic 都有足够内容。
 const KEYWORDS = {
-  compute: ["gpu", "chip", "hardware", "compute", "tpu", "nvidia", "semiconductor", "data center", "datacenter"],
-  data: ["dataset", "data infrastructure", "data pipeline", "data quality", "annotation"],
-  models: ["model", "llm", "transformer", "foundation model", "architecture", "parameter"],
-  networking: ["network", "energy", "power grid", "cooling", "interconnect", "bandwidth"],
-  algorithms: ["algorithm", "reinforcement learning", "optimization", "training method", "fine-tun"],
-  toolkits: ["sdk", "framework", "library", "toolkit", "api release", "open source", "open-source"],
-  applications: ["app", "application", "product launch", "copilot", "assistant", "agent"],
-  healthcare: ["health", "medical", "biotech", "drug discovery", "diagnosis", "clinical", "genom"],
-  finance: ["finance", "fintech", "bank", "trading", "payment", "investment"],
-  entertainment: ["game", "gaming", "music", "film", "creative", "art", "entertainment"],
-  av: ["autonomous vehicle", "self-driving", "robot", "robotics", "drone"],
-  agriculture: ["agricultur", "farm", "climate", "crop", "sustainab", "weather"],
-  validation: ["startup idea", "market validation", "pitch", "strategy"],
-  branding: ["branding", "marketing", "pitch deck"],
-  vibecoding: ["no-code", "vibe coding", "rapid prototyp", "app builder"],
-  growth: ["growth hacking", "automation", "scale", "user acquisition"],
+  compute: [
+    "gpu", "chip", "hardware", "compute", "tpu", "nvidia", "semiconductor",
+    "data center", "datacenter", "accelerator", "fpga", "asic", "processor",
+    "h100", "a100", "amd", "intel", "memory bandwidth", "training cluster",
+    "inference chip", "wafer", "fab", "foundry", "power consumption",
+  ],
+  data: [
+    "dataset", "data infrastructure", "data pipeline", "data quality",
+    "annotation", "labeling", "benchmark", "evaluation dataset",
+    "training data", "synthetic data", "data collection", "data curation",
+    "knowledge graph", "vector database", "embedding",
+  ],
+  models: [
+    "model", "llm", "transformer", "foundation model", "architecture",
+    "parameter", "gpt", "claude", "gemini", "llama", "mistral",
+    "language model", "multimodal", "vision model", "diffusion model",
+    "pre-trained", "pretrained", "weight", "checkpoint", "finetuned",
+    "small language model", "slm", "reasoning model",
+  ],
+  networking: [
+    "network infrastructure", "energy consumption", "power grid", "cooling",
+    "interconnect", "bandwidth", "data center energy", "carbon footprint",
+    "electricity", "renewable", "thermal", "cooling system",
+  ],
+  algorithms: [
+    "algorithm", "reinforcement learning", "optimization", "training method",
+    "fine-tun", "gradient", "attention mechanism", "diffusion", "generative",
+    "sampling", "inference", "rlhf", "dpo", "reasoning", "chain of thought",
+    "prompt engineering", "in-context learning", "few-shot", "zero-shot",
+    "mixture of experts", "moe", "retrieval augmented", "rag",
+  ],
+  toolkits: [
+    "sdk", "framework", "library", "toolkit", "api release", "open source",
+    "open-source", "pytorch", "tensorflow", "jax", "hugging face", "langchain",
+    "github", "plugin", "extension", "integration", "developer tool",
+    "code generation", "coding assistant", "cursor", "copilot for",
+    "vscode", "cli", "package", "repository",
+  ],
+  applications: [
+    "app", "application", "product launch", "assistant", "agent",
+    "chatbot", "automation tool", "ai tool", "deploy", "deployment",
+    "enterprise ai", "ai adoption", "workflow", "productivity",
+    "customer service", "search", "recommendation", "personalization",
+  ],
+  healthcare: [
+    "health", "medical", "biotech", "drug discovery", "diagnosis",
+    "clinical", "genom", "medicine", "patient", "hospital", "cancer",
+    "biology", "protein", "pharma", "therapy", "genetic", "brain",
+    "neuroscience", "public health", "pandemic", "disease", "treatment",
+    "imaging", "radiology", "pathology", "biomedical", "life science",
+    "drug", "fda", "clinical trial", "molecular", "cell", "tissue",
+    "mental health", "biomarker", "epidemic", "vaccine",
+  ],
+  finance: [
+    "finance", "fintech", "bank", "trading", "payment", "investment",
+    "stock", "market", "economy", "venture capital", "funding", "crypto",
+    "blockchain", "hedge fund", "wall street", "asset management", "risk",
+    "fraud detection", "credit", "insurance", "regulatory", "sec", "fed",
+    "interest rate", "inflation", "portfolio", "defi", "revenue",
+    "earnings", "valuation", "ipo", "acquisition", "merger",
+  ],
+  entertainment: [
+    "game", "gaming", "music", "film", "creative", "art", "entertainment",
+    "text-to-image", "text-to-video", "image generation", "video generation",
+    "stable diffusion", "midjourney", "sora", "media", "content creation",
+    "animation", "3d generation", "avatar", "vr", "ar", "metaverse",
+    "streaming", "studio", "generative art", "nft", "udio", "suno",
+  ],
+  av: [
+    "autonomous vehicle", "self-driving", "robot", "robotics", "drone",
+    "tesla", "waymo", "embodied", "manipulation", "industrial robot",
+    "lidar", "navigation", "humanoid", "mobility", "autopilot",
+    "end-to-end driving", "simulation", "motion planning", "perception",
+    "boston dynamics", "figure", "1x", "spot", "quadruped",
+  ],
+  agriculture: [
+    "agricultur", "farm", "climate", "crop", "sustainab", "weather",
+    "food security", "irrigation", "soil", "harvest", "precision farming",
+    "carbon emission", "environmental", "food", "deforestation",
+    "biodiversity", "species", "ecology", "remote sensing",
+  ],
+  validation: [
+    "startup idea", "market validation", "pitch", "strategy",
+    "product market fit", "go-to-market", "business model", "mvp",
+  ],
+  branding: [
+    "branding", "marketing", "pitch deck", "fundraising", "investor",
+    "series a", "series b", "seed round", "angel",
+  ],
+  vibecoding: [
+    "no-code", "vibe coding", "rapid prototyp", "app builder",
+    "low-code", "cursor", "replit", "bolt", "lovable", "v0",
+  ],
+  growth: [
+    "growth hacking", "automation", "scale", "user acquisition",
+    "retention", "conversion", "saas", "viral", "monetization",
+  ],
 };
 
 export function classify(text = "") {

@@ -2,17 +2,58 @@
 // 全部是免费、不需要 API Key 的公开 RSS/Atom 源。
 // 想增加/替换来源：在这个数组里加一行即可，不用改其他代码。
 export const FEEDS = [
-  { url: "https://rss.arxiv.org/rss/cs.AI", name: "arXiv cs.AI", sourceType: "preprint" },
-  { url: "https://rss.arxiv.org/rss/cs.LG", name: "arXiv cs.LG", sourceType: "preprint" },
-  { url: "https://rss.arxiv.org/rss/cs.CL", name: "arXiv cs.CL", sourceType: "preprint" },
-  { url: "https://news.mit.edu/rss/topic/artificial-intelligence2", name: "MIT News · AI", sourceType: "gov-research" },
-  { url: "https://blogs.nvidia.com/feed/", name: "NVIDIA Blog", sourceType: "industry-lab" },
-  { url: "https://www.microsoft.com/en-us/research/feed/", name: "Microsoft Research", sourceType: "industry-lab" },
-  { url: "https://openai.com/blog/rss.xml", name: "OpenAI Blog", sourceType: "industry-lab" },
-  { url: "https://huggingface.co/blog/feed.xml", name: "Hugging Face Blog", sourceType: "dev-community" },
-  { url: "https://hnrss.org/newest?q=AI&points=50", name: "Hacker News (AI, 50+ points)", sourceType: "dev-community" },
-  { url: "https://techcrunch.com/category/artificial-intelligence/feed/", name: "TechCrunch · AI", sourceType: "vc-media" },
-  { url: "https://venturebeat.com/category/ai/feed/", name: "VentureBeat · AI", sourceType: "vc-media" },
+  // ── Preprint Servers ──────────────────────────────────────────────────────
+  { url: "https://rss.arxiv.org/rss/cs.AI",  name: "arXiv cs.AI",          sourceType: "preprint" },
+  { url: "https://rss.arxiv.org/rss/cs.LG",  name: "arXiv cs.LG",          sourceType: "preprint" },
+  { url: "https://rss.arxiv.org/rss/cs.CL",  name: "arXiv cs.CL",          sourceType: "preprint" },
+  { url: "https://rss.arxiv.org/rss/cs.RO",  name: "arXiv cs.RO (Robotics)", sourceType: "preprint" },
+  { url: "https://rss.arxiv.org/rss/cs.CV",  name: "arXiv cs.CV (Vision)", sourceType: "preprint" },
+
+  // ── Government / Research Institutions ───────────────────────────────────
+  { url: "https://news.mit.edu/rss/topic/artificial-intelligence2",
+    name: "MIT News · AI",          sourceType: "gov-research" },
+  { url: "https://hai.stanford.edu/news/rss.xml",
+    name: "Stanford HAI",           sourceType: "gov-research" },
+  { url: "https://spectrum.ieee.org/feeds/feed.rss",
+    name: "IEEE Spectrum",          sourceType: "gov-research" },
+  { url: "https://allenai.org/blog-rss.xml",
+    name: "Allen Institute for AI", sourceType: "gov-research" },
+
+  // ── Industry Tech Labs ────────────────────────────────────────────────────
+  { url: "https://blogs.nvidia.com/feed/",
+    name: "NVIDIA Blog",            sourceType: "industry-lab" },
+  { url: "https://www.microsoft.com/en-us/research/feed/",
+    name: "Microsoft Research",     sourceType: "industry-lab" },
+  { url: "https://openai.com/blog/rss.xml",
+    name: "OpenAI Blog",            sourceType: "industry-lab" },
+  { url: "https://deepmind.google/blog/rss.xml",
+    name: "Google DeepMind Blog",   sourceType: "industry-lab" },
+  { url: "https://blog.research.google/feeds/posts/default",
+    name: "Google Research Blog",   sourceType: "industry-lab" },
+  { url: "https://ai.meta.com/blog/rss/",
+    name: "Meta AI Blog",           sourceType: "industry-lab" },
+  { url: "https://machinelearning.apple.com/rss.xml",
+    name: "Apple Machine Learning", sourceType: "industry-lab" },
+  { url: "https://www.amazon.science/index.rss",
+    name: "Amazon Science",         sourceType: "industry-lab" },
+
+  // ── Developer Communities ─────────────────────────────────────────────────
+  { url: "https://huggingface.co/blog/feed.xml",
+    name: "Hugging Face Blog",             sourceType: "dev-community" },
+  { url: "https://hnrss.org/newest?q=AI&points=50",
+    name: "Hacker News (AI, 50+ pts)",     sourceType: "dev-community" },
+  { url: "https://dev.to/feed/tag/machinelearning",
+    name: "Dev.to · Machine Learning",     sourceType: "dev-community" },
+  { url: "https://dev.to/feed/tag/ai",
+    name: "Dev.to · AI",                   sourceType: "dev-community" },
+
+  // ── Venture Capital / Business Media ─────────────────────────────────────
+  { url: "https://techcrunch.com/category/artificial-intelligence/feed/",
+    name: "TechCrunch · AI",       sourceType: "vc-media" },
+  { url: "https://techcrunch.com/category/fintech/feed/",
+    name: "TechCrunch · Fintech",  sourceType: "vc-media" },
+  { url: "https://venturebeat.com/category/ai/feed/",
+    name: "VentureBeat · AI",      sourceType: "vc-media" },
 ];
 
 // 实习/内推板块：社区持续维护、每天自动更新的开源实习清单（GitHub raw JSON，免 key）。
