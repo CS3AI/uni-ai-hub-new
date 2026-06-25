@@ -1,0 +1,106 @@
+{
+  "week": "2026-06-23",
+  "weekLabel": "Week of June 23 – 29, 2026",
+  "news": [
+    {
+      "rank": 1,
+      "title": "Claude Sonnet 4 Sets New Benchmarks in Agentic Coding and Multi-Step Reasoning",
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news",
+      "commentary": "Not just a benchmark jump — this is a reliability shift. Claude Sonnet 4 now resolves over 70% of real-world GitHub issues in autonomous mode, and the improvement in multi-step tool use is the kind that actually changes how engineers build products. The era of AI writing production-ready code on the first try is closer than most people's roadmaps account for. If you're building on Claude, revisit your system prompts — the baseline has moved."
+    },
+    {
+      "rank": 2,
+      "title": "Meta's Llama 4 Scout Released Open-Weight: 17B Active Parameters Inside a 109B MoE",
+      "source": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/",
+      "commentary": "A 109-billion-parameter mixture-of-experts model, fully open-weight, that runs efficiently on a single high-end consumer GPU. Scout outperforms GPT-4o on multilingual benchmarks while staying lean at inference time. This is the clearest signal yet that Meta's open-source strategy is a genuine competitive moat, not PR. For anyone building AI tools without a hyperscaler budget, the math on self-hosting just changed dramatically."
+    },
+    {
+      "rank": 3,
+      "title": "EU AI Act High-Risk Enforcement Begins — Hiring, Education, and Credit Scoring Now Regulated",
+      "source": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "commentary": "The first real enforcement teeth of the EU AI Act came into effect this month. If your AI system makes decisions in hiring, education assessment, or credit scoring, you now need mandatory transparency documentation and human oversight. Companies are discovering that 'explainability' is a much harder engineering problem than a policy one — a 70B transformer is not self-documenting. This is the moment AI governance officially becomes a systems design constraint."
+    },
+    {
+      "rank": 4,
+      "title": "Google DeepMind Extends AlphaFold 3 to RNA Structure Prediction and Small-Molecule Binding",
+      "source": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/",
+      "commentary": "AlphaFold already solved protein folding. The extension to RNA and small-molecule binding is a direct strike at drug discovery pipelines. Computational workflows that used to take months in pharma now run in hours. The healthcare AI revolution isn't a future event — it's been quietly shipping, paper by paper, for the past two years. If you're interested in biotech AI, this is your moment to get familiar with structural biology basics."
+    },
+    {
+      "rank": 5,
+      "title": "NVIDIA Blackwell Ultra Production Clusters Go Live at Major Hyperscalers",
+      "source": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/",
+      "commentary": "The first Blackwell Ultra clusters went into production this quarter, with training throughput nearly 4x the H100 generation. What's interesting is the buyer mix: not just AWS, Azure, and GCP, but sovereign AI funds from UAE, Japan, and France. The geopolitics of compute infrastructure is now as important as the hardware spec sheet. If you're not thinking about where AI compute lives and who controls it, you're missing half the story of this decade."
+    }
+  ],
+  "papers": [
+    {
+      "rank": 1,
+      "title": "Mixture of Depths: Dynamically Allocating Compute in Transformer Models",
+      "source": "arXiv · cs.LG",
+      "url": "https://arxiv.org/abs/2404.02258",
+      "commentary": "Instead of giving every token the same amount of compute, this method lets the model route tokens — shallow layers for simple ones, deep processing for complex ones. Result: equivalent quality at roughly half the compute. It's a clean solution to one of transformers' most wasteful design assumptions and is already appearing in production architectures. One paper, thousands of GPU-hours saved per week at scale. Read it if you want to understand why 'bigger is not always better' is now an engineering principle."
+    },
+    {
+      "rank": 2,
+      "title": "π0.5: A Vision-Language-Action Model for Open-World Robot Manipulation",
+      "source": "Physical Intelligence (pi.ai)",
+      "url": "https://www.physicalintelligence.company/blog/pi05",
+      "commentary": "Physical AI just had its ImageNet moment. π0.5 follows natural language instructions across diverse robot morphologies with minimal task-specific fine-tuning. The laundry-folding demo is genuinely impressive — not as a party trick, but as evidence that the 'embodied AI' thesis is becoming an engineering reality rather than a conference slide. If you're interested in robotics, this paper defines the new baseline for what VLA (vision-language-action) models should be able to do."
+    },
+    {
+      "rank": 3,
+      "title": "Scaling Laws for Reasoning Tokens: When Does Chain-of-Thought Help?",
+      "source": "arXiv · cs.AI",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "commentary": "This paper gives a principled framework for predicting when chain-of-thought prompting helps versus hurts. The core finding: CoT provides the most benefit when tasks have more than three logical dependencies, and can actually degrade performance on simple classification tasks by introducing noise. Beneath the math, the practical takeaway is that reasoning compute scales differently from pretraining compute — smarter prompting strategies can substitute for larger models in many real-world scenarios."
+    }
+  ],
+  "internships": [
+    {
+      "rank": 1,
+      "title": "Google Research Intern — AI / Machine Learning",
+      "company": "Google DeepMind",
+      "location": "Mountain View, CA (hybrid)",
+      "url": "https://careers.google.com/",
+      "commentary": "Google Research internships are the gold standard for students who want to publish papers. Most interns co-author at least one NeurIPS, ICML, or ICLR submission. The bar is genuinely high — expect a research proposal interview and a technical screen focused on ML fundamentals — but the mentorship, compute access, and network you build are unmatched anywhere in industry. Apply early; the best teams fill by October for the following summer."
+    },
+    {
+      "rank": 2,
+      "title": "Microsoft Research Intern — Responsible AI and Interpretability",
+      "company": "Microsoft Research",
+      "location": "Redmond, WA / Remote",
+      "url": "https://careers.microsoft.com/",
+      "commentary": "This program sits at the intersection of technical AI research and policy — projects range from bias detection infrastructure to interpretability tools with direct product impact. Uniquely for Microsoft, this team has a direct line to the AI policy group in DC, meaning your research can actually inform regulatory conversations. If you care about where AI is heading long-term and not just how to build it faster, this internship matters more than a pure engineering role at a higher-profile company."
+    },
+    {
+      "rank": 3,
+      "title": "Waymo Software Engineering Intern — ML Infrastructure",
+      "company": "Waymo",
+      "location": "San Francisco, CA",
+      "url": "https://waymo.com/careers/",
+      "commentary": "Autonomous driving data is a completely different beast from internet data — dense, safety-critical, multi-sensor, and geographically diverse. An internship at Waymo gives you production ML experience at vehicle scale, working on infrastructure where bugs don't just crash a server. The ML systems engineering challenges here are some of the most demanding in industry, and the resume signal is distinctive: most undergraduates don't get to say they shipped code that runs in a car."
+    }
+  ],
+  "courses": [
+    {
+      "rank": 1,
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "institution": "Stanford University",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "commentary": "Still the best NLP course available online, updated for the LLM era. CS224N doesn't just teach you how transformers work — it walks you through the design decisions that made them the dominant architecture, from attention mechanisms to positional encoding to in-context learning. The 2024-25 lecture notes are now fully grounded in how GPT-4, Claude, and Gemini-class models are actually built. If you want to understand large language models at a mechanistic level rather than just prompting them, start here before anything else."
+    },
+    {
+      "rank": 2,
+      "title": "CS50's Introduction to Artificial Intelligence with Python",
+      "institution": "Harvard University",
+      "url": "https://cs50.harvard.edu/ai/",
+      "commentary": "The ideal entry point if you're new to AI but already know a bit of Python. CS50 AI covers search algorithms, constraint satisfaction, probabilistic models, neural networks, and NLP — all with hands-on Python projects you can actually show in a portfolio. Free on edX with an optional verified certificate. No linear algebra prerequisites; they build up the math as needed. More students have started their AI journey with this course than almost any other online resource."
+    }
+  ]
+}

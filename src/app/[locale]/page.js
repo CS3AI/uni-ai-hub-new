@@ -2,6 +2,9 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/navigation";
+import digest from "@/data/digest.json";
+import WeeklyDigest from "@/components/WeeklyDigest";
+import OpportunityMatch from "@/components/OpportunityMatch";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -35,6 +38,7 @@ export default async function Home({ params }) {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-20">
+      {/* ── Hero ── */}
       <p className="text-xs font-semibold uppercase tracking-wider text-muted">
         {t("eyebrow")}
       </p>
@@ -45,6 +49,7 @@ export default async function Home({ params }) {
         {t("subtitle")}
       </p>
 
+      {/* ── Section cards ── */}
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {SECTIONS.map((s) => (
           <Link
@@ -68,10 +73,17 @@ export default async function Home({ params }) {
         ))}
       </div>
 
-      <div className="mt-14 card-surface rounded-2xl p-5 text-sm text-muted">
+      {/* ── AI Opportunity Match ── */}
+      <OpportunityMatch locale={locale} />
+
+      {/* ── About ── */}
+      <div className="mt-10 card-surface rounded-2xl p-5 text-sm text-muted">
         <p className="font-medium text-foreground">{t("about.title")}</p>
         <p className="mt-1">{t("about.desc")}</p>
       </div>
+
+      {/* ── Weekly Digest ── */}
+      <WeeklyDigest digest={digest} locale={locale} />
     </div>
   );
 }
