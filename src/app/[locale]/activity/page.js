@@ -64,17 +64,17 @@ function GlobalOpportunitiesTab() {
 
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div>
-                  <p className="font-medium text-foreground mb-1">🗓 Timeline</p>
+                  <p className="font-medium text-foreground mb-1">Timeline</p>
                   <p className="text-muted">{opp.deadline}</p>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground mb-1">👥 Eligibility</p>
+                  <p className="font-medium text-foreground mb-1">Eligibility</p>
                   <p className="text-muted">{opp.eligibility}</p>
                 </div>
               </div>
 
               <div>
-                <p className="text-xs font-medium text-foreground mb-1.5">🎯 SDG Alignment</p>
+                <p className="text-xs font-medium text-foreground mb-1.5">SDG Alignment</p>
                 <div className="flex flex-wrap gap-1">
                   {opp.sdgs.map((s) => <Badge key={s} text={s} color="green" />)}
                 </div>
@@ -82,7 +82,7 @@ function GlobalOpportunitiesTab() {
 
               {opp.techStack && (
                 <div>
-                  <p className="text-xs font-medium text-foreground mb-1.5">🛠 Tech Stack</p>
+                  <p className="text-xs font-medium text-foreground mb-1.5">Tech Stack</p>
                   <div className="flex flex-wrap gap-1">
                     {opp.techStack.map((s) => <Badge key={s} text={s} color="blue" />)}
                   </div>
@@ -90,12 +90,12 @@ function GlobalOpportunitiesTab() {
               )}
 
               <div className="rounded-xl bg-amber-50 border border-amber-100 p-3">
-                <p className="text-xs font-medium text-amber-800 mb-1">💡 Why this matters for high schoolers</p>
+                <p className="text-xs font-medium text-amber-800 mb-1">Why this matters for high schoolers</p>
                 <p className="text-xs text-amber-700 leading-relaxed">{opp.whyHighSchool}</p>
               </div>
 
               <div>
-                <p className="text-xs font-medium text-foreground mb-1">✅ Tips</p>
+                <p className="text-xs font-medium text-foreground mb-1">Tips</p>
                 <TipList tips={opp.tips} />
               </div>
 
@@ -154,12 +154,12 @@ function OpenSourceTab() {
                   <p className="text-sm text-muted leading-relaxed">{proj.desc}</p>
 
                   <div className="rounded-xl bg-blue-50 border border-blue-100 p-3">
-                    <p className="text-xs font-medium text-blue-800 mb-1">🤝 How to contribute</p>
+                    <p className="text-xs font-medium text-blue-800 mb-1">How to contribute</p>
                     <p className="text-xs text-blue-700 leading-relaxed">{proj.howToContribute}</p>
                   </div>
 
                   <div>
-                    <p className="text-xs font-medium text-foreground mb-1.5">🛠 Skills needed</p>
+                    <p className="text-xs font-medium text-foreground mb-1.5">Skills needed</p>
                     <div className="flex flex-wrap gap-1">
                       {proj.skills.map((s) => <Badge key={s} text={s} color="blue" />)}
                     </div>
@@ -216,7 +216,7 @@ function OpenSourceTab() {
                   <p className="text-sm text-muted leading-relaxed">{proj.desc}</p>
 
                   <div className="rounded-xl bg-amber-50 border border-amber-100 p-3">
-                    <p className="text-xs font-medium text-amber-800 mb-1">💡 Why join?</p>
+                    <p className="text-xs font-medium text-amber-800 mb-1">Why join?</p>
                     <p className="text-xs text-amber-700 leading-relaxed">{proj.whyJoin}</p>
                   </div>
 
@@ -276,7 +276,7 @@ function LocalActionTab() {
               <p className="text-sm text-muted leading-relaxed">{org.why}</p>
 
               <div>
-                <p className="text-xs font-medium text-foreground mb-2">💡 Project ideas</p>
+                <p className="text-xs font-medium text-foreground mb-2">Project ideas</p>
                 <ul className="space-y-1.5">
                   {org.suggestedProjects.map((p, i) => (
                     <li key={i} className="flex gap-2 text-xs text-muted">
@@ -289,7 +289,7 @@ function LocalActionTab() {
 
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <p className="text-xs font-medium text-foreground">📧 Outreach template</p>
+                  <p className="text-xs font-medium text-foreground">Outreach template</p>
                   <button
                     onClick={() => copyTemplate(org.id, org.outreachTemplate)}
                     className="text-[10px] font-medium text-brand-end border border-current rounded-md px-2 py-0.5 hover:opacity-80 transition"
@@ -303,7 +303,7 @@ function LocalActionTab() {
               </div>
 
               <div>
-                <p className="text-xs font-medium text-foreground mb-1">✅ Tips</p>
+                <p className="text-xs font-medium text-foreground mb-1">Tips</p>
                 <TipList tips={org.tips} />
               </div>
             </div>
