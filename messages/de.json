@@ -3,7 +3,8 @@
     "home": "Start",
     "information": "Aktuelles",
     "courses": "Kurse",
-    "internship": "Praktikum"
+    "internship": "Praktikum",
+    "activity": "Aktivitäten"
   },
   "home": {
     "eyebrow": "University High School · KI-Club",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "Live-Daten",
         "desc": "Echtzeit-Praktikumslisten, Empfehlungsoptionen, KI/CS-Lebenslauf- und Anschreibenvorlagen sowie ein Bewerbungskalender für Schüler."
+      },
+      "activity": {
+        "tag": "Kuratiert",
+        "desc": "Globale KI-Wettbewerbe, SDG Open-Source-Projekte und lokale Aktionsleitfäden — für Schüler, die KI-Fähigkeiten in echte Wirkung umsetzen möchten."
       }
     },
     "about": {
       "title": "Über dieses Projekt",
-      "desc": "Uni AI Hub wurde im Sommer 2026 vom Curriculum-Koordinator des KI-Clubs der University High School entwickelt. Ziel: Schüler und KI-Enthusiasten mit Branchennews, Lernressourcen und Praktikumsangeboten versorgen. Auf dem Smartphone \"Zum Startbildschirm hinzufügen\" wählen für ein App-ähnliches Erlebnis."
+      "desc": "Uni AI Hub wurde im Sommer 2026 vom Curriculum-Koordinator des KI-Clubs der University High School entwickelt. Ziel: Schüler und KI-Enthusiasten mit Branchennews, Lernressourcen und Praktikumsangeboten versorgen."
     }
   },
   "information": {
@@ -107,5 +112,13 @@
     "branding": "Marke & Pitch",
     "vibecoding": "Vibe-Coding-Produkt",
     "growth": "Wachstum & Automatisierung"
+  },
+  "activity": {
+    "eyebrow": "Aktivitäten",
+    "title": "Globale Initiativen & Gemeinschaftsaktionen",
+    "desc": "Globale KI-Wettbewerbe, SDG Open-Source-Projekte und lokale Aktionsleitfäden — für Schüler, die KI-Kompetenzen in echte Wirkung umsetzen.",
+    "tab1": "🌍 Globale Chancen",
+    "tab2": "💻 Open Source & Projekte",
+    "tab3": "🏘️ Lokale Aktion"
   }
 }

@@ -3,7 +3,8 @@
     "home": "Inicio",
     "information": "Noticias",
     "courses": "Cursos",
-    "internship": "Prácticas"
+    "internship": "Prácticas",
+    "activity": "Actividades"
   },
   "home": {
     "eyebrow": "University High School · Club de IA",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "Datos en vivo",
         "desc": "Listados de prácticas en tiempo real, oportunidades de recomendación, plantillas de CV y cartas de presentación IA/CS, y cronograma de solicitudes para estudiantes de secundaria."
+      },
+      "activity": {
+        "tag": "Curado",
+        "desc": "Competencias globales de IA, proyectos open-source de los ODS y guías de acción local — para convertir tus habilidades en IA en impacto real."
       }
     },
     "about": {
       "title": "Sobre este proyecto",
-      "desc": "Uni AI Hub fue creado en el verano de 2026 por el Coordinador de Currículo del Club de IA de la University High School. El objetivo: mantener a los estudiantes y entusiastas de la IA informados sobre noticias del sector, recursos de aprendizaje y oportunidades de prácticas. En móvil, pulsa «Agregar a pantalla de inicio» para una experiencia casi nativa."
+      "desc": "Uni AI Hub fue creado en el verano de 2026 por el Coordinador de Currículo del Club de IA de la University High School. El objetivo: mantener a los estudiantes y entusiastas de la IA informados sobre noticias del sector, recursos de aprendizaje y oportunidades de prácticas."
     }
   },
   "information": {
@@ -107,5 +112,13 @@
     "branding": "Marca & Pitch",
     "vibecoding": "Producto Vibe Coding",
     "growth": "Crecimiento & Automatización"
+  },
+  "activity": {
+    "eyebrow": "Actividades",
+    "title": "Iniciativas globales y acción comunitaria",
+    "desc": "Competencias globales, proyectos open-source ODS y guías de acción local — para convertir tus habilidades en IA en impacto real.",
+    "tab1": "🌍 Oportunidades globales",
+    "tab2": "💻 Open Source & Proyectos",
+    "tab3": "🏘️ Acción local"
   }
 }

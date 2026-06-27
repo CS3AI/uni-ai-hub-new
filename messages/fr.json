@@ -3,7 +3,8 @@
     "home": "Accueil",
     "information": "Actualités",
     "courses": "Cours",
-    "internship": "Stages"
+    "internship": "Stages",
+    "activity": "Activités"
   },
   "home": {
     "eyebrow": "University High School · Club IA",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "Données en direct",
         "desc": "Offres de stages en temps réel, opportunités de recommandation, modèles de CV et de lettres de motivation IA/CS, et calendrier de candidature pour lycéens."
+      },
+      "activity": {
+        "tag": "Sélectionné",
+        "desc": "Compétitions mondiales d'IA, projets open-source liés aux ODD et guides d'action locale — pour transformer vos compétences en IA en impact concret."
       }
     },
     "about": {
       "title": "À propos de ce projet",
-      "desc": "Uni AI Hub a été créé en été 2026 par le Coordinateur Pédagogique du Club IA de l'University High School. Objectif : garder les étudiants et passionnés d'IA informés des actualités, ressources d'apprentissage et opportunités de stages. Sur mobile, appuyez sur « Ajouter à l'écran d'accueil » pour une expérience quasi-native."
+      "desc": "Uni AI Hub a été créé en été 2026 par le Coordinateur Pédagogique du Club IA de l'University High School. Objectif : garder les étudiants et passionnés d'IA informés des actualités, ressources d'apprentissage et opportunités de stages."
     }
   },
   "information": {
@@ -107,5 +112,13 @@
     "branding": "Marque & Pitch",
     "vibecoding": "Produit Vibe Coding",
     "growth": "Croissance & Automatisation"
+  },
+  "activity": {
+    "eyebrow": "Activités",
+    "title": "Initiatives mondiales & Action locale",
+    "desc": "Compétitions mondiales, projets open-source ODD et guides d'action locale — pour transformer vos compétences IA en impact réel.",
+    "tab1": "🌍 Opportunités mondiales",
+    "tab2": "💻 Open Source & Projets",
+    "tab3": "🏘️ Action locale"
   }
 }

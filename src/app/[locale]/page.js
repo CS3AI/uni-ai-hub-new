@@ -34,6 +34,12 @@ export default async function Home({ params }) {
       desc: t("sections.internship.desc"),
       tag: t("sections.internship.tag"),
     },
+    {
+      href: "/activity",
+      title: "Activity",
+      desc: t("sections.activity.desc"),
+      tag: t("sections.activity.tag"),
+    },
   ];
 
   return (
@@ -50,7 +56,7 @@ export default async function Home({ params }) {
       </p>
 
       {/* ── Section cards ── */}
-      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2">
         {SECTIONS.map((s) => (
           <Link
             key={s.href}

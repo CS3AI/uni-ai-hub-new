@@ -3,7 +3,8 @@
     "home": "首页",
     "information": "资讯",
     "courses": "课程",
-    "internship": "实习"
+    "internship": "实习",
+    "activity": "活动"
   },
   "home": {
     "eyebrow": "University High School · AI 社团",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "实时数据源",
         "desc": "真实自动刷新的实习清单、内推机会、AI/CS 简历与套磁信模板、高中生竞赛与实习 Timeline。"
+      },
+      "activity": {
+        "tag": "精选",
+        "desc": "全球 AI 竞赛、可持续发展开源项目、本地社区实践指南，帮助同学们用 AI 技能创造真实影响力。"
       }
     },
     "about": {
       "title": "关于这个项目",
-      "desc": "Uni AI Hub 由 University High School AI Club 的 Curriculum Coordinator 在 2026 年暑假发起搭建，目标是让全校同学和更多 AI 爱好者能持续获取行业信息、自学资源与实习机会。手机上选择「添加到主屏幕」，体验接近原生 App。"
+      "desc": "Uni AI Hub 由 University High School AI Club 的 Curriculum Coordinator 在 2026 年暑假发起搭建，目标是让全校同学和更多 AI 爱好者能持续获取行业信息、自学资源与实习机会。"
     }
   },
   "information": {
@@ -107,5 +112,13 @@
     "branding": "品牌 & 路演",
     "vibecoding": "Vibe Coding 产品",
     "growth": "增长 & 自动化"
+  },
+  "activity": {
+    "eyebrow": "活动",
+    "title": "全球倡议与社区实践",
+    "desc": "精选全球竞赛、SDG 开源项目与本地社区实践指南，助力同学们将 AI 技能转化为现实影响力。",
+    "tab1": "🌍 全球机会",
+    "tab2": "💻 开源项目",
+    "tab3": "🏘️ 本地社区实践"
   }
 }

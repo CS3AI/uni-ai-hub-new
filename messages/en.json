@@ -3,7 +3,8 @@
     "home": "Home",
     "information": "Information",
     "courses": "Courses",
-    "internship": "Internship"
+    "internship": "Internship",
+    "activity": "Activity"
   },
   "home": {
     "eyebrow": "University High School · AI Club",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "Live data",
         "desc": "Real-time internship listings, referral opportunities, AI/CS resume & outreach templates, and a high-schooler application timeline."
+      },
+      "activity": {
+        "tag": "Curated",
+        "desc": "Global AI competitions, open-source SDG projects, and local community action guides — for students ready to turn AI skills into real-world impact."
       }
     },
     "about": {
       "title": "About this project",
-      "desc": "Uni AI Hub was built in summer 2026 by the Curriculum Coordinator of University High School's AI Club. The goal: keep students and AI enthusiasts informed with industry news, learning resources, and internship opportunities. On mobile, tap \"Add to Home Screen\" for a near-native app experience."
+      "desc": "Uni AI Hub was built in summer 2026 by the Curriculum Coordinator of University High School's AI Club. The goal: keep students and AI enthusiasts informed with industry news, learning resources, and internship opportunities."
     }
   },
   "information": {
@@ -56,6 +61,14 @@
     "referralOpportunities": "Referral Opportunities",
     "searchPlaceholder": "Search by company or role, e.g. Google, Research, NLP...",
     "searchEmpty": "No matching positions. Try a different keyword."
+  },
+  "activity": {
+    "eyebrow": "Activity",
+    "title": "Global Initiatives & Community Action",
+    "desc": "Curated global competitions, open-source SDG projects, and local community action guides — for students ready to apply AI skills to real-world challenges.",
+    "tab1": "🌍 Global Opportunities",
+    "tab2": "💻 Open Source & Projects",
+    "tab3": "🏘️ Local Action"
   },
   "sourceTypes": {
     "preprint": "Preprint",

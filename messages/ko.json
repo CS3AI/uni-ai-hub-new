@@ -3,7 +3,8 @@
     "home": "홈",
     "information": "뉴스",
     "courses": "코스",
-    "internship": "인턴십"
+    "internship": "인턴십",
+    "activity": "활동"
   },
   "home": {
     "eyebrow": "University High School · AI 클럽",
@@ -21,11 +22,15 @@
       "internship": {
         "tag": "실시간 데이터",
         "desc": "실시간 인턴십 목록, 추천 기회, AI/CS 이력서 및 커버레터 템플릿, 고등학생을 위한 지원 타임라인."
+      },
+      "activity": {
+        "tag": "큐레이션",
+        "desc": "글로벌 AI 경진대회, SDG 오픈소스 프로젝트, 지역사회 실천 가이드 — AI 역량을 실제 영향력으로 전환하고 싶은 학생들을 위해."
       }
     },
     "about": {
       "title": "이 프로젝트에 대하여",
-      "desc": "Uni AI Hub는 2026년 여름 University High School AI 클럽의 커리큘럼 코디네이터가 제작했습니다. 목표: 학생과 AI 애호가들이 업계 뉴스, 학습 자료, 인턴십 기회를 지속적으로 접할 수 있도록 합니다. 모바일에서 '홈 화면에 추가'로 네이티브 앱과 유사한 경험을 즐기세요."
+      "desc": "Uni AI Hub는 2026년 여름 University High School AI 클럽의 커리큘럼 코디네이터가 제작했습니다. 목표: 학생과 AI 애호가들이 업계 뉴스, 학습 자료, 인턴십 기회를 지속적으로 접할 수 있도록 합니다."
     }
   },
   "information": {
@@ -107,5 +112,13 @@
     "branding": "브랜딩 & 피칭",
     "vibecoding": "Vibe 코딩 제품",
     "growth": "성장 & 자동화"
+  },
+  "activity": {
+    "eyebrow": "활동",
+    "title": "글로벌 이니셔티브 & 지역사회 실천",
+    "desc": "글로벌 AI 경진대회, SDG 오픈소스 프로젝트, 지역사회 실천 가이드 — AI 역량을 현실 영향력으로 전환하세요.",
+    "tab1": "🌍 글로벌 기회",
+    "tab2": "💻 오픈소스 & 프로젝트",
+    "tab3": "🏘️ 지역사회 실천"
   }
 }
