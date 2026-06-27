@@ -45,12 +45,9 @@ function GlobalOpportunitiesTab() {
             onClick={() => setOpen(open === opp.id ? null : opp.id)}
             className="w-full flex items-start justify-between gap-3 p-5 text-left"
           >
-            <div className="flex items-start gap-3">
-              <span className="text-2xl">{opp.emoji}</span>
-              <div>
-                <h3 className="font-semibold text-base leading-tight">{opp.name}</h3>
-                <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
-              </div>
+            <div>
+              <h3 className="font-semibold text-base leading-tight">{opp.name}</h3>
+              <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
             </div>
             <span className="text-muted text-sm mt-1 shrink-0">
               {open === opp.id ? "▲" : "▼"}
@@ -134,14 +131,11 @@ function OpenSourceTab() {
                 onClick={() => setOpen(open === proj.id ? null : proj.id)}
                 className="w-full flex items-start justify-between gap-3 p-5 text-left"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">{proj.emoji}</span>
-                  <div>
-                    <h4 className="font-semibold text-sm leading-tight">{proj.name}</h4>
-                    <div className="flex items-center gap-2 mt-1">
-                      <Badge text={proj.sdg} color="green" />
-                      <Badge text={proj.difficulty} color="purple" />
-                    </div>
+                <div>
+                  <h4 className="font-semibold text-sm leading-tight">{proj.name}</h4>
+                  <div className="flex items-center gap-2 mt-1">
+                    <Badge text={proj.sdg} color="green" />
+                    <Badge text={proj.difficulty} color="purple" />
                   </div>
                 </div>
                 <span className="text-muted text-sm mt-1 shrink-0">
@@ -193,14 +187,11 @@ function OpenSourceTab() {
                 onClick={() => setOpen(open === proj.id ? null : proj.id)}
                 className="w-full flex items-start justify-between gap-3 p-5 text-left"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">{proj.emoji}</span>
-                  <div>
-                    <h4 className="font-semibold text-sm leading-tight">{proj.name}</h4>
-                    <div className="flex items-center gap-2 mt-1">
-                      <p className="text-xs text-muted">{proj.organizer}</p>
-                      <Badge text={proj.difficulty} color="purple" />
-                    </div>
+                <div>
+                  <h4 className="font-semibold text-sm leading-tight">{proj.name}</h4>
+                  <div className="flex items-center gap-2 mt-1">
+                    <p className="text-xs text-muted">{proj.organizer}</p>
+                    <Badge text={proj.difficulty} color="purple" />
                   </div>
                 </div>
                 <span className="text-muted text-sm mt-1 shrink-0">
@@ -262,10 +253,7 @@ function LocalActionTab() {
             onClick={() => setOpen(open === org.id ? null : org.id)}
             className="w-full flex items-start justify-between gap-3 p-5 text-left"
           >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">{org.emoji}</span>
-              <h3 className="font-semibold text-base">{org.name}</h3>
-            </div>
+            <h3 className="font-semibold text-base">{org.name}</h3>
             <span className="text-muted text-sm mt-1 shrink-0">
               {open === org.id ? "▲" : "▼"}
             </span>

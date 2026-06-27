@@ -66,9 +66,9 @@
     "eyebrow": "Activity",
     "title": "Global Initiatives & Community Action",
     "desc": "Curated global competitions, open-source SDG projects, and local community action guides — for students ready to apply AI skills to real-world challenges.",
-    "tab1": "🌍 Global Opportunities",
-    "tab2": "💻 Open Source & Projects",
-    "tab3": "🏘️ Local Action"
+    "tab1": "Global Opportunities",
+    "tab2": "Open Source & Projects",
+    "tab3": "Local Action"
   },
   "sourceTypes": {
     "preprint": "Preprint",

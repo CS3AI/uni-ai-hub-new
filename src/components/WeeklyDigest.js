@@ -101,7 +101,6 @@ export default function WeeklyDigest({ digest, locale }) {
                   : "text-muted hover:text-foreground hover:bg-gray-100"
               }`}
             >
-              <span>{tab.emoji}</span>
               <span>{TL[tab.id]}</span>
             </button>
           ))}
