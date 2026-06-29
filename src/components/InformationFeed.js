@@ -10,6 +10,14 @@ const PAPER_SOURCE = "preprint";
 const HIGH_QUALITY_SOURCES = ["industry-lab", "gov-research", "preprint"];
 const PAGE_SIZE = 10;
 
+// Theme → active class mapping
+const THEME_ACTIVE = {
+  default: "brand-gradient text-white",
+  blue:    "bg-blue-600 text-white",
+  green:   "bg-green-600 text-white",
+  amber:   "bg-amber-500 text-white",
+};
+
 // Colors for sourceType badges
 const SOURCE_BADGE_COLORS = {
   "preprint":      "bg-blue-100 text-blue-700",
@@ -50,42 +58,27 @@ function pickFeatured(items, n = 5) {
   return scored.slice(0, n).map((s) => s.item);
 }
 
-function Paginator({ page, total, pageSize, onPage }) {
+function Paginator({ page, total, pageSize, onPage, activeClass }) {
   const pages = Math.ceil(total / pageSize);
   if (pages <= 1) return null;
-  const range = Array.from({ length: pages }, (_, i) => i + 1);
   return (
     <div className="flex flex-wrap justify-center gap-1.5 mt-6">
-      <button
-        onClick={() => onPage(Math.max(1, page - 1))}
-        disabled={page === 1}
-        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
-      >
-        ‹
-      </button>
-      {range.map((p) => (
-        <button
-          key={p}
-          onClick={() => onPage(p)}
-          className={`w-8 h-8 rounded-lg text-xs font-semibold transition ${
-            page === p ? "brand-gradient text-white" : "card-surface text-muted hover:text-foreground"
-          }`}
-        >
+      <button onClick={() => onPage(Math.max(1, page - 1))} disabled={page === 1}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30">‹</button>
+      {Array.from({ length: pages }, (_, i) => i + 1).map((p) => (
+        <button key={p} onClick={() => onPage(p)}
+          className={`w-8 h-8 rounded-lg text-xs font-semibold transition ${page === p ? activeClass : "card-surface text-muted hover:text-foreground"}`}>
           {p}
         </button>
       ))}
-      <button
-        onClick={() => onPage(Math.min(pages, page + 1))}
-        disabled={page === pages}
-        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
-      >
-        ›
-      </button>
+      <button onClick={() => onPage(Math.min(pages, page + 1))} disabled={page === pages}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30">›</button>
     </div>
   );
 }
 
-export default function InformationFeed({ items }) {
+export default function InformationFeed({ items, theme = "default" }) {
+  const activeClass = THEME_ACTIVE[theme] ?? THEME_ACTIVE.default;
   const t = useTranslations("information");
   const st = useTranslations("sourceTypes");
   const tg = useTranslations("tags");
@@ -97,13 +90,10 @@ export default function InformationFeed({ items }) {
   const [page, setPage] = useState(1);
   const [translatedTitles, setTranslatedTitles] = useState({});
 
-  // Only show source chips that have at least 1 article (excluding preprint)
   const availableSources = useMemo(() =>
     SOURCE_TYPES.filter((s) => s.id !== PAPER_SOURCE && items.some((item) => item.sourceType === s.id)),
     [items]
   );
-
-  // Only show tag chips that have at least 1 article
   const availableTags = useMemo(() =>
     ALL_TAGS.filter((tag) => items.some((item) => item.tags?.includes(tag.id))),
     [items]
@@ -118,9 +108,7 @@ export default function InformationFeed({ items }) {
       for (let i = 0; i < titles.length; i += BATCH) {
         if (controller.signal.aborted) break;
         const chunk = titles.slice(i, i + BATCH);
-        const results = await Promise.all(
-          chunk.map((t) => translateOne(t, tl, controller.signal).catch(() => t))
-        );
+        const results = await Promise.all(chunk.map((t) => translateOne(t, tl, controller.signal).catch(() => t)));
         if (!controller.signal.aborted) {
           setTranslatedTitles((prev) => {
             const next = { ...prev };
@@ -134,64 +122,38 @@ export default function InformationFeed({ items }) {
     return () => controller.abort();
   }, [locale, items]);
 
-  const filtered = useMemo(() => {
-    return items.filter((item) => {
-      if (activeTag && !item.tags?.includes(activeTag)) return false;
-      if (activeSource && item.sourceType !== activeSource) return false;
-      return true;
-    });
-  }, [items, activeTag, activeSource]);
+  const filtered = useMemo(() => items.filter((item) => {
+    if (activeTag && !item.tags?.includes(activeTag)) return false;
+    if (activeSource && item.sourceType !== activeSource) return false;
+    return true;
+  }), [items, activeTag, activeSource]);
 
-  // Reset page when filters change
   useEffect(() => { setPage(1); }, [activeTag, activeSource]);
 
   const featured = useMemo(() => pickFeatured(items), [items]);
-
-  const paged = useMemo(() => {
-    const start = (page - 1) * PAGE_SIZE;
-    return filtered.slice(start, start + PAGE_SIZE);
-  }, [filtered, page]);
-
-  const sourceTypeLabel = (sourceType) => {
-    const found = SOURCE_TYPES.find((s) => s.id === sourceType);
-    return found ? st(found.id) : null;
-  };
-
+  const paged = useMemo(() => filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [filtered, page]);
+  const sourceTypeLabel = (st2) => { const f = SOURCE_TYPES.find((s) => s.id === st2); return f ? st(f.id) : null; };
   const tr = (title) => translatedTitles[title] || title;
 
   return (
     <div>
-      {/* Featured / Hot section */}
+      {/* Featured */}
       {featured.length > 0 && !activeTag && !activeSource && (
         <div className="mb-8 rounded-2xl border border-red-100 bg-red-50/50 p-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-red-500 mb-3">
-            Featured Picks
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-red-500 mb-3">Featured Picks</p>
           <ol className="space-y-2">
             {featured.map((item, idx) => (
               <li key={item.link || idx} className="flex items-start gap-3">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-red-500 text-white text-[11px] font-black flex items-center justify-center leading-none mt-0.5">
-                  {idx + 1}
-                </span>
+                <span className="shrink-0 w-6 h-6 rounded-full bg-red-500 text-white text-[11px] font-black flex items-center justify-center leading-none mt-0.5">{idx + 1}</span>
                 <div className="min-w-0">
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold leading-snug hover:text-red-600 transition-colors"
-                  >
-                    {tr(item.title)}
-                  </a>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer"
+                    className="text-sm font-semibold leading-snug hover:text-red-600 transition-colors">{tr(item.title)}</a>
                   <div className="flex flex-wrap items-center gap-1.5 mt-0.5">
                     <span className="text-[10px] text-muted font-medium">{item.source}</span>
-                    {item.pubDate && (
-                      <span className="text-[10px] text-muted">· {formatDate(item.pubDate, locale)}</span>
-                    )}
+                    {item.pubDate && <span className="text-[10px] text-muted">· {formatDate(item.pubDate, locale)}</span>}
                     {item.tags?.slice(0, 2).map((tagId) => {
                       const found = ALL_TAGS.find((t) => t.id === tagId);
-                      return found ? (
-                        <Tag key={tagId} className="text-[9px] py-0">{tg(tagId)}</Tag>
-                      ) : null;
+                      return found ? <Tag key={tagId}>{tg(tagId)}</Tag> : null;
                     })}
                   </div>
                 </div>
@@ -201,39 +163,24 @@ export default function InformationFeed({ items }) {
         </div>
       )}
 
-      {/* Source filter — only show chips with data */}
+      {/* Source filter */}
       {availableSources.length > 0 && (
         <div className="mb-4 flex flex-wrap gap-2">
-          <FilterChip active={!activeSource} onClick={() => setActiveSource(null)}>
-            {t("allSources")}
-          </FilterChip>
+          <FilterChip active={!activeSource} onClick={() => setActiveSource(null)} activeClass={activeClass}>{t("allSources")}</FilterChip>
           {availableSources.map((s) => (
-            <FilterChip
-              key={s.id}
-              active={activeSource === s.id}
-              onClick={() => setActiveSource(activeSource === s.id ? null : s.id)}
-            >
-              {st(s.id)}
-            </FilterChip>
+            <FilterChip key={s.id} active={activeSource === s.id}
+              onClick={() => setActiveSource(activeSource === s.id ? null : s.id)} activeClass={activeClass}>{st(s.id)}</FilterChip>
           ))}
         </div>
       )}
 
-      {/* Topic filter — only show chips with data */}
+      {/* Topic filter */}
       {availableTags.length > 0 && (
         <div className="mb-6 flex flex-wrap gap-2">
-          <FilterChip active={!activeTag} onClick={() => setActiveTag(null)} subtle>
-            {t("allTopics")}
-          </FilterChip>
+          <FilterChip active={!activeTag} onClick={() => setActiveTag(null)} subtle activeClass={activeClass}>{t("allTopics")}</FilterChip>
           {availableTags.map((tag) => (
-            <FilterChip
-              key={tag.id}
-              active={activeTag === tag.id}
-              onClick={() => setActiveTag(activeTag === tag.id ? null : tag.id)}
-              subtle
-            >
-              {tg(tag.id)}
-            </FilterChip>
+            <FilterChip key={tag.id} active={activeTag === tag.id}
+              onClick={() => setActiveTag(activeTag === tag.id ? null : tag.id)} subtle activeClass={activeClass}>{tg(tag.id)}</FilterChip>
           ))}
         </div>
       )}
@@ -248,10 +195,7 @@ export default function InformationFeed({ items }) {
               const isPaper = item.sourceType === PAPER_SOURCE;
               const badgeColor = SOURCE_BADGE_COLORS[item.sourceType] || "bg-gray-100 text-gray-600";
               return (
-                <li
-                  key={item.link || idx}
-                  className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}
-                >
+                <li key={item.link || idx} className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}>
                   <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
                     <div className="flex flex-wrap items-center gap-2 text-xs text-muted mb-1.5">
                       <span className="font-medium text-brand-end">{item.source}</span>
@@ -262,14 +206,8 @@ export default function InformationFeed({ items }) {
                         </span>
                       )}
                     </div>
-                    <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>
-                      {tr(item.title)}
-                    </h3>
-                    {item.summary && (
-                      <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>
-                        {item.summary}
-                      </p>
-                    )}
+                    <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>{tr(item.title)}</h3>
+                    {item.summary && <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>{item.summary}</p>}
                     {item.tags?.length > 0 && (
                       <div className="mt-2 flex flex-wrap gap-1.5">
                         {item.tags.slice(0, 4).map((tagId) => {
@@ -283,25 +221,19 @@ export default function InformationFeed({ items }) {
               );
             })}
           </ul>
-          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} />
+          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} activeClass={activeClass} />
         </>
       )}
     </div>
   );
 }
 
-function FilterChip({ active, onClick, children, subtle }) {
+function FilterChip({ active, onClick, children, subtle, activeClass }) {
   return (
-    <button
-      onClick={onClick}
+    <button onClick={onClick}
       className={`rounded-full px-3 py-1 text-xs font-medium transition ${
-        active
-          ? "brand-gradient text-white"
-          : subtle
-          ? "bg-background text-muted hover:text-foreground"
-          : "card-surface text-muted hover:text-foreground"
-      }`}
-    >
+        active ? activeClass : subtle ? "bg-background text-muted hover:text-foreground" : "card-surface text-muted hover:text-foreground"
+      }`}>
       {children}
     </button>
   );

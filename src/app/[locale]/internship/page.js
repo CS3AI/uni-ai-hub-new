@@ -56,7 +56,7 @@ export default async function InternshipPage({ params }) {
         />
 
         <Section title={t("liveListings")}>
-          <InternshipList items={listings} />
+          <InternshipList items={listings} theme="green" />
         </Section>
 
         <Section title={t("referralOpportunities")}>
@@ -96,7 +96,7 @@ export default async function InternshipPage({ params }) {
           <div className="grid gap-4 sm:grid-cols-4">
             {TIMELINE.map((m, idx) => (
               <div key={idx} className="card-surface rounded-xl p-4">
-                <Tag tone="brand">{m.period}</Tag>
+                <Tag tone="green">{m.period}</Tag>
                 <ul className="mt-2 space-y-1 text-sm text-muted">
                   {m.items.map((it, i2) => (
                     <li key={i2}>· {it}</li>

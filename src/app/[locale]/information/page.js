@@ -26,7 +26,7 @@ export default async function InformationPage({ params }) {
           description={t("desc")}
           meta={t("itemCount", { count: items.length })}
         />
-        <InformationFeed items={items} />
+        <InformationFeed items={items} theme="blue" />
       </div>
     </div>
   );

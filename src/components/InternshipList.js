@@ -5,50 +5,39 @@ import { useTranslations, useLocale } from "next-intl";
 
 const PAGE_SIZE = 15;
 
+const THEME_ACTIVE = {
+  default: "brand-gradient text-white",
+  blue:    "bg-blue-600 text-white",
+  green:   "bg-green-600 text-white",
+  amber:   "bg-amber-500 text-white",
+};
+
 function formatDate(iso, locale) {
   if (!iso) return "";
-  return new Date(iso).toLocaleDateString(locale, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  return new Date(iso).toLocaleDateString(locale, { year: "numeric", month: "short", day: "numeric" });
 }
 
-function Paginator({ page, total, pageSize, onPage }) {
+function Paginator({ page, total, pageSize, onPage, activeClass }) {
   const pages = Math.ceil(total / pageSize);
   if (pages <= 1) return null;
   return (
     <div className="flex flex-wrap justify-center gap-1.5 mt-6">
-      <button
-        onClick={() => onPage(Math.max(1, page - 1))}
-        disabled={page === 1}
-        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
-      >
-        ‹
-      </button>
+      <button onClick={() => onPage(Math.max(1, page - 1))} disabled={page === 1}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30">‹</button>
       {Array.from({ length: pages }, (_, i) => i + 1).map((p) => (
-        <button
-          key={p}
-          onClick={() => onPage(p)}
-          className={`w-8 h-8 rounded-lg text-xs font-semibold transition ${
-            page === p ? "brand-gradient text-white" : "card-surface text-muted hover:text-foreground"
-          }`}
-        >
+        <button key={p} onClick={() => onPage(p)}
+          className={`w-8 h-8 rounded-lg text-xs font-semibold transition ${page === p ? activeClass : "card-surface text-muted hover:text-foreground"}`}>
           {p}
         </button>
       ))}
-      <button
-        onClick={() => onPage(Math.min(pages, page + 1))}
-        disabled={page === pages}
-        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
-      >
-        ›
-      </button>
+      <button onClick={() => onPage(Math.min(pages, page + 1))} disabled={page === pages}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30">›</button>
     </div>
   );
 }
 
-export default function InternshipList({ items }) {
+export default function InternshipList({ items, theme = "default" }) {
+  const activeClass = THEME_ACTIVE[theme] ?? THEME_ACTIVE.default;
   const t = useTranslations("internship");
   const locale = useLocale();
   const [query, setQuery] = useState("");
@@ -57,32 +46,16 @@ export default function InternshipList({ items }) {
   const filtered = useMemo(() => {
     if (!query.trim()) return items;
     const q = query.toLowerCase();
-    return items.filter(
-      (i) =>
-        i.title.toLowerCase().includes(q) ||
-        i.company.toLowerCase().includes(q)
-    );
+    return items.filter((i) => i.title.toLowerCase().includes(q) || i.company.toLowerCase().includes(q));
   }, [items, query]);
 
-  // Reset page on search
-  const handleQuery = (e) => {
-    setQuery(e.target.value);
-    setPage(1);
-  };
-
-  const paged = useMemo(() => {
-    const start = (page - 1) * PAGE_SIZE;
-    return filtered.slice(start, start + PAGE_SIZE);
-  }, [filtered, page]);
+  const handleQuery = (e) => { setQuery(e.target.value); setPage(1); };
+  const paged = useMemo(() => filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [filtered, page]);
 
   return (
     <div>
-      <input
-        value={query}
-        onChange={handleQuery}
-        placeholder={t("searchPlaceholder")}
-        className="mb-4 w-full rounded-xl border bg-surface px-4 py-2 text-sm outline-none focus:border-brand-end"
-      />
+      <input value={query} onChange={handleQuery} placeholder={t("searchPlaceholder")}
+        className="mb-4 w-full rounded-xl border bg-surface px-4 py-2 text-sm outline-none focus:border-green-500" />
       {filtered.length === 0 ? (
         <p className="text-sm text-muted">{t("searchEmpty")}</p>
       ) : (
@@ -91,31 +64,19 @@ export default function InternshipList({ items }) {
           <ul className="space-y-2">
             {paged.map((item) => (
               <li key={item.id} className="card-surface rounded-xl p-4">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
+                <a href={item.url} target="_blank" rel="noopener noreferrer" className="block">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="text-sm font-semibold">{item.title}</h3>
-                    {item.datePosted && (
-                      <span className="text-xs text-muted">
-                        {formatDate(item.datePosted, locale)}
-                      </span>
-                    )}
+                    {item.datePosted && <span className="text-xs text-muted">{formatDate(item.datePosted, locale)}</span>}
                   </div>
                   <p className="mt-1 text-sm text-muted">
-                    {item.company}
-                    {item.locations?.length
-                      ? ` · ${item.locations.join(", ")}`
-                      : ""}
+                    {item.company}{item.locations?.length ? ` · ${item.locations.join(", ")}` : ""}
                   </p>
                 </a>
               </li>
             ))}
           </ul>
-          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} />
+          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} activeClass={activeClass} />
         </>
       )}
     </div>

@@ -125,7 +125,7 @@ function GlobalOpportunitiesTab({ tr }) {
                 href={opp.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-1 rounded-lg brand-gradient text-white text-xs font-semibold px-4 py-2 hover:opacity-90 transition"
+                className="inline-block mt-1 rounded-lg bg-amber-500 text-white text-xs font-semibold px-4 py-2 hover:bg-amber-600 transition"
               >
                 Visit Official Page →
               </a>
@@ -173,7 +173,7 @@ function OpenSourceTab({ tr }) {
                 href={proj.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-1 rounded-lg brand-gradient text-white text-xs font-semibold px-4 py-2 hover:opacity-90 transition"
+                className="inline-block mt-1 rounded-lg bg-amber-500 text-white text-xs font-semibold px-4 py-2 hover:bg-amber-600 transition"
               >
                 Get Involved →
               </a>
@@ -228,7 +228,7 @@ function LocalActionTab({ tr }) {
                 href={prog.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-1 rounded-lg brand-gradient text-white text-xs font-semibold px-4 py-2 hover:opacity-90 transition"
+                className="inline-block mt-1 rounded-lg bg-amber-500 text-white text-xs font-semibold px-4 py-2 hover:bg-amber-600 transition"
               >
                 Learn More →
               </a>
@@ -292,7 +292,7 @@ function TalksTab({ tr }) {
                 href={ev.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-1 rounded-lg brand-gradient text-white text-xs font-semibold px-4 py-2 hover:opacity-90 transition"
+                className="inline-block mt-1 rounded-lg bg-amber-500 text-white text-xs font-semibold px-4 py-2 hover:bg-amber-600 transition"
               >
                 Visit Official Page →
               </a>
@@ -348,7 +348,7 @@ export default function OpportunityPage() {
               onClick={() => setTab(i)}
               className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${
                 tab === i
-                  ? "brand-gradient text-white shadow-sm"
+                  ? "bg-amber-500 text-white shadow-sm"
                   : "card-surface border border-border text-muted hover:text-foreground"
               }`}
             >
