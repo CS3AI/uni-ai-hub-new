@@ -4,18 +4,7 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "uah-debriefs";
 
-const SEED = [
-  {
-    nick: "匿名学姐",
-    date: "2026-06",
-    msg: "投了 Rivian 自动驾驶实习，第一轮被问到了大量计算机视觉基础（如边缘检测原理），建议大家提前复习 Stanford CS231N 的前 3 讲",
-  },
-  {
-    nick: "Kevin",
-    date: "2026-06",
-    msg: '投递了某非盈利组织的 AI 志愿岗位，对方非常看重"如何用 AI 辅助无障碍设计（Accessibility）"，这个方向值得提前研究一下',
-  },
-];
+const SEED = [];
 
 export default function PeerDebriefs({ title, desc, submitBtn, nickPlaceholder, msgPlaceholder, submitDone, submitNote }) {
   const [entries, setEntries] = useState(SEED);
