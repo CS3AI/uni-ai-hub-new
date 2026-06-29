@@ -32,7 +32,9 @@
       "title": "このプロジェクトについて",
       "desc": "Uni AI Hub は 2026 年夏に University High School AI クラブのカリキュラムコーディネーターが作成しました。目標は、生徒や AI 愛好家が業界ニュース、学習リソース、インターンシップ情報を継続的に入手できるようにすること。"
     },
-    "feedbackWallTitle": "ユーザーフィードバック"
+    "feedbackWallTitle": "ユーザーフィードバック",
+    "peerProfilesTitle": "先輩プロフィール",
+    "peerProfilesDesc": "大手インターン・名門サマープログラム・コンテスト受賞を果たしたUHS学生のリアルな背景。近日公開予定。"
   },
   "information": {
     "eyebrow": "ニュース",
@@ -93,7 +95,15 @@
     "period2item1": "各社が夏季インターン / キャンパスプログラムのオファーを発行",
     "period3": "6〜8 月",
     "period3item0": "夏期講習・研究・インターンが本格化",
-    "period3item1": "Kaggle コンペは通年開催 — いつでも参加可"
+    "period3item1": "Kaggle コンペは通年開催 — いつでも参加可",
+    "interviewTipsTitle": "C. 技術面接とポートフォリオ準備",
+    "peerDebriefsTitle": "面接体験レポート",
+    "peerDebriefsDesc": "UHS学生が匿名でシェアするリアルな面接体験。ログイン不要。",
+    "submitBtn": "匿名投稿",
+    "nickPlaceholder": "ニックネーム（任意）",
+    "msgPlaceholder": "面接体験・就職活動のヒントを共有…",
+    "submitDone": "投稿しました！",
+    "submitNote": "* ブラウザのローカルに保存されます"
   },
   "tags": {
     "compute": "コンピューティング / ハードウェア",

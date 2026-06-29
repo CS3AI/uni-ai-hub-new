@@ -5,6 +5,7 @@ import { Link } from "@/navigation";
 import digest from "@/data/digest.json";
 import WeeklyDigest from "@/components/WeeklyDigest";
 import OpportunityMatch from "@/components/OpportunityMatch";
+import FeedbackWall from "@/components/FeedbackWall";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -94,24 +95,36 @@ export default async function Home({ params }) {
       {/* AI Opportunity Match */}
       <OpportunityMatch locale={locale} />
 
-      {/* About */}
-      <div className="mt-10 card-surface rounded-2xl p-5 text-sm text-muted">
-        <p className="font-medium text-foreground">{t("about.title")}</p>
-        <p className="mt-1">{t("about.desc")}</p>
-      </div>
-
       {/* Weekly Digest */}
       <WeeklyDigest digest={digest} locale={locale} />
 
-      {/* User Feedback Wall */}
+      {/* Peer Profiles — Coming Soon */}
       <div className="mt-8 card-surface rounded-2xl p-5">
-        <div className="flex items-center justify-between">
-          <p className="font-semibold text-base">{t("feedbackWallTitle")}</p>
-          <span className="text-[10px] font-semibold tracking-widest uppercase px-2 py-1 rounded-full border border-gray-200 text-muted">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <p className="font-semibold text-base">{t("peerProfilesTitle")}</p>
+            <p className="mt-1 text-sm text-muted">{t("peerProfilesDesc")}</p>
+          </div>
+          <span className="ml-4 shrink-0 text-[10px] font-semibold tracking-widest uppercase px-2 py-1 rounded-full border border-gray-200 text-muted">
             Coming Soon
           </span>
         </div>
-        <p className="mt-3 text-sm text-muted italic">— — —</p>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className="rounded-xl border-2 border-dashed border-gray-200 p-4 flex flex-col items-center justify-center text-center min-h-[96px]"
+            >
+              <div className="w-10 h-10 rounded-full bg-gray-100 mb-2" />
+              <p className="text-xs text-muted">Profile coming soon</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* User Feedback Wall */}
+      <div className="mt-8">
+        <FeedbackWall title={t("feedbackWallTitle")} />
       </div>
     </div>
   );

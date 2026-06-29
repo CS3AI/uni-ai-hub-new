@@ -32,7 +32,9 @@
       "title": "Sobre este proyecto",
       "desc": "Uni AI Hub fue creado en el verano de 2026 por el Coordinador de Currículo del Club de IA de la University High School. El objetivo: mantener a los estudiantes y entusiastas de la IA informados sobre noticias del sector, recursos de aprendizaje y oportunidades de prácticas."
     },
-    "feedbackWallTitle": "Muro de opiniones"
+    "feedbackWallTitle": "Muro de opiniones",
+    "peerProfilesTitle": "Perfiles de compañeros",
+    "peerProfilesDesc": "Perfiles reales de estudiantes UHS que lograron pasantías, programas de verano o premios en competencias."
   },
   "information": {
     "eyebrow": "Noticias",
@@ -93,7 +95,15 @@
     "period2item1": "Las empresas publican ofertas de prácticas de verano / programas campus",
     "period3": "Jun–Ago",
     "period3item0": "Cursos de verano, investigación y prácticas a pleno rendimiento",
-    "period3item1": "Las competencias de Kaggle funcionan todo el año — únete cuando quieras"
+    "period3item1": "Las competencias de Kaggle funcionan todo el año — únete cuando quieras",
+    "interviewTipsTitle": "C. Entrevista Técnica y Portfolio",
+    "peerDebriefsTitle": "Experiencias de entrevista",
+    "peerDebriefsDesc": "Experiencias reales compartidas anónimamente por estudiantes UHS.",
+    "submitBtn": "Publicar anónimamente",
+    "nickPlaceholder": "Apodo (opcional)",
+    "msgPlaceholder": "Comparte tu experiencia de entrevista…",
+    "submitDone": "¡Publicado!",
+    "submitNote": "* Guardado localmente en tu navegador"
   },
   "tags": {
     "compute": "Cómputo / Hardware",

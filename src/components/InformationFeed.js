@@ -41,17 +41,22 @@ function formatDate(iso, locale) {
 }
 
 function pickFeatured(items, n = 5) {
+  // Rotate every 2 days using an epoch-based seed
+  const epoch = Math.floor(Date.now() / (2 * 86400000));
   const scored = items
     .filter((item) => item.tags?.length > 0)
-    .map((item) => {
+    .map((item, idx) => {
       let score = 0;
       if (HIGH_QUALITY_SOURCES.includes(item.sourceType)) score += 3;
       if (item.pubDate) {
         const age = Date.now() - new Date(item.pubDate).getTime();
-        if (age < 86400000 * 3) score += 2;
-        else if (age < 86400000 * 7) score += 1;
+        if (age < 86400000 * 2) score += 3;
+        else if (age < 86400000 * 5) score += 2;
+        else if (age < 86400000 * 10) score += 1;
       }
       if (item.tags?.length >= 2) score += 1;
+      // Add deterministic tiebreaker that rotates with epoch
+      score += Math.sin(idx * 2.7 + epoch) * 0.49;
       return { item, score };
     });
   scored.sort((a, b) => b.score - a.score);

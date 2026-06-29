@@ -32,7 +32,9 @@
       "title": "About this project",
       "desc": "Uni AI Hub was built in summer 2026 by the Curriculum Coordinator of University High School's AI Club. The goal: keep students and AI enthusiasts informed with industry news, learning resources, and internship opportunities."
     },
-    "feedbackWallTitle": "User Feedback Wall"
+    "feedbackWallTitle": "User Feedback Wall",
+    "peerProfilesTitle": "Peer Profiles",
+    "peerProfilesDesc": "Real backgrounds of UHS students who landed top internships, prestigious summer programs, or competition wins. Profiles coming soon — could yours be next?"
   },
   "information": {
     "eyebrow": "Information",
@@ -93,7 +95,15 @@
     "period2item1": "Companies release summer internship / campus program offers",
     "period3": "Jun–Aug",
     "period3item0": "Summer courses, research, and internships in full swing",
-    "period3item1": "Kaggle competitions run year-round — join anytime"
+    "period3item1": "Kaggle competitions run year-round — join anytime",
+    "interviewTipsTitle": "C. Tech Interview & Portfolio Tips",
+    "peerDebriefsTitle": "Peer Interview Debriefs",
+    "peerDebriefsDesc": "Real interview experiences shared by UHS students. Anonymous — no login required.",
+    "submitBtn": "Post Anonymously",
+    "nickPlaceholder": "Nickname (optional, e.g. Anonymous Senior)",
+    "msgPlaceholder": "Share your interview experience, tips, or job-hunting intel…",
+    "submitDone": "Posted!",
+    "submitNote": "* Stored in your local browser"
   },
   "tags": {
     "compute": "Compute / Hardware",

@@ -32,7 +32,9 @@
       "title": "关于这个项目",
       "desc": "Uni AI Hub 由 University High School AI Club 的 Curriculum Coordinator 在 2026 年暑假发起搭建，目标是让全校同学和更多 AI 爱好者能持续获取行业信息、自学资源与实习机会。"
     },
-    "feedbackWallTitle": "用户反馈墙"
+    "feedbackWallTitle": "用户反馈墙",
+    "peerProfilesTitle": "同学档案",
+    "peerProfilesDesc": "成功拿到大厂实习、顶级夏校或竞赛获奖的宇高学生真实背景档案。即将上线——下一个会是你吗？"
   },
   "information": {
     "eyebrow": "资讯",
@@ -93,7 +95,15 @@
     "period2item1": "公司暑期实习/校园项目密集发放 offer",
     "period3": "6–8 月",
     "period3item0": "暑期课程、科研、实习集中进行",
-    "period3item1": "Kaggle 等竞赛全年滚动，可随时参加"
+    "period3item1": "Kaggle 等竞赛全年滚动，可随时参加",
+    "interviewTipsTitle": "C. 技术面试与作品集准备",
+    "peerDebriefsTitle": "面经与避坑情报站",
+    "peerDebriefsDesc": "由宇高学生分享的真实面试经历，匿名发布，无需登录。",
+    "submitBtn": "匿名发布",
+    "nickPlaceholder": "昵称（可留空，如：匿名学姐）",
+    "msgPlaceholder": "分享你的面试经历、求职感想、行业情报……",
+    "submitDone": "已发布！",
+    "submitNote": "* 留言暂存于本地浏览器"
   },
   "tags": {
     "compute": "算力 / 硬件",

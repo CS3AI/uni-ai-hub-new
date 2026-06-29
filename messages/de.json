@@ -32,7 +32,9 @@
       "title": "Über dieses Projekt",
       "desc": "Uni AI Hub wurde im Sommer 2026 vom Curriculum-Koordinator des KI-Clubs der University High School entwickelt. Ziel: Schüler und KI-Enthusiasten mit Branchennews, Lernressourcen und Praktikumsangeboten versorgen."
     },
-    "feedbackWallTitle": "Nutzerfeedback-Wand"
+    "feedbackWallTitle": "Nutzerfeedback-Wand",
+    "peerProfilesTitle": "Peer-Profile",
+    "peerProfilesDesc": "Echte Profile von UHS-Studenten mit Top-Praktika, Sommerprogrammen oder Wettbewerbsgewinnen. Demnächst verfügbar."
   },
   "information": {
     "eyebrow": "Aktuelles",
@@ -93,7 +95,15 @@
     "period2item1": "Unternehmen veröffentlichen Sommer-Praktikums- / Campus-Programm-Angebote",
     "period3": "Jun–Aug",
     "period3item0": "Sommerkurse, Forschung und Praktika in vollem Gange",
-    "period3item1": "Kaggle-Wettbewerbe laufen ganzjährig — jederzeit teilnehmen"
+    "period3item1": "Kaggle-Wettbewerbe laufen ganzjährig — jederzeit teilnehmen",
+    "interviewTipsTitle": "C. Technisches Interview & Portfolio",
+    "peerDebriefsTitle": "Interview-Erfahrungen",
+    "peerDebriefsDesc": "Echte Interviewerfahrungen von UHS-Studenten, anonym geteilt.",
+    "submitBtn": "Anonym posten",
+    "nickPlaceholder": "Spitzname (optional)",
+    "msgPlaceholder": "Teile deine Interview-Erfahrung…",
+    "submitDone": "Gepostet!",
+    "submitNote": "* Lokal in Ihrem Browser gespeichert"
   },
   "tags": {
     "compute": "Rechenleistung / Hardware",

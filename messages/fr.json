@@ -32,7 +32,9 @@
       "title": "À propos de ce projet",
       "desc": "Uni AI Hub a été créé en été 2026 par le Coordinateur Pédagogique du Club IA de l'University High School. Objectif : garder les étudiants et passionnés d'IA informés des actualités, ressources d'apprentissage et opportunités de stages."
     },
-    "feedbackWallTitle": "Mur de retours utilisateurs"
+    "feedbackWallTitle": "Mur de retours utilisateurs",
+    "peerProfilesTitle": "Profils d'étudiants",
+    "peerProfilesDesc": "Vrais parcours d'étudiants UHS ayant obtenu des stages, programmes d'été ou prix en compétition. Bientôt disponible."
   },
   "information": {
     "eyebrow": "Actualités",
@@ -93,7 +95,15 @@
     "period2item1": "Les entreprises publient les offres de stage d'été / programmes campus",
     "period3": "Jun–Août",
     "period3item0": "Cours d'été, recherche et stages en plein essor",
-    "period3item1": "Les compétitions Kaggle sont ouvertes toute l'année — participez à tout moment"
+    "period3item1": "Les compétitions Kaggle sont ouvertes toute l'année — participez à tout moment",
+    "interviewTipsTitle": "C. Entretien Technique & Portfolio",
+    "peerDebriefsTitle": "Retours d'entretiens",
+    "peerDebriefsDesc": "Expériences d'entretiens partagées anonymement par des étudiants UHS.",
+    "submitBtn": "Publier anonymement",
+    "nickPlaceholder": "Pseudo (facultatif)",
+    "msgPlaceholder": "Partagez votre expérience d'entretien…",
+    "submitDone": "Publié !",
+    "submitNote": "* Stocké localement dans votre navigateur"
   },
   "tags": {
     "compute": "Calcul / Matériel",
