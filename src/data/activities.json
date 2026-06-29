@@ -1,183 +1,239 @@
 {
   "globalOpportunities": [
     {
+      "id": "waicy",
+      "name": "World AI Competition for Youth (WAICY)",
+      "organizer": "WAICY Foundation",
+      "eligibility": "Ages 13–25 globally; team of 1–4",
+      "deadline": "Project submission: Jan 20 — Regional finals: Mar–Apr",
+      "url": "https://www.waicy.org/",
+      "sdgs": ["Climate Action", "Good Health", "Quality Education", "Reduced Inequalities"],
+      "techStack": ["Python", "TensorFlow / PyTorch", "Any AI/ML stack"],
+      "shortDesc": "One of the largest AI competitions specifically for young people worldwide. Teams build AI projects addressing real global challenges, compete in regional championships, and present to international panels.",
+      "whyHighSchool": "WAICY is built for your age group and explicitly welcomes high schoolers. Past student projects have addressed wildfire prediction, crop disease detection, and mental health chatbots. The regional structure means you compete first locally before advancing, making it far less intimidating than adult-focused competitions.",
+      "tips": ["Join as a team of 2–4 for best results — combine coding, design, and domain expertise", "The judging emphasizes real-world impact over technical complexity", "Register early — regional capacity fills up"]
+    },
+    {
+      "id": "ioai",
+      "name": "International Olympiad in Artificial Intelligence (IOAI)",
+      "organizer": "IOAI Foundation",
+      "eligibility": "Age ≤ 20 by July 1, pre-university; selected via national olympiad (USAAIO for US students)",
+      "deadline": "USAAIO selection: Nov–Mar; IOAI: Aug 2–8, 2026 in Astana, Kazakhstan",
+      "url": "https://ioai-official.org/",
+      "sdgs": ["Quality Education", "Decent Work and Economic Growth"],
+      "techStack": ["Python", "NumPy", "Scikit-learn", "PyTorch", "Math / Statistics"],
+      "shortDesc": "The premier international science olympiad for artificial intelligence, modeled after IMO and IPhO. Students from 60+ countries compete in theoretical AI problems and practical ML tasks. US students qualify through USAAIO (usaaio.org).",
+      "whyHighSchool": "IOAI is the most prestigious high school AI competition in the world. Even qualifying at the national level (USAAIO) is a top-tier achievement that opens doors to elite university admissions and research internships. The syllabus covers ML theory, algorithms, and data science — all skills that transfer directly to college coursework.",
+      "tips": ["Start preparing with USAAIO past problems: usaaio.org/past-problems", "Study linear algebra, probability, and Python ML libraries — the core of the exam", "USAAIO registration typically opens in fall — watch their website"]
+    },
+    {
+      "id": "apex-ai",
+      "name": "APEX AI High School Championship",
+      "organizer": "Correlation One",
+      "eligibility": "All US high school students; no prerequisites, all experience levels",
+      "deadline": "Early app: Aug; General: Nov; Final: Feb — competitions run spring",
+      "url": "https://www.correlation-one.com/apex-america/high-school-championship",
+      "sdgs": ["Quality Education", "Decent Work and Economic Growth"],
+      "techStack": ["Python", "Data Science", "Machine Learning"],
+      "shortDesc": "A national US AI and data science competition with no experience prerequisites, organized by Correlation One (which places thousands of engineers at top companies annually). Focuses on practical problem-solving with real datasets.",
+      "whyHighSchool": "Correlation One has a direct pipeline to internships and jobs at companies like Goldman Sachs, Google, and the US government. Competing — even without winning — puts your name in front of their recruiter network. The beginner-friendly entry point means you don't need a competition background.",
+      "tips": ["Use the early application round — acceptance is easier than later rounds", "Practice on Kaggle beginner competitions to prepare", "Correlation One offers free prep workshops — attend them"]
+    },
+    {
       "id": "google-solution-challenge",
       "name": "Google Solution Challenge",
-      "nameCn": "谷歌解决方案挑战赛",
       "organizer": "Google",
-      "emoji": "🌐",
-      "eligibility": "University student teams (high school: prep & observer)",
+      "eligibility": "University student teams (high school: prep & observer track)",
       "deadline": "Applications typically open Aug–Sep; submission deadline Jan–Feb",
       "url": "https://developers.google.com/community/gdsc-solution-challenge",
       "sdgs": ["No Poverty", "Good Health", "Quality Education", "Climate Action"],
       "techStack": ["TensorFlow", "Gemini API", "Flutter", "Firebase", "Google Cloud"],
-      "shortDesc": "Build an app addressing one or more of the UN's 17 Sustainable Development Goals using Google technology.",
-      "whyHighSchool": "Although the competition targets university GDSC chapters, its past winners (AI-powered waste sorting, accessible navigation apps) and open developer resources are excellent roadmaps for high schoolers. Study the winning projects to understand what impactful AI product development looks like, and use the same stack in your own projects.",
+      "shortDesc": "Build an app addressing one or more of the UN's 17 Sustainable Development Goals using Google technology. The world's largest student developer competition with 100K+ participants.",
+      "whyHighSchool": "Partner with a college GDSC chapter to participate as a high school collaborator. Study the winning projects — AI-powered waste sorting, accessible navigation apps, crop disease detection — to understand what impactful AI product development looks like in practice.",
       "tips": ["Team up with a college GDSC chapter as a collaborator", "Pick one SDG and solve a hyper-local version of the problem", "Use Gemini API for rapid NLP features without heavy ML infrastructure"]
     },
     {
       "id": "technovation-girls",
       "name": "Technovation Girls",
-      "nameCn": "全球女性科技创新挑战赛",
       "organizer": "Technovation (non-profit)",
-      "emoji": "👩‍💻",
       "eligibility": "Girls aged 8–18 worldwide",
       "deadline": "Register Oct–Dec; project submission typically April",
       "url": "https://technovationchallenge.org/",
       "sdgs": ["Gender Equality", "Good Health", "Climate Action", "Quality Education"],
       "techStack": ["MIT App Inventor", "Python", "TensorFlow Lite", "Any mobile framework"],
-      "shortDesc": "A global non-profit program encouraging girls aged 8–18 to build mobile apps or AI outputs that solve real community problems.",
-      "whyHighSchool": "If your AI Club has female members, this is the top recommendation. Teams write a business plan alongside their app, learning both technical and entrepreneurial skills. Past winners have tackled climate change, mental health, and food insecurity — the scope is intentionally broad. There is no enrollment fee and support resources are excellent.",
-      "tips": ["Focus on a problem the team personally experiences — judges value authenticity", "The business plan section is taken as seriously as the app — prepare both", "Reach out to Technovation ambassadors in your region for mentorship"]
+      "shortDesc": "A global non-profit program encouraging girls aged 8–18 to build mobile apps or AI projects that solve real community problems. Includes a business plan component alongside the technical build.",
+      "whyHighSchool": "Teams write a business plan alongside their app, learning both technical and entrepreneurial skills. Past winners tackled climate change, mental health, and food insecurity. No enrollment fee and extensive support resources. One of the strongest college essay topics available to female STEM students.",
+      "tips": ["Focus on a problem the team personally experiences — judges value authenticity", "The business plan section is taken as seriously as the app", "Reach out to Technovation ambassadors in your region for mentorship"]
     },
     {
       "id": "earth-prize",
       "name": "The Earth Prize",
-      "nameCn": "地球奖",
       "organizer": "The Earth Foundation (Switzerland)",
-      "emoji": "🌱",
       "eligibility": "Ages 13–19 globally, teams of 2–6",
       "deadline": "Applications open Nov; deadline typically March",
       "url": "https://www.theearthprize.org/",
       "sdgs": ["Climate Action", "Life on Land", "Life Below Water", "Clean Energy"],
       "techStack": ["Remote sensing", "AI prediction models", "Data visualization", "Any relevant stack"],
-      "shortDesc": "A global award for 13–19 year olds using innovative technology to solve environmental sustainability challenges. Prize: up to $100,000 implementation grant.",
-      "whyHighSchool": "The Earth Prize is one of the few competitions that explicitly targets high schoolers and offers a six-figure implementation grant rather than a trophy. The judging criteria reward scientific rigor alongside innovation — teams that use AI for remote sensing, satellite data analysis, or predictive modeling of environmental systems consistently perform well. No prior competition experience required.",
-      "tips": ["Pair AI/ML prediction with real environmental datasets (NASA Earthdata, NOAA) for maximum impact", "The implementation plan matters — judges want to see how the prize money would be used", "Partner with a local environmental organization to validate your problem framing"]
+      "shortDesc": "A global award for 13–19 year olds using innovative technology to solve environmental sustainability challenges. Prize: up to $100,000 implementation grant — one of the largest awards available to high schoolers.",
+      "whyHighSchool": "One of the few competitions that explicitly targets high schoolers AND offers a six-figure implementation grant rather than a trophy. Teams using AI for remote sensing, satellite data analysis, or predictive environmental modeling consistently perform well. No prior competition experience required.",
+      "tips": ["Pair AI/ML prediction with real environmental datasets (NASA Earthdata, NOAA)", "The implementation plan matters — judges want to see how the prize money would be used", "Partner with a local environmental organization to validate your problem framing"]
+    },
+    {
+      "id": "isef",
+      "name": "Regeneron ISEF — AI & Machine Learning Category",
+      "organizer": "Society for Science",
+      "eligibility": "Grades 9–12 worldwide; qualify through affiliated regional/state fair",
+      "deadline": "Qualify through local science fair (fall–winter); ISEF held each May",
+      "url": "https://www.societyforscience.org/isef/",
+      "sdgs": ["Good Health", "Climate Action", "Quality Education", "Life Below Water"],
+      "techStack": ["Python", "TensorFlow", "OpenCV", "Data Science", "Any research stack"],
+      "shortDesc": "The world's largest international pre-college science competition with 1,700+ students from 60+ countries. The Robotics & Intelligent Machines and Systems Software categories are ideal for AI projects. Grand Award winners receive $50,000 scholarships.",
+      "whyHighSchool": "ISEF grand award winners are household names at top universities — the competition carries more weight than almost any extracurricular. AI projects have dominated winning categories in recent years, especially in healthcare diagnostics, climate modeling, and accessibility tools. Start at your regional science fair in 9th or 10th grade to build experience.",
+      "tips": ["Find your affiliated regional science fair: societyforscience.org/affiliated-fairs", "Research projects (original hypothesis + experimental data) score higher than tool-building projects", "Connect with a university professor or lab for mentorship — judges value academic collaboration"]
     },
     {
       "id": "itu-ai-for-good",
       "name": "ITU AI for Good Youth Summit",
-      "nameCn": "国际电信联盟 AI for Good 青年峰会",
       "organizer": "International Telecommunication Union (UN)",
-      "emoji": "🏛️",
       "eligibility": "Youth delegates and student innovators worldwide",
       "deadline": "Annual event — Geneva (May–June); applications open 3–4 months prior",
       "url": "https://aiforgood.itu.int/",
       "sdgs": ["All 17 UN Sustainable Development Goals"],
       "techStack": ["Any AI/ML stack relevant to your chosen SDG"],
-      "shortDesc": "The United Nations' premier platform for AI innovation with social impact. Youth Summit sessions and student project showcases run alongside the main conference.",
-      "whyHighSchool": "Participating in an ITU AI for Good event — even as a virtual delegate — puts your work in front of international policymakers, UN agency representatives, and global AI researchers. Student projects showcased here have gone on to receive UN accelerator support. The exposure is unmatched for any other student competition.",
-      "tips": ["Submit a project proposal months in advance for the best chance at the student showcase", "Frame your project using official UN SDG language — it helps with evaluation criteria", "Virtual participation is often free — follow ITU AI for Good on social media for early announcements"]
+      "shortDesc": "The United Nations' premier platform for AI innovation with social impact. Youth Summit sessions and student project showcases run alongside the main conference, putting student work in front of UN agency heads and global AI researchers.",
+      "whyHighSchool": "Participating in an ITU AI for Good event — even as a virtual delegate — puts your work in front of international policymakers and global AI researchers. Student projects showcased here have gone on to receive UN accelerator support. The exposure is unmatched.",
+      "tips": ["Submit a project proposal months in advance for the student showcase", "Frame your project using official UN SDG language — it helps with evaluation criteria", "Virtual participation is often free — follow ITU AI for Good on social media for early announcements"]
     }
   ],
-  "openSource": {
-    "clubProjects": [
-      {
-        "id": "dialect-translator",
-        "name": "Project A: Multilingual Minority Dialect Translator",
-        "nameCn": "多语言少数族裔方言翻译器",
-        "emoji": "🗣️",
-        "sdg": "SDG 4 — Quality Education",
-        "difficulty": "Intermediate",
-        "githubUrl": "https://github.com/CS3AI/dialect-translator",
-        "desc": "An open-source tool that translates between minority dialect languages (Cantonese, Hokkien, Hmong, Armenian, and others commonly spoken in the LA/Irvine area) to reduce language barriers in educational settings. Built with fine-tuned multilingual models and community-contributed dialect data.",
-        "howToContribute": "Add dialect data samples, improve translation quality for a specific language pair, or help with the front-end interface. No advanced ML experience needed — data collection and annotation are equally important.",
-        "skills": ["Python", "Hugging Face Transformers", "Data annotation", "React (frontend)"]
-      },
-      {
-        "id": "air-quality",
-        "name": "Project B: LA/Irvine Air Quality Prediction Model",
-        "nameCn": "洛杉矶/尔湾空气质量预测大模型",
-        "emoji": "🌫️",
-        "sdg": "SDG 3 — Good Health & Well-Being",
-        "difficulty": "Intermediate–Advanced",
-        "githubUrl": "https://github.com/CS3AI/air-quality-la",
-        "desc": "A time-series forecasting model trained on SCAQMD (South Coast Air Quality Management District) sensor data, predicting PM2.5, ozone, and NO₂ levels 24–72 hours ahead for neighborhoods across Los Angeles and Orange County. Deployed as a public API and interactive map.",
-        "howToContribute": "Help add new sensor data sources, improve the forecasting model architecture, contribute to the web visualization, or write documentation. Community air quality monitors (PurpleAir) data integration is the current top priority.",
-        "skills": ["Python", "PyTorch / scikit-learn", "Time-series forecasting", "APIs", "Leaflet.js (maps)"]
-      }
-    ],
-    "featured": [
-      {
-        "id": "crowdsource-google",
-        "name": "CrowdSource by Google",
-        "organizer": "Google",
-        "emoji": "🏷️",
-        "url": "https://crowdsource.google.com/",
-        "difficulty": "Beginner",
-        "sdg": "SDG 10 — Reduced Inequalities",
-        "desc": "A public platform where anyone can contribute to making AI fairer and more inclusive — through image labeling, handwriting recognition, translation validation, and more. Each small contribution helps train AI models that work better for all languages, cultures, and communities.",
-        "whyJoin": "The perfect entry point for students with no coding experience who still want to contribute to AI development. You can start in minutes, and your contributions directly reduce bias in Google's production AI systems. It's also a conversation-starter in applications: 'I contributed to AI fairness at Google.'"
-      },
-      {
-        "id": "openstreetmap-ai",
-        "name": "OpenStreetMap × AI Integration",
-        "organizer": "OpenStreetMap Foundation",
-        "emoji": "🗺️",
-        "url": "https://tasks.hotosm.org/",
-        "difficulty": "Beginner–Intermediate",
-        "sdg": "SDG 11 — Sustainable Cities",
-        "desc": "Use computer vision to automatically identify buildings, roads, and infrastructure from satellite imagery, then contribute human-verified annotations for accessibility features (ramps, tactile paving, accessible entrances). HOT (Humanitarian OpenStreetMap Team) coordinates disaster response mapping missions where your contributions directly support humanitarian aid operations.",
-        "whyJoin": "Directly relevant if you have any interest in geospatial AI, computer vision, or humanitarian tech. Past AI Club members used this experience as a foundation for spatial data projects that won regional science fairs."
-      },
-      {
-        "id": "huggingface-for-good",
-        "name": "Hugging Face 'AI for Good' Hub",
-        "organizer": "Hugging Face",
-        "emoji": "🤗",
-        "url": "https://huggingface.co/spaces/society-ethics/AI-for-good",
-        "difficulty": "Intermediate–Advanced",
-        "sdg": "Multiple SDGs",
-        "desc": "A curated collection of open-source models built for social good — including wildfire spread prediction, endangered species vocalization recognition, mental health screening tools, and medical imaging diagnostics. All models are forkable with documented training code.",
-        "whyJoin": "Fork a model that interests you, fine-tune it on local data, and deploy it as a Hugging Face Space. This gives you a live, shareable AI project in your portfolio within days — far more impressive than a GitHub repo alone. Recommended starting projects: wildlife detection (CS231N skill transfer) or text classification for social media misinformation."
-      }
-    ]
-  },
+  "openSource": [
+    {
+      "id": "crowdsource-google",
+      "name": "CrowdSource by Google",
+      "organizer": "Google",
+      "url": "https://crowdsource.google.com/",
+      "difficulty": "Beginner",
+      "sdg": "SDG 10 — Reduced Inequalities",
+      "desc": "A public platform where anyone can contribute to making AI fairer and more inclusive — through image labeling, handwriting recognition, translation validation, and more. Each small contribution helps train AI models that work better for all languages, cultures, and communities.",
+      "whyJoin": "The perfect entry point for students with no coding experience who still want to contribute to AI development. Start in minutes, and your contributions directly reduce bias in Google's production AI systems. It's a genuine portfolio talking point: 'I contributed to AI fairness at Google.'"
+    },
+    {
+      "id": "openstreetmap-ai",
+      "name": "OpenStreetMap × AI Integration (HOT Tasks)",
+      "organizer": "Humanitarian OpenStreetMap Team",
+      "url": "https://tasks.hotosm.org/",
+      "difficulty": "Beginner–Intermediate",
+      "sdg": "SDG 11 — Sustainable Cities & SDG 13 — Climate Action",
+      "desc": "Use computer vision tools to automatically identify buildings, roads, and infrastructure from satellite imagery, then contribute human-verified annotations. HOT (Humanitarian OpenStreetMap Team) coordinates disaster response mapping missions — your contributions directly support humanitarian aid operations in real crises.",
+      "whyJoin": "Directly relevant for computer vision and geospatial AI interests. Past AI Club members used this experience as a foundation for spatial data science fair projects. When a disaster happens (earthquake, flood), HOT activates urgent mapping tasks — your contribution has real-world impact within days."
+    },
+    {
+      "id": "huggingface-for-good",
+      "name": "Hugging Face 'AI for Good' Hub",
+      "organizer": "Hugging Face",
+      "url": "https://huggingface.co/spaces/society-ethics/AI-for-good",
+      "difficulty": "Intermediate–Advanced",
+      "sdg": "Multiple SDGs",
+      "desc": "A curated collection of open-source models built for social good — wildfire spread prediction, endangered species vocalization recognition, mental health screening tools, medical imaging diagnostics. All models are forkable with documented training code and free GPU compute via Hugging Face Spaces.",
+      "whyJoin": "Fork a model that interests you, fine-tune it on local data, and deploy it as a Hugging Face Space. This gives you a live, shareable AI project in your portfolio within days. Recommended starting projects: wildlife detection via CV transfer learning, or NLP classification for social media misinformation."
+    },
+    {
+      "id": "common-voice-mozilla",
+      "name": "Common Voice by Mozilla",
+      "organizer": "Mozilla Foundation",
+      "url": "https://commonvoice.mozilla.org/",
+      "difficulty": "Beginner",
+      "sdg": "SDG 10 — Reduced Inequalities",
+      "desc": "Mozilla's open dataset initiative to make voice recognition technology accessible to everyone. Contribute by recording short sentences or validating existing recordings in any language. The dataset is used by researchers and developers worldwide to build speech recognition AI for underrepresented languages.",
+      "whyJoin": "Takes 10 minutes to start. If you speak a language other than English, your contributions are especially valuable — Cantonese, Hokkien, Spanish, Armenian, Hmong, and Korean contributions are all needed. This directly addresses linguistic inequality in AI systems."
+    },
+    {
+      "id": "agenta",
+      "name": "Agenta — Open-Source LLM App Platform",
+      "organizer": "Agenta (open source)",
+      "url": "https://github.com/Agenta-AI/agenta",
+      "difficulty": "Intermediate",
+      "sdg": "SDG 9 — Industry & Innovation",
+      "desc": "An open-source platform for building, evaluating, and deploying LLM applications. Agenta handles prompt management, model evaluation, and observability. The team actively mentors contributors and has 70+ contributors from around the world. Beginner-friendly issues are labeled in GitHub.",
+      "whyJoin": "If you want real production-grade AI engineering experience, this is one of the best beginner-to-intermediate open source projects. Maintainers respond to PRs quickly, will review your code, and give feedback. Fix documentation, improve evaluation metrics, or build new integrations — all count."
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama — Local LLM Runtime",
+      "organizer": "Ollama (open source)",
+      "url": "https://github.com/ollama/ollama",
+      "difficulty": "Intermediate–Advanced",
+      "sdg": "SDG 9 — Industry & Innovation",
+      "desc": "A lightweight runtime for running large language models locally on your own computer, without sending data to cloud APIs. Ollama made local AI accessible to millions of developers. It's one of GitHub's most-starred AI projects with active contribution opportunities.",
+      "whyJoin": "Ollama touches AI infrastructure, model serving, and systems programming. Contributing — even to documentation, model cards, or issue triage — gives you a line on your resume that signals deep understanding of how LLMs actually work under the hood."
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI — Self-Hosted AI Interface",
+      "organizer": "Open WebUI (open source)",
+      "url": "https://github.com/open-webui/open-webui",
+      "difficulty": "Beginner–Intermediate",
+      "sdg": "SDG 10 — Reduced Inequalities",
+      "desc": "A polished open-source interface for interacting with local and remote AI models. Together with Ollama, it's become the most popular self-hosted AI stack for privacy-conscious developers and organizations. Built with Python (backend) and Svelte (frontend).",
+      "whyJoin": "Front-end contributions (UI improvements, accessibility, internationalization) are especially welcomed and don't require ML expertise. If you know React/Svelte or Python, there are consistently labeled 'good first issue' entries. Privacy-preserving AI is a growing field — relevant for healthcare, education, and government."
+    }
+  ],
   "localAction": {
-    "intro": "The best AI projects solve problems people actually have. Here's a playbook for approaching local organizations with AI solutions — with outreach templates and suggested project ideas for each.",
-    "orgs": [
+    "intro": "Real programs in California where you can volunteer, participate, or build AI skills alongside local communities. All opportunities below are verified and active.",
+    "programs": [
       {
-        "id": "library",
-        "name": "Public Library",
-        "emoji": "📚",
-        "why": "Libraries are trusted community institutions actively seeking to expand digital literacy programs. They have space, foot traffic, and existing relationships with underserved communities — the perfect environment to deploy and test AI tools.",
-        "suggestedProjects": [
-          "AI-powered book recommendation system trained on the local catalog",
-          "Multilingual document translation kiosk for immigrant patrons",
-          "Digital literacy workshop: 'How AI Works' for seniors and families"
-        ],
-        "outreachTemplate": "Hi [Name], my name is [Your Name] from University High School's AI Club. We've built Uni AI Hub (https://uni-ai-hub-new.vercel.app) — a platform aggregating AI resources for students. We're now looking to apply what we've learned to benefit our community, and we'd love to partner with [Library Name] on a [specific project idea]. Could we schedule a 15-minute call to explore this? I can come by the library in person if that's more convenient.",
-        "tips": ["Start with a digital literacy workshop — it's low-risk for them and high-value for building trust", "Bring a working demo, even a prototype, to the first meeting", "Ask about their biggest operational pain points before pitching — listen first"]
+        "id": "ca-ai-training",
+        "name": "California Free AI Training Program",
+        "org": "California Governor's Office / CSU + Community Colleges",
+        "location": "Los Angeles, Sacramento, San Francisco (+ online)",
+        "type": "Free Coursework",
+        "url": "https://newtimesmagazine.com/education/california-is-training-the-next-generation-of-ai-experts/",
+        "desc": "Governor Newsom launched a statewide free AI training initiative for high schoolers (9th grade and up) with classes at California State University campuses, community colleges, and select LA/Sacramento/SF high schools. No coding experience required. Online/mobile-friendly options available for rural students.",
+        "howToJoin": "Contact your school counselor or check with your nearest CSU campus or community college for available sections. Online enrollment is available at californiacolleges.edu.",
+        "timeline": "Ongoing — new cohorts each semester"
       },
       {
-        "id": "blind-association",
-        "name": "Braille Institute / Blind Association",
-        "emoji": "👁️",
-        "why": "AI has transformative potential for accessibility — from real-time audio descriptions to document reading and navigation assistance. Organizations serving the visually impaired are often eager to test new assistive technologies but lack technical capacity to develop them.",
-        "suggestedProjects": [
-          "AI image captioning tool that describes photos and documents aloud",
-          "Audio-first interface for navigating local government websites",
-          "Object detection app for indoor navigation assistance"
-        ],
-        "outreachTemplate": "Hi [Name], I'm a high school student from University High School's AI Club, and I'm reaching out because I'm deeply interested in using AI for accessibility. Our club has been studying computer vision and natural language processing, and I think there's an opportunity to build a tool that could meaningfully help your clients. Specifically, I'm thinking about [specific project idea — e.g., an image description tool]. I'd love to get your perspective on what would be most useful. Would you be open to a brief conversation?",
-        "tips": ["Reach out to the Braille Institute of America — they have chapters in LA/Orange County", "Involve potential users in the design process from day one — don't build in isolation", "Focus on one specific, well-scoped problem rather than a broad 'accessibility platform'"]
+        "id": "aiedu",
+        "name": "aiEDU — AI Literacy Volunteer Coach",
+        "org": "aiEDU (501c3 Non-Profit)",
+        "location": "Los Angeles region + remote",
+        "type": "Volunteer / Teaching",
+        "url": "https://www.aiedu.org/",
+        "desc": "aiEDU is a nonprofit dedicated to AI literacy in K-12 schools, with a focus on under-resourced communities in LA. They recruit volunteer AI coaches — high school and college students who help younger students learn about AI tools, ethics, and careers. No teaching degree required.",
+        "howToJoin": "Apply at aiedu.org/volunteer. Volunteers complete a 2-hour online training module, then commit to 1–2 sessions per month at a partner school. Strong recommendation letter potential.",
+        "timeline": "Rolling applications year-round"
       },
       {
-        "id": "animal-shelter",
-        "name": "Animal Shelter",
-        "emoji": "🐾",
-        "why": "Animal shelters face real operational challenges — predicting adoption likelihood, managing volunteer schedules, identifying animals from blurry intake photos. Many are underfunded and understaffed, making them open to free technical help with measurable outcomes.",
-        "suggestedProjects": [
-          "Animal-adopter matching algorithm based on behavioral data and adopter preferences",
-          "Computer vision tool for automatic animal photo tagging and profile generation",
-          "Predictive model for adoption likelihood to prioritize outreach efforts"
-        ],
-        "outreachTemplate": "Hi [Name], I'm [Your Name], a student at University High School where I lead our AI Club. We're working on a project to help local nonprofits use AI to improve their operations, and [Shelter Name] came up as an organization doing incredible work. I'd love to explore whether we could build something useful for you — for example, a tool to help match animals with the right adopters, or to automate some of the photo tagging for your online listings. It would be a free student project. Would you be open to a 20-minute conversation?",
-        "tips": ["Contact the volunteer coordinator, not the executive director, for your first outreach", "Ask to shadow staff for a few hours to understand their real workflow before proposing a solution", "Orange County Animal Care and LA Animal Services are both large organizations actively working on digital improvements"]
+        "id": "inspirit-ai",
+        "name": "Inspirit AI — Student Program (LA/Irvine)",
+        "org": "Inspirit AI (founded by Stanford & MIT students)",
+        "location": "Online + in-person at UCLA, Stanford, MIT",
+        "type": "Intensive Learning + Mentorship",
+        "url": "https://www.inspiritai.com/",
+        "desc": "A live online and in-person AI program taught by Stanford and MIT students, designed specifically for high schoolers. Students build and deploy real AI models (image classification, NLP, reinforcement learning) over 10 sessions. Scholarships available for under-resourced students.",
+        "howToJoin": "Apply at inspiritai.com. Cohorts run after school, on weekends, and in summer. Financial aid covers up to 100% of the cost for qualifying students.",
+        "timeline": "Multiple cohorts per year — summer cohorts are largest"
       },
       {
-        "id": "senior-center",
-        "name": "Senior Center",
-        "emoji": "🧓",
-        "why": "Senior centers serve one of the communities most impacted by — and most wary of — AI. Teaching seniors to use AI tools safely builds digital confidence and reduces isolation. You'll also gain perspective on how to design AI for non-technical users.",
-        "suggestedProjects": [
-          "Monthly 'AI Essentials' workshop series tailored for seniors (ChatGPT, scam detection, health info)",
-          "Voice-first AI assistant for medication reminders and appointment scheduling",
-          "Intergenerational storytelling project: AI transcription and preservation of oral histories"
-        ],
-        "outreachTemplate": "Hi [Name], I'm a student from University High School's AI Club. We're looking for opportunities to give back to the community by sharing what we know about artificial intelligence. I'd love to offer a free, friendly workshop for your members — something like 'What is AI and how can it help me?' — completely non-technical, focused on practical everyday uses. We'd tailor it entirely to what your community needs. Would this be something [Center Name] might be interested in?",
-        "tips": ["Don't use jargon — ever. Practice explaining your topic to a grandparent before the workshop", "Bring printed handouts; don't assume everyone has a smartphone or laptop", "This experience looks excellent in college applications as evidence of community engagement and communication skills"]
+        "id": "la-works-tech",
+        "name": "LA Works — Tech for Good Volunteer",
+        "org": "LA Works (Los Angeles)",
+        "location": "Los Angeles County",
+        "type": "Volunteer",
+        "url": "https://www.laworks.com/",
+        "desc": "LA Works is Los Angeles's largest volunteer organization, coordinating thousands of volunteers with nonprofits across the county. Their Tech for Good program specifically matches students with AI/tech skills to nonprofits that need help with data analysis, chatbot setup, automation, and digital literacy coaching.",
+        "howToJoin": "Register at laworks.com and filter opportunities by 'technology' and 'education'. Many opportunities are one-day or weekend commitments. Age minimum: 14 with parent/guardian.",
+        "timeline": "Opportunities posted continuously"
+      },
+      {
+        "id": "caltech-summer-tech",
+        "name": "Caltech Summer Tech Camp",
+        "org": "California Institute of Technology",
+        "location": "Pasadena, CA (on campus)",
+        "type": "Summer Intensive Program",
+        "url": "https://www.summer.caltech.edu/",
+        "desc": "A summer program at Caltech for high school students ages 13–18 to explore computer science, AI, and technology. Participants work on hands-on projects with access to Caltech facilities and mentorship from researchers. Multiple tracks including AI/ML, robotics, and data science.",
+        "howToJoin": "Applications open each winter at summer.caltech.edu. Spots are competitive — apply early and tailor your application to the AI/ML track. Financial aid available.",
+        "timeline": "Program runs June–August; applications open January–March"
       }
     ]
   }

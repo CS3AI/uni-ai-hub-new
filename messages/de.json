@@ -4,7 +4,7 @@
     "information": "Aktuelles",
     "courses": "Kurse",
     "internship": "Praktikum",
-    "activity": "Aktivitäten"
+    "activity": "Chancen"
   },
   "home": {
     "eyebrow": "University High School · KI-Club",
@@ -25,13 +25,14 @@
       },
       "activity": {
         "tag": "Kuratiert",
-        "desc": "Globale KI-Wettbewerbe, SDG Open-Source-Projekte und lokale Aktionsleitfäden — für Schüler, die KI-Fähigkeiten in echte Wirkung umsetzen möchten."
+        "desc": "Globale KI-Wettbewerbe, Open-Source-SDG-Projekte und echte California-Programme — für Schüler, die ihre KI-Fähigkeiten in echte Wirkung umwandeln wollen."
       }
     },
     "about": {
       "title": "Über dieses Projekt",
       "desc": "Uni AI Hub wurde im Sommer 2026 vom Curriculum-Koordinator des KI-Clubs der University High School entwickelt. Ziel: Schüler und KI-Enthusiasten mit Branchennews, Lernressourcen und Praktikumsangeboten versorgen."
-    }
+    },
+    "feedbackWallTitle": "Nutzerfeedback-Wand"
   },
   "information": {
     "eyebrow": "Aktuelles",
@@ -113,12 +114,12 @@
     "vibecoding": "Vibe-Coding-Produkt",
     "growth": "Wachstum & Automatisierung"
   },
-  "activity": {
-    "eyebrow": "Aktivitäten",
-    "title": "Globale Initiativen & Gemeinschaftsaktionen",
-    "desc": "Globale KI-Wettbewerbe, SDG Open-Source-Projekte und lokale Aktionsleitfäden — für Schüler, die KI-Kompetenzen in echte Wirkung umsetzen.",
+  "opportunity": {
+    "eyebrow": "Chancen",
+    "title": "Globale Wettbewerbe & Community-Programme",
+    "desc": "Kuratierte globale Wettbewerbe, Open-Source-SDG-Projekte und echte California-Programme — für Schüler, die KI-Fähigkeiten auf reale Herausforderungen anwenden wollen.",
     "tab1": "Globale Chancen",
     "tab2": "Open Source & Projekte",
-    "tab3": "Lokale Aktion"
+    "tab3": "Lokale Aktion (Kalifornien)"
   }
 }

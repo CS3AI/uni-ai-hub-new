@@ -4,7 +4,7 @@
     "information": "뉴스",
     "courses": "코스",
     "internship": "인턴십",
-    "activity": "활동"
+    "activity": "기회"
   },
   "home": {
     "eyebrow": "University High School · AI 클럽",
@@ -25,13 +25,14 @@
       },
       "activity": {
         "tag": "큐레이션",
-        "desc": "글로벌 AI 경진대회, SDG 오픈소스 프로젝트, 지역사회 실천 가이드 — AI 역량을 실제 영향력으로 전환하고 싶은 학생들을 위해."
+        "desc": "글로벌 AI 대회, SDG 오픈소스 프로젝트, 캘리포니아 실제 프로그램 — AI 기술을 실제 영향력으로 전환할 준비가 된 학생들을 위해."
       }
     },
     "about": {
       "title": "이 프로젝트에 대하여",
       "desc": "Uni AI Hub는 2026년 여름 University High School AI 클럽의 커리큘럼 코디네이터가 제작했습니다. 목표: 학생과 AI 애호가들이 업계 뉴스, 학습 자료, 인턴십 기회를 지속적으로 접할 수 있도록 합니다."
-    }
+    },
+    "feedbackWallTitle": "사용자 피드백 벽"
   },
   "information": {
     "eyebrow": "뉴스",
@@ -113,12 +114,12 @@
     "vibecoding": "Vibe 코딩 제품",
     "growth": "성장 & 자동화"
   },
-  "activity": {
-    "eyebrow": "활동",
-    "title": "글로벌 이니셔티브 & 지역사회 실천",
-    "desc": "글로벌 AI 경진대회, SDG 오픈소스 프로젝트, 지역사회 실천 가이드 — AI 역량을 현실 영향력으로 전환하세요.",
+  "opportunity": {
+    "eyebrow": "기회",
+    "title": "글로벌 대회 & 커뮤니티 프로그램",
+    "desc": "엄선된 글로벌 대회, SDG 오픈소스 프로젝트, 캘리포니아 실제 프로그램 — AI 기술을 실제 문제에 적용할 준비가 된 학생들을 위해.",
     "tab1": "글로벌 기회",
     "tab2": "오픈소스 & 프로젝트",
-    "tab3": "지역 사회 활동"
+    "tab3": "지역 프로그램 (캘리포니아)"
   }
 }

@@ -4,7 +4,7 @@
     "information": "Actualités",
     "courses": "Cours",
     "internship": "Stages",
-    "activity": "Activités"
+    "activity": "Opportunités"
   },
   "home": {
     "eyebrow": "University High School · Club IA",
@@ -25,13 +25,14 @@
       },
       "activity": {
         "tag": "Sélectionné",
-        "desc": "Compétitions mondiales d'IA, projets open-source liés aux ODD et guides d'action locale — pour transformer vos compétences en IA en impact concret."
+        "desc": "Compétitions mondiales d'IA, projets open source SDG et programmes californiens — pour les étudiants prêts à transformer leurs compétences en impact réel."
       }
     },
     "about": {
       "title": "À propos de ce projet",
       "desc": "Uni AI Hub a été créé en été 2026 par le Coordinateur Pédagogique du Club IA de l'University High School. Objectif : garder les étudiants et passionnés d'IA informés des actualités, ressources d'apprentissage et opportunités de stages."
-    }
+    },
+    "feedbackWallTitle": "Mur de retours utilisateurs"
   },
   "information": {
     "eyebrow": "Actualités",
@@ -113,12 +114,12 @@
     "vibecoding": "Produit Vibe Coding",
     "growth": "Croissance & Automatisation"
   },
-  "activity": {
-    "eyebrow": "Activités",
-    "title": "Initiatives mondiales & Action locale",
-    "desc": "Compétitions mondiales, projets open-source ODD et guides d'action locale — pour transformer vos compétences IA en impact réel.",
+  "opportunity": {
+    "eyebrow": "Opportunités",
+    "title": "Compétitions mondiales & programmes communautaires",
+    "desc": "Compétitions mondiales sélectionnées, projets open source SDG et programmes californiens réels — pour les étudiants prêts à appliquer leurs compétences en IA aux défis du monde réel.",
     "tab1": "Opportunités mondiales",
     "tab2": "Open Source & Projets",
-    "tab3": "Action locale"
+    "tab3": "Action locale (Californie)"
   }
 }

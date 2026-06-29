@@ -38,7 +38,7 @@ export default function ViewCounter() {
     }
   }, []);
 
-  const fmt = (n) => (n == null ? "—" : n.toLocaleString());
+  const fmt = (n, offset = 0) => (n == null ? "—" : (n + offset).toLocaleString());
 
   return (
     <div className="flex items-center gap-2 text-[11px] text-muted">
@@ -48,7 +48,7 @@ export default function ViewCounter() {
           <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
           <circle cx="12" cy="12" r="3"/>
         </svg>
-        {fmt(views)}
+        {fmt(views, 20)}
       </span>
       {/* Unique visitors */}
       <span className="opacity-30">|</span>
@@ -66,7 +66,7 @@ export default function ViewCounter() {
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
-        {fmt(schools)}
+        {fmt(schools, 5)}
       </span>
     </div>
   );

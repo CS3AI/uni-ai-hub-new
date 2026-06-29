@@ -35,8 +35,8 @@ export default async function Home({ params }) {
       tag: t("sections.internship.tag"),
     },
     {
-      href: "/activity",
-      title: "Activity",
+      href: "/opportunity",
+      title: "Opportunity",
       desc: t("sections.activity.desc"),
       tag: t("sections.activity.tag"),
     },
@@ -90,6 +90,17 @@ export default async function Home({ params }) {
 
       {/* ── Weekly Digest ── */}
       <WeeklyDigest digest={digest} locale={locale} />
+
+      {/* ── User Feedback Wall ── */}
+      <div className="mt-8 card-surface rounded-2xl p-5">
+        <div className="flex items-center justify-between">
+          <p className="font-semibold text-base">{t("feedbackWallTitle")}</p>
+          <span className="text-[10px] font-semibold tracking-widest uppercase px-2 py-1 rounded-full border border-gray-200 text-muted">
+            Coming Soon
+          </span>
+        </div>
+        <p className="mt-3 text-sm text-muted italic">— — —</p>
+      </div>
     </div>
   );
 }

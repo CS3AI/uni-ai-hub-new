@@ -10,7 +10,7 @@ export default async function Navbar() {
     { href: "/information", label: t("information") },
     { href: "/courses", label: t("courses") },
     { href: "/internship", label: t("internship") },
-    { href: "/activity", label: t("activity") },
+    { href: "/opportunity", label: t("activity") },
   ];
 
   return (

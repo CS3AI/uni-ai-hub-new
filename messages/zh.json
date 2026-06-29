@@ -4,7 +4,7 @@
     "information": "资讯",
     "courses": "课程",
     "internship": "实习",
-    "activity": "活动"
+    "activity": "机会"
   },
   "home": {
     "eyebrow": "University High School · AI 社团",
@@ -25,13 +25,14 @@
       },
       "activity": {
         "tag": "精选",
-        "desc": "全球 AI 竞赛、可持续发展开源项目、本地社区实践指南，帮助同学们用 AI 技能创造真实影响力。"
+        "desc": "全球 AI 竞赛、SDG 开源项目、加州本地实践机会，助力同学们将 AI 技能转化为现实影响力。"
       }
     },
     "about": {
       "title": "关于这个项目",
       "desc": "Uni AI Hub 由 University High School AI Club 的 Curriculum Coordinator 在 2026 年暑假发起搭建，目标是让全校同学和更多 AI 爱好者能持续获取行业信息、自学资源与实习机会。"
-    }
+    },
+    "feedbackWallTitle": "用户反馈墙"
   },
   "information": {
     "eyebrow": "资讯",
@@ -113,12 +114,12 @@
     "vibecoding": "Vibe Coding 产品",
     "growth": "增长 & 自动化"
   },
-  "activity": {
-    "eyebrow": "活动",
-    "title": "全球倡议与社区实践",
-    "desc": "精选全球竞赛、SDG 开源项目与本地社区实践指南，助力同学们将 AI 技能转化为现实影响力。",
+  "opportunity": {
+    "eyebrow": "机会",
+    "title": "全球竞赛与社区项目",
+    "desc": "精选全球竞赛、SDG 开源项目与加州本地实践项目，助力同学们将 AI 技能应用于现实挑战。",
     "tab1": "全球机会",
     "tab2": "开源项目",
-    "tab3": "本地社区实践"
+    "tab3": "本地机会（加州）"
   }
 }

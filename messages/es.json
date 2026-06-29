@@ -4,7 +4,7 @@
     "information": "Noticias",
     "courses": "Cursos",
     "internship": "Prácticas",
-    "activity": "Actividades"
+    "activity": "Oportunidades"
   },
   "home": {
     "eyebrow": "University High School · Club de IA",
@@ -25,13 +25,14 @@
       },
       "activity": {
         "tag": "Curado",
-        "desc": "Competencias globales de IA, proyectos open-source de los ODS y guías de acción local — para convertir tus habilidades en IA en impacto real."
+        "desc": "Competencias globales de IA, proyectos SDG de código abierto y programas reales en California — para estudiantes listos para convertir sus habilidades en impacto."
       }
     },
     "about": {
       "title": "Sobre este proyecto",
       "desc": "Uni AI Hub fue creado en el verano de 2026 por el Coordinador de Currículo del Club de IA de la University High School. El objetivo: mantener a los estudiantes y entusiastas de la IA informados sobre noticias del sector, recursos de aprendizaje y oportunidades de prácticas."
-    }
+    },
+    "feedbackWallTitle": "Muro de opiniones"
   },
   "information": {
     "eyebrow": "Noticias",
@@ -113,12 +114,12 @@
     "vibecoding": "Producto Vibe Coding",
     "growth": "Crecimiento & Automatización"
   },
-  "activity": {
-    "eyebrow": "Actividades",
-    "title": "Iniciativas globales y acción comunitaria",
-    "desc": "Competencias globales, proyectos open-source ODS y guías de acción local — para convertir tus habilidades en IA en impacto real.",
+  "opportunity": {
+    "eyebrow": "Oportunidades",
+    "title": "Competencias globales y programas comunitarios",
+    "desc": "Competencias globales seleccionadas, proyectos SDG de código abierto y programas reales en California — para estudiantes listos para aplicar sus habilidades de IA a desafíos del mundo real.",
     "tab1": "Oportunidades globales",
     "tab2": "Código abierto y proyectos",
-    "tab3": "Acción local"
+    "tab3": "Acción local (California)"
   }
 }
