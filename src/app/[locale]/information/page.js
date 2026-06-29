@@ -18,14 +18,16 @@ export default async function InformationPage({ params }) {
   const items = await getInformationFeed({ revalidate: 1800, limit: 200 });
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-      <PageHeader
-        eyebrow={t("eyebrow")}
-        title={t("title")}
-        description={t("desc")}
-        meta={t("itemCount", { count: items.length })}
-      />
-      <InformationFeed items={items} />
+    <div className="min-h-screen bg-blue-50">
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        <PageHeader
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("desc")}
+          meta={t("itemCount", { count: items.length })}
+        />
+        <InformationFeed items={items} />
+      </div>
     </div>
   );
 }

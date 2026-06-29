@@ -7,11 +7,24 @@
       "eligibility": "Ages 13–25 globally; team of 1–4",
       "deadline": "Project submission: Jan 20 — Regional finals: Mar–Apr",
       "url": "https://www.waicy.org/",
-      "sdgs": ["Climate Action", "Good Health", "Quality Education", "Reduced Inequalities"],
-      "techStack": ["Python", "TensorFlow / PyTorch", "Any AI/ML stack"],
+      "sdgs": [
+        "Climate Action",
+        "Good Health",
+        "Quality Education",
+        "Reduced Inequalities"
+      ],
+      "techStack": [
+        "Python",
+        "TensorFlow / PyTorch",
+        "Any AI/ML stack"
+      ],
       "shortDesc": "One of the largest AI competitions specifically for young people worldwide. Teams build AI projects addressing real global challenges, compete in regional championships, and present to international panels.",
       "whyHighSchool": "WAICY is built for your age group and explicitly welcomes high schoolers. Past student projects have addressed wildfire prediction, crop disease detection, and mental health chatbots. The regional structure means you compete first locally before advancing, making it far less intimidating than adult-focused competitions.",
-      "tips": ["Join as a team of 2–4 for best results — combine coding, design, and domain expertise", "The judging emphasizes real-world impact over technical complexity", "Register early — regional capacity fills up"]
+      "tips": [
+        "Join as a team of 2–4 for best results — combine coding, design, and domain expertise",
+        "The judging emphasizes real-world impact over technical complexity",
+        "Register early — regional capacity fills up"
+      ]
     },
     {
       "id": "ioai",
@@ -20,11 +33,24 @@
       "eligibility": "Age ≤ 20 by July 1, pre-university; selected via national olympiad (USAAIO for US students)",
       "deadline": "USAAIO selection: Nov–Mar; IOAI: Aug 2–8, 2026 in Astana, Kazakhstan",
       "url": "https://ioai-official.org/",
-      "sdgs": ["Quality Education", "Decent Work and Economic Growth"],
-      "techStack": ["Python", "NumPy", "Scikit-learn", "PyTorch", "Math / Statistics"],
+      "sdgs": [
+        "Quality Education",
+        "Decent Work and Economic Growth"
+      ],
+      "techStack": [
+        "Python",
+        "NumPy",
+        "Scikit-learn",
+        "PyTorch",
+        "Math / Statistics"
+      ],
       "shortDesc": "The premier international science olympiad for artificial intelligence, modeled after IMO and IPhO. Students from 60+ countries compete in theoretical AI problems and practical ML tasks. US students qualify through USAAIO (usaaio.org).",
       "whyHighSchool": "IOAI is the most prestigious high school AI competition in the world. Even qualifying at the national level (USAAIO) is a top-tier achievement that opens doors to elite university admissions and research internships. The syllabus covers ML theory, algorithms, and data science — all skills that transfer directly to college coursework.",
-      "tips": ["Start preparing with USAAIO past problems: usaaio.org/past-problems", "Study linear algebra, probability, and Python ML libraries — the core of the exam", "USAAIO registration typically opens in fall — watch their website"]
+      "tips": [
+        "Start preparing with USAAIO past problems: usaaio.org/past-problems",
+        "Study linear algebra, probability, and Python ML libraries — the core of the exam",
+        "USAAIO registration typically opens in fall — watch their website"
+      ]
     },
     {
       "id": "apex-ai",
@@ -33,11 +59,22 @@
       "eligibility": "All US high school students; no prerequisites, all experience levels",
       "deadline": "Early app: Aug; General: Nov; Final: Feb — competitions run spring",
       "url": "https://www.correlation-one.com/apex-america/high-school-championship",
-      "sdgs": ["Quality Education", "Decent Work and Economic Growth"],
-      "techStack": ["Python", "Data Science", "Machine Learning"],
+      "sdgs": [
+        "Quality Education",
+        "Decent Work and Economic Growth"
+      ],
+      "techStack": [
+        "Python",
+        "Data Science",
+        "Machine Learning"
+      ],
       "shortDesc": "A national US AI and data science competition with no experience prerequisites, organized by Correlation One (which places thousands of engineers at top companies annually). Focuses on practical problem-solving with real datasets.",
       "whyHighSchool": "Correlation One has a direct pipeline to internships and jobs at companies like Goldman Sachs, Google, and the US government. Competing — even without winning — puts your name in front of their recruiter network. The beginner-friendly entry point means you don't need a competition background.",
-      "tips": ["Use the early application round — acceptance is easier than later rounds", "Practice on Kaggle beginner competitions to prepare", "Correlation One offers free prep workshops — attend them"]
+      "tips": [
+        "Use the early application round — acceptance is easier than later rounds",
+        "Practice on Kaggle beginner competitions to prepare",
+        "Correlation One offers free prep workshops — attend them"
+      ]
     },
     {
       "id": "google-solution-challenge",
@@ -46,11 +83,26 @@
       "eligibility": "University student teams (high school: prep & observer track)",
       "deadline": "Applications typically open Aug–Sep; submission deadline Jan–Feb",
       "url": "https://developers.google.com/community/gdsc-solution-challenge",
-      "sdgs": ["No Poverty", "Good Health", "Quality Education", "Climate Action"],
-      "techStack": ["TensorFlow", "Gemini API", "Flutter", "Firebase", "Google Cloud"],
+      "sdgs": [
+        "No Poverty",
+        "Good Health",
+        "Quality Education",
+        "Climate Action"
+      ],
+      "techStack": [
+        "TensorFlow",
+        "Gemini API",
+        "Flutter",
+        "Firebase",
+        "Google Cloud"
+      ],
       "shortDesc": "Build an app addressing one or more of the UN's 17 Sustainable Development Goals using Google technology. The world's largest student developer competition with 100K+ participants.",
       "whyHighSchool": "Partner with a college GDSC chapter to participate as a high school collaborator. Study the winning projects — AI-powered waste sorting, accessible navigation apps, crop disease detection — to understand what impactful AI product development looks like in practice.",
-      "tips": ["Team up with a college GDSC chapter as a collaborator", "Pick one SDG and solve a hyper-local version of the problem", "Use Gemini API for rapid NLP features without heavy ML infrastructure"]
+      "tips": [
+        "Team up with a college GDSC chapter as a collaborator",
+        "Pick one SDG and solve a hyper-local version of the problem",
+        "Use Gemini API for rapid NLP features without heavy ML infrastructure"
+      ]
     },
     {
       "id": "technovation-girls",
@@ -59,11 +111,25 @@
       "eligibility": "Girls aged 8–18 worldwide",
       "deadline": "Register Oct–Dec; project submission typically April",
       "url": "https://technovationchallenge.org/",
-      "sdgs": ["Gender Equality", "Good Health", "Climate Action", "Quality Education"],
-      "techStack": ["MIT App Inventor", "Python", "TensorFlow Lite", "Any mobile framework"],
+      "sdgs": [
+        "Gender Equality",
+        "Good Health",
+        "Climate Action",
+        "Quality Education"
+      ],
+      "techStack": [
+        "MIT App Inventor",
+        "Python",
+        "TensorFlow Lite",
+        "Any mobile framework"
+      ],
       "shortDesc": "A global non-profit program encouraging girls aged 8–18 to build mobile apps or AI projects that solve real community problems. Includes a business plan component alongside the technical build.",
       "whyHighSchool": "Teams write a business plan alongside their app, learning both technical and entrepreneurial skills. Past winners tackled climate change, mental health, and food insecurity. No enrollment fee and extensive support resources. One of the strongest college essay topics available to female STEM students.",
-      "tips": ["Focus on a problem the team personally experiences — judges value authenticity", "The business plan section is taken as seriously as the app", "Reach out to Technovation ambassadors in your region for mentorship"]
+      "tips": [
+        "Focus on a problem the team personally experiences — judges value authenticity",
+        "The business plan section is taken as seriously as the app",
+        "Reach out to Technovation ambassadors in your region for mentorship"
+      ]
     },
     {
       "id": "earth-prize",
@@ -72,11 +138,25 @@
       "eligibility": "Ages 13–19 globally, teams of 2–6",
       "deadline": "Applications open Nov; deadline typically March",
       "url": "https://www.theearthprize.org/",
-      "sdgs": ["Climate Action", "Life on Land", "Life Below Water", "Clean Energy"],
-      "techStack": ["Remote sensing", "AI prediction models", "Data visualization", "Any relevant stack"],
+      "sdgs": [
+        "Climate Action",
+        "Life on Land",
+        "Life Below Water",
+        "Clean Energy"
+      ],
+      "techStack": [
+        "Remote sensing",
+        "AI prediction models",
+        "Data visualization",
+        "Any relevant stack"
+      ],
       "shortDesc": "A global award for 13–19 year olds using innovative technology to solve environmental sustainability challenges. Prize: up to $100,000 implementation grant — one of the largest awards available to high schoolers.",
       "whyHighSchool": "One of the few competitions that explicitly targets high schoolers AND offers a six-figure implementation grant rather than a trophy. Teams using AI for remote sensing, satellite data analysis, or predictive environmental modeling consistently perform well. No prior competition experience required.",
-      "tips": ["Pair AI/ML prediction with real environmental datasets (NASA Earthdata, NOAA)", "The implementation plan matters — judges want to see how the prize money would be used", "Partner with a local environmental organization to validate your problem framing"]
+      "tips": [
+        "Pair AI/ML prediction with real environmental datasets (NASA Earthdata, NOAA)",
+        "The implementation plan matters — judges want to see how the prize money would be used",
+        "Partner with a local environmental organization to validate your problem framing"
+      ]
     },
     {
       "id": "isef",
@@ -85,11 +165,26 @@
       "eligibility": "Grades 9–12 worldwide; qualify through affiliated regional/state fair",
       "deadline": "Qualify through local science fair (fall–winter); ISEF held each May",
       "url": "https://www.societyforscience.org/isef/",
-      "sdgs": ["Good Health", "Climate Action", "Quality Education", "Life Below Water"],
-      "techStack": ["Python", "TensorFlow", "OpenCV", "Data Science", "Any research stack"],
+      "sdgs": [
+        "Good Health",
+        "Climate Action",
+        "Quality Education",
+        "Life Below Water"
+      ],
+      "techStack": [
+        "Python",
+        "TensorFlow",
+        "OpenCV",
+        "Data Science",
+        "Any research stack"
+      ],
       "shortDesc": "The world's largest international pre-college science competition with 1,700+ students from 60+ countries. The Robotics & Intelligent Machines and Systems Software categories are ideal for AI projects. Grand Award winners receive $50,000 scholarships.",
       "whyHighSchool": "ISEF grand award winners are household names at top universities — the competition carries more weight than almost any extracurricular. AI projects have dominated winning categories in recent years, especially in healthcare diagnostics, climate modeling, and accessibility tools. Start at your regional science fair in 9th or 10th grade to build experience.",
-      "tips": ["Find your affiliated regional science fair: societyforscience.org/affiliated-fairs", "Research projects (original hypothesis + experimental data) score higher than tool-building projects", "Connect with a university professor or lab for mentorship — judges value academic collaboration"]
+      "tips": [
+        "Find your affiliated regional science fair: societyforscience.org/affiliated-fairs",
+        "Research projects (original hypothesis + experimental data) score higher than tool-building projects",
+        "Connect with a university professor or lab for mentorship — judges value academic collaboration"
+      ]
     },
     {
       "id": "itu-ai-for-good",
@@ -98,11 +193,19 @@
       "eligibility": "Youth delegates and student innovators worldwide",
       "deadline": "Annual event — Geneva (May–June); applications open 3–4 months prior",
       "url": "https://aiforgood.itu.int/",
-      "sdgs": ["All 17 UN Sustainable Development Goals"],
-      "techStack": ["Any AI/ML stack relevant to your chosen SDG"],
+      "sdgs": [
+        "All 17 UN Sustainable Development Goals"
+      ],
+      "techStack": [
+        "Any AI/ML stack relevant to your chosen SDG"
+      ],
       "shortDesc": "The United Nations' premier platform for AI innovation with social impact. Youth Summit sessions and student project showcases run alongside the main conference, putting student work in front of UN agency heads and global AI researchers.",
       "whyHighSchool": "Participating in an ITU AI for Good event — even as a virtual delegate — puts your work in front of international policymakers and global AI researchers. Student projects showcased here have gone on to receive UN accelerator support. The exposure is unmatched.",
-      "tips": ["Submit a project proposal months in advance for the student showcase", "Frame your project using official UN SDG language — it helps with evaluation criteria", "Virtual participation is often free — follow ITU AI for Good on social media for early announcements"]
+      "tips": [
+        "Submit a project proposal months in advance for the student showcase",
+        "Frame your project using official UN SDG language — it helps with evaluation criteria",
+        "Virtual participation is often free — follow ITU AI for Good on social media for early announcements"
+      ]
     }
   ],
   "openSource": [
@@ -236,5 +339,124 @@
         "timeline": "Program runs June–August; applications open January–March"
       }
     ]
-  }
+  },
+  "talksAndEvents": [
+    {
+      "id": "ted-ai",
+      "name": "TED AI Conference",
+      "org": "TED",
+      "type": "Conference",
+      "format": "In-Person + Livestream",
+      "location": "San Francisco, CA",
+      "period": "October annually",
+      "url": "https://ted.com/ai",
+      "cost": "Tickets (student discounts available)",
+      "desc": "Annual TED conference dedicated entirely to AI, gathering leading researchers, entrepreneurs, and artists to explore AI's impact on humanity. Past speakers include Andrej Karpathy, Sam Altman, and Yann LeCun.",
+      "whyAttend": "Direct access to cutting-edge ideas from the world's top AI thinkers in an intimate setting — and livestream is free."
+    },
+    {
+      "id": "nvidia-gtc",
+      "name": "NVIDIA GTC (GPU Technology Conference)",
+      "org": "NVIDIA",
+      "type": "Industry Conference",
+      "format": "In-Person + Free Online",
+      "location": "San Jose, CA",
+      "period": "March annually",
+      "url": "https://www.nvidia.com/gtc/",
+      "cost": "Free online; in-person tickets available",
+      "desc": "NVIDIA's flagship AI and accelerated computing conference. Jensen Huang's keynote is a must-watch for anyone in AI. Hundreds of technical sessions on deep learning, robotics, autonomous vehicles, and more.",
+      "whyAttend": "Free online access to the biggest industry keynotes and technical sessions on AI hardware and applications."
+    },
+    {
+      "id": "neurips",
+      "name": "NeurIPS (Neural Information Processing Systems)",
+      "org": "NeurIPS Foundation",
+      "type": "Academic Conference",
+      "format": "In-Person + Virtual",
+      "location": "Vancouver, Canada (annual rotation)",
+      "period": "December annually",
+      "url": "https://neurips.cc/",
+      "cost": "Registration required; virtual attendance available",
+      "desc": "The world's most prestigious machine learning research conference. Breakthrough papers in deep learning, reinforcement learning, and AI safety are presented here first. Student volunteer programs offer free attendance.",
+      "whyAttend": "Student volunteer applications open each summer — work 1-2 days in exchange for free full conference access."
+    },
+    {
+      "id": "google-io",
+      "name": "Google I/O",
+      "org": "Google",
+      "type": "Developer Conference",
+      "format": "In-Person (lottery) + Free Livestream",
+      "location": "Mountain View, CA (Shoreline Amphitheatre)",
+      "period": "May annually",
+      "url": "https://io.google/",
+      "cost": "Free online; in-person by lottery",
+      "desc": "Google's annual developer conference showcasing the latest in AI, Android, and cloud. AI keynotes feature announcements from Google DeepMind, Gemini models, and Google Labs — all fully livestreamed for free.",
+      "whyAttend": "Free livestream of major AI product announcements directly from Google engineers and researchers."
+    },
+    {
+      "id": "sxsw-edu",
+      "name": "SXSW EDU",
+      "org": "SXSW",
+      "type": "Education + Tech Conference",
+      "format": "In-Person",
+      "location": "Austin, TX",
+      "period": "March annually",
+      "url": "https://sxswedu.com/",
+      "cost": "Registration required (student rates)",
+      "desc": "Where education and innovation meet. AI in education, youth entrepreneurship, and student-led startup showcases. High school students can participate in competitions and pitch events.",
+      "whyAttend": "One of the few major tech conferences specifically welcoming high school students with dedicated programs and competitions."
+    },
+    {
+      "id": "stanford-hai-salon",
+      "name": "Stanford HAI AI Salon",
+      "org": "Stanford Human-Centered AI Institute",
+      "type": "Public Lecture Series",
+      "format": "In-Person + Online",
+      "location": "Stanford University, Palo Alto, CA",
+      "period": "Monthly during academic year",
+      "url": "https://hai.stanford.edu/events",
+      "cost": "Free (register online)",
+      "desc": "Monthly conversations between AI researchers, policymakers, artists, and community leaders on the societal impact of AI. Hosted by Fei-Fei Li and John Etchemendy. Open to public and high school students.",
+      "whyAttend": "Free access to Stanford's AI faculty and guests — held on campus just 30 minutes from LA / accessible via Caltrain."
+    },
+    {
+      "id": "ces-ai",
+      "name": "CES — AI & Future Tech Showcases",
+      "org": "Consumer Technology Association",
+      "type": "Industry Expo",
+      "format": "In-Person",
+      "location": "Las Vegas, NV",
+      "period": "January annually",
+      "url": "https://ces.tech",
+      "cost": "Passes required (student media credential available)",
+      "desc": "The world's largest consumer technology show. AI applications across robotics, smart home, healthcare, mobility and more. Major company keynotes from Samsung, Sony, Nvidia, and startups.",
+      "whyAttend": "Hands-on exposure to AI products before they launch, and direct interaction with engineers and product teams."
+    },
+    {
+      "id": "fortune-brainstorm-ai",
+      "name": "Fortune Brainstorm AI",
+      "org": "Fortune Media",
+      "type": "Executive Summit",
+      "format": "In-Person + Livestream",
+      "location": "San Francisco, CA",
+      "period": "December annually",
+      "url": "https://fortune.com/conferences/brainstorm-ai/",
+      "cost": "Tickets (limited; livestream free)",
+      "desc": "C-suite executives, AI researchers, and policymakers discuss AI's impact on business, society, and government. Past speakers: Sam Altman, Jensen Huang, Satya Nadella, Fei-Fei Li.",
+      "whyAttend": "Free livestream of frank discussions between the most influential decision-makers in AI."
+    },
+    {
+      "id": "ai-summit",
+      "name": "The AI Summit",
+      "org": "AI Summit Group",
+      "type": "Business Conference",
+      "format": "In-Person",
+      "location": "San Francisco, New York, London (rotating)",
+      "period": "Multiple dates annually",
+      "url": "https://theaisummit.com/",
+      "cost": "Registration required (student rates)",
+      "desc": "Practical AI conference focused on real business implementation. Case studies from Fortune 500 companies on deploying AI at scale. Good for understanding how AI is used in industry beyond research.",
+      "whyAttend": "Understand the gap between AI research and production deployment — crucial context for internship and career conversations."
+    }
+  ]
 }

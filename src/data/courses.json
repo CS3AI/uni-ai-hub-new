@@ -289,6 +289,60 @@
       "topic": "Reinforcement Learning, LLMs, Science",
       "level": "Intermediate–Advanced",
       "format": "Research Talk Series"
+    },
+    {
+      "name": "NeurIPS Student Volunteer Program",
+      "speaker": "Various top ML researchers worldwide",
+      "org": "NeurIPS Foundation · In-Person Conference",
+      "url": "https://neurips.cc/",
+      "topic": "Deep Learning, RL, AI Safety, Alignment",
+      "level": "Intermediate–Advanced",
+      "format": "In-Person Conference (student volunteer access)"
+    },
+    {
+      "name": "ICML — International Conference on Machine Learning",
+      "speaker": "Leading ML academics and industry researchers",
+      "org": "ICML · In-Person Conference",
+      "url": "https://icml.cc/",
+      "topic": "Machine Learning Theory and Applications",
+      "level": "Advanced",
+      "format": "In-Person Conference"
+    },
+    {
+      "name": "TED AI Conference",
+      "speaker": "Andrej Karpathy, Sam Altman, Fei-Fei Li (past editions)",
+      "org": "TED · In-Person + Livestream",
+      "url": "https://ted.com/ai",
+      "topic": "AI & Society, Generative AI, Ethics",
+      "level": "All Levels",
+      "format": "In-Person Conference + Free Livestream"
+    },
+    {
+      "name": "NVIDIA GTC — Keynote & Technical Sessions",
+      "speaker": "Jensen Huang + NVIDIA researchers",
+      "org": "NVIDIA · In-Person + Free Online",
+      "url": "https://www.nvidia.com/gtc/",
+      "topic": "AI Hardware, Deep Learning, Robotics",
+      "level": "All Levels",
+      "format": "In-Person Conference + Free Online"
+    },
+    {
+      "name": "Stanford AI Safety Workshop",
+      "speaker": "Stuart Russell, Paul Christiano, and guests",
+      "org": "Center for Human-Compatible AI (CHAI) · Stanford",
+      "url": "https://humancompatible.ai/",
+      "topic": "AI Alignment, Safety, Ethics",
+      "level": "Intermediate–Advanced",
+      "format": "In-Person Workshop (open registration)"
+    },
+    {
+      "name": "MIT CSAIL Open Lecture Days",
+      "speaker": "Various MIT CS and AI faculty",
+      "org": "MIT CSAIL · Cambridge, MA",
+      "url": "https://www.csail.mit.edu/events",
+      "topic": "Computer Science, AI Research",
+      "level": "All Levels",
+      "format": "In-Person Lecture (free, public)"
     }
   ]
 }

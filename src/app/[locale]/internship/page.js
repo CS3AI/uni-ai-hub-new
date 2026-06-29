@@ -46,65 +46,67 @@ export default async function InternshipPage({ params }) {
   ];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-      <PageHeader
-        eyebrow={t("eyebrow")}
-        title={t("title")}
-        description={t("desc")}
-        meta={t("listingsMeta", { count: listings.length })}
-      />
+    <div className="min-h-screen bg-green-50">
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        <PageHeader
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("desc")}
+          meta={t("listingsMeta", { count: listings.length })}
+        />
 
-      <Section title={t("liveListings")}>
-        <InternshipList items={listings} />
-      </Section>
+        <Section title={t("liveListings")}>
+          <InternshipList items={listings} />
+        </Section>
 
-      <Section title={t("referralOpportunities")}>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {REFERRALS.map((r, idx) => (
-            <div key={idx} className="card-surface rounded-xl p-4">
-              <h3 className="font-semibold">
-                <a
-                  href={r.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-brand-end hover:underline"
-                >
-                  {r.company}
-                </a>
-              </h3>
-              <p className="mt-1 text-sm text-muted">{r.note}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
+        <Section title={t("referralOpportunities")}>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {REFERRALS.map((r, idx) => (
+              <div key={idx} className="card-surface rounded-xl p-4">
+                <h3 className="font-semibold">
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-end hover:underline"
+                  >
+                    {r.company}
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-muted">{r.note}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
 
-      <Section title={ir("resumeTitle")}>
-        <p className="mb-3 text-sm text-muted">{ir("resumeDesc")}</p>
-        <div className="grid gap-4 sm:grid-cols-3">
-          {RESUME_RESOURCES.map((r, idx) => (
-            <div key={idx} className="card-surface rounded-xl p-4">
-              <h3 className="text-sm font-semibold">{r.label}</h3>
-              <p className="mt-1 text-sm text-muted">{r.detail}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
+        <Section title={ir("resumeTitle")}>
+          <p className="mb-3 text-sm text-muted">{ir("resumeDesc")}</p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {RESUME_RESOURCES.map((r, idx) => (
+              <div key={idx} className="card-surface rounded-xl p-4">
+                <h3 className="text-sm font-semibold">{r.label}</h3>
+                <p className="mt-1 text-sm text-muted">{r.detail}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
 
-      <Section title={ir("timelineTitle")}>
-        <p className="mb-3 text-sm text-muted">{ir("timelineDesc")}</p>
-        <div className="grid gap-4 sm:grid-cols-4">
-          {TIMELINE.map((m, idx) => (
-            <div key={idx} className="card-surface rounded-xl p-4">
-              <Tag tone="brand">{m.period}</Tag>
-              <ul className="mt-2 space-y-1 text-sm text-muted">
-                {m.items.map((it, i2) => (
-                  <li key={i2}>· {it}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </Section>
+        <Section title={ir("timelineTitle")}>
+          <p className="mb-3 text-sm text-muted">{ir("timelineDesc")}</p>
+          <div className="grid gap-4 sm:grid-cols-4">
+            {TIMELINE.map((m, idx) => (
+              <div key={idx} className="card-surface rounded-xl p-4">
+                <Tag tone="brand">{m.period}</Tag>
+                <ul className="mt-2 space-y-1 text-sm text-muted">
+                  {m.items.map((it, i2) => (
+                    <li key={i2}>· {it}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Section>
+      </div>
     </div>
   );
 }

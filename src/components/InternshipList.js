@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 
+const PAGE_SIZE = 15;
+
 function formatDate(iso, locale) {
   if (!iso) return "";
   return new Date(iso).toLocaleDateString(locale, {
@@ -12,10 +14,45 @@ function formatDate(iso, locale) {
   });
 }
 
+function Paginator({ page, total, pageSize, onPage }) {
+  const pages = Math.ceil(total / pageSize);
+  if (pages <= 1) return null;
+  return (
+    <div className="flex flex-wrap justify-center gap-1.5 mt-6">
+      <button
+        onClick={() => onPage(Math.max(1, page - 1))}
+        disabled={page === 1}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
+      >
+        ‹
+      </button>
+      {Array.from({ length: pages }, (_, i) => i + 1).map((p) => (
+        <button
+          key={p}
+          onClick={() => onPage(p)}
+          className={`w-8 h-8 rounded-lg text-xs font-semibold transition ${
+            page === p ? "brand-gradient text-white" : "card-surface text-muted hover:text-foreground"
+          }`}
+        >
+          {p}
+        </button>
+      ))}
+      <button
+        onClick={() => onPage(Math.min(pages, page + 1))}
+        disabled={page === pages}
+        className="px-3 py-1.5 rounded-lg text-xs font-medium card-surface text-muted disabled:opacity-30"
+      >
+        ›
+      </button>
+    </div>
+  );
+}
+
 export default function InternshipList({ items }) {
   const t = useTranslations("internship");
   const locale = useLocale();
   const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
     if (!query.trim()) return items;
@@ -27,44 +64,59 @@ export default function InternshipList({ items }) {
     );
   }, [items, query]);
 
+  // Reset page on search
+  const handleQuery = (e) => {
+    setQuery(e.target.value);
+    setPage(1);
+  };
+
+  const paged = useMemo(() => {
+    const start = (page - 1) * PAGE_SIZE;
+    return filtered.slice(start, start + PAGE_SIZE);
+  }, [filtered, page]);
+
   return (
     <div>
       <input
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={handleQuery}
         placeholder={t("searchPlaceholder")}
         className="mb-4 w-full rounded-xl border bg-surface px-4 py-2 text-sm outline-none focus:border-brand-end"
       />
       {filtered.length === 0 ? (
         <p className="text-sm text-muted">{t("searchEmpty")}</p>
       ) : (
-        <ul className="space-y-2">
-          {filtered.map((item) => (
-            <li key={item.id} className="card-surface rounded-xl p-4">
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h3 className="text-sm font-semibold">{item.title}</h3>
-                  {item.datePosted && (
-                    <span className="text-xs text-muted">
-                      {formatDate(item.datePosted, locale)}
-                    </span>
-                  )}
-                </div>
-                <p className="mt-1 text-sm text-muted">
-                  {item.company}
-                  {item.locations?.length
-                    ? ` · ${item.locations.join(", ")}`
-                    : ""}
-                </p>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <>
+          <p className="mb-3 text-xs text-muted">{filtered.length} listings</p>
+          <ul className="space-y-2">
+            {paged.map((item) => (
+              <li key={item.id} className="card-surface rounded-xl p-4">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3 className="text-sm font-semibold">{item.title}</h3>
+                    {item.datePosted && (
+                      <span className="text-xs text-muted">
+                        {formatDate(item.datePosted, locale)}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-1 text-sm text-muted">
+                    {item.company}
+                    {item.locations?.length
+                      ? ` · ${item.locations.join(", ")}`
+                      : ""}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} />
+        </>
       )}
     </div>
   );

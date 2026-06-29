@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import activities from "@/data/activities.json";
 
@@ -38,6 +38,8 @@ function Badge({ text, color = "blue" }) {
     green:  "bg-green-50 text-green-700 border-green-200",
     purple: "bg-purple-50 text-purple-700 border-purple-200",
     amber:  "bg-amber-50 text-amber-700 border-amber-200",
+    red:    "bg-red-50 text-red-700 border-red-200",
+    pink:   "bg-pink-50 text-pink-700 border-pink-200",
   }[color] ?? "bg-gray-50 text-gray-700 border-gray-200";
   return (
     <span className={`inline-block rounded-full border px-2 py-0.5 text-[10px] font-medium ${cls}`}>
@@ -238,18 +240,82 @@ function LocalActionTab({ tr }) {
   );
 }
 
+/* ─── Tab 4: Talks & Events ────────────────────────────── */
+function TalksTab({ tr }) {
+  const [open, setOpen] = useState(null);
+  const typeColors = { "Conference": "blue", "Academic Conference": "purple", "Industry Conference": "blue", "Developer Conference": "green", "Education + Tech Conference": "green", "Public Lecture Series": "amber", "Industry Expo": "red", "Executive Summit": "pink", "Business Conference": "blue" };
+
+  return (
+    <div className="space-y-3">
+      {activities.talksAndEvents.map((ev) => (
+        <div key={ev.id} className="card-surface rounded-xl overflow-hidden shadow-sm">
+          <button
+            onClick={() => setOpen(open === ev.id ? null : ev.id)}
+            className="w-full flex items-start justify-between gap-3 p-4 text-left"
+          >
+            <div>
+              <h3 className="font-semibold text-sm leading-tight">{ev.name}</h3>
+              <div className="flex items-center gap-2 mt-1 flex-wrap">
+                <p className="text-xs text-muted">{ev.org}</p>
+                <Badge text={ev.type} color={typeColors[ev.type] || "blue"} />
+              </div>
+            </div>
+            <span className="text-muted text-xs mt-1 shrink-0">{open === ev.id ? "▲" : "▼"}</span>
+          </button>
+
+          {open === ev.id && (
+            <div className="px-4 pb-4 border-t border-border/40 pt-3 space-y-3">
+              <div className="grid grid-cols-2 gap-3 text-xs">
+                <div>
+                  <p className="font-medium text-foreground mb-1">Location</p>
+                  <p className="text-muted">{ev.location}</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-1">When</p>
+                  <p className="text-muted">{ev.period}</p>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-1.5">
+                <Badge text={ev.format} color="blue" />
+                {ev.cost && <Badge text={ev.cost} color="green" />}
+              </div>
+
+              <p className="text-sm text-muted leading-relaxed">{tr(ev.desc)}</p>
+
+              <div className="rounded-lg bg-amber-50 border border-amber-100 p-3">
+                <p className="text-xs font-medium text-amber-800 mb-1">Why attend?</p>
+                <p className="text-xs text-amber-700 leading-relaxed">{tr(ev.whyAttend)}</p>
+              </div>
+
+              <a
+                href={ev.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-1 rounded-lg brand-gradient text-white text-xs font-semibold px-4 py-2 hover:opacity-90 transition"
+              >
+                Visit Official Page →
+              </a>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /* ─── Main Page ────────────────────────────────────────── */
 export default function OpportunityPage() {
   const t = useTranslations("opportunity");
   const locale = useLocale();
   const [tab, setTab] = useState(0);
 
-  // Collect all text that needs translation
   const allTexts = [
     ...activities.globalOpportunities.flatMap(o => [o.shortDesc, o.deadline, o.eligibility, o.whyHighSchool, ...o.tips]),
     ...activities.openSource.flatMap(o => [o.desc, o.whyJoin]),
     activities.localAction.intro,
     ...activities.localAction.programs.flatMap(p => [p.desc, p.howToJoin]),
+    ...activities.talksAndEvents.flatMap(e => [e.desc, e.whyAttend]),
   ];
   const tr = useTranslateField(allTexts, locale);
 
@@ -257,42 +323,42 @@ export default function OpportunityPage() {
     { label: t("tab1"), content: <GlobalOpportunitiesTab tr={tr} /> },
     { label: t("tab2"), content: <OpenSourceTab tr={tr} /> },
     { label: t("tab3"), content: <LocalActionTab tr={tr} /> },
+    { label: t("tab4"), content: <TalksTab tr={tr} /> },
   ];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-      {/* Header — matches PageHeader component style */}
-      <div className="mb-8">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">
-          {t("eyebrow")}
-        </p>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {t("title")}
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          {t("desc")}
-        </p>
-      </div>
+    <div className="min-h-screen bg-yellow-50">
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        <div className="mb-8">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">
+            {t("eyebrow")}
+          </p>
+          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            {t("title")}
+          </h1>
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            {t("desc")}
+          </p>
+        </div>
 
-      {/* Tab bar */}
-      <div className="mb-6 flex gap-2 flex-wrap">
-        {TABS.map((tb, i) => (
-          <button
-            key={i}
-            onClick={() => setTab(i)}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${
-              tab === i
-                ? "brand-gradient text-white shadow-sm"
-                : "card-surface border border-border text-muted hover:text-foreground"
-            }`}
-          >
-            {tb.label}
-          </button>
-        ))}
-      </div>
+        <div className="mb-6 flex gap-2 flex-wrap">
+          {TABS.map((tb, i) => (
+            <button
+              key={i}
+              onClick={() => setTab(i)}
+              className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${
+                tab === i
+                  ? "brand-gradient text-white shadow-sm"
+                  : "card-surface border border-border text-muted hover:text-foreground"
+              }`}
+            >
+              {tb.label}
+            </button>
+          ))}
+        </div>
 
-      {/* Content */}
-      {TABS[tab].content}
+        {TABS[tab].content}
+      </div>
     </div>
   );
 }
