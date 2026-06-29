@@ -6,7 +6,7 @@ import { useState } from "react";
 const RESOURCES = [
   // Courses
   {
-    id: "cs50ai", type: "course", emoji: "📘",
+    id: "cs50ai", type: "course",
     title: "CS50's Introduction to AI with Python",
     institution: "Harvard University",
     url: "https://cs50.harvard.edu/ai/",
@@ -16,7 +16,7 @@ const RESOURCES = [
     levels: ["beginner", "intermediate"],
   },
   {
-    id: "mslearn", type: "course", emoji: "📘",
+    id: "mslearn", type: "course",
     title: "Microsoft Learn · AI School",
     institution: "Microsoft",
     url: "https://learn.microsoft.com/training/",
@@ -26,7 +26,7 @@ const RESOURCES = [
     levels: ["beginner"],
   },
   {
-    id: "gcp", type: "course", emoji: "📘",
+    id: "gcp", type: "course",
     title: "Google Cloud Skills Boost — AI Learning Path",
     institution: "Google",
     url: "https://www.cloudskillsboost.google/",
@@ -36,7 +36,7 @@ const RESOURCES = [
     levels: ["beginner", "intermediate"],
   },
   {
-    id: "mit_ocw", type: "course", emoji: "📘",
+    id: "mit_ocw", type: "course",
     title: "MIT OpenCourseWare · Artificial Intelligence",
     institution: "MIT",
     url: "https://ocw.mit.edu/",
@@ -46,7 +46,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "cs188", type: "course", emoji: "📘",
+    id: "cs188", type: "course",
     title: "CS188: Introduction to Artificial Intelligence",
     institution: "UC Berkeley",
     url: "https://inst.eecs.berkeley.edu/~cs188/",
@@ -56,7 +56,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "cs224n", type: "course", emoji: "📘",
+    id: "cs224n", type: "course",
     title: "CS224N: Natural Language Processing with Deep Learning",
     institution: "Stanford University",
     url: "https://web.stanford.edu/class/cs224n/",
@@ -66,7 +66,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "cs231n", type: "course", emoji: "📘",
+    id: "cs231n", type: "course",
     title: "CS231N: Deep Learning for Computer Vision",
     institution: "Stanford University",
     url: "http://cs231n.stanford.edu/",
@@ -76,7 +76,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "dli", type: "course", emoji: "📘",
+    id: "dli", type: "course",
     title: "NVIDIA Deep Learning Institute (DLI)",
     institution: "NVIDIA",
     url: "https://www.nvidia.com/en-us/training/",
@@ -86,7 +86,7 @@ const RESOURCES = [
     levels: ["beginner", "intermediate"],
   },
   {
-    id: "hai", type: "course", emoji: "📘",
+    id: "hai", type: "course",
     title: "Stanford HAI / AIMI Summer Research Program",
     institution: "Stanford HAI",
     url: "https://hai.stanford.edu/",
@@ -96,7 +96,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "spirit", type: "research", emoji: "🔬",
+    id: "spirit", type: "research",
     title: "Spirit AI High School Research Program",
     institution: "Spirit AI",
     url: "",
@@ -108,7 +108,7 @@ const RESOURCES = [
 
   // Competitions
   {
-    id: "kaggle", type: "competition", emoji: "🏆",
+    id: "kaggle", type: "competition",
     title: "Kaggle Competitions",
     institution: "Kaggle (Google)",
     url: "https://www.kaggle.com/competitions",
@@ -118,7 +118,7 @@ const RESOURCES = [
     levels: ["beginner", "intermediate", "advanced"],
   },
   {
-    id: "swift", type: "competition", emoji: "🏆",
+    id: "swift", type: "competition",
     title: "Apple Swift Student Challenge",
     institution: "Apple",
     url: "https://developer.apple.com/swift-student-challenge/",
@@ -128,7 +128,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "gsoc", type: "competition", emoji: "🏆",
+    id: "gsoc", type: "competition",
     title: "Google Summer of Code (18+)",
     institution: "Google",
     url: "https://summerofcode.withgoogle.com/",
@@ -140,7 +140,7 @@ const RESOURCES = [
 
   // Internship paths
   {
-    id: "simplify", type: "internship", emoji: "💼",
+    id: "simplify", type: "internship",
     title: "AI/ML Internship Listings (Live)",
     institution: "Simplify Jobs",
     url: "/internship",
@@ -150,7 +150,7 @@ const RESOURCES = [
     levels: ["intermediate", "advanced"],
   },
   {
-    id: "ucsd_hdsi", type: "course", emoji: "📘",
+    id: "ucsd_hdsi", type: "course",
     title: "HDSI: Halicioglu Data Science Institute Programs",
     institution: "UC San Diego",
     url: "https://hdsi.ucsd.edu/",
@@ -160,7 +160,7 @@ const RESOURCES = [
     levels: ["beginner", "intermediate", "advanced"],
   },
   {
-    id: "ipam", type: "course", emoji: "📘",
+    id: "ipam", type: "course",
     title: "IPAM Machine Learning Research Programs",
     institution: "UCLA",
     url: "https://www.ipam.ucla.edu/",
@@ -264,7 +264,7 @@ export default function OpportunityMatch({ locale }) {
           <h2 className="text-base font-bold">{u.title}</h2>
           <p className="text-xs text-muted mt-0.5">{u.sub}</p>
         </div>
-        <span className="shrink-0 text-lg">🎯</span>
+        
       </div>
 
       {/* Selectors */}
@@ -346,7 +346,7 @@ export default function OpportunityMatch({ locale }) {
                   rel="noopener noreferrer"
                   className="group flex gap-3 rounded-xl border border-gray-100 bg-background p-4 hover:border-brand-start/30 hover:shadow-sm transition-all"
                 >
-                  <span className="text-xl shrink-0 mt-0.5">{r.emoji}</span>
+                  
                   <div className="min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${TYPE_COLORS[r.type] || TYPE_COLORS.course}`}>

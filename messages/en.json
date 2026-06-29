@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "Courses",
     "title": "Learning & Training",
-    "desc": "University open courses, company self-paced certification programs, and student competition / open-source opportunities.",
+    "desc": "University open courses, company self-paced programs, and curated lectures from leading AI researchers and industry experts.",
     "lastUpdated": "Last updated",
     "universities": "Universities",
     "companies": "Companies",
-    "competitions": "Competitions & Open Source",
-    "audience": "For"
+    "lectures": "Lectures"
   },
   "internship": {
     "eyebrow": "Internship",

@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "Cursos",
     "title": "Aprendizaje & Formación",
-    "desc": "Cursos abiertos universitarios, certificaciones en línea empresariales y oportunidades de competencias / proyectos de código abierto para estudiantes.",
+    "desc": "Cursos universitarios abiertos, programas de empresas y conferencias seleccionadas de investigadores y expertos en IA.",
     "lastUpdated": "Última actualización",
     "universities": "Universidades",
     "companies": "Empresas",
-    "competitions": "Competencias & Código Abierto",
-    "audience": "Para"
+    "lectures": "Conferencias"
   },
   "internship": {
     "eyebrow": "Prácticas",

@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const TABS = [
-  { id: "news",        emoji: "📰", label: "AI News",          count: 5 },
-  { id: "papers",      emoji: "🔬", label: "Research Papers",  count: 3 },
-  { id: "internships", emoji: "💼", label: "Internships",      count: 3 },
-  { id: "courses",     emoji: "📚", label: "Top Courses",      count: 2 },
+  { id: "news", label: "AI News",          count: 5 },
+  { id: "papers", label: "Research Papers",  count: 3 },
+  { id: "internships", label: "Internships",      count: 3 },
+  { id: "courses", label: "Top Courses",      count: 2 },
 ];
 
 const LANG_MAP = { zh:"zh-CN", fr:"fr", es:"es", de:"de", ja:"ja", ru:"ru", ko:"ko" };

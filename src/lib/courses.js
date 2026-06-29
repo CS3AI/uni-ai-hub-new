@@ -2,11 +2,12 @@ import seed from "@/data/courses.json";
 import { fetchPublishedSheet } from "./sheet";
 
 /**
- * Courses 数据：默认用 data/courses.json 里的精选示例。
- * 如果配置了 COURSES_SHEET_URL（发布为 CSV 的 Google Sheet），
- * 则用表格里的行去"追加"到对应分类，方便社团成员无代码更新。
+ * Courses data: defaults to data/courses.json curated content.
+ * If COURSES_SHEET_URL is configured (published Google Sheet CSV),
+ * sheet rows are merged into the relevant category.
  *
- * Google Sheet 建议列：category(university/company/competition), group, code, title, url, level, format, host, type, audience
+ * Google Sheet columns: category(university/company/lecture), group, code, title,
+ *   url, level, format, speaker, org, topic
  */
 export async function getCoursesData() {
   const sheetRows = await fetchPublishedSheet(process.env.COURSES_SHEET_URL, {
@@ -41,18 +42,20 @@ export async function getCoursesData() {
         data.companies.push(group);
       }
       group.programs.push({ title: row.title, url: row.url, format: row.format });
-    } else if (category === "competition") {
-      data.competitions.push({
+    } else if (category === "lecture") {
+      data.lectures.push({
         name: row.title,
-        host: row.host,
+        speaker: row.speaker,
+        org: row.org,
         url: row.url,
-        type: row.type,
-        audience: row.audience,
+        topic: row.topic,
+        level: row.level,
+        format: row.format,
       });
     }
   }
 
   data.lastUpdated = new Date().toISOString().slice(0, 10);
-  data.note = "内容来自社团维护的 Google Sheet，实时同步。";
+  data.note = "Content synced from club-maintained Google Sheet.";
   return data;
 }

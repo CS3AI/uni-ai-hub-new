@@ -212,8 +212,8 @@ function LocalActionTab({ tr }) {
           {open === prog.id && (
             <div className="px-4 pb-4 border-t border-border/40 pt-3 space-y-3">
               <div className="flex flex-wrap gap-2 text-xs text-muted">
-                <span>📍 {prog.location}</span>
-                <span>🗓 {prog.timeline}</span>
+                <span>{prog.location}</span>
+                <span>{prog.timeline}</span>
               </div>
               <p className="text-sm text-muted leading-relaxed">{tr(prog.desc)}</p>
 

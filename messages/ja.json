@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "コース",
     "title": "学習とトレーニング",
-    "desc": "大学のオープンコース、企業の自己学習認定プログラム、学生向けコンテスト・OSS 機会を網羅しています。",
+    "desc": "大学のオープンコース、企業の自学習プログラム、そしてトップAI研究者・専門家による厳選講演。",
     "lastUpdated": "最終更新",
     "universities": "大学",
     "companies": "企業",
-    "competitions": "コンテスト & オープンソース",
-    "audience": "対象"
+    "lectures": "講義・講演"
   },
   "internship": {
     "eyebrow": "インターン",

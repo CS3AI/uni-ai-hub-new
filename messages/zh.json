@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "课程",
     "title": "学习与培训",
-    "desc": "大学公开课、企业自学认证课程，以及面向学生的竞赛与开源项目机会。",
+    "desc": "大学公开课、公司自学课程，以及精选的顶尖AI研究者和业界专家讲座。",
     "lastUpdated": "最近更新",
     "universities": "大学课程",
     "companies": "企业培训",
-    "competitions": "竞赛与开源项目机会",
-    "audience": "适合"
+    "lectures": "讲座"
   },
   "internship": {
     "eyebrow": "实习",

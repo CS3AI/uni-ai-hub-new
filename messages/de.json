@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "Kurse",
     "title": "Lernen & Training",
-    "desc": "Offene Universitätskurse, Firmenzertifizierungen und studentische Wettbewerbs- / Open-Source-Projekte.",
+    "desc": "Offene Universitätskurse, Unternehmenskurse und kuratierte Vorträge von führenden KI-Forschern und Branchenexperten.",
     "lastUpdated": "Zuletzt aktualisiert",
     "universities": "Universitäten",
     "companies": "Unternehmen",
-    "competitions": "Wettbewerbe & Open Source",
-    "audience": "Für"
+    "lectures": "Vorträge"
   },
   "internship": {
     "eyebrow": "Praktikum",

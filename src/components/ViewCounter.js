@@ -57,7 +57,7 @@ export default function ViewCounter() {
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
           <circle cx="12" cy="7" r="4"/>
         </svg>
-        {fmt(visitors)}
+        {fmt(visitors, 100)}
       </span>
       {/* School referrals */}
       <span className="opacity-30">|</span>

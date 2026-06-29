@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "Cours",
     "title": "Apprentissage & Formation",
-    "desc": "Cours ouverts universitaires, certifications en ligne en entreprise et opportunités de compétitions / projets open source pour étudiants.",
+    "desc": "Cours universitaires ouverts, programmes d'autoformation d'entreprises et conférences sélectionnées de chercheurs et experts en IA.",
     "lastUpdated": "Dernière mise à jour",
     "universities": "Universités",
     "companies": "Entreprises",
-    "competitions": "Compétitions & Open Source",
-    "audience": "Pour"
+    "lectures": "Conférences"
   },
   "internship": {
     "eyebrow": "Stages",

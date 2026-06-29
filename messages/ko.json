@@ -46,12 +46,11 @@
   "courses": {
     "eyebrow": "코스",
     "title": "학습 및 훈련",
-    "desc": "대학 공개 강좌, 기업 온라인 인증 프로그램, 학생 대회 / 오픈 소스 프로젝트 기회.",
+    "desc": "대학 공개 강의, 기업 자기 학습 프로그램, 그리고 AI 연구자·전문가의 엄선된 강연.",
     "lastUpdated": "최근 업데이트",
     "universities": "대학교",
     "companies": "기업",
-    "competitions": "대회 & 오픈 소스",
-    "audience": "대상"
+    "lectures": "강연"
   },
   "internship": {
     "eyebrow": "인턴십",

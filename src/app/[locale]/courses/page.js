@@ -72,21 +72,21 @@ export default async function CoursesPage({ params }) {
         </div>
       </Section>
 
-      <Section title={t("competitions")}>
-        <div className="grid gap-4 sm:grid-cols-3">
-          {data.competitions.map((c, idx) => (
+      <Section title={t("lectures")}>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {data.lectures.map((lec, idx) => (
             <div key={idx} className="card-surface rounded-xl p-4">
-              <h3 className="font-semibold">
-                <CourseLink url={c.url} title={c.name} />
+              <h3 className="font-semibold text-sm leading-snug">
+                <CourseLink url={lec.url} title={lec.name} />
               </h3>
-              <p className="mt-1 text-xs text-muted">{c.host}</p>
+              <p className="mt-1 text-xs text-muted">{lec.speaker}</p>
+              <p className="text-xs text-muted">{lec.org}</p>
               <div className="mt-2 flex flex-wrap gap-1.5">
-                {c.type && <Tag>{c.type}</Tag>}
+                {lec.level && <Tag>{lec.level}</Tag>}
+                {lec.format && <Tag>{lec.format}</Tag>}
               </div>
-              {c.audience && (
-                <p className="mt-2 text-xs text-muted">
-                  {t("audience")}: {c.audience}
-                </p>
+              {lec.topic && (
+                <p className="mt-2 text-xs text-muted">{lec.topic}</p>
               )}
             </div>
           ))}
