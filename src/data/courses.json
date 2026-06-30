@@ -192,6 +192,20 @@
           "url": "https://www.ics.uci.edu/",
           "level": "High School",
           "format": "Summer School / Open Resources"
+        },
+        {
+          "code": "CS171",
+          "title": "Introduction to Artificial Intelligence",
+          "url": "https://www.ics.uci.edu/~rickl/courses/cs-171/",
+          "level": "Beginner–Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS273A",
+          "title": "Machine Learning",
+          "url": "https://www.ics.uci.edu/~ihler/courses/cs273a/",
+          "level": "Intermediate–Advanced",
+          "format": "Open Course Materials"
         }
       ]
     },
@@ -204,6 +218,58 @@
           "url": "",
           "level": "High School Research",
           "format": "Research Program"
+        }
+      ]
+    },
+    {
+      "name": "University of Washington",
+      "courses": [
+        {
+          "code": "CSE446",
+          "title": "Machine Learning",
+          "url": "https://courses.cs.washington.edu/courses/cse446/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CSE599",
+          "title": "Deep Learning",
+          "url": "https://courses.cs.washington.edu/courses/cse599/",
+          "level": "Advanced",
+          "format": "Open Lecture Notes"
+        },
+        {
+          "code": "CSE484",
+          "title": "Computer Security & AI Applications",
+          "url": "https://courses.cs.washington.edu/courses/cse484/",
+          "level": "Intermediate–Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Johns Hopkins University",
+      "courses": [
+        {
+          "code": "EN.601.475",
+          "title": "Machine Learning",
+          "url": "https://www.cs.jhu.edu/~phi/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "EN.601.482",
+          "title": "Machine Learning: Deep Learning",
+          "url": "https://deep.cs.jhu.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "EN.553.740",
+          "title": "Machine Learning for Medical Applications",
+          "url": "https://www.bme.jhu.edu/",
+          "level": "Advanced",
+          "format": "Open Lecture Notes"
         }
       ]
     }
@@ -333,14 +399,16 @@
       "format": "Research Talk Series"
     },
     {
-      "name": "NeurIPS Student Volunteer Program",
-      "speaker": "Various top ML researchers worldwide",
-      "org": "NeurIPS Foundation · In-Person Conference",
-      "url": "https://neurips.cc/",
-      "topic": "Deep Learning, RL, AI Safety, Alignment",
-      "level": "Intermediate–Advanced",
-      "format": "In-Person Conference (student volunteer access)"
-    },
+      "name": "MIT CSAIL Open Lecture Days",
+      "speaker": "Various MIT CS and AI faculty",
+      "org": "MIT CSAIL · Cambridge, MA",
+      "url": "https://www.csail.mit.edu/events",
+      "topic": "Computer Science, AI Research",
+      "level": "All Levels",
+      "format": "In-Person Lecture (free, public)"
+    }
+  ],
+  "conferences": [
     {
       "name": "ICML — International Conference on Machine Learning",
       "speaker": "Leading ML academics and industry researchers",
@@ -376,15 +444,117 @@
       "topic": "AI Alignment, Safety, Ethics",
       "level": "Intermediate–Advanced",
       "format": "In-Person Workshop (open registration)"
+    }
+  ],
+  "volunteering": [
+    {
+      "name": "NeurIPS Student Volunteer Program",
+      "speaker": "Various top ML researchers worldwide",
+      "org": "NeurIPS Foundation · In-Person Conference",
+      "url": "https://neurips.cc/",
+      "topic": "Deep Learning, RL, AI Safety, Alignment",
+      "level": "Intermediate–Advanced",
+      "format": "Student Volunteer Program"
+    }
+  ],
+  "summerSchools": [
+    {
+      "name": "Stanford HAI / AIMI Summer Research Program",
+      "org": "Stanford University",
+      "url": "https://hai.stanford.edu/education",
+      "audience": "High School / Undergraduate",
+      "desc": "Research mentorship in Human-Centered AI and AI in Medicine. Access to Stanford faculty and labs.",
+      "format": "In-Person (Paid / Scholarship)"
     },
     {
-      "name": "MIT CSAIL Open Lecture Days",
-      "speaker": "Various MIT CS and AI faculty",
-      "org": "MIT CSAIL · Cambridge, MA",
-      "url": "https://www.csail.mit.edu/events",
-      "topic": "Computer Science, AI Research",
-      "level": "All Levels",
-      "format": "In-Person Lecture (free, public)"
+      "name": "UC Berkeley AI4ALL",
+      "org": "UC Berkeley / AI4ALL",
+      "url": "https://ai-4-all.org/",
+      "audience": "High School (underrepresented students)",
+      "desc": "Residential AI summer camp at UC Berkeley focused on social impact. Competitive application; financial aid available.",
+      "format": "Residential Summer Camp"
+    },
+    {
+      "name": "MIT PRIMES (Program for Research in Mathematics, Engineering & Science)",
+      "org": "MIT",
+      "url": "https://math.mit.edu/research/highschool/primes/",
+      "audience": "High School",
+      "desc": "Year-long mentored research program for high schoolers, including AI/CS projects with MIT researchers.",
+      "format": "Year-Round (Remote + In-Person)"
+    },
+    {
+      "name": "Carnegie Mellon SAMS (Summer Academy for Math and Science)",
+      "org": "Carnegie Mellon University",
+      "url": "https://www.cmu.edu/pre-college/academic-programs/sams.html",
+      "audience": "High School (rising 11–12th grade)",
+      "desc": "6-week residential STEM program at CMU. Covers AI, ML, robotics, and CS fundamentals.",
+      "format": "Residential (Fully Funded for Eligible Students)"
+    },
+    {
+      "name": "NVIDIA Deep Learning Institute (DLI) Summer Programs",
+      "org": "NVIDIA",
+      "url": "https://www.nvidia.com/en-us/training/",
+      "audience": "High School / Undergraduate",
+      "desc": "Hands-on GPU-accelerated training workshops in DL, CV, and NLP. Certificate upon completion.",
+      "format": "Online / In-Person Workshop"
+    },
+    {
+      "name": "Google CS Research Mentorship Program (CSRMP)",
+      "org": "Google",
+      "url": "https://research.google/outreach/csrmp/",
+      "audience": "Undergraduate (focus on underrepresented groups)",
+      "desc": "Connects underrepresented students with Google researchers for 12-week mentored projects.",
+      "format": "Remote Mentorship"
+    }
+  ],
+  "researchPrograms": [
+    {
+      "name": "Spirit AI High School Research Program",
+      "org": "Spirit AI",
+      "url": "",
+      "audience": "High School",
+      "desc": "One of the few mentored AI research programs designed specifically for high schoolers. Real publication potential.",
+      "format": "Remote Research Mentorship"
+    },
+    {
+      "name": "RSI — Research Science Institute",
+      "org": "MIT / Center for Excellence in Education",
+      "url": "https://www.cee.org/research-science-institute",
+      "audience": "High School (rising 12th grade)",
+      "desc": "6-week on-campus research at MIT — one of the most prestigious science programs in the world. Highly competitive.",
+      "format": "Residential (Fully Funded)"
+    },
+    {
+      "name": "PRIMES-USA",
+      "org": "MIT",
+      "url": "https://math.mit.edu/research/highschool/primes/",
+      "audience": "High School (outside MA)",
+      "desc": "Remote version of MIT PRIMES. Year-long research mentorship with MIT faculty in CS, AI, and math.",
+      "format": "Remote Research Mentorship"
+    },
+    {
+      "name": "Regeneron Science Talent Search",
+      "org": "Society for Science",
+      "url": "https://www.societyforscience.org/regeneron-sts/",
+      "audience": "High School (senior year)",
+      "desc": "The most prestigious pre-college science competition in the US. Top AI/ML projects have won national recognition.",
+      "format": "Science Competition"
+    },
+    {
+      "name": "Simons Summer Research Program",
+      "org": "Stony Brook University / Simons Foundation",
+      "url": "https://www.stonybrook.edu/commcms/simons/",
+      "audience": "High School (rising 12th grade)",
+      "desc": "7-week mentored research experience at Stony Brook with faculty in STEM fields including AI.",
+      "format": "Residential Research"
+    },
+    {
+      "name": "UCSB Research Mentorship Program (RMP)",
+      "org": "UC Santa Barbara",
+      "url": "https://www.summer.ucsb.edu/pre-college/research-mentorship-program",
+      "audience": "High School",
+      "desc": "5-week residential research mentorship with UCSB faculty including AI and computational science projects.",
+      "format": "Residential Research"
     }
   ]
 }

@@ -23,6 +23,12 @@ export default async function InternshipPage({ params }) {
   const REFERRALS = [
     { company: "Blizzard Entertainment", url: "https://careers.blizzard.com/", note: ir("blizzardNote") },
     { company: "Rivian", url: "https://www.rivian.com/careers", note: ir("rivianNote") },
+    { company: "Google", url: "https://careers.google.com/students/", note: ir("googleNote") },
+    { company: "Microsoft", url: "https://careers.microsoft.com/students/", note: ir("microsoftNote") },
+    { company: "Meta", url: "https://www.metacareers.com/students/", note: ir("metaNote") },
+    { company: "Tesla", url: "https://www.tesla.com/careers/search/?type=4", note: ir("teslaNote") },
+    { company: "Waymo", url: "https://waymo.com/careers/", note: ir("waymoNote") },
+    { company: "OpenAI", url: "https://openai.com/careers/", note: ir("openaiNote") },
   ];
 
   const RESUME_RESOURCES = [

@@ -9,7 +9,6 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// Level -> color mapping for colored tags
 function levelColor(level = "") {
   const l = level.toLowerCase();
   if (l.includes("begin")) return "bg-green-100 text-green-700";
@@ -23,10 +22,14 @@ function levelColor(level = "") {
 function formatColor(format = "") {
   const f = format.toLowerCase();
   if (f.includes("in-person") || f.includes("workshop") || f.includes("conference")) return "bg-red-100 text-red-700";
-  if (f.includes("free")) return "bg-green-100 text-green-700";
-  if (f.includes("youtube") || f.includes("online") || f.includes("open course")) return "bg-blue-100 text-blue-700";
+  if (f.includes("volunteer")) return "bg-teal-100 text-teal-700";
+  if (f.includes("residential") || f.includes("funded")) return "bg-orange-100 text-orange-700";
+  if (f.includes("remote") || f.includes("mentorship")) return "bg-indigo-100 text-indigo-700";
+  if (f.includes("competition") || f.includes("science")) return "bg-yellow-100 text-yellow-700";
+  if (f.includes("free") || f.includes("open course")) return "bg-green-100 text-green-700";
+  if (f.includes("youtube") || f.includes("online")) return "bg-blue-100 text-blue-700";
   if (f.includes("ted")) return "bg-red-100 text-red-700";
-  if (f.includes("research")) return "bg-purple-100 text-purple-700";
+  if (f.includes("research") || f.includes("public lecture")) return "bg-purple-100 text-purple-700";
   return "bg-gray-100 text-gray-600";
 }
 
@@ -55,6 +58,7 @@ export default async function CoursesPage({ params }) {
           meta={`${t("lastUpdated")}: ${data.lastUpdated}`}
         />
 
+        {/* Universities */}
         <Section title={t("universities")}>
           <div className="grid gap-4 sm:grid-cols-2">
             {data.universities.map((uni) => (
@@ -63,10 +67,7 @@ export default async function CoursesPage({ params }) {
                 <ul className="mt-2 space-y-2">
                   {uni.courses.map((c, idx) => (
                     <li key={idx} className="text-sm">
-                      <CourseLink
-                        url={c.url}
-                        title={`${c.code ? c.code + " · " : ""}${c.title}`}
-                      />
+                      <CourseLink url={c.url} title={`${c.code ? c.code + " · " : ""}${c.title}`} />
                       <div className="mt-1 flex flex-wrap gap-1.5">
                         {c.level && <ColorTag color={levelColor(c.level)}>{c.level}</ColorTag>}
                         {c.format && <ColorTag color={formatColor(c.format)}>{c.format}</ColorTag>}
@@ -79,6 +80,7 @@ export default async function CoursesPage({ params }) {
           </div>
         </Section>
 
+        {/* Companies */}
         <Section title={t("companies")}>
           <div className="grid gap-4 sm:grid-cols-2">
             {data.companies.map((co) => (
@@ -101,9 +103,10 @@ export default async function CoursesPage({ params }) {
           </div>
         </Section>
 
-        <Section title={t("lectures")}>
+        {/* Online Lectures (pure lecture/recorded content only) */}
+        <Section title={t("onlineLectures")}>
           <div className="grid gap-4 sm:grid-cols-2">
-            {data.lectures.map((lec, idx) => (
+            {(data.lectures || []).map((lec, idx) => (
               <div key={idx} className="card-surface rounded-xl p-4">
                 <h3 className="font-semibold text-sm leading-snug">
                   <CourseLink url={lec.url} title={lec.name} />
@@ -114,13 +117,97 @@ export default async function CoursesPage({ params }) {
                   {lec.level && <ColorTag color={levelColor(lec.level)}>{lec.level}</ColorTag>}
                   {lec.format && <ColorTag color={formatColor(lec.format)}>{lec.format}</ColorTag>}
                 </div>
-                {lec.topic && (
-                  <p className="mt-2 text-xs text-muted">{lec.topic}</p>
-                )}
+                {lec.topic && <p className="mt-2 text-xs text-muted">{lec.topic}</p>}
               </div>
             ))}
           </div>
         </Section>
+
+        {/* Conferences & Events (in-person academic/industry conferences) */}
+        {(data.conferences || []).length > 0 && (
+          <Section title={t("conferencesEvents")}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {data.conferences.map((lec, idx) => (
+                <div key={idx} className="card-surface rounded-xl p-4">
+                  <h3 className="font-semibold text-sm leading-snug">
+                    <CourseLink url={lec.url} title={lec.name} />
+                  </h3>
+                  <p className="mt-1 text-xs text-muted">{lec.speaker}</p>
+                  <p className="text-xs text-muted">{lec.org}</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {lec.level && <ColorTag color={levelColor(lec.level)}>{lec.level}</ColorTag>}
+                    {lec.format && <ColorTag color={formatColor(lec.format)}>{lec.format}</ColorTag>}
+                  </div>
+                  {lec.topic && <p className="mt-2 text-xs text-muted">{lec.topic}</p>}
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Volunteer Opportunities */}
+        {(data.volunteering || []).length > 0 && (
+          <Section title={t("volunteering")}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {data.volunteering.map((v, idx) => (
+                <div key={idx} className="card-surface rounded-xl p-4">
+                  <h3 className="font-semibold text-sm leading-snug">
+                    <CourseLink url={v.url} title={v.name} />
+                  </h3>
+                  <p className="mt-1 text-xs text-muted">{v.speaker}</p>
+                  <p className="text-xs text-muted">{v.org}</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {v.level && <ColorTag color={levelColor(v.level)}>{v.level}</ColorTag>}
+                    {v.format && <ColorTag color={formatColor(v.format)}>{v.format}</ColorTag>}
+                  </div>
+                  {v.topic && <p className="mt-2 text-xs text-muted">{v.topic}</p>}
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Summer Schools */}
+        {(data.summerSchools || []).length > 0 && (
+          <Section title={t("summerSchools")}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {data.summerSchools.map((s, idx) => (
+                <div key={idx} className="card-surface rounded-xl p-4">
+                  <h3 className="font-semibold text-sm leading-snug">
+                    <CourseLink url={s.url} title={s.name} />
+                  </h3>
+                  <p className="mt-1 text-xs text-muted">{s.org}</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {s.audience && <ColorTag color="bg-orange-100 text-orange-700">{s.audience}</ColorTag>}
+                    {s.format && <ColorTag color={formatColor(s.format)}>{s.format}</ColorTag>}
+                  </div>
+                  {s.desc && <p className="mt-2 text-xs text-muted leading-relaxed">{s.desc}</p>}
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Research Programs */}
+        {(data.researchPrograms || []).length > 0 && (
+          <Section title={t("researchPrograms")}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {data.researchPrograms.map((r, idx) => (
+                <div key={idx} className="card-surface rounded-xl p-4">
+                  <h3 className="font-semibold text-sm leading-snug">
+                    <CourseLink url={r.url} title={r.name} />
+                  </h3>
+                  <p className="mt-1 text-xs text-muted">{r.org}</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {r.audience && <ColorTag color="bg-purple-100 text-purple-700">{r.audience}</ColorTag>}
+                    {r.format && <ColorTag color={formatColor(r.format)}>{r.format}</ColorTag>}
+                  </div>
+                  {r.desc && <p className="mt-2 text-xs text-muted leading-relaxed">{r.desc}</p>}
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
       </div>
     </div>
   );
@@ -138,12 +225,7 @@ function Section({ title, children }) {
 function CourseLink({ url, title }) {
   if (!url) return <span>{title}</span>;
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-brand-end hover:underline"
-    >
+    <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-brand-end hover:underline">
       {title}
     </a>
   );

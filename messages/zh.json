@@ -34,7 +34,7 @@
     },
     "feedbackWallTitle": "用户反馈墙",
     "peerProfilesTitle": "同学档案",
-    "peerProfilesDesc": "成功拿到大厂实习、顶级夏校或竞赛获奖的宇高学生真实背景档案。即将上线——下一个会是你吗？"
+    "peerProfilesDesc": "成功拿到大厂实习、顶级夏校录取或竞赛获奖的UHS同学真实背景档案。即将上线——下一个会是你吗？"
   },
   "information": {
     "eyebrow": "资讯",
@@ -52,7 +52,12 @@
     "lastUpdated": "最近更新",
     "universities": "大学课程",
     "companies": "企业培训",
-    "lectures": "讲座"
+    "lectures": "讲座",
+    "onlineLectures": "在线讲座",
+    "conferencesEvents": "前沿会议与行业展会",
+    "volunteering": "志愿者机会",
+    "summerSchools": "夏校与学习项目",
+    "researchPrograms": "科研项目"
   },
   "internship": {
     "eyebrow": "实习",
@@ -103,7 +108,13 @@
     "nickPlaceholder": "昵称（可留空，如：匿名学姐）",
     "msgPlaceholder": "分享你的面试经历、求职感想、行业情报……",
     "submitDone": "已发布！",
-    "submitNote": "* 留言暂存于本地浏览器"
+    "submitNote": "* 留言暂存于本地浏览器",
+    "googleNote": "谷歌暑期实习及STEP项目（面向低年级大学生）。关注Google Careers页面。",
+    "microsoftNote": "微软Explore实习（大一/大二）和SWE暑期项目，申请窗口通常在10–1月。",
+    "metaNote": "Meta大学生项目及AI研究实习，部分高中研究岗位通过Meta AI Lab开放。",
+    "teslaNote": "特斯拉AI、Autopilot和能源部门暑期实习，全年开放工程岗位申请。",
+    "waymoNote": "Waymo自动驾驶AI研究实习，需要较强的CV/ML背景，关注Waymo Careers。",
+    "openaiNote": "OpenAI学者计划和驻场研究项目，面向早期研究者。竞争激烈，建议先打好ML基础。"
   },
   "tags": {
     "compute": "算力 / 硬件",

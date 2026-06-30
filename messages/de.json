@@ -52,7 +52,12 @@
     "lastUpdated": "Zuletzt aktualisiert",
     "universities": "Universitäten",
     "companies": "Unternehmen",
-    "lectures": "Vorträge"
+    "lectures": "Vorträge",
+    "onlineLectures": "Online-Vorlesungen",
+    "conferencesEvents": "Konferenzen & Veranstaltungen",
+    "volunteering": "Ehrenamtliche Möglichkeiten",
+    "summerSchools": "Sommerschulen & Programme",
+    "researchPrograms": "Forschungsprogramme"
   },
   "internship": {
     "eyebrow": "Praktikum",
@@ -103,7 +108,13 @@
     "nickPlaceholder": "Spitzname (optional)",
     "msgPlaceholder": "Teile deine Interview-Erfahrung…",
     "submitDone": "Gepostet!",
-    "submitNote": "* Lokal in Ihrem Browser gespeichert"
+    "submitNote": "* Lokal in Ihrem Browser gespeichert",
+    "googleNote": "Search/Ads intern roles and Google STEP program for underrepresented CS students. Watch the Careers portal.",
+    "microsoftNote": "Microsoft Explore (freshmen/sophomores) and SWE internship programs. Apply Oct–Jan.",
+    "metaNote": "Meta University and standard SWE / AI Research internships. High school research roles via Meta AI Lab.",
+    "teslaNote": "AI, Autopilot, and Energy internships. Tesla's careers page lists engineering openings year-round.",
+    "waymoNote": "Self-driving AI research internships. Strong CV/ML background required. Watch Waymo Careers.",
+    "openaiNote": "OpenAI Scholars and residency programs for early-career researchers. Competitive — build a strong ML portfolio first."
   },
   "tags": {
     "compute": "Rechenleistung / Hardware",

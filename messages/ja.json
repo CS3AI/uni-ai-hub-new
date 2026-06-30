@@ -52,7 +52,12 @@
     "lastUpdated": "最終更新",
     "universities": "大学",
     "companies": "企業",
-    "lectures": "講義・講演"
+    "lectures": "講義・講演",
+    "onlineLectures": "オンライン講義",
+    "conferencesEvents": "カンファレンス & イベント",
+    "volunteering": "ボランティア機会",
+    "summerSchools": "サマースクール & プログラム",
+    "researchPrograms": "研究プログラム"
   },
   "internship": {
     "eyebrow": "インターン",
@@ -103,7 +108,13 @@
     "nickPlaceholder": "ニックネーム（任意）",
     "msgPlaceholder": "面接体験・就職活動のヒントを共有…",
     "submitDone": "投稿しました！",
-    "submitNote": "* ブラウザのローカルに保存されます"
+    "submitNote": "* ブラウザのローカルに保存されます",
+    "googleNote": "Search/Ads intern roles and Google STEP program for underrepresented CS students. Watch the Careers portal.",
+    "microsoftNote": "Microsoft Explore (freshmen/sophomores) and SWE internship programs. Apply Oct–Jan.",
+    "metaNote": "Meta University and standard SWE / AI Research internships. High school research roles via Meta AI Lab.",
+    "teslaNote": "AI, Autopilot, and Energy internships. Tesla's careers page lists engineering openings year-round.",
+    "waymoNote": "Self-driving AI research internships. Strong CV/ML background required. Watch Waymo Careers.",
+    "openaiNote": "OpenAI Scholars and residency programs for early-career researchers. Competitive — build a strong ML portfolio first."
   },
   "tags": {
     "compute": "コンピューティング / ハードウェア",

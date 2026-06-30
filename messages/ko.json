@@ -52,7 +52,12 @@
     "lastUpdated": "최근 업데이트",
     "universities": "대학교",
     "companies": "기업",
-    "lectures": "강연"
+    "lectures": "강연",
+    "onlineLectures": "온라인 강의",
+    "conferencesEvents": "컨퍼런스 & 이벤트",
+    "volunteering": "봉사 기회",
+    "summerSchools": "여름 학교 & 프로그램",
+    "researchPrograms": "연구 프로그램"
   },
   "internship": {
     "eyebrow": "인턴십",
@@ -103,7 +108,13 @@
     "nickPlaceholder": "닉네임 (선택사항)",
     "msgPlaceholder": "면접 경험, 취업 팁을 공유하세요…",
     "submitDone": "게시됨!",
-    "submitNote": "* 브라우저에 로컬 저장됩니다"
+    "submitNote": "* 브라우저에 로컬 저장됩니다",
+    "googleNote": "Search/Ads intern roles and Google STEP program for underrepresented CS students. Watch the Careers portal.",
+    "microsoftNote": "Microsoft Explore (freshmen/sophomores) and SWE internship programs. Apply Oct–Jan.",
+    "metaNote": "Meta University and standard SWE / AI Research internships. High school research roles via Meta AI Lab.",
+    "teslaNote": "AI, Autopilot, and Energy internships. Tesla's careers page lists engineering openings year-round.",
+    "waymoNote": "Self-driving AI research internships. Strong CV/ML background required. Watch Waymo Careers.",
+    "openaiNote": "OpenAI Scholars and residency programs for early-career researchers. Competitive — build a strong ML portfolio first."
   },
   "tags": {
     "compute": "컴퓨팅 / 하드웨어",
