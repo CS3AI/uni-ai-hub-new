@@ -106,6 +106,85 @@ const RESOURCES = [
     levels: ["beginner", "intermediate"],
   },
 
+
+  // Opportunities & Programs
+  {
+    id: "neurips_student",
+    type: "opportunity",
+    title: "NeurIPS Student Volunteer Program",
+    institution: "NeurIPS Foundation",
+    url: "https://neurips.cc/",
+    desc: "Attend the world's top ML conference free as a volunteer. Exceptional networking with researchers and industry leaders.",
+    grades: ["g11g12", "college"],
+    interests: ["general", "algorithms", "nlp", "cv", "data"],
+    levels: ["intermediate", "advanced"],
+  },
+  {
+    id: "google_sol",
+    type: "opportunity",
+    title: "Google Solution Challenge",
+    institution: "Google",
+    url: "https://developers.google.com/community/gdsc/solution-challenge",
+    desc: "Build a tech solution for a UN SDG problem using Google tech. Teams win mentorship, Google HQ visits, and cash prizes.",
+    grades: ["g11g12", "college"],
+    interests: ["applications", "ethics", "general"],
+    levels: ["beginner", "intermediate", "advanced"],
+  },
+  {
+    id: "ioai",
+    type: "opportunity",
+    title: "International Olympiad in Artificial Intelligence (IOAI)",
+    institution: "IOAI",
+    url: "https://ioai-official.org/",
+    desc: "The Olympics of AI for high schoolers. Combines a theory exam with a practical ML coding challenge. National selection required.",
+    grades: ["g9g10", "g11g12"],
+    interests: ["general", "algorithms", "data"],
+    levels: ["advanced"],
+  },
+  {
+    id: "mlh",
+    type: "opportunity",
+    title: "Major League Hacking (MLH) Hackathons",
+    institution: "Major League Hacking",
+    url: "https://mlh.io/",
+    desc: "Weekend hackathons every week worldwide — build and ship an AI project in 24–48 hours. Great for portfolio and networking.",
+    grades: ["g9g10", "g11g12", "college"],
+    interests: ["applications", "general", "nlp", "cv"],
+    levels: ["beginner", "intermediate", "advanced"],
+  },
+  {
+    id: "common_voice",
+    type: "opportunity",
+    title: "Mozilla Common Voice — Open Source Contribution",
+    institution: "Mozilla",
+    url: "https://commonvoice.mozilla.org/",
+    desc: "Contribute to an open-source AI voice dataset. Great first open-source project with real-world AI impact.",
+    grades: ["g9g10", "g11g12", "college"],
+    interests: ["ethics", "applications", "nlp"],
+    levels: ["beginner", "intermediate"],
+  },
+  {
+    id: "ted_ai",
+    type: "opportunity",
+    title: "TED AI Conference",
+    institution: "TED",
+    url: "https://ted.com/tedai",
+    desc: "TED's flagship AI event with top researchers and entrepreneurs. Student tickets and scholarship opportunities available.",
+    grades: ["g11g12", "college"],
+    interests: ["ethics", "general", "applications"],
+    levels: ["beginner", "intermediate", "advanced"],
+  },
+  {
+    id: "internship_hs",
+    type: "internship",
+    title: "High School AI / ML Internships (Live Board)",
+    institution: "Uni AI Hub",
+    url: "/internship",
+    desc: "Browse our live listings for AI/ML internships open to high schoolers — updated daily. Includes Rivian, non-profit AI roles, and more.",
+    grades: ["g11g12"],
+    interests: ["general", "cv", "nlp", "robotics", "data", "applications"],
+    levels: ["intermediate", "advanced"],
+  },
   // Competitions
   {
     id: "kaggle", type: "competition",
@@ -194,7 +273,7 @@ const UI = {
     grades: { g9g10: "9th – 10th Grade", g11g12: "11th – 12th Grade", college: "College / University" },
     interests: { general: "General AI / Not Sure", nlp: "NLP & Large Language Models", cv: "Computer Vision", robotics: "Robotics & Autonomous Systems", data: "Data Science & Analytics", ethics: "AI Ethics & Policy", applications: "AI Product Building", algorithms: "Algorithms & Theory" },
     levels: { beginner: "Beginner (no coding yet)", intermediate: "Intermediate (some Python)", advanced: "Advanced (ML projects)" },
-    types: { course: "Course", competition: "Competition", internship: "Internship", research: "Research Program" },
+    types: { course: "Course", competition: "Competition", internship: "Internship", research: "Research Program", opportunity: "Opportunity" },
   },
   zh: {
     title: "AI 机会匹配",
@@ -208,7 +287,7 @@ const UI = {
     grades: { g9g10: "高一 / 高二（9–10年级）", g11g12: "高三 / 高四（11–12年级）", college: "大学生" },
     interests: { general: "AI 通识 / 还没想好", nlp: "自然语言处理 & 大模型", cv: "计算机视觉", robotics: "机器人 & 自动驾驶", data: "数据科学", ethics: "AI 伦理与政策", applications: "AI 产品开发", algorithms: "算法与理论" },
     levels: { beginner: "零基础（无编程经验）", intermediate: "初级（有一些 Python 经验）", advanced: "进阶（有 ML 项目经验）" },
-    types: { course: "课程", competition: "竞赛", internship: "实习", research: "科研项目" },
+    types: { course: "课程", competition: "竞赛", internship: "实习", research: "科研项目", opportunity: "机会" },
   },
   ja: {
     title: "AI 機会マッチング",
@@ -222,7 +301,7 @@ const UI = {
     grades: { g9g10: "高校1–2年生", g11g12: "高校3–4年生", college: "大学生" },
     interests: { general: "AI全般 / 未定", nlp: "自然言語処理 & LLM", cv: "コンピュータビジョン", robotics: "ロボティクス & 自律システム", data: "データサイエンス", ethics: "AI倫理 & 政策", applications: "AIプロダクト開発", algorithms: "アルゴリズム & 理論" },
     levels: { beginner: "初心者（未経験）", intermediate: "中級（Python経験あり）", advanced: "上級（MLプロジェクト経験）" },
-    types: { course: "コース", competition: "コンペ", internship: "インターン", research: "研究プログラム" },
+    types: { course: "コース", competition: "コンペ", internship: "インターン", research: "研究プログラム", opportunity: "機会" },
   },
 };
 
@@ -235,6 +314,7 @@ const TYPE_COLORS = {
   competition: "bg-yellow-50 text-yellow-700",
   internship:  "bg-green-50 text-green-700",
   research:    "bg-purple-50 text-purple-700",
+  opportunity: "bg-orange-50 text-orange-700",
 };
 
 export default function OpportunityMatch({ locale }) {

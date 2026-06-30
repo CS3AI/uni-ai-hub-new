@@ -62,6 +62,27 @@
           "url": "https://inst.eecs.berkeley.edu/~cs188/",
           "level": "Beginner–Advanced",
           "format": "Open Course Materials"
+        },
+        {
+          "code": "CS189",
+          "title": "Introduction to Machine Learning",
+          "url": "https://people.eecs.berkeley.edu/~jrs/189/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS285",
+          "title": "Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
+          "level": "Advanced",
+          "format": "Open Lecture Videos"
+        },
+        {
+          "code": "CS294-196",
+          "title": "Large Language Models: Foundations and Applications",
+          "url": "https://llmsfoundations.github.io/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
         }
       ]
     },
@@ -126,6 +147,27 @@
           "url": "https://cs50.harvard.edu/ai/",
           "level": "Beginner",
           "format": "Free Online Course (edX)"
+        },
+        {
+          "code": "CS109a",
+          "title": "Data Science 1: Introduction to Data Science",
+          "url": "https://harvard-iacs.github.io/2022-CS109A/",
+          "level": "Intermediate",
+          "format": "Free Online Materials"
+        },
+        {
+          "code": "CS182",
+          "title": "Designing, Visualizing and Understanding Deep Neural Networks",
+          "url": "https://cs182sp21.github.io/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "STAT195",
+          "title": "Statistical Machine Learning",
+          "url": "https://harvard.edu",
+          "level": "Advanced",
+          "format": "Open Lecture Notes"
         }
       ]
     },

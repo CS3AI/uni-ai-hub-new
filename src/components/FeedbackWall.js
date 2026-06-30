@@ -103,7 +103,6 @@ export default function FeedbackWall({ title }) {
             <button
               key={r.id}
               onClick={() => handleReact(r)}
-              disabled={!!voted[r.id]}
               className={`flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all
                 ${voted[r.id]
                   ? "border-brand-end bg-brand-end/10 text-brand-end cursor-default"

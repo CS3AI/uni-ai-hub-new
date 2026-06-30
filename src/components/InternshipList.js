@@ -36,6 +36,38 @@ function Paginator({ page, total, pageSize, onPage, activeClass }) {
   );
 }
 
+
+// Infer required skills from job title keywords
+function inferSkills(title) {
+  const t = (title || "").toLowerCase();
+  const skills = [];
+  if (/computer vision|cv|vision|image|3d|slam|lidar|point cloud/.test(t)) skills.push("Computer Vision");
+  if (/nlp|natural language|language model|llm|text|speech|bert|gpt/.test(t)) skills.push("NLP / LLM");
+  if (/reinforcement|rl|self.driv|autonomous|robot/.test(t)) skills.push("Reinforcement Learning");
+  if (/machine learning|ml|deep learning|neural|pytorch|tensorflow/.test(t)) skills.push("ML / Deep Learning");
+  if (/data science|data engineer|analytics|big data|sql|spark/.test(t)) skills.push("Data Science");
+  if (/simulation|physics|hardware/.test(t)) skills.push("Simulation / Physics");
+  if (/software|backend|frontend|fullstack|web|api|cloud/.test(t)) skills.push("Software Engineering");
+  if (/research|paper|phd|scientist/.test(t)) skills.push("Research Methods");
+  // Always add Python if ML-adjacent
+  if (skills.some(s => ["ML / Deep Learning","Computer Vision","NLP / LLM","Reinforcement Learning","Data Science"].includes(s))) {
+    if (!skills.includes("Python")) skills.unshift("Python");
+  }
+  return skills.slice(0, 4); // max 4 tags
+}
+
+const SKILL_COLOR = {
+  "Python": "bg-blue-50 text-blue-700",
+  "Computer Vision": "bg-purple-50 text-purple-700",
+  "NLP / LLM": "bg-indigo-50 text-indigo-700",
+  "Reinforcement Learning": "bg-orange-50 text-orange-700",
+  "ML / Deep Learning": "bg-green-50 text-green-700",
+  "Data Science": "bg-teal-50 text-teal-700",
+  "Simulation / Physics": "bg-yellow-50 text-yellow-700",
+  "Software Engineering": "bg-gray-100 text-gray-600",
+  "Research Methods": "bg-pink-50 text-pink-700",
+};
+
 export default function InternshipList({ items, theme = "default" }) {
   const activeClass = THEME_ACTIVE[theme] ?? THEME_ACTIVE.default;
   const t = useTranslations("internship");
@@ -72,6 +104,19 @@ export default function InternshipList({ items, theme = "default" }) {
                   <p className="mt-1 text-sm text-muted">
                     {item.company}{item.locations?.length ? ` · ${item.locations.join(", ")}` : ""}
                   </p>
+                  {(() => {
+                    const skills = inferSkills(item.title);
+                    if (!skills.length) return null;
+                    return (
+                      <div className="mt-2 flex flex-wrap gap-1">
+                        {skills.map(s => (
+                          <span key={s} className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${SKILL_COLOR[s] || "bg-gray-100 text-gray-600"}`}>
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    );
+                  })()}
                 </a>
               </li>
             ))}
