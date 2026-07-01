@@ -35,10 +35,10 @@ export default function CourseTabs({ tabs }) {
         <button
           key={id}
           onClick={() => scrollTo(id)}
-          className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
+          className={`rounded-full px-4 py-1.5 text-xs font-medium transition whitespace-nowrap ${
             active === id
               ? "bg-red-500 text-white shadow-sm"
-              : "bg-white border border-gray-200 text-muted hover:border-red-300 hover:text-red-700"
+              : "card-surface border border-border text-muted hover:text-foreground"
           }`}
         >
           {label}

@@ -80,7 +80,10 @@
         "Use the early application round — acceptance is easier than later rounds",
         "Practice on Kaggle beginner competitions to prepare",
         "Correlation One offers free prep workshops — attend them"
-      ]
+      ],
+      "difficulty": "Intermediate–Advanced",
+      "opportunityType": "AI Competition",
+      "requirement": "Python + ML Project"
     },
     {
       "id": "google-solution-challenge",
@@ -108,7 +111,10 @@
         "Team up with a college GDSC chapter as a collaborator",
         "Pick one SDG and solve a hyper-local version of the problem",
         "Use Gemini API for rapid NLP features without heavy ML infrastructure"
-      ]
+      ],
+      "difficulty": "Beginner–Advanced",
+      "opportunityType": "Hackathon / SDG",
+      "requirement": "Any Google tech stack"
     },
     {
       "id": "technovation-girls",
@@ -135,7 +141,10 @@
         "Focus on a problem the team personally experiences — judges value authenticity",
         "The business plan section is taken as seriously as the app",
         "Reach out to Technovation ambassadors in your region for mentorship"
-      ]
+      ],
+      "difficulty": "Beginner",
+      "opportunityType": "AI App Challenge",
+      "requirement": "No prior coding required"
     },
     {
       "id": "earth-prize",
@@ -162,7 +171,10 @@
         "Pair AI/ML prediction with real environmental datasets (NASA Earthdata, NOAA)",
         "The implementation plan matters — judges want to see how the prize money would be used",
         "Partner with a local environmental organization to validate your problem framing"
-      ]
+      ],
+      "difficulty": "Intermediate",
+      "opportunityType": "Environmental Research",
+      "requirement": "STEM project + essay"
     },
     {
       "id": "isef",
@@ -190,7 +202,10 @@
         "Find your affiliated regional science fair: societyforscience.org/affiliated-fairs",
         "Research projects (original hypothesis + experimental data) score higher than tool-building projects",
         "Connect with a university professor or lab for mentorship — judges value academic collaboration"
-      ]
+      ],
+      "difficulty": "Advanced",
+      "opportunityType": "Science Fair",
+      "requirement": "Original research project"
     },
     {
       "id": "itu-ai-for-good",
@@ -211,7 +226,10 @@
         "Submit a project proposal months in advance for the student showcase",
         "Frame your project using official UN SDG language — it helps with evaluation criteria",
         "Virtual participation is often free — follow ITU AI for Good on social media for early announcements"
-      ]
+      ],
+      "difficulty": "Beginner–Intermediate",
+      "opportunityType": "AI for Good Summit",
+      "requirement": "AI project proposal"
     }
   ],
   "openSource": [
