@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import InformationFeed from "@/components/InformationFeed";
 import { getInformationFeed } from "@/lib/information";
 
-export const revalidate = 1800; // 30-minute ISR
+export const revalidate = 43200; // 12-hour ISR
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -15,7 +15,7 @@ export default async function InformationPage({ params }) {
   setRequestLocale(locale);
   const t = await getTranslations("information");
 
-  const items = await getInformationFeed({ revalidate: 1800, limit: 200 });
+  const items = await getInformationFeed({ revalidate: 43200, limit: 200 });
 
   return (
     <div className="min-h-screen bg-blue-50">

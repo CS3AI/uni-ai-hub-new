@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ViewCounter from "./ViewCounter";
+import NavLinks from "./NavLinks";
 
 export default async function Navbar() {
   const t = await getTranslations("nav");
@@ -23,17 +24,7 @@ export default async function Navbar() {
           </Link>
           <ViewCounter />
         </div>
-        <nav className="hidden gap-6 text-sm font-medium sm:flex">
-          {LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-muted hover:text-foreground transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
+        <NavLinks links={LINKS} />
         <div className="flex items-center gap-3">
           <span className="hidden sm:block text-xs font-semibold tracking-widest uppercase brand-gradient-text select-none">
             YCM Studio
