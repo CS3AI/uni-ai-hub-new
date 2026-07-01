@@ -47,8 +47,8 @@
   },
   "courses": {
     "eyebrow": "Cursos",
-    "title": "Aprendizaje & Formación",
-    "desc": "Cursos universitarios abiertos, programas de empresas y conferencias seleccionadas de investigadores y expertos en IA.",
+    "title": "Aprendizaje, Investigación y Programas",
+    "desc": "Una guía completa para estudiantes de IA: cursos universitarios, formación empresarial, conferencias, voluntariado, escuelas de verano e investigación.",
     "lastUpdated": "Última actualización",
     "universities": "Universidades",
     "companies": "Empresas",
@@ -138,7 +138,7 @@
     "eyebrow": "Oportunidades",
     "title": "Competencias globales y programas comunitarios",
     "desc": "Competencias globales seleccionadas, proyectos SDG de código abierto y programas reales en California — para estudiantes listos para aplicar sus habilidades de IA a desafíos del mundo real.",
-    "tab1": "Oportunidades globales",
+    "tab1": "Desafíos globales",
     "tab2": "Código abierto y proyectos",
     "tab3": "Acción local (California)",
     "tab4": "Conferencias y Eventos"

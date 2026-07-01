@@ -47,8 +47,8 @@
   },
   "courses": {
     "eyebrow": "Courses",
-    "title": "Learning & Training",
-    "desc": "University open courses, company self-paced programs, and curated lectures from leading AI researchers and industry experts.",
+    "title": "Learning, Research & Programs",
+    "desc": "A complete guide for AI learners: university courses, company training, online lectures, conferences, volunteer programs, summer schools, and research opportunities — all in one place.",
     "lastUpdated": "Last updated",
     "universities": "Universities",
     "companies": "Companies",
@@ -138,7 +138,7 @@
     "eyebrow": "Opportunity",
     "title": "Global Competitions & Community Programs",
     "desc": "Curated global competitions, open-source SDG projects, and real California programs — for students ready to apply AI skills to real-world challenges.",
-    "tab1": "Global Opportunities",
+    "tab1": "Global Challenges",
     "tab2": "Open Source & Projects",
     "tab3": "Local Action (California)",
     "tab4": "Talks & Events"

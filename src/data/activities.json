@@ -24,7 +24,10 @@
         "Join as a team of 2–4 for best results — combine coding, design, and domain expertise",
         "The judging emphasizes real-world impact over technical complexity",
         "Register early — regional capacity fills up"
-      ]
+      ],
+      "difficulty": "Beginner–Intermediate",
+      "opportunityType": "AI Competition",
+      "requirement": "Python / Any ML stack"
     },
     {
       "id": "ioai",
@@ -50,7 +53,10 @@
         "Start preparing with USAAIO past problems: usaaio.org/past-problems",
         "Study linear algebra, probability, and Python ML libraries — the core of the exam",
         "USAAIO registration typically opens in fall — watch their website"
-      ]
+      ],
+      "difficulty": "Advanced",
+      "opportunityType": "Academic Olympiad",
+      "requirement": "Strong Math + ML Theory"
     },
     {
       "id": "apex-ai",

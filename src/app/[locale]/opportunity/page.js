@@ -73,9 +73,20 @@ function GlobalOpportunitiesTab({ tr }) {
             onClick={() => setOpen(open === opp.id ? null : opp.id)}
             className="w-full flex items-start justify-between gap-3 p-4 text-left"
           >
-            <div>
+            <div className="min-w-0">
               <h3 className="font-semibold text-sm leading-tight">{opp.name}</h3>
               <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {opp.difficulty && (
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700">{opp.difficulty}</span>
+                )}
+                {opp.opportunityType && (
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700">{opp.opportunityType}</span>
+                )}
+                {opp.requirement && (
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">{opp.requirement}</span>
+                )}
+              </div>
             </div>
             <span className="text-muted text-xs mt-1 shrink-0">{open === opp.id ? "▲" : "▼"}</span>
           </button>

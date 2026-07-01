@@ -112,7 +112,7 @@ export default function WeeklyDigest({ digest, locale }) {
       <div className="divide-y divide-gray-50">
         {items.map((item, i) => (
           <div key={i} className="p-5 flex gap-4">
-            <span className="shrink-0 w-8 text-2xl font-black text-gray-100 dark:text-gray-800 leading-none pt-0.5 select-none">
+            <span className="shrink-0 w-8 text-2xl font-black text-purple-300 leading-none pt-0.5 select-none">
               {String(item.rank).padStart(2, "0")}
             </span>
             <div className="min-w-0 flex-1">

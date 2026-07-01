@@ -172,18 +172,6 @@
       ]
     },
     {
-      "name": "Stanford HAI / AIMI",
-      "courses": [
-        {
-          "code": "HAI/AIMI",
-          "title": "Human-Centered AI & AI in Medicine and Imaging — Research Lectures & Summer Program",
-          "url": "https://hai.stanford.edu/",
-          "level": "High School Research",
-          "format": "Research Program / Lecture"
-        }
-      ]
-    },
-    {
       "name": "University of California, Irvine",
       "courses": [
         {
@@ -206,18 +194,6 @@
           "url": "https://www.ics.uci.edu/~ihler/courses/cs273a/",
           "level": "Intermediate–Advanced",
           "format": "Open Course Materials"
-        }
-      ]
-    },
-    {
-      "name": "Spirit AI",
-      "courses": [
-        {
-          "code": "Spirit AI",
-          "title": "Spirit AI High School Research Program",
-          "url": "",
-          "level": "High School Research",
-          "format": "Research Program"
         }
       ]
     },
@@ -455,6 +431,51 @@
       "topic": "Deep Learning, RL, AI Safety, Alignment",
       "level": "Intermediate–Advanced",
       "format": "Student Volunteer Program"
+    },
+    {
+      "name": "Google Developer Student Clubs (GDSC) — Lead or Member",
+      "speaker": "Student-led, Google-sponsored",
+      "org": "Google Developers · Global",
+      "url": "https://developers.google.com/community/gdsc",
+      "topic": "AI, Cloud, Mobile, Web — hands-on community projects",
+      "level": "All Levels",
+      "format": "Club Leadership / Volunteer"
+    },
+    {
+      "name": "MLH (Major League Hacking) — Hackathon Organizer / Coach",
+      "speaker": "MLH Community",
+      "org": "Major League Hacking · Global",
+      "url": "https://mlh.io/",
+      "topic": "Hackathon organization, mentoring, and judging",
+      "level": "Intermediate–Advanced",
+      "format": "Volunteer Organizer / Mentor"
+    },
+    {
+      "name": "Code.org — Volunteer Educator & Facilitator",
+      "speaker": "Code.org volunteers",
+      "org": "Code.org · USA",
+      "url": "https://code.org/volunteer",
+      "topic": "CS and AI education outreach for K-12 students",
+      "level": "All Levels",
+      "format": "Volunteer Educator"
+    },
+    {
+      "name": "AI for Good Foundation — Youth Ambassador",
+      "speaker": "ITU / AI for Good team",
+      "org": "AI for Good · UN-affiliated",
+      "url": "https://aiforgood.itu.int/",
+      "topic": "AI policy, SDGs, global development advocacy",
+      "level": "Intermediate–Advanced",
+      "format": "Youth Ambassador / Volunteer"
+    },
+    {
+      "name": "FIRST Robotics — Student Mentor / Alumni Coach",
+      "speaker": "FIRST alumni community",
+      "org": "FIRST · USA",
+      "url": "https://www.firstinspires.org/",
+      "topic": "Robotics, AI systems, STEM mentorship",
+      "level": "Intermediate",
+      "format": "Volunteer Mentor"
     }
   ],
   "summerSchools": [

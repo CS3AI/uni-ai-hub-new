@@ -47,8 +47,8 @@
   },
   "courses": {
     "eyebrow": "Cours",
-    "title": "Apprentissage & Formation",
-    "desc": "Cours universitaires ouverts, programmes d'autoformation d'entreprises et conférences sélectionnées de chercheurs et experts en IA.",
+    "title": "Apprentissage, Recherche & Programmes",
+    "desc": "Un guide complet pour les apprenants en IA : cours universitaires, formations en entreprise, conférences, bénévolat, écoles d'été et opportunités de recherche.",
     "lastUpdated": "Dernière mise à jour",
     "universities": "Universités",
     "companies": "Entreprises",
@@ -138,7 +138,7 @@
     "eyebrow": "Opportunités",
     "title": "Compétitions mondiales & programmes communautaires",
     "desc": "Compétitions mondiales sélectionnées, projets open source SDG et programmes californiens réels — pour les étudiants prêts à appliquer leurs compétences en IA aux défis du monde réel.",
-    "tab1": "Opportunités mondiales",
+    "tab1": "Défis mondiaux",
     "tab2": "Open Source & Projets",
     "tab3": "Action locale (Californie)",
     "tab4": "Conférences & Événements"

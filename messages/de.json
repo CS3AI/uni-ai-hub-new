@@ -47,8 +47,8 @@
   },
   "courses": {
     "eyebrow": "Kurse",
-    "title": "Lernen & Training",
-    "desc": "Offene Universitätskurse, Unternehmenskurse und kuratierte Vorträge von führenden KI-Forschern und Branchenexperten.",
+    "title": "Lernen, Forschung & Programme",
+    "desc": "Ein vollständiger Leitfaden für KI-Lernende: Universitätskurse, Unternehmensschulungen, Vorlesungen, Konferenzen, Freiwilligenprogramme, Sommerschulen und Forschungsmöglichkeiten.",
     "lastUpdated": "Zuletzt aktualisiert",
     "universities": "Universitäten",
     "companies": "Unternehmen",
@@ -138,7 +138,7 @@
     "eyebrow": "Chancen",
     "title": "Globale Wettbewerbe & Community-Programme",
     "desc": "Kuratierte globale Wettbewerbe, Open-Source-SDG-Projekte und echte California-Programme — für Schüler, die KI-Fähigkeiten auf reale Herausforderungen anwenden wollen.",
-    "tab1": "Globale Chancen",
+    "tab1": "Globale Herausforderungen",
     "tab2": "Open Source & Projekte",
     "tab3": "Lokale Aktion (Kalifornien)",
     "tab4": "Talks & Events"
