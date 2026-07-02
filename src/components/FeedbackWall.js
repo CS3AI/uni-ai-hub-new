@@ -39,6 +39,8 @@ export default function FeedbackWall({ title }) {
   const [msg, setMsg]         = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 5;
 
   useEffect(() => {
     // Reactions from localStorage
@@ -227,23 +229,44 @@ export default function FeedbackWall({ title }) {
       {loading ? (
         <p className="mb-4 text-sm text-muted">Loading comments...</p>
       ) : comments.length > 0 ? (
-        <div className="mb-5 space-y-3">
-          {comments.map((c) => (
-            <div key={c.id} className="group relative rounded-xl bg-background/60 px-4 py-3 text-sm">
-              <span className="font-semibold">{c.nick}</span>
-              <span className="ml-2 text-xs text-muted">[{c.date}]</span>
-              {myIds.includes(c.id) && (
-                <button
-                  onClick={() => handleDelete(c.id)}
-                  className="absolute right-3 top-3 hidden group-hover:block text-xs text-muted hover:text-red-500 transition-colors"
-                  title="Delete my comment"
-                >
-                  ✕
-                </button>
-              )}
-              <p className="mt-1 text-muted">{c.msg}</p>
+        <div className="mb-5">
+          <div className="space-y-3">
+            {comments.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).map((c) => (
+              <div key={c.id} className="group relative rounded-xl bg-background/60 px-4 py-3 text-sm">
+                <span className="font-semibold">{c.nick}</span>
+                <span className="ml-2 text-xs text-muted">[{c.date}]</span>
+                {myIds.includes(c.id) && (
+                  <button
+                    onClick={() => handleDelete(c.id)}
+                    className="absolute right-3 top-3 hidden group-hover:block text-xs text-muted hover:text-red-500 transition-colors"
+                    title="Delete my comment"
+                  >
+                    ✕
+                  </button>
+                )}
+                <p className="mt-1 text-muted">{c.msg}</p>
+              </div>
+            ))}
+          </div>
+          {comments.length > PAGE_SIZE && (
+            <div className="mt-3 flex items-center justify-between text-xs text-muted">
+              <button
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page === 1}
+                className="rounded px-2 py-1 border border-border disabled:opacity-30 hover:border-brand-end transition-colors"
+              >
+                ← Prev
+              </button>
+              <span>Page {page} / {Math.ceil(comments.length / PAGE_SIZE)}</span>
+              <button
+                onClick={() => setPage((p) => Math.min(Math.ceil(comments.length / PAGE_SIZE), p + 1))}
+                disabled={page === Math.ceil(comments.length / PAGE_SIZE)}
+                className="rounded px-2 py-1 border border-border disabled:opacity-30 hover:border-brand-end transition-colors"
+              >
+                Next →
+              </button>
             </div>
-          ))}
+          )}
         </div>
       ) : null}
 
