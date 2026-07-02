@@ -1,10 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const STORAGE_KEY  = "uah-comments";
-const COUNTS_KEY   = "uah-reaction-counts";
-const VOTED_KEY    = "uah-reactions-voted";
-const NAMESPACE    = "uni-ai-hub-ycm";
+const COUNTS_KEY  = "uah-reaction-counts";
+const VOTED_KEY   = "uah-reactions-voted";
+const NAMESPACE   = "uni-ai-hub-ycm";
+
+const SUPABASE_URL = "https://nonehrshbqcbpiamvzdk.supabase.co";
+const SUPABASE_KEY = "sb_publishable_fw2HpLPV7a7YLM0BSZEfaw_dA92klMu";
 
 const REACTIONS = [
   { id: "react-like",   emoji: "👍", label: "Like" },
@@ -22,9 +24,10 @@ export default function FeedbackWall({ title }) {
   const [nick, setNick]     = useState("");
   const [msg, setMsg]       = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load from localStorage synchronously
+    // Load reaction counts from localStorage
     try {
       const c = JSON.parse(localStorage.getItem(COUNTS_KEY) || "{}");
       setCounts((prev) => ({ ...prev, ...c }));
@@ -33,12 +36,8 @@ export default function FeedbackWall({ title }) {
       const v = JSON.parse(localStorage.getItem(VOTED_KEY) || "{}");
       setVoted(v);
     } catch {}
-    try {
-      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-      setComments(saved);
-    } catch {}
 
-    // Silently sync with counterapi in background (best-effort, no await)
+    // Silently sync reaction counts with counterapi
     REACTIONS.forEach((r) => {
       fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${r.id}`)
         .then((res) => res.ok ? res.json() : null)
@@ -46,7 +45,6 @@ export default function FeedbackWall({ title }) {
           if (data?.count != null) {
             setCounts((prev) => {
               const remote = data.count;
-              // Only use remote if it's higher (prevents reset)
               if (remote > (prev[r.id] ?? 0)) {
                 const merged = { ...prev, [r.id]: remote };
                 try { localStorage.setItem(COUNTS_KEY, JSON.stringify(merged)); } catch {}
@@ -58,10 +56,43 @@ export default function FeedbackWall({ title }) {
         })
         .catch(() => {});
     });
+
+    // Load comments from Supabase (shared across all users)
+    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments?order=created_at.desc&limit=50`, {
+      headers: {
+        apikey: SUPABASE_KEY,
+        Authorization: `Bearer ${SUPABASE_KEY}`,
+      },
+    })
+      .then((res) => res.ok ? res.json() : [])
+      .then((data) => {
+        if (Array.isArray(data)) {
+          const parsed = data.map((row) => {
+            try {
+              const obj = JSON.parse(row.message);
+              return {
+                id: row.id,
+                nick: obj.nick || "Anonymous",
+                msg: obj.msg || row.message,
+                date: row.created_at?.slice(0, 7) ?? "",
+              };
+            } catch {
+              return {
+                id: row.id,
+                nick: "Anonymous",
+                msg: row.message,
+                date: row.created_at?.slice(0, 7) ?? "",
+              };
+            }
+          });
+          setComments(parsed);
+        }
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
   }, []);
 
   function handleReact(reaction) {
-    // Already voted → ignore
     if (voted[reaction.id]) return;
 
     const newCounts = { ...counts, [reaction.id]: (counts[reaction.id] ?? 0) + 1 };
@@ -75,23 +106,36 @@ export default function FeedbackWall({ title }) {
       localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
     } catch {}
 
-    // Fire-and-forget to counterapi
     fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/up`).catch(() => {});
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (!msg.trim()) return;
-    const now  = new Date();
-    const date = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
-    const entry = { nick: nick.trim() || "Anonymous", date, msg: msg.trim() };
-    const next  = [...comments, entry];
-    setComments(next);
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch {}
+
+    const nickVal = nick.trim() || "Anonymous";
+    const msgVal  = msg.trim();
+    const date    = new Date().toISOString().slice(0, 7);
+
+    // Optimistic update
+    const optimistic = { id: Date.now(), nick: nickVal, msg: msgVal, date };
+    setComments((prev) => [optimistic, ...prev]);
     setNick("");
     setMsg("");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
+
+    // Persist to Supabase
+    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments`, {
+      method: "POST",
+      headers: {
+        apikey: SUPABASE_KEY,
+        Authorization: `Bearer ${SUPABASE_KEY}`,
+        "Content-Type": "application/json",
+        Prefer: "return=minimal",
+      },
+      body: JSON.stringify({ message: JSON.stringify({ nick: nickVal, msg: msgVal }) }),
+    }).catch(() => {});
   }
 
   return (
@@ -119,17 +163,19 @@ export default function FeedbackWall({ title }) {
       </div>
 
       {/* Comment Feed */}
-      {comments.length > 0 && (
+      {loading ? (
+        <p className="mb-4 text-sm text-muted">Loading comments...</p>
+      ) : comments.length > 0 ? (
         <div className="mb-5 space-y-3">
-          {comments.map((c, idx) => (
-            <div key={idx} className="rounded-xl bg-background/60 px-4 py-3 text-sm">
+          {comments.map((c) => (
+            <div key={c.id} className="rounded-xl bg-background/60 px-4 py-3 text-sm">
               <span className="font-semibold">{c.nick}</span>
               <span className="ml-2 text-xs text-muted">[{c.date}]</span>
               <p className="mt-1 text-muted">{c.msg}</p>
             </div>
           ))}
         </div>
-      )}
+      ) : null}
 
       {/* Submit Form */}
       <form onSubmit={handleSubmit} className="space-y-2">
@@ -159,7 +205,7 @@ export default function FeedbackWall({ title }) {
           </button>
           {submitted && <span className="text-sm text-green-600 font-medium">Posted!</span>}
         </div>
-        <p className="text-xs text-muted">Stored locally on your device only.</p>
+        <p className="text-xs text-muted">Comments are shared with all visitors.</p>
       </form>
     </div>
   );
