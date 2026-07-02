@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const COUNTS_KEY  = "uah-reaction-counts";
-const VOTED_KEY   = "uah-reactions-voted";
+const VOTED_KEY   = "uah-reactions-voted-v2";
 const NAMESPACE   = "uni-ai-hub-ycm";
 
 const SUPABASE_URL = "https://nonehrshbqcbpiamvzdk.supabase.co";
@@ -194,7 +194,7 @@ export default function FeedbackWall({ title }) {
           placeholder="Share a thought, tip, or experience..."
           rows={3}
           className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:border-brand-end resize-none"
-          maxLength={300}
+          maxLength={800}
         />
         <div className="flex items-center gap-3">
           <button
