@@ -1,9 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const COUNTS_KEY  = "uah-reaction-counts";
-const VOTED_KEY   = "uah-reactions-voted-v2";
-const NAMESPACE   = "uni-ai-hub-ycm";
+const COUNTS_KEY   = "uah-reaction-counts";
+const VOTED_KEY    = "uah-reactions-voted-v2";
+const MY_IDS_KEY   = "uah-my-comment-ids";
+const SESSION_KEY  = "uah-session-token";
+const NAMESPACE    = "uni-ai-hub-ycm";
 
 const SUPABASE_URL = "https://nonehrshbqcbpiamvzdk.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vbmVocnNoYnFjYnBpYW12emRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI5NDg4MjUsImV4cCI6MjA5ODUyNDgyNX0.9OfnQumldllJEeM4XTQPfXHw6fmek8zSuJEFL6LaoIU";
@@ -17,17 +19,29 @@ const REACTIONS = [
 
 const INIT_COUNTS = Object.fromEntries(REACTIONS.map((r) => [r.id, 0]));
 
+function getOrCreateSession() {
+  try {
+    let token = localStorage.getItem(SESSION_KEY);
+    if (!token) {
+      token = crypto.randomUUID();
+      localStorage.setItem(SESSION_KEY, token);
+    }
+    return token;
+  } catch { return "anon"; }
+}
+
 export default function FeedbackWall({ title }) {
-  const [counts, setCounts] = useState(INIT_COUNTS);
-  const [voted, setVoted]   = useState({});
+  const [counts, setCounts]   = useState(INIT_COUNTS);
+  const [voted, setVoted]     = useState({});
   const [comments, setComments] = useState([]);
-  const [nick, setNick]     = useState("");
-  const [msg, setMsg]       = useState("");
+  const [myIds, setMyIds]     = useState([]);
+  const [nick, setNick]       = useState("");
+  const [msg, setMsg]         = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load reaction counts from localStorage
+    // Reactions from localStorage
     try {
       const c = JSON.parse(localStorage.getItem(COUNTS_KEY) || "{}");
       setCounts((prev) => ({ ...prev, ...c }));
@@ -36,8 +50,12 @@ export default function FeedbackWall({ title }) {
       const v = JSON.parse(localStorage.getItem(VOTED_KEY) || "{}");
       setVoted(v);
     } catch {}
+    try {
+      const ids = JSON.parse(localStorage.getItem(MY_IDS_KEY) || "[]");
+      setMyIds(ids);
+    } catch {}
 
-    // Silently sync reaction counts with counterapi
+    // Sync reaction counts from counterapi (best-effort)
     REACTIONS.forEach((r) => {
       fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${r.id}`)
         .then((res) => res.ok ? res.json() : null)
@@ -57,8 +75,8 @@ export default function FeedbackWall({ title }) {
         .catch(() => {});
     });
 
-    // Load comments from Supabase (shared across all users)
-    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments?order=created_at.desc&limit=50`, {
+    // Load visible comments from Supabase
+    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments?visible=eq.true&order=created_at.desc&limit=50`, {
       headers: {
         apikey: SUPABASE_KEY,
         Authorization: `Bearer ${SUPABASE_KEY}`,
@@ -70,19 +88,9 @@ export default function FeedbackWall({ title }) {
           const parsed = data.map((row) => {
             try {
               const obj = JSON.parse(row.message);
-              return {
-                id: row.id,
-                nick: obj.nick || "Anonymous",
-                msg: obj.msg || row.message,
-                date: row.created_at?.slice(0, 7) ?? "",
-              };
+              return { id: row.id, nick: obj.nick || "Anonymous", msg: obj.msg || row.message, date: row.created_at?.slice(0, 7) ?? "" };
             } catch {
-              return {
-                id: row.id,
-                nick: "Anonymous",
-                msg: row.message,
-                date: row.created_at?.slice(0, 7) ?? "",
-              };
+              return { id: row.id, nick: "Anonymous", msg: row.message, date: row.created_at?.slice(0, 7) ?? "" };
             }
           });
           setComments(parsed);
@@ -93,48 +101,99 @@ export default function FeedbackWall({ title }) {
   }, []);
 
   function handleReact(reaction) {
-    if (voted[reaction.id]) return;
+    const alreadyVoted = !!voted[reaction.id];
 
-    const newCounts = { ...counts, [reaction.id]: (counts[reaction.id] ?? 0) + 1 };
-    const newVoted  = { ...voted, [reaction.id]: true };
-
-    setCounts(newCounts);
-    setVoted(newVoted);
-
-    try {
-      localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts));
-      localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
-    } catch {}
-
-    fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/up`).catch(() => {});
+    if (alreadyVoted) {
+      // Undo vote
+      const newCounts = { ...counts, [reaction.id]: Math.max(0, (counts[reaction.id] ?? 1) - 1) };
+      const newVoted  = { ...voted };
+      delete newVoted[reaction.id];
+      setCounts(newCounts);
+      setVoted(newVoted);
+      try {
+        localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts));
+        localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
+      } catch {}
+      fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/down`).catch(() => {});
+    } else {
+      // Add vote
+      const newCounts = { ...counts, [reaction.id]: (counts[reaction.id] ?? 0) + 1 };
+      const newVoted  = { ...voted, [reaction.id]: true };
+      setCounts(newCounts);
+      setVoted(newVoted);
+      try {
+        localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts));
+        localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
+      } catch {}
+      fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/up`).catch(() => {});
+    }
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
     if (!msg.trim()) return;
 
+    const sessionToken = getOrCreateSession();
     const nickVal = nick.trim() || "Anonymous";
     const msgVal  = msg.trim();
     const date    = new Date().toISOString().slice(0, 7);
+    const tempId  = Date.now();
 
     // Optimistic update
-    const optimistic = { id: Date.now(), nick: nickVal, msg: msgVal, date };
-    setComments((prev) => [optimistic, ...prev]);
+    setComments((prev) => [{ id: tempId, nick: nickVal, msg: msgVal, date }, ...prev]);
+    setMyIds((prev) => {
+      const next = [...prev, tempId];
+      try { localStorage.setItem(MY_IDS_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
     setNick("");
     setMsg("");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
 
     // Persist to Supabase
-    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments`, {
-      method: "POST",
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/feedback_comments`, {
+        method: "POST",
+        headers: {
+          apikey: SUPABASE_KEY,
+          Authorization: `Bearer ${SUPABASE_KEY}`,
+          "Content-Type": "application/json",
+          Prefer: "return=representation",
+        },
+        body: JSON.stringify({
+          message: JSON.stringify({ nick: nickVal, msg: msgVal }),
+          session_token: sessionToken,
+        }),
+      });
+      if (res.ok) {
+        const [saved] = await res.json();
+        if (saved?.id) {
+          // Replace temp id with real id
+          setComments((prev) => prev.map((c) => c.id === tempId ? { ...c, id: saved.id } : c));
+          setMyIds((prev) => {
+            const next = prev.map((id) => id === tempId ? saved.id : id);
+            try { localStorage.setItem(MY_IDS_KEY, JSON.stringify(next)); } catch {}
+            return next;
+          });
+        }
+      }
+    } catch {}
+  }
+
+  async function handleDelete(commentId) {
+    setComments((prev) => prev.filter((c) => c.id !== commentId));
+    setMyIds((prev) => {
+      const next = prev.filter((id) => id !== commentId);
+      try { localStorage.setItem(MY_IDS_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
+    fetch(`${SUPABASE_URL}/rest/v1/feedback_comments?id=eq.${commentId}`, {
+      method: "DELETE",
       headers: {
         apikey: SUPABASE_KEY,
         Authorization: `Bearer ${SUPABASE_KEY}`,
-        "Content-Type": "application/json",
-        Prefer: "return=minimal",
       },
-      body: JSON.stringify({ message: JSON.stringify({ nick: nickVal, msg: msgVal }) }),
     }).catch(() => {});
   }
 
@@ -150,16 +209,18 @@ export default function FeedbackWall({ title }) {
             <button
               key={r.id}
               onClick={() => handleReact(r)}
-              className={`flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all
+              title={voted[r.id] ? "Click to undo" : r.label}
+              className={`flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all cursor-pointer
                 ${voted[r.id]
                   ? "border-brand-end bg-brand-end/10 text-brand-end"
-                  : "border-border hover:border-brand-end hover:bg-brand-end/5 cursor-pointer"}`}
+                  : "border-border hover:border-brand-end hover:bg-brand-end/5"}`}
             >
               <span className="text-base">{r.emoji}</span>
               <span>{counts[r.id] > 0 ? counts[r.id] : "—"}</span>
             </button>
           ))}
         </div>
+        <p className="mt-1.5 text-xs text-muted">Click again to undo</p>
       </div>
 
       {/* Comment Feed */}
@@ -168,9 +229,18 @@ export default function FeedbackWall({ title }) {
       ) : comments.length > 0 ? (
         <div className="mb-5 space-y-3">
           {comments.map((c) => (
-            <div key={c.id} className="rounded-xl bg-background/60 px-4 py-3 text-sm">
+            <div key={c.id} className="group relative rounded-xl bg-background/60 px-4 py-3 text-sm">
               <span className="font-semibold">{c.nick}</span>
               <span className="ml-2 text-xs text-muted">[{c.date}]</span>
+              {myIds.includes(c.id) && (
+                <button
+                  onClick={() => handleDelete(c.id)}
+                  className="absolute right-3 top-3 hidden group-hover:block text-xs text-muted hover:text-red-500 transition-colors"
+                  title="Delete my comment"
+                >
+                  ✕
+                </button>
+              )}
               <p className="mt-1 text-muted">{c.msg}</p>
             </div>
           ))}
