@@ -6,7 +6,7 @@ const VOTED_KEY   = "uah-reactions-voted";
 const NAMESPACE   = "uni-ai-hub-ycm";
 
 const SUPABASE_URL = "https://nonehrshbqcbpiamvzdk.supabase.co";
-const SUPABASE_KEY = "sb_publishable_fw2HpLPV7a7YLM0BSZEfaw_dA92klMu";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vbmVocnNoYnFjYnBpYW12emRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI5NDg4MjUsImV4cCI6MjA5ODUyNDgyNX0.9OfnQumldllJEeM4XTQPfXHw6fmek8zSuJEFL6LaoIU";
 
 const REACTIONS = [
   { id: "react-like",   emoji: "👍", label: "Like" },
