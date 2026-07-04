@@ -74,22 +74,27 @@ export default async function CoursesPage({ params }) {
         <Section id="universities" title={t("universities")}>
           <div className="grid gap-4 sm:grid-cols-2">
             {data.universities.map((uni) => (
-              <div key={uni.name} className="card-surface rounded-xl p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <LogoImg src={uni.logo} alt={uni.name} />
-                  <h3 className="font-semibold text-sm leading-tight">{uni.name}</h3>
+              <div key={uni.name} className="card-surface rounded-xl overflow-hidden flex">
+                <LogoImg
+                  src={uni.logo}
+                  alt={uni.name}
+                  wrapperClass="w-24 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+                  className="w-16 h-16"
+                />
+                <div className="flex-1 p-4">
+                  <h3 className="font-bold text-base leading-tight mb-2">{uni.name}</h3>
+                  <ul className="space-y-2">
+                    {uni.courses.map((c, idx) => (
+                      <li key={idx} className="text-sm">
+                        <CourseLink url={c.url} title={`${c.code ? c.code + " · " : ""}${c.title}`} />
+                        <div className="mt-1 flex flex-wrap gap-1.5">
+                          {c.level && <ColorTag color={levelColor(c.level)}>{c.level}</ColorTag>}
+                          {c.format && <ColorTag color={formatColor(c.format)}>{c.format}</ColorTag>}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="mt-2 space-y-2">
-                  {uni.courses.map((c, idx) => (
-                    <li key={idx} className="text-sm">
-                      <CourseLink url={c.url} title={`${c.code ? c.code + " · " : ""}${c.title}`} />
-                      <div className="mt-1 flex flex-wrap gap-1.5">
-                        {c.level && <ColorTag color={levelColor(c.level)}>{c.level}</ColorTag>}
-                        {c.format && <ColorTag color={formatColor(c.format)}>{c.format}</ColorTag>}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -98,23 +103,28 @@ export default async function CoursesPage({ params }) {
         <Section id="companies" title={t("companies")}>
           <div className="grid gap-4 sm:grid-cols-2">
             {data.companies.map((co) => (
-              <div key={co.name} className="card-surface rounded-xl p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <LogoImg src={co.logo} alt={co.name} />
-                  <h3 className="font-semibold text-sm leading-tight">{co.name}</h3>
+              <div key={co.name} className="card-surface rounded-xl overflow-hidden flex">
+                <LogoImg
+                  src={co.logo}
+                  alt={co.name}
+                  wrapperClass="w-24 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+                  className="w-16 h-16"
+                />
+                <div className="flex-1 p-4">
+                  <h3 className="font-bold text-base leading-tight mb-2">{co.name}</h3>
+                  <ul className="space-y-2">
+                    {co.programs.map((p, idx) => (
+                      <li key={idx} className="text-sm">
+                        <CourseLink url={p.url} title={p.title} />
+                        {p.format && (
+                          <div className="mt-1">
+                            <ColorTag color={formatColor(p.format)}>{p.format}</ColorTag>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="mt-2 space-y-2">
-                  {co.programs.map((p, idx) => (
-                    <li key={idx} className="text-sm">
-                      <CourseLink url={p.url} title={p.title} />
-                      {p.format && (
-                        <div className="mt-1">
-                          <ColorTag color={formatColor(p.format)}>{p.format}</ColorTag>
-                        </div>
-                      )}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>

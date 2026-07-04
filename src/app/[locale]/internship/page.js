@@ -77,15 +77,20 @@ export default async function InternshipPage({ params }) {
         <Section title={t("referralOpportunities")}>
           <div className="grid gap-4 sm:grid-cols-2">
             {REFERRALS.map((r, idx) => (
-              <div key={idx} className="card-surface rounded-xl p-4">
-                <div className="flex items-center gap-2 mb-1">
-                  <LogoImg src={r.logo} alt={r.company} size={24} />
-                  <h3 className="font-semibold text-sm">
+              <div key={idx} className="card-surface rounded-xl overflow-hidden flex">
+                <LogoImg
+                  src={r.logo}
+                  alt={r.company}
+                  wrapperClass="w-24 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+                  className="w-14 h-14"
+                />
+                <div className="flex-1 p-4">
+                  <h3 className="font-bold text-base mb-1">
                     <a href={r.url} target="_blank" rel="noopener noreferrer"
                       className="hover:text-brand-end hover:underline">{r.company}</a>
                   </h3>
+                  <p className="text-sm text-muted">{r.note}</p>
                 </div>
-                <p className="mt-1 text-sm text-muted">{r.note}</p>
               </div>
             ))}
           </div>
