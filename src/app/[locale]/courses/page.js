@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import CourseTabs from "@/components/CourseTabs";
 import LogoImg from "@/components/LogoImg";
 import { getCoursesData } from "@/lib/courses";
+import { UniCourseList, CompanyProgramList } from "@/components/CourseAccordion";
 
 export const revalidate = 600;
 
@@ -83,17 +84,7 @@ export default async function CoursesPage({ params }) {
                 />
                 <div className="flex-1 p-4">
                   <h3 className="font-bold text-base leading-tight mb-2">{uni.name}</h3>
-                  <ul className="space-y-2">
-                    {uni.courses.map((c, idx) => (
-                      <li key={idx} className="text-sm">
-                        <CourseLink url={c.url} title={`${c.code ? c.code + " · " : ""}${c.title}`} />
-                        <div className="mt-1 flex flex-wrap gap-1.5">
-                          {c.level && <ColorTag color={levelColor(c.level)}>{c.level}</ColorTag>}
-                          {c.format && <ColorTag color={formatColor(c.format)}>{c.format}</ColorTag>}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
+                  <UniCourseList courses={uni.courses} />
                 </div>
               </div>
             ))}
@@ -112,18 +103,7 @@ export default async function CoursesPage({ params }) {
                 />
                 <div className="flex-1 p-4">
                   <h3 className="font-bold text-base leading-tight mb-2">{co.name}</h3>
-                  <ul className="space-y-2">
-                    {co.programs.map((p, idx) => (
-                      <li key={idx} className="text-sm">
-                        <CourseLink url={p.url} title={p.title} />
-                        {p.format && (
-                          <div className="mt-1">
-                            <ColorTag color={formatColor(p.format)}>{p.format}</ColorTag>
-                          </div>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
+                  <CompanyProgramList programs={co.programs} />
                 </div>
               </div>
             ))}

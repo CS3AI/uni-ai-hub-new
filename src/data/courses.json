@@ -9,21 +9,24 @@
           "title": "Natural Language Processing with Deep Learning",
           "url": "https://web.stanford.edu/class/cs224n/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "The gold-standard NLP course — covers transformers, attention, BERT, and GPT from first principles. Lectures and assignments freely available online."
         },
         {
           "code": "CS231N",
           "title": "Deep Learning for Computer Vision",
           "url": "http://cs231n.stanford.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Stanford's definitive computer vision course. Covers CNNs, object detection, image segmentation, and generative models using PyTorch."
         },
         {
           "code": "CRAFT",
           "title": "CRAFT / Code in Place",
           "url": "https://craft.stanford.edu/",
           "level": "Beginner–Advanced",
-          "format": "Teaching Program"
+          "format": "Teaching Program",
+          "desc": "Stanford's free online teaching program. Learn Python fundamentals through interactive problem-solving, led by Stanford instructors — ideal for true beginners."
         }
       ],
       "logo": "https://icon.horse/icon/stanford.edu"
@@ -36,21 +39,24 @@
           "title": "OpenCourseWare · Artificial Intelligence",
           "url": "https://ocw.mit.edu/",
           "level": "All Ages",
-          "format": "Open Courseware"
+          "format": "Open Courseware",
+          "desc": "Free access to MIT's complete AI course materials — lecture notes, assignments, and exams covering search, knowledge representation, ML, and robotics."
         },
         {
           "code": "OLL",
           "title": "Open Learning Library",
           "url": "https://openlearninglibrary.mit.edu/",
           "level": "All Ages",
-          "format": "Open Courseware"
+          "format": "Open Courseware",
+          "desc": "Interactive MIT courses with auto-graded exercises covering probability, linear algebra, and introductory ML — all foundational for AI study."
         },
         {
           "code": "Horizon",
           "title": "Horizon · AI Frontiers Seminar",
           "url": "https://horizon.mit.edu/",
           "level": "Advanced",
-          "format": "Seminar Program"
+          "format": "Seminar Program",
+          "desc": "MIT's cutting-edge AI seminar series bringing researchers and industry leaders together on frontier topics: AI safety, foundation models, and policy."
         }
       ],
       "logo": "https://icon.horse/icon/mit.edu"
@@ -63,28 +69,32 @@
           "title": "Introduction to Artificial Intelligence",
           "url": "https://inst.eecs.berkeley.edu/~cs188/",
           "level": "Beginner–Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "One of the most widely taken AI courses globally. Covers search algorithms, MDPs, Bayesian networks, and RL with hands-on Python projects."
         },
         {
           "code": "CS189",
           "title": "Introduction to Machine Learning",
           "url": "https://people.eecs.berkeley.edu/~jrs/189/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Rigorous introduction to ML theory — SVMs, neural networks, and dimensionality reduction. Assumes strong linear algebra and probability."
         },
         {
           "code": "CS285",
           "title": "Deep Reinforcement Learning",
           "url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
           "level": "Advanced",
-          "format": "Open Lecture Videos"
+          "format": "Open Lecture Videos",
+          "desc": "Deep reinforcement learning by Sergey Levine. Covers policy gradients, model-based RL, and offline RL — one of the best free RL courses online."
         },
         {
           "code": "CS294-196",
           "title": "Large Language Models: Foundations and Applications",
           "url": "https://llmsfoundations.github.io/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Berkeley's course on large language models — pretraining, fine-tuning, RLHF, and agents. Covers the full LLM stack from first principles."
         }
       ],
       "logo": "https://icon.horse/icon/berkeley.edu"
@@ -97,21 +107,24 @@
           "title": "Machine Learning",
           "url": "https://uclaml.github.io/",
           "level": "Intermediate–Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Intro to ML covering regression, classification, neural networks, and clustering. Balances theory with practical Python implementation."
         },
         {
           "code": "CS 161",
           "title": "Fundamentals of Artificial Intelligence",
           "url": "https://www.cs.ucla.edu/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Surveys core AI topics: search, constraint satisfaction, game playing, probabilistic reasoning, and planning."
         },
         {
           "code": "IPAM",
           "title": "IPAM Machine Learning Programs & Research Workshops",
           "url": "https://www.ipam.ucla.edu/",
           "level": "Advanced",
-          "format": "Research Program / Workshop"
+          "format": "Research Program / Workshop",
+          "desc": "UCLA's Institute for Pure and Applied Mathematics — workshops and programs connecting mathematical research with ML applications."
         }
       ],
       "logo": "https://icon.horse/icon/ucla.edu"
@@ -124,21 +137,24 @@
           "title": "Introduction to AI: Probabilistic Reasoning and Decision-Making",
           "url": "https://cse.ucsd.edu/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Probabilistic AI — Bayesian networks, HMMs, MDPs, and decision theory. Great for understanding the math behind real-world AI systems."
         },
         {
           "code": "CSE 158",
           "title": "Recommender Systems and Web Mining",
           "url": "https://cseweb.ucsd.edu/classes/fa23/cse258-a/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Focus on recommendation systems — collaborative filtering, matrix factorization, and web-scale ML. Highly practical with real datasets."
         },
         {
           "code": "HDSI",
           "title": "Halicioglu Data Science Institute — Programs & Resources",
           "url": "https://hdsi.ucsd.edu/",
           "level": "Beginner–Advanced",
-          "format": "Research Program / Open Resources"
+          "format": "Research Program / Open Resources",
+          "desc": "UCSD's Halicioglu Data Science Institute — cross-disciplinary resources covering data wrangling, visualization, and applied ML projects."
         }
       ],
       "logo": "https://icon.horse/icon/ucsd.edu"
@@ -151,28 +167,32 @@
           "title": "CS50's Introduction to Artificial Intelligence with Python",
           "url": "https://cs50.harvard.edu/ai/",
           "level": "Beginner",
-          "format": "Free Online Course (edX)"
+          "format": "Free Online Course (edX)",
+          "desc": "Harvard's famous CS50 adapted for AI. Covers search, classification, optimization, and neural networks in Python — ideal for motivated beginners."
         },
         {
           "code": "CS109a",
           "title": "Data Science 1: Introduction to Data Science",
           "url": "https://harvard-iacs.github.io/2022-CS109A/",
           "level": "Intermediate",
-          "format": "Free Online Materials"
+          "format": "Free Online Materials",
+          "desc": "Harvard's intro data science track — statistical learning, regression, classification, and cross-validation with Python. Lecture videos fully public."
         },
         {
           "code": "CS182",
           "title": "Designing, Visualizing and Understanding Deep Neural Networks",
           "url": "https://cs182sp21.github.io/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Covers CNNs, RNNs, transformers, and interpretability with a focus on building deep intuition for modern neural network architectures."
         },
         {
           "code": "STAT195",
           "title": "Statistical Machine Learning",
           "url": "https://harvard.edu",
           "level": "Advanced",
-          "format": "Open Lecture Notes"
+          "format": "Open Lecture Notes",
+          "desc": "Graduate-level statistical ML — kernel methods, boosting, PAC learning, and Bayesian methods. Great for theory-oriented learners."
         }
       ],
       "logo": "https://icon.horse/icon/harvard.edu"
@@ -185,21 +205,24 @@
           "title": "UCI ICS Open AI Resources & Summer School",
           "url": "https://www.ics.uci.edu/",
           "level": "High School",
-          "format": "Summer School / Open Resources"
+          "format": "Summer School / Open Resources",
+          "desc": "UCI's AI resource hub — open course materials and summer programs for undergraduate and high school students interested in AI."
         },
         {
           "code": "CS171",
           "title": "Introduction to Artificial Intelligence",
           "url": "https://www.ics.uci.edu/~rickl/courses/cs-171/",
           "level": "Beginner–Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Accessible survey of AI methods — search, logic, probabilistic reasoning, and ML fundamentals for undergraduates."
         },
         {
           "code": "CS273A",
           "title": "Machine Learning",
           "url": "https://www.ics.uci.edu/~ihler/courses/cs273a/",
           "level": "Intermediate–Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Applied ML focusing on practical techniques: scikit-learn, cross-validation, feature engineering, and model evaluation on real datasets."
         }
       ],
       "logo": "https://icon.horse/icon/uci.edu"
@@ -212,21 +235,24 @@
           "title": "Machine Learning",
           "url": "https://courses.cs.washington.edu/courses/cse446/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "UW's core ML course — supervised and unsupervised learning, regularization, and deep learning with a strong mathematical foundation."
         },
         {
           "code": "CSE599",
           "title": "Deep Learning",
           "url": "https://courses.cs.washington.edu/courses/cse599/",
           "level": "Advanced",
-          "format": "Open Lecture Notes"
+          "format": "Open Lecture Notes",
+          "desc": "Deep learning covering modern architectures, training techniques, and applications in vision and language."
         },
         {
           "code": "CSE484",
           "title": "Computer Security & AI Applications",
           "url": "https://courses.cs.washington.edu/courses/cse484/",
           "level": "Intermediate–Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Explores the intersection of computer security and AI — adversarial attacks, privacy-preserving ML, and secure system design."
         }
       ],
       "logo": "https://icon.horse/icon/washington.edu"
@@ -239,21 +265,24 @@
           "title": "Machine Learning",
           "url": "https://www.cs.jhu.edu/~phi/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Core ML algorithms — linear and logistic regression, SVMs, decision trees, and neural networks. Rigorous and mathematically thorough."
         },
         {
           "code": "EN.601.482",
           "title": "Machine Learning: Deep Learning",
           "url": "https://deep.cs.jhu.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Deep learning covering CNNs, RNNs, attention mechanisms, and generative models. Builds directly on the ML fundamentals course."
         },
         {
           "code": "EN.553.740",
           "title": "Machine Learning for Medical Applications",
           "url": "https://www.bme.jhu.edu/",
           "level": "Advanced",
-          "format": "Open Lecture Notes"
+          "format": "Open Lecture Notes",
+          "desc": "ML techniques applied to medical imaging, clinical data, and genomics. Ideal for students interested in healthcare and biomedical AI."
         }
       ],
       "logo": "https://icon.horse/icon/jhu.edu"
@@ -267,21 +296,24 @@
           "title": "Introduction to Deep Learning",
           "url": "https://deeplearning.cs.cmu.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "CMU's flagship deep learning course — backpropagation, CNNs, RNNs, and advanced architectures with rigorous programming projects."
         },
         {
           "code": "10-601",
           "title": "Introduction to Machine Learning",
           "url": "https://www.cs.cmu.edu/~ninamf/courses/601sp15/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Classic ML theory and practice: Bayesian learning, decision trees, SVMs, and PAC learning. One of CMU's most popular courses."
         },
         {
           "code": "15-281",
           "title": "AI: Representation & Problem Solving",
           "url": "https://www.cs.cmu.edu/~15281/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "AI fundamentals — search, game trees, constraint satisfaction, and probabilistic graphical models with strong CS focus."
         }
       ]
     },
@@ -294,21 +326,24 @@
           "title": "Introduction to Machine Learning",
           "url": "https://www.cs.princeton.edu/courses/archive/spring23/cos324/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Princeton's intro ML: regression, classification, clustering, and neural networks with clear mathematical exposition."
         },
         {
           "code": "COS 484",
           "title": "Natural Language Processing",
           "url": "https://cos484.github.io/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "NLP fundamentals — text classification, language models, sequence labeling, and neural approaches to language understanding."
         },
         {
           "code": "COS 598D",
           "title": "Machine Learning Theory",
           "url": "https://www.cs.princeton.edu/courses/archive/fall23/cos598D/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Graduate seminar on ML theory — generalization bounds, VC dimension, and algorithmic stability for advanced learners."
         }
       ]
     },
@@ -321,21 +356,24 @@
           "title": "Machine Learning for Intelligent Systems",
           "url": "https://www.cs.cornell.edu/courses/cs4780/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "ML for intelligent systems — supervised learning, kernel methods, and probabilistic models. Core part of Cornell's AI curriculum."
         },
         {
           "code": "CS 5740",
           "title": "Natural Language Processing",
           "url": "https://www.cs.cornell.edu/courses/cs5740/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "NLP covering parsing, semantics, machine translation, and neural language models with strong theoretical grounding."
         },
         {
           "code": "CS 4756",
           "title": "Robot Learning",
           "url": "https://www.cs.cornell.edu/courses/cs4756/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Robot learning — imitation learning, reinforcement learning for robotics, and sim-to-real transfer techniques."
         }
       ]
     },
@@ -348,21 +386,24 @@
           "title": "Deep Learning for Computer Vision",
           "url": "https://web.eecs.umich.edu/~justincj/teaching/eecs498/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Michigan's deep learning for vision course by Justin Johnson (co-creator of CS231N). Covers CNNs, detection, segmentation, and generation."
         },
         {
           "code": "EECS 445",
           "title": "Introduction to Machine Learning",
           "url": "https://eecs445-f16.github.io/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Core ML course with Python labs — regression, SVMs, neural networks, and unsupervised learning methods."
         },
         {
           "code": "SI 670",
           "title": "Applied Machine Learning",
           "url": "https://www.si.umich.edu/programs/courses/670",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Applied ML for information and data science students — feature engineering, model selection, and real-world project deployment."
         }
       ]
     },
@@ -375,21 +416,24 @@
           "title": "Machine Learning",
           "url": "https://omscs.gatech.edu/cs-7641-machine-learning",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "ML course by Charles Isbell covering supervised, unsupervised, and reinforcement learning with a focus on algorithmic thinking."
         },
         {
           "code": "CS 7643",
           "title": "Deep Learning",
           "url": "https://omscs.gatech.edu/cs-7643-deep-learning",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Deep learning covering modern architectures, optimization techniques, and applications in vision, NLP, and generative AI."
         },
         {
           "code": "CS 4649",
           "title": "Robot Intelligence",
           "url": "https://www.cc.gatech.edu/classes/AY2021/cs4649_spring/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Robot intelligence — planning, perception, and learning algorithms for autonomous robotic systems."
         }
       ]
     },
@@ -402,21 +446,24 @@
           "title": "Deep Learning (Yann LeCun)",
           "url": "https://atcold.github.io/NYU-DLSP21/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Deep learning by Yann LeCun (inventor of CNNs). Covers energy-based models, transformers, and self-supervised learning — full lectures on YouTube."
         },
         {
           "code": "DS-GA 1003",
           "title": "Machine Learning",
           "url": "https://nyu-ds1003.github.io/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Rigorous ML — regression, SVMs, neural networks, and tree methods with strong mathematical foundations."
         },
         {
           "code": "CSCI-UA 0473",
           "title": "Introduction to Machine Learning",
           "url": "https://cs.nyu.edu/courses/",
           "level": "Beginner",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Undergraduate ML introduction with practical focus on building models with scikit-learn and PyTorch."
         }
       ]
     },
@@ -429,21 +476,24 @@
           "title": "Machine Learning",
           "url": "https://courses.engr.illinois.edu/cs446/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Comprehensive ML: linear models, kernels, probabilistic models, and neural networks with theoretical depth."
         },
         {
           "code": "CS 547",
           "title": "Deep Learning",
           "url": "https://deep.cs.illinois.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Deep learning seminar covering the latest research in neural architectures, training methods, and applications."
         },
         {
           "code": "CS 410",
           "title": "Text Information Systems",
           "url": "https://cs.illinois.edu/courses/profile/CS410",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Text information retrieval and mining — search engines, topic models, and NLP for large-scale text analysis."
         }
       ]
     },
@@ -456,21 +506,24 @@
           "title": "Artificial Intelligence",
           "url": "https://cpsc.yale.edu/academics/undergraduate/class-descriptions/cpsc-470-artificial-intelligence",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Yale's AI course: search, knowledge representation, ML, and planning — classical and modern techniques."
         },
         {
           "code": "CPSC 477",
           "title": "Natural Language Processing",
           "url": "https://cpsc.yale.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "NLP covering syntax, semantics, and neural approaches to language understanding and text generation."
         },
         {
           "code": "CPSC 483",
           "title": "Deep Learning on Graph-Structured Data",
           "url": "https://cpsc483-683.github.io/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Deep learning on graphs — graph neural networks for social networks, molecular structures, and knowledge graphs."
         }
       ]
     },
@@ -483,21 +536,24 @@
           "title": "Machine Learning",
           "url": "https://www.cs.columbia.edu/~amueller/comsw4771/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Core ML: regression, classification, Bayesian methods, and neural networks with solid theoretical grounding."
         },
         {
           "code": "COMS W4995",
           "title": "Applied Machine Learning",
           "url": "https://www.cs.columbia.edu/~djhsu/coms4995-s20/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Applied ML with hands-on projects — data preprocessing, model evaluation, ensemble methods, and deployment pipelines."
         },
         {
           "code": "COMS 6998",
           "title": "Foundation Models & AI Agents",
           "url": "https://www.cs.columbia.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Cutting-edge course on foundation models and AI agents — LLM fine-tuning, RAG pipelines, and building autonomous agentic systems."
         }
       ]
     },
@@ -510,21 +566,24 @@
           "title": "Learning Systems (Yaser Abu-Mostafa)",
           "url": "https://work.caltech.edu/telecourse",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Classic ML theory by Yaser Abu-Mostafa — VC dimension, bias-variance tradeoff, regularization. Available as a free video lecture series."
         },
         {
           "code": "CS 155",
           "title": "Machine Learning & Data Mining",
           "url": "http://www.yisongyue.com/courses/cs155/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "ML and data mining — probabilistic models, matrix factorization methods, and Bayesian inference with applications."
         },
         {
           "code": "CS 159",
           "title": "Advanced Topics in ML",
           "url": "https://1five9.github.io/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Advanced ML topics: distribution shift, meta-learning, and causal inference — for students with strong ML foundations."
         }
       ]
     },
@@ -537,21 +596,24 @@
           "title": "Neural Networks and Deep Learning",
           "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Neural networks and deep learning — backpropagation, CNNs, RNNs, attention, and language models with practical assignments."
         },
         {
           "code": "CSC 2547",
           "title": "Topics in Machine Learning",
           "url": "https://www.cs.toronto.edu/~cmaddis/courses/sta414_w23/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Graduate ML seminar covering frontier research in deep learning, generative models, and AI safety."
         },
         {
           "code": "STA 414",
           "title": "Statistical Methods for Machine Learning",
           "url": "https://www.cs.toronto.edu/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Statistical ML methods — Bayesian inference, Gaussian processes, variational autoencoders, and probabilistic graphical models."
         }
       ]
     },
@@ -564,21 +626,24 @@
           "title": "Deep Learning",
           "url": "https://da.inf.ethz.ch/teaching/2023/DeepLearning/",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "ETH's flagship deep learning course taught by world-class researchers. Covers architectures, optimization, and state-of-the-art applications."
         },
         {
           "code": "252-0535",
           "title": "Advanced Machine Learning",
           "url": "https://las.inf.ethz.ch/aml",
           "level": "Advanced",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Advanced ML with rigorous theory — kernel methods, Gaussian processes, and Bayesian learning for graduate-level students."
         },
         {
           "code": "227-0434",
           "title": "Machine Learning",
           "url": "https://ml2.inf.ethz.ch/courses/aml/",
           "level": "Intermediate",
-          "format": "Open Course Materials"
+          "format": "Open Course Materials",
+          "desc": "Core ML at ETH — linear models, ensemble methods, and neural networks with strong mathematical treatment."
         }
       ]
     }
@@ -590,7 +655,8 @@
         {
           "title": "NVIDIA Deep Learning Institute (DLI)",
           "url": "https://www.nvidia.com/en-us/training/",
-          "format": "Self-Paced Online + Certificate"
+          "format": "Self-Paced Online + Certificate",
+          "desc": "Hands-on GPU-accelerated Jupyter labs in the cloud. Covers deep learning, computer vision, NLP, and CUDA — on real NVIDIA hardware, no local setup needed."
         }
       ],
       "logo": "https://icon.horse/icon/nvidia.com"
@@ -601,7 +667,8 @@
         {
           "title": "Microsoft Learn · AI School",
           "url": "https://learn.microsoft.com/training/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Self-paced learning paths for Azure AI services, ML Studio, and responsible AI. Industry-recognized certifications for Azure AI Engineer and Data Scientist."
         }
       ],
       "logo": "https://icon.horse/icon/microsoft.com"
@@ -612,7 +679,8 @@
         {
           "title": "Google Cloud Skills Boost (Google AI Learning Path)",
           "url": "https://www.cloudskillsboost.google/",
-          "format": "Free / Paid Online Course"
+          "format": "Free / Paid Online Course",
+          "desc": "Project-based labs on Google Cloud covering Vertex AI, AutoML, BigQuery ML, and Gemini APIs. Many labs free with a trial account."
         }
       ],
       "logo": "https://icon.horse/icon/google.com"
@@ -623,7 +691,8 @@
         {
           "title": "AWS Educate & AWS Academy",
           "url": "https://aws.amazon.com/education/awseducate/",
-          "format": "Free Education Program"
+          "format": "Free Education Program",
+          "desc": "Amazon's student cloud program — ML on SageMaker, computer vision with Rekognition, and NLP with Comprehend. Free tier available."
         }
       ],
       "logo": "https://icon.horse/icon/amazon.com"
@@ -635,17 +704,20 @@
         {
           "title": "Deep Learning Specialization (Andrew Ng)",
           "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Andrew Ng's flagship course — neural networks, CNNs, RNNs, and hyperparameter tuning in Python. The most-completed deep learning course globally with 1M+ learners."
         },
         {
           "title": "Machine Learning Specialization",
           "url": "https://www.deeplearning.ai/courses/machine-learning-specialization/",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Updated intro to ML by Andrew Ng — supervised learning, clustering, and recommender systems. The ideal first ML course for beginners."
         },
         {
           "title": "AI for Everyone",
           "url": "https://www.deeplearning.ai/courses/ai-for-everyone/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Non-technical overview of AI strategy and business applications. Perfect for understanding AI's impact without needing coding experience."
         }
       ]
     },
@@ -656,12 +728,14 @@
         {
           "title": "Practical Deep Learning for Coders",
           "url": "https://course.fast.ai/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Jeremy Howard's top-down approach — start with state-of-the-art models immediately, then learn the underlying theory. Uses PyTorch and the fastai library."
         },
         {
           "title": "Deep Learning Foundations to Stable Diffusion",
           "url": "https://course.fast.ai/Lessons/part2.html",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Build diffusion models from scratch — covers the mathematics and code behind image generation. Great for deeply understanding generative AI."
         }
       ]
     },
@@ -672,17 +746,20 @@
         {
           "title": "NLP Course",
           "url": "https://huggingface.co/learn/nlp-course/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "End-to-end NLP with the Transformers library — tokenization, fine-tuning BERT/GPT, and deploying models to the Hugging Face Hub."
         },
         {
           "title": "Deep Reinforcement Learning Course",
           "url": "https://huggingface.co/learn/deep-rl-course/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Hands-on RL using Stable Baselines3 and Unity ML-Agents. Covers PPO, DQN, and multi-agent systems with interactive environments."
         },
         {
           "title": "Diffusion Models Course",
           "url": "https://huggingface.co/learn/diffusion-course/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Theory and practice of diffusion models — UNets, DDPM sampling, and building your own image generator step-by-step."
         }
       ]
     },
@@ -693,17 +770,20 @@
         {
           "title": "Intro to Machine Learning",
           "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Learn decision trees and random forests with scikit-learn by working on real Kaggle competition datasets — immediate, hands-on practice."
         },
         {
           "title": "Python for ML",
           "url": "https://www.kaggle.com/learn/python",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Python fundamentals tailored for data science: lists, loops, functions, and pandas. The natural starting point before ML study."
         },
         {
           "title": "ML Explainability & Feature Engineering",
           "url": "https://www.kaggle.com/learn",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "SHAP values, permutation importance, and partial dependence plots. Essential for understanding what your model actually learned."
         }
       ]
     },
@@ -714,12 +794,14 @@
         {
           "title": "PyTorch Tutorials & Documentation",
           "url": "https://pytorch.org/tutorials/",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Official PyTorch tutorials — tensors, autograd, neural networks, and production deployment. The primary reference for building ML systems."
         },
         {
           "title": "Meta AI Research Resources",
           "url": "https://ai.meta.com/research/",
-          "format": "Open Research"
+          "format": "Open Research",
+          "desc": "Access to Meta's open research: Llama model weights, Segment Anything, and AI papers with code — great for staying current with frontier AI."
         }
       ]
     },
@@ -730,12 +812,14 @@
         {
           "title": "AI Engineering Professional Certificate",
           "url": "https://www.coursera.org/professional-certificates/ai-engineer",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Professional certificate covering ML, deep learning, and IBM Watson APIs. Designed for career changers entering AI engineering roles."
         },
         {
           "title": "Machine Learning with Python",
           "url": "https://www.coursera.org/learn/machine-learning-with-python",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "IBM's hands-on ML course using scikit-learn — regression, classification, clustering, and model evaluation on real datasets."
         }
       ]
     },
@@ -746,12 +830,14 @@
         {
           "title": "OpenAI Cookbook",
           "url": "https://cookbook.openai.com/",
-          "format": "Free Open Resource"
+          "format": "Free Open Resource",
+          "desc": "Code recipes for GPT-4, embeddings, and function calling — practical patterns for building AI-powered applications and agents."
         },
         {
           "title": "Prompt Engineering Guide",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering",
-          "format": "Free Documentation"
+          "format": "Free Documentation",
+          "desc": "OpenAI's best practices for crafting effective prompts — zero-shot, few-shot, chain-of-thought, and structured output techniques."
         }
       ]
     },
@@ -762,12 +848,14 @@
         {
           "title": "Anthropic Courses (GitHub)",
           "url": "https://github.com/anthropics/courses",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Official Claude API courses on GitHub — covers prompt engineering fundamentals, tool use, and building production applications with Claude."
         },
         {
           "title": "Prompt Engineering Guide",
           "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
-          "format": "Free Documentation"
+          "format": "Free Documentation",
+          "desc": "Anthropic's guide to effective prompting for Claude — structured prompts, XML tags, and reasoning techniques for reliable outputs."
         }
       ]
     },
@@ -778,12 +866,14 @@
         {
           "title": "Intel AI Developer Program",
           "url": "https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/training/courses.html",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Free tools, tutorials, and cloud credits for AI on Intel hardware — optimized for edge AI and on-device deployment scenarios."
         },
         {
           "title": "OpenVINO Learning Path",
           "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/get-started.html",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Optimize and deploy deep learning models for Intel CPUs, GPUs, and VPUs. Ideal for embedded AI and real-time inference applications."
         }
       ]
     },
@@ -794,12 +884,14 @@
         {
           "title": "AI & ML Specializations (100+ courses)",
           "url": "https://www.coursera.org/browse/data-science/machine-learning",
-          "format": "Free Audit Available"
+          "format": "Free Audit Available",
+          "desc": "100+ specializations from Stanford, DeepLearning.AI, and Google. Audit most courses for free, or pay for certificates relevant to careers."
         },
         {
           "title": "Google Data Analytics Certificate",
           "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Entry-level data analytics certificate — spreadsheets, SQL, R, and Tableau. The most popular foundational certificate for data careers."
         }
       ]
     },
@@ -810,12 +902,14 @@
         {
           "title": "Deep Learning Nanodegree",
           "url": "https://www.udacity.com/course/deep-learning-nanodegree--nd101",
-          "format": "Paid Nanodegree"
+          "format": "Paid Nanodegree",
+          "desc": "Project-based program covering neural networks, CNNs, RNNs, and GANs — includes mentor support, code reviews, and career coaching."
         },
         {
           "title": "Machine Learning Engineer Nanodegree",
           "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
-          "format": "Paid Nanodegree"
+          "format": "Paid Nanodegree",
+          "desc": "End-to-end ML engineering — data pipelines, model training, deployment, and monitoring with heavy focus on AWS cloud services."
         }
       ]
     },
@@ -826,12 +920,14 @@
         {
           "title": "MIT MicroMasters in Statistics & Data Science",
           "url": "https://www.edx.org/micromasters/mitx-statistics-and-data-science",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Graduate-level statistics and data science from MIT — can count toward a full MIT master's degree if you later apply and are accepted."
         },
         {
           "title": "AI & ML MicroBachelors Programs",
           "url": "https://www.edx.org/learn/machine-learning",
-          "format": "Free Audit / Certificate"
+          "format": "Free Audit / Certificate",
+          "desc": "Undergraduate-level programs in AI and ML from top universities — stackable credentials that can transfer toward full degrees."
         }
       ]
     },
@@ -842,12 +938,14 @@
         {
           "title": "Data Science & ML Career Tracks",
           "url": "https://www.datacamp.com/tracks/machine-learning-scientist-with-python",
-          "format": "Free Trial / Subscription"
+          "format": "Free Trial / Subscription",
+          "desc": "Structured career tracks from Python basics through ML engineering — interactive coding exercises run directly in the browser, no setup needed."
         },
         {
           "title": "AI Fundamentals",
           "url": "https://www.datacamp.com/tracks/ai-fundamentals",
-          "format": "Free Trial / Subscription"
+          "format": "Free Trial / Subscription",
+          "desc": "Introduction to AI concepts, working with ChatGPT, and practical AI tools. No prior coding experience required — great starting point for beginners."
         }
       ]
     },
@@ -858,12 +956,14 @@
         {
           "title": "Create ML Documentation & Tutorials",
           "url": "https://developer.apple.com/machine-learning/",
-          "format": "Free Documentation"
+          "format": "Free Documentation",
+          "desc": "Apple's drag-and-drop ML tool for macOS — train image classifiers, object detectors, and sound classifiers without writing code."
         },
         {
           "title": "MLX Framework (Open Source LLM Training)",
           "url": "https://ml-explore.github.io/mlx/",
-          "format": "Open Source"
+          "format": "Open Source",
+          "desc": "Apple's open-source ML research framework optimized for Apple Silicon. Efficient LLM training and fine-tuning on MacBook — great for on-device AI."
         }
       ]
     },
@@ -874,12 +974,14 @@
         {
           "title": "Trailhead AI Modules",
           "url": "https://trailhead.salesforce.com/en/content/learn/modules/artificial-intelligence-fundamentals",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Free gamified learning on Salesforce's platform covering Einstein AI, Agentforce, and AI product features. Industry-relevant certifications included."
         },
         {
           "title": "Einstein AI Learning Path",
           "url": "https://trailhead.salesforce.com/en/content/learn/trails/get-smart-with-einstein",
-          "format": "Free Online Course"
+          "format": "Free Online Course",
+          "desc": "Hands-on modules for building AI-powered CRM applications using Salesforce's Einstein platform — relevant for business and enterprise AI roles."
         }
       ]
     },
@@ -890,12 +992,14 @@
         {
           "title": "Become an AI Engineer Learning Path",
           "url": "https://www.linkedin.com/learning/paths/become-an-artificial-intelligence-engineer",
-          "format": "Subscription / Free Trial"
+          "format": "Subscription / Free Trial",
+          "desc": "Structured path covering Python, ML fundamentals, and modern AI tools — designed for career transitions into AI and data engineering roles."
         },
         {
           "title": "Machine Learning & AI Courses (500+)",
           "url": "https://www.linkedin.com/learning/topics/machine-learning",
-          "format": "Subscription / Free Trial"
+          "format": "Subscription / Free Trial",
+          "desc": "500+ courses covering ML, data science, and AI tools. Available free with LinkedIn Premium or a library card in many US cities."
         }
       ]
     }
