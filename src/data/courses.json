@@ -225,7 +225,7 @@
           "desc": "Applied ML focusing on practical techniques: scikit-learn, cross-validation, feature engineering, and model evaluation on real datasets."
         }
       ],
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/UC_Irvine_seal.svg"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/UC_Irvine_seal.svg/200px-UC_Irvine_seal.svg.png"
     },
     {
       "name": "University of Washington",
@@ -255,7 +255,7 @@
           "desc": "Explores the intersection of computer security and AI — adversarial attacks, privacy-preserving ML, and secure system design."
         }
       ],
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Washington_seal.svg"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/University_of_Washington_seal.svg/200px-University_of_Washington_seal.svg.png"
     },
     {
       "name": "Johns Hopkins University",
@@ -409,7 +409,7 @@
     },
     {
       "name": "Georgia Institute of Technology",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia_Tech_seal.svg",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Georgia_Tech_seal.svg/200px-Georgia_Tech_seal.svg.png",
       "courses": [
         {
           "code": "CS 7641",
@@ -439,7 +439,7 @@
     },
     {
       "name": "New York University (NYU)",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/NYU_logo.svg",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/NYU_logo.svg/200px-NYU_logo.svg.png",
       "courses": [
         {
           "code": "DS-GA 1008",
@@ -529,7 +529,7 @@
     },
     {
       "name": "Columbia University",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Columbia_University_crown.svg",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Columbia_University_crown.svg/200px-Columbia_University_crown.svg.png",
       "courses": [
         {
           "code": "COMS 4771",
@@ -589,7 +589,7 @@
     },
     {
       "name": "University of Toronto",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Toronto_coat_of_arms.svg",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/University_of_Toronto_coat_of_arms.svg/200px-University_of_Toronto_coat_of_arms.svg.png",
       "courses": [
         {
           "code": "CSC 421",
