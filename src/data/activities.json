@@ -118,7 +118,7 @@
       "difficulty": "Beginner–Advanced",
       "opportunityType": "Hackathon / SDG",
       "requirement": "Any Google tech stack",
-      "logo": "https://icon.horse/icon/google.com"
+      "logo": "https://cdn.simpleicons.org/google/4285F4"
     },
     {
       "id": "technovation-girls",
@@ -399,7 +399,7 @@
       "cost": "Free online; in-person tickets available",
       "desc": "NVIDIA's flagship AI and accelerated computing conference. Jensen Huang's keynote is a must-watch for anyone in AI. Hundreds of technical sessions on deep learning, robotics, autonomous vehicles, and more.",
       "whyAttend": "Free online access to the biggest industry keynotes and technical sessions on AI hardware and applications.",
-      "logo": "https://icon.horse/icon/nvidia.com"
+      "logo": "https://cdn.simpleicons.org/nvidia/76B900"
     },
     {
       "id": "neurips",
@@ -427,7 +427,7 @@
       "cost": "Free online; in-person by lottery",
       "desc": "Google's annual developer conference showcasing the latest in AI, Android, and cloud. AI keynotes feature announcements from Google DeepMind, Gemini models, and Google Labs — all fully livestreamed for free.",
       "whyAttend": "Free livestream of major AI product announcements directly from Google engineers and researchers.",
-      "logo": "https://icon.horse/icon/google.com"
+      "logo": "https://cdn.simpleicons.org/google/4285F4"
     },
     {
       "id": "sxsw-edu",
@@ -455,7 +455,7 @@
       "cost": "Free (register online)",
       "desc": "Monthly conversations between AI researchers, policymakers, artists, and community leaders on the societal impact of AI. Hosted by Fei-Fei Li and John Etchemendy. Open to public and high school students.",
       "whyAttend": "Free access to Stanford's AI faculty and guests — held on campus just 30 minutes from LA / accessible via Caltrain.",
-      "logo": "https://icon.horse/icon/stanford.edu"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanford_wordmark_(2012).svg/200px-Stanford_wordmark_(2012).svg.png"
     },
     {
       "id": "ces-ai",

@@ -22,14 +22,14 @@ export default async function InternshipPage({ params }) {
   const listings = await getInternshipListings({ revalidate: 21600, limit: 80, aiOnly: true });
 
   const REFERRALS = [
-    { company: "Blizzard Entertainment", logo: "https://icon.horse/icon/blizzard.com", url: "https://careers.blizzard.com/", note: ir("blizzardNote") },
+    { company: "Blizzard Entertainment", logo: "https://cdn.simpleicons.org/blizzard", url: "https://careers.blizzard.com/", note: ir("blizzardNote") },
     { company: "Rivian", logo: "https://icon.horse/icon/rivian.com", url: "https://www.rivian.com/careers", note: ir("rivianNote") },
-    { company: "Google", logo: "https://icon.horse/icon/google.com", url: "https://careers.google.com/students/", note: ir("googleNote") },
-    { company: "Microsoft", logo: "https://icon.horse/icon/microsoft.com", url: "https://careers.microsoft.com/students/", note: ir("microsoftNote") },
-    { company: "Meta", logo: "https://icon.horse/icon/meta.com", url: "https://www.metacareers.com/students/", note: ir("metaNote") },
-    { company: "Tesla", logo: "https://icon.horse/icon/tesla.com", url: "https://www.tesla.com/careers/search/?type=4", note: ir("teslaNote") },
+    { company: "Google", logo: "https://cdn.simpleicons.org/google/4285F4", url: "https://careers.google.com/students/", note: ir("googleNote") },
+    { company: "Microsoft", logo: "https://cdn.simpleicons.org/microsoft/0078D4", url: "https://careers.microsoft.com/students/", note: ir("microsoftNote") },
+    { company: "Meta", logo: "https://cdn.simpleicons.org/meta/0082FB", url: "https://www.metacareers.com/students/", note: ir("metaNote") },
+    { company: "Tesla", logo: "https://cdn.simpleicons.org/tesla/CC0000", url: "https://www.tesla.com/careers/search/?type=4", note: ir("teslaNote") },
     { company: "Waymo", logo: "https://icon.horse/icon/waymo.com", url: "https://waymo.com/careers/", note: ir("waymoNote") },
-    { company: "OpenAI", logo: "https://icon.horse/icon/openai.com", url: "https://openai.com/careers/", note: ir("openaiNote") },
+    { company: "OpenAI", logo: "https://cdn.simpleicons.org/openai", url: "https://openai.com/careers/", note: ir("openaiNote") },
   ];
 
   const RESUME_RESOURCES = [
