@@ -29,7 +29,7 @@
           "desc": "Stanford's free online teaching program. Learn Python fundamentals through interactive problem-solving, led by Stanford instructors — ideal for true beginners."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanford_wordmark_(2012).svg/200px-Stanford_wordmark_(2012).svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=stanford.edu&sz=64"
     },
     {
       "name": "Massachusetts Institute of Technology (MIT)",
@@ -59,7 +59,7 @@
           "desc": "MIT's cutting-edge AI seminar series bringing researchers and industry leaders together on frontier topics: AI safety, foundation models, and policy."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/200px-MIT_logo.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=mit.edu&sz=64"
     },
     {
       "name": "University of California, Berkeley",
@@ -97,7 +97,7 @@
           "desc": "Berkeley's course on large language models — pretraining, fine-tuning, RLHF, and agents. Covers the full LLM stack from first principles."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/UC_Berkeley_wordmark.svg/200px-UC_Berkeley_wordmark.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=berkeley.edu&sz=64"
     },
     {
       "name": "University of California, Los Angeles (UCLA)",
@@ -127,7 +127,7 @@
           "desc": "UCLA's Institute for Pure and Applied Mathematics — workshops and programs connecting mathematical research with ML applications."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/200px-UCLA_Bruins_script.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=ucla.edu&sz=64"
     },
     {
       "name": "University of California, San Diego (UCSD)",
@@ -157,7 +157,7 @@
           "desc": "UCSD's Halicioglu Data Science Institute — cross-disciplinary resources covering data wrangling, visualization, and applied ML projects."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/University_of_California,_San_Diego_seal.svg/200px-University_of_California,_San_Diego_seal.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=ucsd.edu&sz=64"
     },
     {
       "name": "Harvard University",
@@ -195,7 +195,7 @@
           "desc": "Graduate-level statistical ML — kernel methods, boosting, PAC learning, and Bayesian methods. Great for theory-oriented learners."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/200px-Harvard_University_logo.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=harvard.edu&sz=64"
     },
     {
       "name": "University of California, Irvine",
@@ -225,7 +225,7 @@
           "desc": "Applied ML focusing on practical techniques: scikit-learn, cross-validation, feature engineering, and model evaluation on real datasets."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/University_of_California,_Irvine_seal.svg/200px-University_of_California,_Irvine_seal.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=uci.edu&sz=64"
     },
     {
       "name": "University of Washington",
@@ -255,7 +255,7 @@
           "desc": "Explores the intersection of computer security and AI — adversarial attacks, privacy-preserving ML, and secure system design."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/University_of_Washington_seal.svg/200px-University_of_Washington_seal.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=washington.edu&sz=64"
     },
     {
       "name": "Johns Hopkins University",
@@ -285,11 +285,11 @@
           "desc": "ML techniques applied to medical imaging, clinical data, and genomics. Ideal for students interested in healthcare and biomedical AI."
         }
       ],
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Johns_Hopkins_University_logo.svg/200px-Johns_Hopkins_University_logo.svg.png"
+      "logo": "https://www.google.com/s2/favicons?domain=jhu.edu&sz=64"
     },
     {
       "name": "Carnegie Mellon University",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Carnegie_Mellon_University_seal.svg/200px-Carnegie_Mellon_University_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=cmu.edu&sz=64",
       "courses": [
         {
           "code": "11-785",
@@ -319,7 +319,7 @@
     },
     {
       "name": "Princeton University",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Princeton_seal.svg/200px-Princeton_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=princeton.edu&sz=64",
       "courses": [
         {
           "code": "COS 324",
@@ -349,7 +349,7 @@
     },
     {
       "name": "Cornell University",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Cornell_University_shield.svg/200px-Cornell_University_shield.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=cornell.edu&sz=64",
       "courses": [
         {
           "code": "CS 4780",
@@ -379,7 +379,7 @@
     },
     {
       "name": "University of Michigan",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/University_of_Michigan_seal.svg/200px-University_of_Michigan_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=umich.edu&sz=64",
       "courses": [
         {
           "code": "EECS 498",
@@ -409,7 +409,7 @@
     },
     {
       "name": "Georgia Institute of Technology",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Georgia_Tech_seal.svg/200px-Georgia_Tech_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=gatech.edu&sz=64",
       "courses": [
         {
           "code": "CS 7641",
@@ -439,7 +439,7 @@
     },
     {
       "name": "New York University (NYU)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/New_York_University.svg/200px-New_York_University.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=nyu.edu&sz=64",
       "courses": [
         {
           "code": "DS-GA 1008",
@@ -469,7 +469,7 @@
     },
     {
       "name": "University of Illinois Urbana-Champaign",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/University_of_Illinois_seal.svg/200px-University_of_Illinois_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=illinois.edu&sz=64",
       "courses": [
         {
           "code": "CS 446",
@@ -499,7 +499,7 @@
     },
     {
       "name": "Yale University",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/200px-Yale_University_Shield_1.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=yale.edu&sz=64",
       "courses": [
         {
           "code": "CPSC 470",
@@ -529,7 +529,7 @@
     },
     {
       "name": "Columbia University",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Columbia_University_shield.svg/200px-Columbia_University_shield.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=columbia.edu&sz=64",
       "courses": [
         {
           "code": "COMS 4771",
@@ -559,7 +559,7 @@
     },
     {
       "name": "California Institute of Technology (Caltech)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Caltech_seal.svg/200px-Caltech_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=caltech.edu&sz=64",
       "courses": [
         {
           "code": "CS 156",
@@ -589,7 +589,7 @@
     },
     {
       "name": "University of Toronto",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/University_of_Toronto_seal.svg/200px-University_of_Toronto_seal.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=utoronto.ca&sz=64",
       "courses": [
         {
           "code": "CSC 421",
@@ -619,7 +619,7 @@
     },
     {
       "name": "ETH Zurich",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ETH_Z%C3%BCrich_Logo_black.svg/200px-ETH_Z%C3%BCrich_Logo_black.svg.png",
+      "logo": "https://www.google.com/s2/favicons?domain=ethz.ch&sz=64",
       "courses": [
         {
           "code": "263-3210",
