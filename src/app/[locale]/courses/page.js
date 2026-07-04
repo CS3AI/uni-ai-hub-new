@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import CourseTabs from "@/components/CourseTabs";
 import LogoImg from "@/components/LogoImg";
 import { getCoursesData } from "@/lib/courses";
-import { UniCourseList, CompanyProgramList } from "@/components/CourseAccordion";
+import { UniCourseList, CompanyProgramList, LectureList, ConferenceList, SummerSchoolList, ResearchProgramList } from "@/components/CourseAccordion";
 
 export const revalidate = 600;
 
@@ -111,40 +111,14 @@ export default async function CoursesPage({ params }) {
         </Section>
 
         <Section id="lectures" title={t("onlineLectures")}>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {(data.lectures || []).map((lec, idx) => (
-              <div key={idx} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold text-sm leading-snug">
-                  <CourseLink url={lec.url} title={lec.name} />
-                </h3>
-                <p className="mt-1 text-xs text-muted">{lec.speaker}</p>
-                <p className="text-xs text-muted">{lec.org}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {lec.level && <ColorTag color={levelColor(lec.level)}>{lec.level}</ColorTag>}
-                  {lec.format && <ColorTag color={formatColor(lec.format)}>{lec.format}</ColorTag>}
-                </div>
-                {lec.topic && <p className="mt-2 text-xs text-muted">{lec.topic}</p>}
-              </div>
-            ))}
+          <div className="card-surface rounded-xl p-4">
+            <LectureList lectures={data.lectures || []} />
           </div>
         </Section>
 
         <Section id="conferences" title={t("conferencesEvents")}>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {(data.conferences || []).map((lec, idx) => (
-              <div key={idx} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold text-sm leading-snug">
-                  <CourseLink url={lec.url} title={lec.name} />
-                </h3>
-                <p className="mt-1 text-xs text-muted">{lec.speaker}</p>
-                <p className="text-xs text-muted">{lec.org}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {lec.level && <ColorTag color={levelColor(lec.level)}>{lec.level}</ColorTag>}
-                  {lec.format && <ColorTag color={formatColor(lec.format)}>{lec.format}</ColorTag>}
-                </div>
-                {lec.topic && <p className="mt-2 text-xs text-muted">{lec.topic}</p>}
-              </div>
-            ))}
+          <div className="card-surface rounded-xl p-4">
+            <ConferenceList conferences={data.conferences || []} />
           </div>
         </Section>
 
@@ -168,38 +142,14 @@ export default async function CoursesPage({ params }) {
         </Section>
 
         <Section id="summer-schools" title={t("summerSchools")}>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {(data.summerSchools || []).map((s, idx) => (
-              <div key={idx} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold text-sm leading-snug">
-                  <CourseLink url={s.url} title={s.name} />
-                </h3>
-                <p className="mt-1 text-xs text-muted">{s.org}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {s.audience && <ColorTag color="bg-orange-100 text-orange-700">{s.audience}</ColorTag>}
-                  {s.format && <ColorTag color={formatColor(s.format)}>{s.format}</ColorTag>}
-                </div>
-                {s.desc && <p className="mt-2 text-xs text-muted leading-relaxed">{s.desc}</p>}
-              </div>
-            ))}
+          <div className="card-surface rounded-xl p-4">
+            <SummerSchoolList programs={data.summerSchools || []} />
           </div>
         </Section>
 
         <Section id="research-programs" title={t("researchPrograms")}>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {(data.researchPrograms || []).map((r, idx) => (
-              <div key={idx} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold text-sm leading-snug">
-                  <CourseLink url={r.url} title={r.name} />
-                </h3>
-                <p className="mt-1 text-xs text-muted">{r.org}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {r.audience && <ColorTag color="bg-purple-100 text-purple-700">{r.audience}</ColorTag>}
-                  {r.format && <ColorTag color={formatColor(r.format)}>{r.format}</ColorTag>}
-                </div>
-                {r.desc && <p className="mt-2 text-xs text-muted leading-relaxed">{r.desc}</p>}
-              </div>
-            ))}
+          <div className="card-surface rounded-xl p-4">
+            <ResearchProgramList programs={data.researchPrograms || []} />
           </div>
         </Section>
       </div>
