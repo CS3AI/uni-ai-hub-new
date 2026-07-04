@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import activities from "@/data/activities.json";
+import LogoImg from "@/components/LogoImg";
 
 /* ─── Translation ──────────────────────────────────────── */
 const LANG_MAP = { zh:"zh-CN", fr:"fr", es:"es", de:"de", ja:"ja", ru:"ru", ko:"ko" };
