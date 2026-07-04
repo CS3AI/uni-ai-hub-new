@@ -79,8 +79,8 @@ export default async function CoursesPage({ params }) {
                 <LogoImg
                   src={uni.logo}
                   alt={uni.name}
-                  wrapperClass="w-24 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
-                  className="w-16 h-16"
+                  wrapperClass="w-16 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+                  className="w-11 h-11"
                 />
                 <div className="flex-1 p-4">
                   <h3 className="font-bold text-base leading-tight mb-2">{uni.name}</h3>
@@ -98,8 +98,8 @@ export default async function CoursesPage({ params }) {
                 <LogoImg
                   src={co.logo}
                   alt={co.name}
-                  wrapperClass="w-24 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
-                  className="w-16 h-16"
+                  wrapperClass="w-16 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+                  className="w-11 h-11"
                 />
                 <div className="flex-1 p-4">
                   <h3 className="font-bold text-base leading-tight mb-2">{co.name}</h3>
