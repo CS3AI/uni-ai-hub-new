@@ -87,7 +87,7 @@ export default async function InternshipPage({ params }) {
     },
     {
       company: "OpenAI",
-      logo: "https://cdn.simpleicons.org/openai",
+      logo: "/logos/openai.png",
       url: "https://openai.com/careers/",
       note: ir("openaiNote"),
       workDesc: "LLM training and fine-tuning, RLHF pipeline development, safety and alignment research, ChatGPT product features, API infrastructure, or interpretability research with top safety researchers.",
