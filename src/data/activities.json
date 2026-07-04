@@ -28,7 +28,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI Competition",
       "requirement": "Python / Any ML stack",
-      "logo": "https://logo.clearbit.com/waicy.org"
+      "logo": "https://icon.horse/icon/waicy.org"
     },
     {
       "id": "ioai",
@@ -58,7 +58,7 @@
       "difficulty": "Advanced",
       "opportunityType": "Academic Olympiad",
       "requirement": "Strong Math + ML Theory",
-      "logo": "https://logo.clearbit.com/ioai-official.org"
+      "logo": "https://icon.horse/icon/ioai-official.org"
     },
     {
       "id": "apex-ai",
@@ -86,7 +86,7 @@
       "difficulty": "Intermediate–Advanced",
       "opportunityType": "AI Competition",
       "requirement": "Python + ML Project",
-      "logo": "https://logo.clearbit.com/correlation-one.com"
+      "logo": "https://icon.horse/icon/correlation-one.com"
     },
     {
       "id": "google-solution-challenge",
@@ -118,7 +118,7 @@
       "difficulty": "Beginner–Advanced",
       "opportunityType": "Hackathon / SDG",
       "requirement": "Any Google tech stack",
-      "logo": "https://logo.clearbit.com/google.com"
+      "logo": "https://icon.horse/icon/google.com"
     },
     {
       "id": "technovation-girls",
@@ -149,7 +149,7 @@
       "difficulty": "Beginner",
       "opportunityType": "AI App Challenge",
       "requirement": "No prior coding required",
-      "logo": "https://logo.clearbit.com/technovation.org"
+      "logo": "https://icon.horse/icon/technovation.org"
     },
     {
       "id": "earth-prize",
@@ -180,7 +180,7 @@
       "difficulty": "Intermediate",
       "opportunityType": "Environmental Research",
       "requirement": "STEM project + essay",
-      "logo": "https://logo.clearbit.com/theearthprize.org"
+      "logo": "https://icon.horse/icon/theearthprize.org"
     },
     {
       "id": "isef",
@@ -212,7 +212,7 @@
       "difficulty": "Advanced",
       "opportunityType": "Science Fair",
       "requirement": "Original research project",
-      "logo": "https://logo.clearbit.com/societyforscience.org"
+      "logo": "https://icon.horse/icon/societyforscience.org"
     },
     {
       "id": "itu-ai-for-good",
@@ -237,7 +237,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI for Good Summit",
       "requirement": "AI project proposal",
-      "logo": "https://logo.clearbit.com/itu.int"
+      "logo": "https://icon.horse/icon/itu.int"
     }
   ],
   "openSource": [
@@ -385,7 +385,7 @@
       "cost": "Tickets (student discounts available)",
       "desc": "Annual TED conference dedicated entirely to AI, gathering leading researchers, entrepreneurs, and artists to explore AI's impact on humanity. Past speakers include Andrej Karpathy, Sam Altman, and Yann LeCun.",
       "whyAttend": "Direct access to cutting-edge ideas from the world's top AI thinkers in an intimate setting — and livestream is free.",
-      "logo": "https://logo.clearbit.com/ted.com"
+      "logo": "https://icon.horse/icon/ted.com"
     },
     {
       "id": "nvidia-gtc",
@@ -399,7 +399,7 @@
       "cost": "Free online; in-person tickets available",
       "desc": "NVIDIA's flagship AI and accelerated computing conference. Jensen Huang's keynote is a must-watch for anyone in AI. Hundreds of technical sessions on deep learning, robotics, autonomous vehicles, and more.",
       "whyAttend": "Free online access to the biggest industry keynotes and technical sessions on AI hardware and applications.",
-      "logo": "https://logo.clearbit.com/nvidia.com"
+      "logo": "https://icon.horse/icon/nvidia.com"
     },
     {
       "id": "neurips",
@@ -413,7 +413,7 @@
       "cost": "Registration required; virtual attendance available",
       "desc": "The world's most prestigious machine learning research conference. Breakthrough papers in deep learning, reinforcement learning, and AI safety are presented here first. Student volunteer programs offer free attendance.",
       "whyAttend": "Student volunteer applications open each summer — work 1-2 days in exchange for free full conference access.",
-      "logo": "https://logo.clearbit.com/neurips.cc"
+      "logo": "https://icon.horse/icon/neurips.cc"
     },
     {
       "id": "google-io",
@@ -427,7 +427,7 @@
       "cost": "Free online; in-person by lottery",
       "desc": "Google's annual developer conference showcasing the latest in AI, Android, and cloud. AI keynotes feature announcements from Google DeepMind, Gemini models, and Google Labs — all fully livestreamed for free.",
       "whyAttend": "Free livestream of major AI product announcements directly from Google engineers and researchers.",
-      "logo": "https://logo.clearbit.com/google.com"
+      "logo": "https://icon.horse/icon/google.com"
     },
     {
       "id": "sxsw-edu",
@@ -441,7 +441,7 @@
       "cost": "Registration required (student rates)",
       "desc": "Where education and innovation meet. AI in education, youth entrepreneurship, and student-led startup showcases. High school students can participate in competitions and pitch events.",
       "whyAttend": "One of the few major tech conferences specifically welcoming high school students with dedicated programs and competitions.",
-      "logo": "https://logo.clearbit.com/sxswedu.com"
+      "logo": "https://icon.horse/icon/sxswedu.com"
     },
     {
       "id": "stanford-hai-salon",
@@ -455,7 +455,7 @@
       "cost": "Free (register online)",
       "desc": "Monthly conversations between AI researchers, policymakers, artists, and community leaders on the societal impact of AI. Hosted by Fei-Fei Li and John Etchemendy. Open to public and high school students.",
       "whyAttend": "Free access to Stanford's AI faculty and guests — held on campus just 30 minutes from LA / accessible via Caltrain.",
-      "logo": "https://logo.clearbit.com/stanford.edu"
+      "logo": "https://icon.horse/icon/stanford.edu"
     },
     {
       "id": "ces-ai",
@@ -469,7 +469,7 @@
       "cost": "Passes required (student media credential available)",
       "desc": "The world's largest consumer technology show. AI applications across robotics, smart home, healthcare, mobility and more. Major company keynotes from Samsung, Sony, Nvidia, and startups.",
       "whyAttend": "Hands-on exposure to AI products before they launch, and direct interaction with engineers and product teams.",
-      "logo": "https://logo.clearbit.com/ces.tech"
+      "logo": "https://icon.horse/icon/ces.tech"
     },
     {
       "id": "fortune-brainstorm-ai",
@@ -483,7 +483,7 @@
       "cost": "Tickets (limited; livestream free)",
       "desc": "C-suite executives, AI researchers, and policymakers discuss AI's impact on business, society, and government. Past speakers: Sam Altman, Jensen Huang, Satya Nadella, Fei-Fei Li.",
       "whyAttend": "Free livestream of frank discussions between the most influential decision-makers in AI.",
-      "logo": "https://logo.clearbit.com/fortune.com"
+      "logo": "https://icon.horse/icon/fortune.com"
     },
     {
       "id": "ai-summit",
@@ -497,7 +497,7 @@
       "cost": "Registration required (student rates)",
       "desc": "Practical AI conference focused on real business implementation. Case studies from Fortune 500 companies on deploying AI at scale. Good for understanding how AI is used in industry beyond research.",
       "whyAttend": "Understand the gap between AI research and production deployment — crucial context for internship and career conversations.",
-      "logo": "https://logo.clearbit.com/theaisummit.com"
+      "logo": "https://icon.horse/icon/theaisummit.com"
     }
   ]
 }
