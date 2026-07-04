@@ -21,14 +21,14 @@ export default async function InternshipPage({ params }) {
   const listings = await getInternshipListings({ revalidate: 21600, limit: 80, aiOnly: true });
 
   const REFERRALS = [
-    { company: "Blizzard Entertainment", url: "https://careers.blizzard.com/", note: ir("blizzardNote") },
-    { company: "Rivian", url: "https://www.rivian.com/careers", note: ir("rivianNote") },
-    { company: "Google", url: "https://careers.google.com/students/", note: ir("googleNote") },
-    { company: "Microsoft", url: "https://careers.microsoft.com/students/", note: ir("microsoftNote") },
-    { company: "Meta", url: "https://www.metacareers.com/students/", note: ir("metaNote") },
-    { company: "Tesla", url: "https://www.tesla.com/careers/search/?type=4", note: ir("teslaNote") },
-    { company: "Waymo", url: "https://waymo.com/careers/", note: ir("waymoNote") },
-    { company: "OpenAI", url: "https://openai.com/careers/", note: ir("openaiNote") },
+    { company: "Blizzard Entertainment", logo: "https://logo.clearbit.com/blizzard.com", url: "https://careers.blizzard.com/", note: ir("blizzardNote") },
+    { company: "Rivian", logo: "https://logo.clearbit.com/rivian.com", url: "https://www.rivian.com/careers", note: ir("rivianNote") },
+    { company: "Google", logo: "https://logo.clearbit.com/google.com", url: "https://careers.google.com/students/", note: ir("googleNote") },
+    { company: "Microsoft", logo: "https://logo.clearbit.com/microsoft.com", url: "https://careers.microsoft.com/students/", note: ir("microsoftNote") },
+    { company: "Meta", logo: "https://logo.clearbit.com/meta.com", url: "https://www.metacareers.com/students/", note: ir("metaNote") },
+    { company: "Tesla", logo: "https://logo.clearbit.com/tesla.com", url: "https://www.tesla.com/careers/search/?type=4", note: ir("teslaNote") },
+    { company: "Waymo", logo: "https://logo.clearbit.com/waymo.com", url: "https://waymo.com/careers/", note: ir("waymoNote") },
+    { company: "OpenAI", logo: "https://logo.clearbit.com/openai.com", url: "https://openai.com/careers/", note: ir("openaiNote") },
   ];
 
   const RESUME_RESOURCES = [
@@ -77,10 +77,17 @@ export default async function InternshipPage({ params }) {
           <div className="grid gap-4 sm:grid-cols-2">
             {REFERRALS.map((r, idx) => (
               <div key={idx} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold">
-                  <a href={r.url} target="_blank" rel="noopener noreferrer"
-                    className="hover:text-brand-end hover:underline">{r.company}</a>
-                </h3>
+                <div className="flex items-center gap-2 mb-1">
+                  {r.logo && (
+                    <img src={r.logo} alt={r.company} width={24} height={24}
+                      className="rounded object-contain flex-shrink-0"
+                      onError={(e) => { e.target.style.display = 'none'; }} />
+                  )}
+                  <h3 className="font-semibold text-sm">
+                    <a href={r.url} target="_blank" rel="noopener noreferrer"
+                      className="hover:text-brand-end hover:underline">{r.company}</a>
+                  </h3>
+                </div>
                 <p className="mt-1 text-sm text-muted">{r.note}</p>
               </div>
             ))}

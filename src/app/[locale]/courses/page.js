@@ -74,7 +74,14 @@ export default async function CoursesPage({ params }) {
           <div className="grid gap-4 sm:grid-cols-2">
             {data.universities.map((uni) => (
               <div key={uni.name} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold">{uni.name}</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  {uni.logo && (
+                    <img src={uni.logo} alt={uni.name} width={28} height={28}
+                      className="rounded object-contain flex-shrink-0"
+                      onError={(e) => { e.target.style.display = 'none'; }} />
+                  )}
+                  <h3 className="font-semibold text-sm leading-tight">{uni.name}</h3>
+                </div>
                 <ul className="mt-2 space-y-2">
                   {uni.courses.map((c, idx) => (
                     <li key={idx} className="text-sm">
@@ -95,7 +102,14 @@ export default async function CoursesPage({ params }) {
           <div className="grid gap-4 sm:grid-cols-2">
             {data.companies.map((co) => (
               <div key={co.name} className="card-surface rounded-xl p-4">
-                <h3 className="font-semibold">{co.name}</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  {co.logo && (
+                    <img src={co.logo} alt={co.name} width={28} height={28}
+                      className="rounded object-contain flex-shrink-0"
+                      onError={(e) => { e.target.style.display = 'none'; }} />
+                  )}
+                  <h3 className="font-semibold text-sm leading-tight">{co.name}</h3>
+                </div>
                 <ul className="mt-2 space-y-2">
                   {co.programs.map((p, idx) => (
                     <li key={idx} className="text-sm">

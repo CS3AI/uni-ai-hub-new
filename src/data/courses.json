@@ -25,7 +25,8 @@
           "level": "Beginner–Advanced",
           "format": "Teaching Program"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/stanford.edu"
     },
     {
       "name": "Massachusetts Institute of Technology (MIT)",
@@ -51,7 +52,8 @@
           "level": "Advanced",
           "format": "Seminar Program"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/mit.edu"
     },
     {
       "name": "University of California, Berkeley",
@@ -84,7 +86,8 @@
           "level": "Advanced",
           "format": "Open Course Materials"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/berkeley.edu"
     },
     {
       "name": "University of California, Los Angeles (UCLA)",
@@ -110,7 +113,8 @@
           "level": "Advanced",
           "format": "Research Program / Workshop"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/ucla.edu"
     },
     {
       "name": "University of California, San Diego (UCSD)",
@@ -136,7 +140,8 @@
           "level": "Beginner–Advanced",
           "format": "Research Program / Open Resources"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/ucsd.edu"
     },
     {
       "name": "Harvard University",
@@ -169,7 +174,8 @@
           "level": "Advanced",
           "format": "Open Lecture Notes"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/harvard.edu"
     },
     {
       "name": "University of California, Irvine",
@@ -195,7 +201,8 @@
           "level": "Intermediate–Advanced",
           "format": "Open Course Materials"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/uci.edu"
     },
     {
       "name": "University of Washington",
@@ -221,7 +228,8 @@
           "level": "Intermediate–Advanced",
           "format": "Open Course Materials"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/washington.edu"
     },
     {
       "name": "Johns Hopkins University",
@@ -247,6 +255,331 @@
           "level": "Advanced",
           "format": "Open Lecture Notes"
         }
+      ],
+      "logo": "https://logo.clearbit.com/jhu.edu"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "logo": "https://logo.clearbit.com/cmu.edu",
+      "courses": [
+        {
+          "code": "11-785",
+          "title": "Introduction to Deep Learning",
+          "url": "https://deeplearning.cs.cmu.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "10-601",
+          "title": "Introduction to Machine Learning",
+          "url": "https://www.cs.cmu.edu/~ninamf/courses/601sp15/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "15-281",
+          "title": "AI: Representation & Problem Solving",
+          "url": "https://www.cs.cmu.edu/~15281/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Princeton University",
+      "logo": "https://logo.clearbit.com/princeton.edu",
+      "courses": [
+        {
+          "code": "COS 324",
+          "title": "Introduction to Machine Learning",
+          "url": "https://www.cs.princeton.edu/courses/archive/spring23/cos324/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "COS 484",
+          "title": "Natural Language Processing",
+          "url": "https://cos484.github.io/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "COS 598D",
+          "title": "Machine Learning Theory",
+          "url": "https://www.cs.princeton.edu/courses/archive/fall23/cos598D/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Cornell University",
+      "logo": "https://logo.clearbit.com/cornell.edu",
+      "courses": [
+        {
+          "code": "CS 4780",
+          "title": "Machine Learning for Intelligent Systems",
+          "url": "https://www.cs.cornell.edu/courses/cs4780/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 5740",
+          "title": "Natural Language Processing",
+          "url": "https://www.cs.cornell.edu/courses/cs5740/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 4756",
+          "title": "Robot Learning",
+          "url": "https://www.cs.cornell.edu/courses/cs4756/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "University of Michigan",
+      "logo": "https://logo.clearbit.com/umich.edu",
+      "courses": [
+        {
+          "code": "EECS 498",
+          "title": "Deep Learning for Computer Vision",
+          "url": "https://web.eecs.umich.edu/~justincj/teaching/eecs498/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "EECS 445",
+          "title": "Introduction to Machine Learning",
+          "url": "https://eecs445-f16.github.io/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "SI 670",
+          "title": "Applied Machine Learning",
+          "url": "https://www.si.umich.edu/programs/courses/670",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Georgia Institute of Technology",
+      "logo": "https://logo.clearbit.com/gatech.edu",
+      "courses": [
+        {
+          "code": "CS 7641",
+          "title": "Machine Learning",
+          "url": "https://omscs.gatech.edu/cs-7641-machine-learning",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 7643",
+          "title": "Deep Learning",
+          "url": "https://omscs.gatech.edu/cs-7643-deep-learning",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 4649",
+          "title": "Robot Intelligence",
+          "url": "https://www.cc.gatech.edu/classes/AY2021/cs4649_spring/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "New York University (NYU)",
+      "logo": "https://logo.clearbit.com/nyu.edu",
+      "courses": [
+        {
+          "code": "DS-GA 1008",
+          "title": "Deep Learning (Yann LeCun)",
+          "url": "https://atcold.github.io/NYU-DLSP21/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "DS-GA 1003",
+          "title": "Machine Learning",
+          "url": "https://nyu-ds1003.github.io/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CSCI-UA 0473",
+          "title": "Introduction to Machine Learning",
+          "url": "https://cs.nyu.edu/courses/",
+          "level": "Beginner",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "University of Illinois Urbana-Champaign",
+      "logo": "https://logo.clearbit.com/illinois.edu",
+      "courses": [
+        {
+          "code": "CS 446",
+          "title": "Machine Learning",
+          "url": "https://courses.engr.illinois.edu/cs446/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 547",
+          "title": "Deep Learning",
+          "url": "https://deep.cs.illinois.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 410",
+          "title": "Text Information Systems",
+          "url": "https://cs.illinois.edu/courses/profile/CS410",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Yale University",
+      "logo": "https://logo.clearbit.com/yale.edu",
+      "courses": [
+        {
+          "code": "CPSC 470",
+          "title": "Artificial Intelligence",
+          "url": "https://cpsc.yale.edu/academics/undergraduate/class-descriptions/cpsc-470-artificial-intelligence",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CPSC 477",
+          "title": "Natural Language Processing",
+          "url": "https://cpsc.yale.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CPSC 483",
+          "title": "Deep Learning on Graph-Structured Data",
+          "url": "https://cpsc483-683.github.io/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "Columbia University",
+      "logo": "https://logo.clearbit.com/columbia.edu",
+      "courses": [
+        {
+          "code": "COMS 4771",
+          "title": "Machine Learning",
+          "url": "https://www.cs.columbia.edu/~amueller/comsw4771/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "COMS W4995",
+          "title": "Applied Machine Learning",
+          "url": "https://www.cs.columbia.edu/~djhsu/coms4995-s20/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "COMS 6998",
+          "title": "Foundation Models & AI Agents",
+          "url": "https://www.cs.columbia.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "California Institute of Technology (Caltech)",
+      "logo": "https://logo.clearbit.com/caltech.edu",
+      "courses": [
+        {
+          "code": "CS 156",
+          "title": "Learning Systems (Yaser Abu-Mostafa)",
+          "url": "https://work.caltech.edu/telecourse",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 155",
+          "title": "Machine Learning & Data Mining",
+          "url": "http://www.yisongyue.com/courses/cs155/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CS 159",
+          "title": "Advanced Topics in ML",
+          "url": "https://1five9.github.io/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "University of Toronto",
+      "logo": "https://logo.clearbit.com/utoronto.ca",
+      "courses": [
+        {
+          "code": "CSC 421",
+          "title": "Neural Networks and Deep Learning",
+          "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "CSC 2547",
+          "title": "Topics in Machine Learning",
+          "url": "https://www.cs.toronto.edu/~cmaddis/courses/sta414_w23/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "STA 414",
+          "title": "Statistical Methods for Machine Learning",
+          "url": "https://www.cs.toronto.edu/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        }
+      ]
+    },
+    {
+      "name": "ETH Zurich",
+      "logo": "https://logo.clearbit.com/ethz.ch",
+      "courses": [
+        {
+          "code": "263-3210",
+          "title": "Deep Learning",
+          "url": "https://da.inf.ethz.ch/teaching/2023/DeepLearning/",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "252-0535",
+          "title": "Advanced Machine Learning",
+          "url": "https://las.inf.ethz.ch/aml",
+          "level": "Advanced",
+          "format": "Open Course Materials"
+        },
+        {
+          "code": "227-0434",
+          "title": "Machine Learning",
+          "url": "https://ml2.inf.ethz.ch/courses/aml/",
+          "level": "Intermediate",
+          "format": "Open Course Materials"
+        }
       ]
     }
   ],
@@ -259,7 +592,8 @@
           "url": "https://www.nvidia.com/en-us/training/",
           "format": "Self-Paced Online + Certificate"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/nvidia.com"
     },
     {
       "name": "Microsoft",
@@ -269,7 +603,8 @@
           "url": "https://learn.microsoft.com/training/",
           "format": "Free Online Course"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/microsoft.com"
     },
     {
       "name": "Google",
@@ -279,7 +614,8 @@
           "url": "https://www.cloudskillsboost.google/",
           "format": "Free / Paid Online Course"
         }
-      ]
+      ],
+      "logo": "https://logo.clearbit.com/google.com"
     },
     {
       "name": "Amazon",
@@ -288,6 +624,278 @@
           "title": "AWS Educate & AWS Academy",
           "url": "https://aws.amazon.com/education/awseducate/",
           "format": "Free Education Program"
+        }
+      ],
+      "logo": "https://logo.clearbit.com/amazon.com"
+    },
+    {
+      "name": "DeepLearning.AI",
+      "logo": "https://logo.clearbit.com/deeplearning.ai",
+      "programs": [
+        {
+          "title": "Deep Learning Specialization (Andrew Ng)",
+          "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "format": "Free Audit / Certificate"
+        },
+        {
+          "title": "Machine Learning Specialization",
+          "url": "https://www.deeplearning.ai/courses/machine-learning-specialization/",
+          "format": "Free Audit / Certificate"
+        },
+        {
+          "title": "AI for Everyone",
+          "url": "https://www.deeplearning.ai/courses/ai-for-everyone/",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "fast.ai",
+      "logo": "https://logo.clearbit.com/fast.ai",
+      "programs": [
+        {
+          "title": "Practical Deep Learning for Coders",
+          "url": "https://course.fast.ai/",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Deep Learning Foundations to Stable Diffusion",
+          "url": "https://course.fast.ai/Lessons/part2.html",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "Hugging Face",
+      "logo": "https://logo.clearbit.com/huggingface.co",
+      "programs": [
+        {
+          "title": "NLP Course",
+          "url": "https://huggingface.co/learn/nlp-course/",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Deep Reinforcement Learning Course",
+          "url": "https://huggingface.co/learn/deep-rl-course/",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Diffusion Models Course",
+          "url": "https://huggingface.co/learn/diffusion-course/",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "Kaggle",
+      "logo": "https://logo.clearbit.com/kaggle.com",
+      "programs": [
+        {
+          "title": "Intro to Machine Learning",
+          "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Python for ML",
+          "url": "https://www.kaggle.com/learn/python",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "ML Explainability & Feature Engineering",
+          "url": "https://www.kaggle.com/learn",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "Meta",
+      "logo": "https://logo.clearbit.com/meta.com",
+      "programs": [
+        {
+          "title": "PyTorch Tutorials & Documentation",
+          "url": "https://pytorch.org/tutorials/",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Meta AI Research Resources",
+          "url": "https://ai.meta.com/research/",
+          "format": "Open Research"
+        }
+      ]
+    },
+    {
+      "name": "IBM",
+      "logo": "https://logo.clearbit.com/ibm.com",
+      "programs": [
+        {
+          "title": "AI Engineering Professional Certificate",
+          "url": "https://www.coursera.org/professional-certificates/ai-engineer",
+          "format": "Free Audit / Certificate"
+        },
+        {
+          "title": "Machine Learning with Python",
+          "url": "https://www.coursera.org/learn/machine-learning-with-python",
+          "format": "Free Audit / Certificate"
+        }
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "logo": "https://logo.clearbit.com/openai.com",
+      "programs": [
+        {
+          "title": "OpenAI Cookbook",
+          "url": "https://cookbook.openai.com/",
+          "format": "Free Open Resource"
+        },
+        {
+          "title": "Prompt Engineering Guide",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "format": "Free Documentation"
+        }
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "logo": "https://logo.clearbit.com/anthropic.com",
+      "programs": [
+        {
+          "title": "Anthropic Courses (GitHub)",
+          "url": "https://github.com/anthropics/courses",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Prompt Engineering Guide",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "format": "Free Documentation"
+        }
+      ]
+    },
+    {
+      "name": "Intel",
+      "logo": "https://logo.clearbit.com/intel.com",
+      "programs": [
+        {
+          "title": "Intel AI Developer Program",
+          "url": "https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/training/courses.html",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "OpenVINO Learning Path",
+          "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/get-started.html",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "Coursera",
+      "logo": "https://logo.clearbit.com/coursera.org",
+      "programs": [
+        {
+          "title": "AI & ML Specializations (100+ courses)",
+          "url": "https://www.coursera.org/browse/data-science/machine-learning",
+          "format": "Free Audit Available"
+        },
+        {
+          "title": "Google Data Analytics Certificate",
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "format": "Free Audit / Certificate"
+        }
+      ]
+    },
+    {
+      "name": "Udacity",
+      "logo": "https://logo.clearbit.com/udacity.com",
+      "programs": [
+        {
+          "title": "Deep Learning Nanodegree",
+          "url": "https://www.udacity.com/course/deep-learning-nanodegree--nd101",
+          "format": "Paid Nanodegree"
+        },
+        {
+          "title": "Machine Learning Engineer Nanodegree",
+          "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
+          "format": "Paid Nanodegree"
+        }
+      ]
+    },
+    {
+      "name": "edX",
+      "logo": "https://logo.clearbit.com/edx.org",
+      "programs": [
+        {
+          "title": "MIT MicroMasters in Statistics & Data Science",
+          "url": "https://www.edx.org/micromasters/mitx-statistics-and-data-science",
+          "format": "Free Audit / Certificate"
+        },
+        {
+          "title": "AI & ML MicroBachelors Programs",
+          "url": "https://www.edx.org/learn/machine-learning",
+          "format": "Free Audit / Certificate"
+        }
+      ]
+    },
+    {
+      "name": "DataCamp",
+      "logo": "https://logo.clearbit.com/datacamp.com",
+      "programs": [
+        {
+          "title": "Data Science & ML Career Tracks",
+          "url": "https://www.datacamp.com/tracks/machine-learning-scientist-with-python",
+          "format": "Free Trial / Subscription"
+        },
+        {
+          "title": "AI Fundamentals",
+          "url": "https://www.datacamp.com/tracks/ai-fundamentals",
+          "format": "Free Trial / Subscription"
+        }
+      ]
+    },
+    {
+      "name": "Apple",
+      "logo": "https://logo.clearbit.com/apple.com",
+      "programs": [
+        {
+          "title": "Create ML Documentation & Tutorials",
+          "url": "https://developer.apple.com/machine-learning/",
+          "format": "Free Documentation"
+        },
+        {
+          "title": "MLX Framework (Open Source LLM Training)",
+          "url": "https://ml-explore.github.io/mlx/",
+          "format": "Open Source"
+        }
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "logo": "https://logo.clearbit.com/salesforce.com",
+      "programs": [
+        {
+          "title": "Trailhead AI Modules",
+          "url": "https://trailhead.salesforce.com/en/content/learn/modules/artificial-intelligence-fundamentals",
+          "format": "Free Online Course"
+        },
+        {
+          "title": "Einstein AI Learning Path",
+          "url": "https://trailhead.salesforce.com/en/content/learn/trails/get-smart-with-einstein",
+          "format": "Free Online Course"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn Learning",
+      "logo": "https://logo.clearbit.com/linkedin.com",
+      "programs": [
+        {
+          "title": "Become an AI Engineer Learning Path",
+          "url": "https://www.linkedin.com/learning/paths/become-an-artificial-intelligence-engineer",
+          "format": "Subscription / Free Trial"
+        },
+        {
+          "title": "Machine Learning & AI Courses (500+)",
+          "url": "https://www.linkedin.com/learning/topics/machine-learning",
+          "format": "Subscription / Free Trial"
         }
       ]
     }

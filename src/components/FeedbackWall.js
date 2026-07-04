@@ -103,32 +103,11 @@ export default function FeedbackWall({ title }) {
   }, []);
 
   function handleReact(reaction) {
-    const alreadyVoted = !!voted[reaction.id];
-
-    if (alreadyVoted) {
-      // Undo vote
-      const newCounts = { ...counts, [reaction.id]: Math.max(0, (counts[reaction.id] ?? 1) - 1) };
-      const newVoted  = { ...voted };
-      delete newVoted[reaction.id];
-      setCounts(newCounts);
-      setVoted(newVoted);
-      try {
-        localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts));
-        localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
-      } catch {}
-      fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/down`).catch(() => {});
-    } else {
-      // Add vote
-      const newCounts = { ...counts, [reaction.id]: (counts[reaction.id] ?? 0) + 1 };
-      const newVoted  = { ...voted, [reaction.id]: true };
-      setCounts(newCounts);
-      setVoted(newVoted);
-      try {
-        localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts));
-        localStorage.setItem(VOTED_KEY,  JSON.stringify(newVoted));
-      } catch {}
-      fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/up`).catch(() => {});
-    }
+    // Always increment — no undo, no limit
+    const newCounts = { ...counts, [reaction.id]: (counts[reaction.id] ?? 0) + 1 };
+    setCounts(newCounts);
+    try { localStorage.setItem(COUNTS_KEY, JSON.stringify(newCounts)); } catch {}
+    fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${reaction.id}/up`).catch(() => {});
   }
 
   async function handleSubmit(e) {
@@ -212,17 +191,13 @@ export default function FeedbackWall({ title }) {
               key={r.id}
               onClick={() => handleReact(r)}
               title={voted[r.id] ? "Click to undo" : r.label}
-              className={`flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all cursor-pointer
-                ${voted[r.id]
-                  ? "border-brand-end bg-brand-end/10 text-brand-end"
-                  : "border-border hover:border-brand-end hover:bg-brand-end/5"}`}
+              className="flex items-center gap-1.5 rounded-full border border-border px-4 py-1.5 text-sm font-medium transition-all cursor-pointer hover:border-brand-end hover:bg-brand-end/5"
             >
               <span className="text-base">{r.emoji}</span>
               <span>{counts[r.id] > 0 ? counts[r.id] : "—"}</span>
             </button>
           ))}
         </div>
-        <p className="mt-1.5 text-xs text-muted">Click again to undo</p>
       </div>
 
       {/* Comment Feed */}
