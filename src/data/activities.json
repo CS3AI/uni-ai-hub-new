@@ -28,7 +28,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI Competition",
       "requirement": "Python / Any ML stack",
-      "logo": "https://waicy.org/apple-touch-icon.png"
+      "logo": "/logos/waicy.png"
     },
     {
       "id": "ioai",
@@ -58,7 +58,7 @@
       "difficulty": "Advanced",
       "opportunityType": "Academic Olympiad",
       "requirement": "Strong Math + ML Theory",
-      "logo": "https://ioai-official.org/apple-touch-icon.png"
+      "logo": "/logos/ioai.png"
     },
     {
       "id": "apex-ai",
@@ -149,7 +149,7 @@
       "difficulty": "Beginner",
       "opportunityType": "AI App Challenge",
       "requirement": "No prior coding required",
-      "logo": "https://technovation.org/apple-touch-icon.png"
+      "logo": "/logos/technovation.png"
     },
     {
       "id": "earth-prize",
@@ -237,7 +237,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI for Good Summit",
       "requirement": "AI project proposal",
-      "logo": "https://aiforgood.itu.int/apple-touch-icon.png"
+      "logo": "/logos/aiforgood.png"
     }
   ],
   "openSource": [
@@ -385,7 +385,7 @@
       "cost": "Tickets (student discounts available)",
       "desc": "Annual TED conference dedicated entirely to AI, gathering leading researchers, entrepreneurs, and artists to explore AI's impact on humanity. Past speakers include Andrej Karpathy, Sam Altman, and Yann LeCun.",
       "whyAttend": "Direct access to cutting-edge ideas from the world's top AI thinkers in an intimate setting — and livestream is free.",
-      "logo": "https://cdn.simpleicons.org/ted/EB0028"
+      "logo": "/logos/ted.png"
     },
     {
       "id": "nvidia-gtc",
@@ -413,7 +413,7 @@
       "cost": "Registration required; virtual attendance available",
       "desc": "The world's most prestigious machine learning research conference. Breakthrough papers in deep learning, reinforcement learning, and AI safety are presented here first. Student volunteer programs offer free attendance.",
       "whyAttend": "Student volunteer applications open each summer — work 1-2 days in exchange for free full conference access.",
-      "logo": "https://icon.horse/icon/neurips.cc"
+      "logo": "/logos/neurips.png"
     },
     {
       "id": "google-io",
@@ -455,7 +455,7 @@
       "cost": "Free (register online)",
       "desc": "Monthly conversations between AI researchers, policymakers, artists, and community leaders on the societal impact of AI. Hosted by Fei-Fei Li and John Etchemendy. Open to public and high school students.",
       "whyAttend": "Free access to Stanford's AI faculty and guests — held on campus just 30 minutes from LA / accessible via Caltrain.",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanford_wordmark_(2012).svg/200px-Stanford_wordmark_(2012).svg.png"
+      "logo": "/logos/stanford-hai.png"
     },
     {
       "id": "ces-ai",
@@ -469,7 +469,7 @@
       "cost": "Passes required (student media credential available)",
       "desc": "The world's largest consumer technology show. AI applications across robotics, smart home, healthcare, mobility and more. Major company keynotes from Samsung, Sony, Nvidia, and startups.",
       "whyAttend": "Hands-on exposure to AI products before they launch, and direct interaction with engineers and product teams.",
-      "logo": "https://icon.horse/icon/ces.tech"
+      "logo": "/logos/ces.png"
     },
     {
       "id": "fortune-brainstorm-ai",
@@ -497,7 +497,7 @@
       "cost": "Registration required (student rates)",
       "desc": "Practical AI conference focused on real business implementation. Case studies from Fortune 500 companies on deploying AI at scale. Good for understanding how AI is used in industry beyond research.",
       "whyAttend": "Understand the gap between AI research and production deployment — crucial context for internship and career conversations.",
-      "logo": "https://icon.horse/icon/theaisummit.com"
+      "logo": "/logos/aisummit.png"
     }
   ]
 }

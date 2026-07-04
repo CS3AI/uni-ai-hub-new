@@ -24,7 +24,7 @@ export default async function InternshipPage({ params }) {
   const REFERRALS = [
     {
       company: "Blizzard Entertainment",
-      logo: "https://cdn.simpleicons.org/blizzard",
+      logo: "/logos/blizzard.png",
       url: "https://careers.blizzard.com/",
       note: ir("blizzardNote"),
       workDesc: "Game AI systems, player behavior modeling, NPC pathfinding, matchmaking algorithms, and anti-cheat ML models. Blizzard interns often work on live game features shipped to millions of players.",
@@ -51,7 +51,7 @@ export default async function InternshipPage({ params }) {
     },
     {
       company: "Microsoft",
-      logo: "https://cdn.simpleicons.org/microsoft/0078D4",
+      logo: "/logos/microsoft.png",
       url: "https://careers.microsoft.com/students/",
       note: ir("microsoftNote"),
       workDesc: "Azure ML infrastructure, Copilot features in Office 365, Teams AI, Bing Search AI, or Windows AI integrations. Microsoft Explore interns rotate across two different teams over 12 weeks.",
