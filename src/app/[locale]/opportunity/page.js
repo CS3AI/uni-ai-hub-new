@@ -75,11 +75,7 @@ function GlobalOpportunitiesTab({ tr }) {
           >
             <div className="min-w-0">
               <div className="flex items-center gap-2 flex-1 min-w-0">
-                {opp.logo && (
-                  <img src={opp.logo} alt={opp.organizer} width={22} height={22}
-                    className="rounded object-contain flex-shrink-0"
-                    onError={(e) => { e.target.style.display = 'none'; }} />
-                )}
+                <LogoImg src={opp.logo} alt={opp.organizer} size={22} />
                 <div className="min-w-0">
                   <h3 className="font-semibold text-sm leading-tight">{opp.name}</h3>
                   <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
@@ -274,11 +270,7 @@ function TalksTab({ tr }) {
             className="w-full flex items-start justify-between gap-3 p-4 text-left"
           >
             <div className="flex items-center gap-2 flex-1 min-w-0">
-              {ev.logo && (
-                <img src={ev.logo} alt={ev.name} width={22} height={22}
-                  className="rounded object-contain flex-shrink-0"
-                  onError={(e) => { e.target.style.display = 'none'; }} />
-              )}
+              <LogoImg src={ev.logo} alt={ev.name} size={22} />
               <div>
               <h3 className="font-semibold text-sm leading-tight">{ev.name}</h3>
               </div>

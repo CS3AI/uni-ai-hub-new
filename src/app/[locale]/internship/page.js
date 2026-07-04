@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import PageHeader from "@/components/PageHeader";
+import LogoImg from "@/components/LogoImg";
 import Tag from "@/components/Tag";
 import InternshipList from "@/components/InternshipList";
 import PeerDebriefs from "@/components/PeerDebriefs";
@@ -78,11 +79,7 @@ export default async function InternshipPage({ params }) {
             {REFERRALS.map((r, idx) => (
               <div key={idx} className="card-surface rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-1">
-                  {r.logo && (
-                    <img src={r.logo} alt={r.company} width={24} height={24}
-                      className="rounded object-contain flex-shrink-0"
-                      onError={(e) => { e.target.style.display = 'none'; }} />
-                  )}
+                  <LogoImg src={r.logo} alt={r.company} size={24} />
                   <h3 className="font-semibold text-sm">
                     <a href={r.url} target="_blank" rel="noopener noreferrer"
                       className="hover:text-brand-end hover:underline">{r.company}</a>

@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import PageHeader from "@/components/PageHeader";
 import CourseTabs from "@/components/CourseTabs";
+import LogoImg from "@/components/LogoImg";
 import { getCoursesData } from "@/lib/courses";
 
 export const revalidate = 600;
@@ -75,11 +76,7 @@ export default async function CoursesPage({ params }) {
             {data.universities.map((uni) => (
               <div key={uni.name} className="card-surface rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  {uni.logo && (
-                    <img src={uni.logo} alt={uni.name} width={28} height={28}
-                      className="rounded object-contain flex-shrink-0"
-                      onError={(e) => { e.target.style.display = 'none'; }} />
-                  )}
+                  <LogoImg src={uni.logo} alt={uni.name} />
                   <h3 className="font-semibold text-sm leading-tight">{uni.name}</h3>
                 </div>
                 <ul className="mt-2 space-y-2">
@@ -103,11 +100,7 @@ export default async function CoursesPage({ params }) {
             {data.companies.map((co) => (
               <div key={co.name} className="card-surface rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  {co.logo && (
-                    <img src={co.logo} alt={co.name} width={28} height={28}
-                      className="rounded object-contain flex-shrink-0"
-                      onError={(e) => { e.target.style.display = 'none'; }} />
-                  )}
+                  <LogoImg src={co.logo} alt={co.name} />
                   <h3 className="font-semibold text-sm leading-tight">{co.name}</h3>
                 </div>
                 <ul className="mt-2 space-y-2">
