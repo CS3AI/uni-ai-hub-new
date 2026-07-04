@@ -225,7 +225,7 @@
           "desc": "Applied ML focusing on practical techniques: scikit-learn, cross-validation, feature engineering, and model evaluation on real datasets."
         }
       ],
-      "logo": "https://www.google.com/s2/favicons?domain=uci.edu&sz=64"
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/UC_Irvine_seal.svg"
     },
     {
       "name": "University of Washington",
@@ -255,7 +255,7 @@
           "desc": "Explores the intersection of computer security and AI — adversarial attacks, privacy-preserving ML, and secure system design."
         }
       ],
-      "logo": "https://www.google.com/s2/favicons?domain=washington.edu&sz=64"
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Washington_seal.svg"
     },
     {
       "name": "Johns Hopkins University",
@@ -409,7 +409,7 @@
     },
     {
       "name": "Georgia Institute of Technology",
-      "logo": "https://www.google.com/s2/favicons?domain=gatech.edu&sz=64",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia_Tech_seal.svg",
       "courses": [
         {
           "code": "CS 7641",
@@ -439,7 +439,7 @@
     },
     {
       "name": "New York University (NYU)",
-      "logo": "https://www.google.com/s2/favicons?domain=nyu.edu&sz=64",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/NYU_logo.svg",
       "courses": [
         {
           "code": "DS-GA 1008",
@@ -529,7 +529,7 @@
     },
     {
       "name": "Columbia University",
-      "logo": "https://www.google.com/s2/favicons?domain=columbia.edu&sz=64",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Columbia_University_crown.svg",
       "courses": [
         {
           "code": "COMS 4771",
@@ -589,7 +589,7 @@
     },
     {
       "name": "University of Toronto",
-      "logo": "https://www.google.com/s2/favicons?domain=utoronto.ca&sz=64",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Toronto_coat_of_arms.svg",
       "courses": [
         {
           "code": "CSC 421",
@@ -699,7 +699,7 @@
     },
     {
       "name": "DeepLearning.AI",
-      "logo": "https://icon.horse/icon/deeplearning.ai",
+      "logo": "https://www.deeplearning.ai/apple-touch-icon.png",
       "programs": [
         {
           "title": "Deep Learning Specialization (Andrew Ng)",
@@ -723,7 +723,7 @@
     },
     {
       "name": "fast.ai",
-      "logo": "https://icon.horse/icon/fast.ai",
+      "logo": "https://www.fast.ai/apple-touch-icon.png",
       "programs": [
         {
           "title": "Practical Deep Learning for Coders",

@@ -28,7 +28,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI Competition",
       "requirement": "Python / Any ML stack",
-      "logo": "https://icon.horse/icon/waicy.org"
+      "logo": "https://waicy.org/apple-touch-icon.png"
     },
     {
       "id": "ioai",
@@ -58,7 +58,7 @@
       "difficulty": "Advanced",
       "opportunityType": "Academic Olympiad",
       "requirement": "Strong Math + ML Theory",
-      "logo": "https://icon.horse/icon/ioai-official.org"
+      "logo": "https://ioai-official.org/apple-touch-icon.png"
     },
     {
       "id": "apex-ai",
@@ -149,7 +149,7 @@
       "difficulty": "Beginner",
       "opportunityType": "AI App Challenge",
       "requirement": "No prior coding required",
-      "logo": "https://icon.horse/icon/technovation.org"
+      "logo": "https://technovation.org/apple-touch-icon.png"
     },
     {
       "id": "earth-prize",
@@ -237,7 +237,7 @@
       "difficulty": "Beginner–Intermediate",
       "opportunityType": "AI for Good Summit",
       "requirement": "AI project proposal",
-      "logo": "https://icon.horse/icon/itu.int"
+      "logo": "https://aiforgood.itu.int/apple-touch-icon.png"
     }
   ],
   "openSource": [
@@ -385,7 +385,7 @@
       "cost": "Tickets (student discounts available)",
       "desc": "Annual TED conference dedicated entirely to AI, gathering leading researchers, entrepreneurs, and artists to explore AI's impact on humanity. Past speakers include Andrej Karpathy, Sam Altman, and Yann LeCun.",
       "whyAttend": "Direct access to cutting-edge ideas from the world's top AI thinkers in an intimate setting — and livestream is free.",
-      "logo": "https://icon.horse/icon/ted.com"
+      "logo": "https://cdn.simpleicons.org/ted/EB0028"
     },
     {
       "id": "nvidia-gtc",
