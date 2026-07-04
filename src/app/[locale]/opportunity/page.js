@@ -72,45 +72,47 @@ function GlobalOpportunitiesTab({ tr }) {
         <div key={opp.id} className="card-surface rounded-xl overflow-hidden shadow-sm">
           <button
             onClick={() => setOpen(open === opp.id ? null : opp.id)}
-            className="w-full flex items-start justify-between gap-3 p-4 text-left"
+            className="w-full flex items-stretch text-left hover:bg-gray-50 transition-colors"
           >
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-1 min-w-0">
-                <LogoImg src={opp.logo} alt={opp.organizer} size={40} />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-sm leading-tight">{opp.name}</h3>
-                  <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
+            <LogoImg
+              src={opp.logo}
+              alt={opp.organizer}
+              wrapperClass="w-20 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+              className="w-12 h-12"
+            />
+            <div className="flex-1 flex items-start justify-between gap-2 p-4">
+              <div className="min-w-0 flex-1">
+                <h3 className="font-semibold text-sm leading-tight">{opp.name}</h3>
+                <p className="text-xs text-muted mt-0.5">{opp.organizer}</p>
+                {(opp.deadline || opp.eligibility) && (
+                  <div className="grid grid-cols-2 gap-x-3 mt-2 text-[11px] text-muted">
+                    {opp.deadline && (
+                      <div><span className="font-semibold text-foreground">Timeline: </span>{opp.deadline}</div>
+                    )}
+                    {opp.eligibility && (
+                      <div><span className="font-semibold text-foreground">Eligibility: </span>{opp.eligibility}</div>
+                    )}
+                  </div>
+                )}
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {opp.difficulty && (
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700">{opp.difficulty}</span>
+                  )}
+                  {opp.opportunityType && (
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700">{opp.opportunityType}</span>
+                  )}
+                  {opp.requirement && (
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">{opp.requirement}</span>
+                  )}
                 </div>
               </div>
-              <div className="mt-2 flex flex-wrap gap-1.5">
-                {opp.difficulty && (
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700">{opp.difficulty}</span>
-                )}
-                {opp.opportunityType && (
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700">{opp.opportunityType}</span>
-                )}
-                {opp.requirement && (
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">{opp.requirement}</span>
-                )}
-              </div>
+              <span className="text-muted text-xs mt-1 shrink-0">{open === opp.id ? "▲" : "▼"}</span>
             </div>
-            <span className="text-muted text-xs mt-1 shrink-0">{open === opp.id ? "▲" : "▼"}</span>
           </button>
 
           {open === opp.id && (
             <div className="px-4 pb-4 border-t border-border/40 pt-3 space-y-3">
               <p className="text-sm text-muted leading-relaxed">{tr(opp.shortDesc)}</p>
-
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div>
-                  <p className="font-medium text-foreground mb-1">Timeline</p>
-                  <p className="text-muted">{tr(opp.deadline)}</p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">Eligibility</p>
-                  <p className="text-muted">{tr(opp.eligibility)}</p>
-                </div>
-              </div>
 
               <div>
                 <p className="text-xs font-medium text-foreground mb-1.5">SDG Alignment</p>
@@ -268,34 +270,34 @@ function TalksTab({ tr }) {
         <div key={ev.id} className="card-surface rounded-xl overflow-hidden shadow-sm">
           <button
             onClick={() => setOpen(open === ev.id ? null : ev.id)}
-            className="w-full flex items-start justify-between gap-3 p-4 text-left"
+            className="w-full flex items-stretch text-left hover:bg-gray-50 transition-colors"
           >
-            <div className="flex items-center gap-2 flex-1 min-w-0">
-              <LogoImg src={ev.logo} alt={ev.name} size={40} />
-              <div>
-              <h3 className="font-semibold text-sm leading-tight">{ev.name}</h3>
+            <LogoImg
+              src={ev.logo}
+              alt={ev.name}
+              wrapperClass="w-20 flex-shrink-0 flex items-center justify-center bg-white/70 border-r border-gray-100 p-3"
+              className="w-12 h-12"
+            />
+            <div className="flex-1 flex items-start justify-between gap-2 p-4">
+              <div className="min-w-0 flex-1">
+                <h3 className="font-semibold text-sm leading-tight">{ev.name}</h3>
+                <p className="text-xs text-muted mt-0.5">{ev.org}</p>
+                {(ev.location || ev.period) && (
+                  <div className="flex gap-3 mt-1.5 text-[11px] text-muted">
+                    {ev.location && <span><span className="font-semibold text-foreground">Location: </span>{ev.location}</span>}
+                    {ev.period && <span><span className="font-semibold text-foreground">When: </span>{ev.period}</span>}
+                  </div>
+                )}
+                <div className="mt-1.5">
+                  <Badge text={ev.type} color={typeColors[ev.type] || "blue"} />
+                </div>
               </div>
-              <div className="flex items-center gap-2 mt-1 flex-wrap">
-                <p className="text-xs text-muted">{ev.org}</p>
-                <Badge text={ev.type} color={typeColors[ev.type] || "blue"} />
-              </div>
+              <span className="text-muted text-xs mt-1 shrink-0">{open === ev.id ? "▲" : "▼"}</span>
             </div>
-            <span className="text-muted text-xs mt-1 shrink-0">{open === ev.id ? "▲" : "▼"}</span>
           </button>
 
           {open === ev.id && (
             <div className="px-4 pb-4 border-t border-border/40 pt-3 space-y-3">
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div>
-                  <p className="font-medium text-foreground mb-1">Location</p>
-                  <p className="text-muted">{ev.location}</p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">When</p>
-                  <p className="text-muted">{ev.period}</p>
-                </div>
-              </div>
-
               <div className="flex flex-wrap gap-1.5">
                 <Badge text={ev.format} color="blue" />
                 {ev.cost && <Badge text={ev.cost} color="green" />}

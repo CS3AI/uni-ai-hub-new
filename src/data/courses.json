@@ -1104,6 +1104,126 @@
       "level": "All Levels",
       "format": "In-Person Lecture (free, public)",
       "desc": "Free public lectures at MIT's Computer Science and AI Lab. Attend in person in Cambridge or access recordings — covers active research from MIT's top faculty."
+    },
+    {
+      "name": "Stanford CS224N — Natural Language Processing with Deep Learning",
+      "speaker": "Christopher Manning & Chris Potts",
+      "org": "Stanford University · YouTube",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "topic": "NLP, Transformers, Attention Mechanisms",
+      "level": "Intermediate–Advanced",
+      "format": "Free Online Lecture Series",
+      "desc": "The gold-standard NLP course from Stanford. Covers word vectors, RNNs, Transformers, and the latest in large language models — taught by one of the field's founding researchers."
+    },
+    {
+      "name": "Stanford CS229 — Machine Learning",
+      "speaker": "Andrew Ng (original) / Tengyu Ma",
+      "org": "Stanford University · YouTube",
+      "url": "https://cs229.stanford.edu/",
+      "topic": "Supervised/Unsupervised Learning, RL, Probabilistic Models",
+      "level": "Intermediate",
+      "format": "Free Online Lecture Series",
+      "desc": "The foundational ML course that launched Andrew Ng's career as an educator. Dense with math and theory — ideal if you want to understand WHY algorithms work, not just how to call them."
+    },
+    {
+      "name": "Let's Build GPT: from Scratch, in Code",
+      "speaker": "Andrej Karpathy",
+      "org": "Karpathy · YouTube",
+      "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+      "topic": "Transformers, GPT Architecture, Self-Attention",
+      "level": "Intermediate",
+      "format": "YouTube Lecture",
+      "desc": "Andrej Karpathy builds a GPT from scratch in ~2 hours of live coding. No fluff — just pure transformer implementation. One of the clearest explanations of attention and autoregressive generation on the internet."
+    },
+    {
+      "name": "Hugging Face NLP Course",
+      "speaker": "Hugging Face team",
+      "org": "Hugging Face · Online",
+      "url": "https://huggingface.co/learn/nlp-course/",
+      "topic": "Transformers, Fine-Tuning, Datasets, Tokenizers",
+      "level": "Beginner–Intermediate",
+      "format": "Free Online Course",
+      "desc": "Official Hugging Face course teaching you to use the most widely used NLP library in industry. Covers BERT, GPT-2, tokenizers, and the full training pipeline — plus hands-on notebooks throughout."
+    },
+    {
+      "name": "NYU Deep Learning (Yann LeCun & Alfredo Canziani)",
+      "speaker": "Yann LeCun & Alfredo Canziani",
+      "org": "New York University · YouTube",
+      "url": "https://atcold.github.io/NYU-DLSP21/",
+      "topic": "Energy-Based Models, Self-Supervised Learning, Graph Neural Networks",
+      "level": "Advanced",
+      "format": "Free Online Lecture Series",
+      "desc": "The Turing Award winner's own course — unique for its coverage of energy-based models and self-supervised learning. Taught with beautiful visualizations and cutting-edge research perspectives."
+    },
+    {
+      "name": "Google Machine Learning Crash Course",
+      "speaker": "Google Engineers",
+      "org": "Google · Online",
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "topic": "Linear/Logistic Regression, Neural Nets, TensorFlow Basics",
+      "level": "Beginner",
+      "format": "Free Online Course",
+      "desc": "Google's own intro to ML — 15 hours of lessons with video lectures, interactive visualizations, and real-case studies. Uses TensorFlow Playground for hands-on intuition building."
+    },
+    {
+      "name": "DeepMind × UCL — Reinforcement Learning Lecture Series",
+      "speaker": "Hado van Hasselt, David Silver, others",
+      "org": "DeepMind / UCL · YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm",
+      "topic": "RL, Policy Gradients, Model-Based RL, Multi-Agent",
+      "level": "Intermediate–Advanced",
+      "format": "Free Online Lecture Series",
+      "desc": "DeepMind's research scientists teach RL from basics through AlphaGo-level techniques. If you're interested in game-playing agents, robotics AI, or autonomous systems — this is the definitive series."
+    },
+    {
+      "name": "Spinning Up in Deep RL (OpenAI)",
+      "speaker": "Josh Achiam (OpenAI)",
+      "org": "OpenAI · Online",
+      "url": "https://spinningup.openai.com/",
+      "topic": "PPO, SAC, DDPG, Policy Gradient Algorithms",
+      "level": "Intermediate–Advanced",
+      "format": "Free Online Course + Code",
+      "desc": "OpenAI's definitive RL introduction with fully implemented, well-documented algorithms in PyTorch. Used by researchers at top AI labs to get new team members up to speed quickly."
+    },
+    {
+      "name": "MIT 18.065 — Matrix Methods in Data Analysis & ML",
+      "speaker": "Gilbert Strang",
+      "org": "MIT · YouTube / OCW",
+      "url": "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/",
+      "topic": "Linear Algebra, SVD, PCA, Deep Learning Math",
+      "level": "Intermediate",
+      "format": "Free Online Lecture Series",
+      "desc": "Gilbert Strang's legendary lectures applied to ML. Understanding SVD and matrix factorization gives you genuine insight into how dimensionality reduction, attention, and embeddings actually work."
+    },
+    {
+      "name": "AI Safety Fundamentals — Technical Track",
+      "speaker": "Richard Ngo, Evan Hubinger, others",
+      "org": "BlueDot Impact · Online",
+      "url": "https://aisafetyfundamentals.com/technical",
+      "topic": "Alignment, RLHF, Interpretability, Scalable Oversight",
+      "level": "Intermediate–Advanced",
+      "format": "Free Structured Course",
+      "desc": "A 8-week reading group curriculum used by hundreds of researchers to enter the AI safety field. Covers interpretability, RLHF, and alignment — increasingly relevant as LLMs become more capable."
+    },
+    {
+      "name": "Practical MLOps — Full Lifecycle of ML Systems",
+      "speaker": "Noah Gift",
+      "org": "Duke University / O'Reilly · YouTube",
+      "url": "https://learning.oreilly.com/library/view/practical-mlops/9781098103002/",
+      "topic": "Model Deployment, CI/CD for ML, Cloud ML Platforms",
+      "level": "Intermediate",
+      "format": "Online Course",
+      "desc": "Bridges the gap between model training and production deployment. Covers containerization, monitoring, A/B testing, and cloud pipelines — essential skills that are rarely taught in academic ML courses."
+    },
+    {
+      "name": "Andrej Karpathy's micrograd: Backpropagation from Scratch",
+      "speaker": "Andrej Karpathy",
+      "org": "Karpathy · YouTube",
+      "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+      "topic": "Backpropagation, Automatic Differentiation, Neural Network Math",
+      "level": "Beginner–Intermediate",
+      "format": "YouTube Lecture",
+      "desc": "Karpathy implements backpropagation in ~100 lines of Python, building a complete autograd engine from scratch. After this video, the math behind PyTorch's gradient computation is no longer a black box."
     }
   ],
   "conferences": [
@@ -1146,6 +1266,166 @@
       "level": "Intermediate–Advanced",
       "format": "In-Person Workshop (open registration)",
       "desc": "Intensive workshop on AI alignment, safety, and ethics with leading researchers including Stuart Russell and Paul Christiano. Open registration; a great entry point into AI safety."
+    },
+    {
+      "name": "NeurIPS — Neural Information Processing Systems",
+      "speaker": "Top ML researchers globally",
+      "org": "NeurIPS Foundation · In-Person Conference",
+      "url": "https://neurips.cc/",
+      "topic": "Deep Learning, RL, AI Safety, Optimization",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The world's largest ML conference with 15,000+ attendees. Papers cover everything from theory to applications. Student volunteer spots offer free attendance — one of the best ways for students to enter the research community."
+    },
+    {
+      "name": "ICLR — International Conference on Learning Representations",
+      "speaker": "Top deep learning researchers",
+      "org": "ICLR Foundation · In-Person Conference",
+      "url": "https://iclr.cc/",
+      "topic": "Deep Learning, Representation Learning, Generative Models",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "Started by Yann LeCun and Yoshua Bengio — arguably the trendiest venue for deep learning papers. Open review system means you can read all paper submissions and reviews, invaluable for understanding research quality."
+    },
+    {
+      "name": "ACL — Association for Computational Linguistics",
+      "speaker": "NLP researchers worldwide",
+      "org": "ACL · In-Person Conference",
+      "url": "https://www.aclweb.org/",
+      "topic": "NLP, Machine Translation, Dialogue, Summarization",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The premier NLP conference, alongside EMNLP and NAACL. If you're interested in language models, translation, or conversational AI, following ACL proceedings is essential for tracking the frontier."
+    },
+    {
+      "name": "CVPR — Computer Vision and Pattern Recognition",
+      "speaker": "Top CV researchers",
+      "org": "IEEE · In-Person Conference",
+      "url": "https://cvpr.thecvf.com/",
+      "topic": "Object Detection, Segmentation, Generative Image Models",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The largest computer vision conference — over 10,000 papers submitted annually. Showcases breakthroughs in image generation (DALL-E, Stable Diffusion predecessors), video understanding, and 3D scene reconstruction."
+    },
+    {
+      "name": "AAAI — Association for the Advancement of AI",
+      "speaker": "AI researchers across all subfields",
+      "org": "AAAI · In-Person Conference",
+      "url": "https://www.aaai.org/",
+      "topic": "Knowledge Representation, Planning, ML, Human-AI Interaction",
+      "level": "Intermediate–Advanced",
+      "format": "In-Person Conference",
+      "desc": "One of the oldest and broadest AI conferences — covers symbolic AI, knowledge graphs, and classical planning alongside ML. Great for understanding the full breadth of AI as a field, not just deep learning."
+    },
+    {
+      "name": "IJCAI — International Joint Conference on AI",
+      "speaker": "International AI community",
+      "org": "IJCAI · In-Person Conference",
+      "url": "https://www.ijcai.org/",
+      "topic": "AI Planning, Multi-Agent Systems, Knowledge Graphs",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The flagship international AI conference since 1969. Strong in multi-agent systems, constraint satisfaction, and game theory — areas fundamental to understanding how AI agents reason and cooperate."
+    },
+    {
+      "name": "CoRL — Conference on Robot Learning",
+      "speaker": "Robotics and ML researchers",
+      "org": "CoRL · In-Person Conference",
+      "url": "https://www.robot-learning.org/",
+      "topic": "Robot Manipulation, Sim-to-Real Transfer, Imitation Learning",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The fastest-growing venue at the intersection of robotics and deep learning. Covers manipulation, locomotion, and embodied AI — directly relevant to the wave of humanoid robot startups hiring ML engineers."
+    },
+    {
+      "name": "FAccT — Fairness, Accountability, and Transparency",
+      "speaker": "ML ethics and policy researchers",
+      "org": "ACM · In-Person Conference",
+      "url": "https://facctconference.org/",
+      "topic": "Algorithmic Fairness, Bias, AI Ethics, Interpretability",
+      "level": "Intermediate",
+      "format": "In-Person Conference",
+      "desc": "The premier venue for AI ethics and fairness research. Crucial for understanding how algorithmic bias causes real-world harm, and how to build responsible AI systems — increasingly a requirement for AI roles."
+    },
+    {
+      "name": "ICCV — International Conference on Computer Vision",
+      "speaker": "Top CV researchers",
+      "org": "IEEE · In-Person Conference (biennial)",
+      "url": "https://iccv.thecvf.com/",
+      "topic": "Image Recognition, Video Analysis, 3D Vision, GANs",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "CVPR's biennial counterpart — equally prestigious. Alternates years with CVPR and ECCV, forming the triumvirate of computer vision publishing. Covers everything from neural rendering to medical imaging AI."
+    },
+    {
+      "name": "EMNLP — Empirical Methods in Natural Language Processing",
+      "speaker": "NLP researchers worldwide",
+      "org": "ACL · In-Person Conference",
+      "url": "https://2025.emnlp.org/",
+      "topic": "Language Models, Question Answering, Information Extraction",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The empirically-focused NLP conference — strong in datasets, evaluation benchmarks, and large-scale language model analysis. Reading EMNLP papers is one of the best ways to understand how LLM capabilities are measured."
+    },
+    {
+      "name": "MLSys — Machine Learning and Systems",
+      "speaker": "ML systems and infrastructure researchers",
+      "org": "MLSys Foundation · In-Person Conference",
+      "url": "https://mlsys.org/",
+      "topic": "Training Infrastructure, Inference Optimization, Hardware-Software Co-design",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "At the intersection of ML and computer systems — covers GPU kernel optimization, model parallelism, and inference efficiency. Increasingly important as deploying large models at scale becomes the central engineering challenge."
+    },
+    {
+      "name": "ICLR Workshop Day — Open to Students",
+      "speaker": "Graduate researchers & workshop organizers",
+      "org": "ICLR · In-Person / Virtual",
+      "url": "https://iclr.cc/",
+      "topic": "Emerging ML Topics, Specialized Research Areas",
+      "level": "Intermediate",
+      "format": "Workshop Sessions",
+      "desc": "ICLR's workshop days are more accessible than the main track — smaller, focused sessions on topics like tiny ML, ML for climate, and AI safety. A realistic first research conference experience for undergraduates."
+    },
+    {
+      "name": "ECCV — European Conference on Computer Vision",
+      "speaker": "Leading CV researchers in Europe and globally",
+      "org": "IEEE / ECVA · In-Person Conference (biennial)",
+      "url": "https://eccv.ecva.net/",
+      "topic": "3D Reconstruction, Neural Radiance Fields, Medical Vision",
+      "level": "Advanced",
+      "format": "In-Person Conference",
+      "desc": "The European counterpart to CVPR/ICCV — particularly strong in 3D scene understanding, neural rendering (NeRF), and medical imaging. Covers many techniques now used in AR/VR systems."
+    },
+    {
+      "name": "AIES — AI, Ethics, and Society",
+      "speaker": "AI ethics researchers and policymakers",
+      "org": "AAAI / ACM · In-Person Conference",
+      "url": "https://www.aies-conference.com/",
+      "topic": "AI Policy, Societal Impact, Human-AI Interaction",
+      "level": "Beginner–Intermediate",
+      "format": "In-Person Conference",
+      "desc": "A conference specifically for students and professionals interested in the societal impact of AI. Accessible even without deep ML background — strong focus on policy, governance, and the human side of AI systems."
+    },
+    {
+      "name": "NeurIPS HS (High School) Outreach",
+      "speaker": "NeurIPS mentors and student volunteers",
+      "org": "NeurIPS Foundation · Virtual",
+      "url": "https://neurips.cc/",
+      "topic": "ML Fundamentals, Research Pathways, AI Careers",
+      "level": "Beginner",
+      "format": "Virtual Workshop",
+      "desc": "NeurIPS hosts outreach sessions specifically for high school students — panel discussions, Q&A with researchers, and introductory ML demos. Free to join virtually; check the NeurIPS site for each year's schedule."
+    },
+    {
+      "name": "Stanford HAI — Human-Centered AI Symposium",
+      "speaker": "Stanford HAI fellows and industry leaders",
+      "org": "Stanford HAI · In-Person / Virtual",
+      "url": "https://hai.stanford.edu/events",
+      "topic": "Human-AI Collaboration, AI Policy, Foundation Models",
+      "level": "Intermediate",
+      "format": "Public Lecture / Symposium",
+      "desc": "Stanford's interdisciplinary AI institute hosts public symposiums bringing together technologists, ethicists, policymakers, and domain experts. Livestreamed for free — high-quality debate on where AI is heading."
     }
   ],
   "volunteering": [
@@ -1202,6 +1482,146 @@
       "topic": "Robotics, AI systems, STEM mentorship",
       "level": "Intermediate",
       "format": "Volunteer Mentor"
+    },
+    {
+      "name": "ICLR Student Volunteer Program",
+      "speaker": "ICLR organizing committee",
+      "org": "ICLR Foundation · In-Person Conference",
+      "url": "https://iclr.cc/",
+      "topic": "Deep learning research, conference logistics, networking",
+      "level": "Intermediate–Advanced",
+      "format": "Student Volunteer Program",
+      "desc": "Volunteer at one of the most prestigious ML conferences in exchange for free registration (worth $500+). Help with sessions, Q&A, and workshops — and get direct access to top researchers and their talks."
+    },
+    {
+      "name": "Women in Machine Learning (WiML) Workshop Volunteer",
+      "speaker": "WiML organizing team",
+      "org": "WiML · Co-located with NeurIPS / ICML",
+      "url": "https://wimlworkshop.org/",
+      "topic": "Inclusive AI research, mentoring, community building",
+      "level": "All Levels",
+      "format": "Workshop Volunteer",
+      "desc": "WiML runs a major workshop at NeurIPS connecting women and non-binary researchers in ML. Volunteering provides mentorship, community, and exposure to outstanding women in AI research — open to all gender identities."
+    },
+    {
+      "name": "Black in AI — Workshop Volunteer & Community Member",
+      "speaker": "Black in AI organizing committee",
+      "org": "Black in AI · Co-located with NeurIPS",
+      "url": "https://blackinai.github.io/",
+      "topic": "Representation in AI, research mentorship, policy",
+      "level": "All Levels",
+      "format": "Volunteer / Community Organizer",
+      "desc": "Black in AI's annual workshop and social is one of the best-networked events in ML. Volunteers help with logistics, panels, and mentorship sessions. A powerful community for underrepresented students entering AI."
+    },
+    {
+      "name": "AI4ALL Open Learning — Curriculum Volunteer",
+      "speaker": "AI4ALL educators",
+      "org": "AI4ALL · USA",
+      "url": "https://ai-4-all.org/",
+      "topic": "K-12 AI education, curriculum development, inclusion",
+      "level": "Intermediate",
+      "format": "Volunteer Educator / Curriculum Contributor",
+      "desc": "AI4ALL trains the next generation of diverse AI leaders. As a volunteer, you can contribute to curriculum, mentor summer program participants, or support their Open Learning initiative — free AI education for underrepresented students."
+    },
+    {
+      "name": "Girls Who Code — Club Facilitator / Volunteer Instructor",
+      "speaker": "Girls Who Code educators",
+      "org": "Girls Who Code · USA",
+      "url": "https://girlswhocode.com/",
+      "topic": "CS fundamentals, Python, web development, ML basics",
+      "level": "All Levels",
+      "format": "Volunteer Educator",
+      "desc": "Run a GWC club at your school or volunteer at after-school sessions teaching coding to girls. Hands-on curriculum includes Python and intro ML projects — impactful, flexible, and easy to set up."
+    },
+    {
+      "name": "Hour of Code — Volunteer Educator",
+      "speaker": "Code.org community",
+      "org": "Code.org · Global",
+      "url": "https://hourofcode.com/volunteer",
+      "topic": "CS introductory activities, AI concepts, computational thinking",
+      "level": "All Levels",
+      "format": "Volunteer Educator",
+      "desc": "Code.org's Hour of Code happens every December in schools worldwide. As a volunteer, you lead 1-hour coding activities in classrooms. Minimal prep time, immediate impact, and many schools specifically request AI-focused volunteers."
+    },
+    {
+      "name": "Kaggle — Community Forum Mentor & Notebook Author",
+      "speaker": "Kaggle community",
+      "org": "Kaggle · Online",
+      "url": "https://www.kaggle.com/",
+      "topic": "ML competitions, data science, model evaluation",
+      "level": "Intermediate–Advanced",
+      "format": "Online Community Volunteer",
+      "desc": "Earning Kaggle Expert or Master tier through competition contributions and published notebooks is a recognized signal to AI employers. Active mentorship in discussion forums also builds your ML community presence."
+    },
+    {
+      "name": "Latinas in AI — Ambassador & Event Volunteer",
+      "speaker": "Latinas in AI leadership",
+      "org": "Latinas in AI · Global",
+      "url": "https://www.latinasinai.com/",
+      "topic": "AI leadership, representation, mentorship",
+      "level": "All Levels",
+      "format": "Ambassador / Volunteer",
+      "desc": "A community focused on increasing Latina representation in AI. Volunteer opportunities include event coordination, workshop facilitation, and social media outreach. Strong network of AI professionals across the Americas."
+    },
+    {
+      "name": "Partnership on AI — Student Working Group",
+      "speaker": "PAI research staff",
+      "org": "Partnership on AI · USA (Remote possible)",
+      "url": "https://partnershiponai.org/",
+      "topic": "AI governance, responsible AI practices, policy",
+      "level": "Intermediate",
+      "format": "Research Volunteer / Working Group",
+      "desc": "PAI brings together AI researchers, academics, and NGOs to develop AI best practices. Student researchers can contribute to reports, attend roundtables, and engage with policy discussions — excellent for AI ethics tracks."
+    },
+    {
+      "name": "IEEE Student Branch — AI/ML Section Lead",
+      "speaker": "IEEE volunteers",
+      "org": "IEEE · Campus Chapter",
+      "url": "https://students.ieee.org/",
+      "topic": "Technical projects, AI engineering, professional development",
+      "level": "All Levels",
+      "format": "Club Leadership / Volunteer Organizer",
+      "desc": "Starting or leading an IEEE student branch at your school gives you IEEE membership, access to research papers, and a professional network. Organize AI/ML project demos, speaker events, and hackathons."
+    },
+    {
+      "name": "ACM Student Chapter — Organizer",
+      "speaker": "ACM community",
+      "org": "ACM · Campus Chapter",
+      "url": "https://www.acm.org/chapters/student-chapters",
+      "topic": "Computing, algorithms, AI research, coding competitions",
+      "level": "All Levels",
+      "format": "Club Leadership / Volunteer Organizer",
+      "desc": "ACM chapters run programming contests, reading groups, and speaker series. ACM membership provides free digital library access — thousands of ML papers. Leadership roles in ACM chapters look strong on research applications."
+    },
+    {
+      "name": "Papers with Code — Open Source ML Contributor",
+      "speaker": "ML community",
+      "org": "Papers with Code (Meta AI) · Online",
+      "url": "https://paperswithcode.com/",
+      "topic": "Reproducing ML results, code documentation, benchmarks",
+      "level": "Intermediate–Advanced",
+      "format": "Open Source Volunteer",
+      "desc": "Papers with Code links ML papers to their GitHub implementations and benchmark leaderboards. Contributing reproductions, benchmark results, or documentation is a direct way to engage with the ML research community."
+    },
+    {
+      "name": "Teach AI — K-12 AI Curriculum Contributor",
+      "speaker": "ISTE/CSTA volunteer educators",
+      "org": "Teach AI · USA",
+      "url": "https://teachai.org/",
+      "topic": "AI literacy, K-12 education, lesson plan development",
+      "level": "All Levels",
+      "format": "Curriculum Volunteer",
+      "desc": "Teach AI develops AI literacy frameworks for K-12 education. As a volunteer, you can contribute lesson plans, review curriculum content, or speak at teacher professional development sessions."
+    },
+    {
+      "name": "AAAI Student Volunteer Program",
+      "speaker": "AAAI organizing committee",
+      "org": "AAAI · In-Person Conference",
+      "url": "https://www.aaai.org/",
+      "topic": "AI research, conference experience, broad AI topics",
+      "level": "Intermediate",
+      "format": "Student Volunteer Program",
+      "desc": "AAAI accepts student volunteers for conference logistics in exchange for free registration. One of the broadest AI conferences — great for students who want exposure beyond deep learning to planning, knowledge representation, and multi-agent systems."
     }
   ],
   "summerSchools": [
@@ -1252,6 +1672,118 @@
       "audience": "Undergraduate (focus on underrepresented groups)",
       "desc": "Connects underrepresented students with Google researchers for 12-week mentored projects.",
       "format": "Remote Mentorship"
+    },
+    {
+      "name": "Oxford Machine Learning Summer School (OxML)",
+      "org": "University of Oxford / AI for Global Goals",
+      "url": "https://www.oxfordml.school/",
+      "audience": "Undergraduate / Graduate",
+      "desc": "One of the most competitive ML summer schools in the world. Led by Oxford researchers — covers deep learning, NLP, computer vision, and RL with a strong mathematical foundation. Scholarships available for students from lower-income countries.",
+      "format": "In-Person Residential (Selective)"
+    },
+    {
+      "name": "Eastern European Machine Learning Summer School (EEML)",
+      "org": "Organized by DeepMind / Google Brain researchers",
+      "url": "https://www.eeml.eu/",
+      "audience": "Graduate / Advanced Undergraduate",
+      "desc": "A highly selective summer school run by DeepMind and Google Brain researchers for students in Eastern Europe and globally. Known for exceptional lab sessions and direct access to industry ML researchers.",
+      "format": "In-Person Residential (Competitive)"
+    },
+    {
+      "name": "AI4ALL Summer Program",
+      "org": "AI4ALL · Multiple Universities",
+      "url": "https://ai-4-all.org/programs/",
+      "audience": "High School (rising 10th–12th grade)",
+      "desc": "A paid, fully-funded residential AI program for underrepresented high school students. Runs at multiple university campuses, with a focus on building both technical skills and understanding AI's social impact.",
+      "format": "In-Person Residential (Funded)"
+    },
+    {
+      "name": "Google CS Summer Institute (CSSI)",
+      "org": "Google",
+      "url": "https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute",
+      "audience": "High School (rising freshmen)",
+      "desc": "Google's 3-week introductory CS program specifically for incoming college freshmen from underrepresented groups. Covers web development, Python, and CS fundamentals — held at Google campuses. Paid and fully funded.",
+      "format": "In-Person Residential (Funded by Google)"
+    },
+    {
+      "name": "CMU RISS — Robotics Institute Summer Scholars",
+      "org": "Carnegie Mellon University",
+      "url": "https://riss.ri.cmu.edu/",
+      "audience": "Undergraduate",
+      "desc": "CMU's flagship robotics research internship — 10 weeks working directly with CMU robotics faculty on real research projects. One of the strongest undergraduate robotics research programs in the world; strong AI component.",
+      "format": "In-Person Research Program (Paid)"
+    },
+    {
+      "name": "MIT PRIMES-Circle",
+      "org": "MIT / MIT PRIMES",
+      "url": "https://math.mit.edu/research/highschool/primes/circle/",
+      "audience": "High School (Boston area)",
+      "desc": "MIT PRIMES-Circle connects MIT student mentors with local high school students for hands-on math and CS projects. A lower barrier version of the highly selective PRIMES research program — all projects are MIT-mentored.",
+      "format": "Mentorship Program (Free)"
+    },
+    {
+      "name": "Caltech SURF — Summer Undergraduate Research Fellowship",
+      "org": "California Institute of Technology",
+      "url": "https://www.surf.caltech.edu/",
+      "audience": "Undergraduate",
+      "desc": "Caltech's prestigious 10-week research fellowship matching undergraduates with Caltech faculty, including AI and computational science labs. Strong alumni network; many SURF participants go on to top PhD programs.",
+      "format": "In-Person Research (Stipend Provided)"
+    },
+    {
+      "name": "NSF REU — AI & Machine Learning Track",
+      "org": "NSF (National Science Foundation) · Various Universities",
+      "url": "https://www.nsf.gov/crssprgm/reu/",
+      "audience": "Undergraduate (US citizens/PR)",
+      "desc": "NSF funds 1,000+ summer research positions at universities across the US, many with AI/ML focus. Students receive a stipend, housing, and direct faculty mentorship. A major pathway to PhD programs at top schools.",
+      "format": "In-Person Research (NSF Funded)"
+    },
+    {
+      "name": "Veritas AI — High School Research Program",
+      "org": "Veritas AI (Harvard/MIT alumni-founded)",
+      "url": "https://www.veritasai.com/",
+      "audience": "High School",
+      "desc": "An intensive summer AI research program founded by Harvard and MIT students specifically for high schoolers. Projects range from ML for healthcare to NLP — students produce a publishable research paper with faculty mentorship.",
+      "format": "Remote Research Program (Paid)"
+    },
+    {
+      "name": "Inspirit AI — Stanford & MIT-Founded Program",
+      "org": "Inspirit AI",
+      "url": "https://www.inspiritai.com/",
+      "audience": "High School (grades 9–12)",
+      "desc": "Founded by Stanford and MIT graduates, Inspirit AI teaches students to build real AI projects through project-based curriculum. Offers both live online and on-campus formats; students complete 2–3 portfolio projects.",
+      "format": "Live Online / On-Campus (Selective)"
+    },
+    {
+      "name": "NVIDIA Deep Learning Institute (DLI) — Summer Intensive",
+      "org": "NVIDIA",
+      "url": "https://www.nvidia.com/en-us/training/",
+      "audience": "High School / Undergraduate",
+      "desc": "NVIDIA's official hands-on DL training program. Courses on GPU computing, computer vision, NLP, and robotics. Some community college partnerships offer free access — check for student pricing and scholarship codes.",
+      "format": "Online / In-Person Workshops"
+    },
+    {
+      "name": "Johns Hopkins Center for Talented Youth — AI Track",
+      "org": "Johns Hopkins University (CTY)",
+      "url": "https://cty.jhu.edu/",
+      "audience": "Middle School / High School",
+      "desc": "JHU CTY is one of the most established gifted education programs in the US, running for 40+ years. The AI and ML courses provide a rigorous introduction to algorithms and neural networks with hands-on project work.",
+      "format": "In-Person Residential (Paid)"
+    },
+    {
+      "name": "Columbia Pre-College — AI & Machine Learning Intensive",
+      "org": "Columbia University School of Professional Studies",
+      "url": "https://precollege.sps.columbia.edu/highschool",
+      "audience": "High School (14+)",
+      "desc": "Columbia's pre-college AI program runs in NYC over 3 weeks. Students take university-level AI courses, use Columbia's research computing cluster, and gain early exposure to university research culture and NYC tech industry.",
+      "format": "In-Person Residential (Paid)"
+    },
+    {
+      "name": "Polygence — Mentored AI Research Project",
+      "org": "Polygence",
+      "url": "https://www.polygence.org/",
+      "audience": "High School",
+      "desc": "Polygence matches high school students with PhD student mentors for 1-on-1 original research projects. AI/ML tracks are among the most popular — students produce a paper, presentation, or public project over 10+ sessions.",
+      "format": "Remote 1-on-1 Mentorship (Paid)"
     }
   ],
   "researchPrograms": [
@@ -1302,6 +1834,118 @@
       "audience": "High School",
       "desc": "5-week residential research mentorship with UCSB faculty including AI and computational science projects.",
       "format": "Residential Research"
+    },
+    {
+      "name": "MIT UROP — Undergraduate Research Opportunities Program",
+      "org": "Massachusetts Institute of Technology",
+      "url": "https://urop.mit.edu/",
+      "audience": "MIT Undergraduates",
+      "desc": "MIT's flagship program connecting undergrads to faculty research from freshman year. Many MIT students in AI/ML publish papers through UROP — a foundational reason MIT undergrads are so competitive for PhD programs.",
+      "format": "On-Campus Research (Paid or For Credit)"
+    },
+    {
+      "name": "Stanford CURIS — Computer Science Undergraduate Research",
+      "org": "Stanford University",
+      "url": "https://curis.stanford.edu/",
+      "audience": "Stanford Undergraduates / Non-Stanford (competitive)",
+      "desc": "Stanford's summer CS research fellowship — includes AI, ML, HCI, and systems. Non-Stanford students can apply competitively. 10-week stipend-supported position working directly with faculty or PhD mentors.",
+      "format": "In-Person Research (Stipend Provided)"
+    },
+    {
+      "name": "Google Research — Student Researcher Program",
+      "org": "Google",
+      "url": "https://research.google/careers/student-researcher/",
+      "audience": "Undergraduate / Graduate",
+      "desc": "Google's part-time student research program — work remotely on a real Google Research project while enrolled in school. Unlike an internship, it continues during the semester. Highly competitive and increasingly the pipeline to Google AI full-time roles.",
+      "format": "Remote Part-Time Research (Paid)"
+    },
+    {
+      "name": "Microsoft Research — Internship (MSRI)",
+      "org": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/academic-program/research-internship/",
+      "audience": "PhD Students / Exceptional Undergrads",
+      "desc": "Microsoft Research internships are a direct path to some of the most impactful AI research in industry. Labs include MSR Cambridge, MSR Redmond, MSR Asia — many papers published from MSRI lead to top-tier publications.",
+      "format": "In-Person Research (Paid)"
+    },
+    {
+      "name": "Lumiere Research Scholar Program",
+      "org": "Lumiere Education",
+      "url": "https://www.lumiere-education.com/",
+      "audience": "High School",
+      "desc": "Lumiere pairs high school students with PhD student mentors from top universities for 12-week independent research projects. AI/ML is among the most popular tracks — students produce publishable papers with strong mentor support.",
+      "format": "Remote 1-on-1 Mentorship (Paid)"
+    },
+    {
+      "name": "Aether Research — AI Research Program for High Schoolers",
+      "org": "Aether Research",
+      "url": "https://aetherresearch.org/",
+      "audience": "High School",
+      "desc": "A mentored AI research program run by graduate students at top universities. Combines curriculum in ML fundamentals with original research projects. Strong track record of student papers accepted at AI conferences.",
+      "format": "Remote Mentorship Program"
+    },
+    {
+      "name": "CMU Dietrich College Undergraduate Research",
+      "org": "Carnegie Mellon University",
+      "url": "https://www.cmu.edu/uro/",
+      "audience": "CMU Undergraduates",
+      "desc": "CMU's umbrella undergraduate research program — covers SCS, MLD, and Robotics Institute labs. CMU's AI faculty (in language technologies, computer vision, and RL) run active research groups that frequently take undergrads.",
+      "format": "On-Campus Research (Paid or For Credit)"
+    },
+    {
+      "name": "Johns Hopkins Applied Physics Lab (APL) — SEAP",
+      "org": "Johns Hopkins APL / US Department of Defense",
+      "url": "https://www.jhuapl.edu/stem/programs/seap",
+      "audience": "High School (US citizens)",
+      "desc": "SEAP places high school students in cutting-edge research at JHU APL, which conducts AI research for national defense, space exploration, and healthcare. Paid 8-week program — one of the best-funded HS research experiences in the US.",
+      "format": "In-Person Research (DoD Funded)"
+    },
+    {
+      "name": "Simons Summer Research Program",
+      "org": "Stony Brook University",
+      "url": "https://www.stonybrook.edu/simons/",
+      "audience": "High School (NY/NJ preferred)",
+      "desc": "7-week residential research program at Stony Brook University. Students work 1-on-1 with SBU faculty in labs including AI/ML and computational science. Culminates in a symposium — strong preparation for science fair competitions.",
+      "format": "In-Person Residential (Paid)"
+    },
+    {
+      "name": "AI Camp — Intensive Research Track",
+      "org": "AI Camp",
+      "url": "https://www.ai-camp.org/",
+      "audience": "High School",
+      "desc": "AI Camp offers hands-on AI project bootcamps for high schoolers. The research track produces real deployable projects — students have built ML applications for climate science, accessibility, and healthcare, mentored by ML engineers.",
+      "format": "In-Person / Online Intensive (Paid)"
+    },
+    {
+      "name": "LabXchange — Harvard-Founded Research Simulation Platform",
+      "org": "Harvard University / Amgen Foundation",
+      "url": "https://www.labxchange.org/",
+      "audience": "High School / All Levels",
+      "desc": "Harvard-developed platform for virtual science and AI research simulations. Free to use — students can engage in mentor-guided research clusters with real Harvard researchers through the online community.",
+      "format": "Free Online Research Platform"
+    },
+    {
+      "name": "PRIMES-USA — Remote Math & CS Research",
+      "org": "MIT PRIMES",
+      "url": "https://math.mit.edu/research/highschool/primes/usa/",
+      "audience": "High School (outside Boston)",
+      "desc": "The remote version of MIT PRIMES — open to students anywhere in the US. Students work 1-on-1 with MIT student mentors on original math or CS research projects, including AI/ML theory. One of the most academically rigorous HS research programs.",
+      "format": "Remote Research Mentorship (Free)"
+    },
+    {
+      "name": "Wolfram Research Internship",
+      "org": "Wolfram Research",
+      "url": "https://www.wolfram.com/company/careers/internships/",
+      "audience": "High School / Undergraduate",
+      "desc": "Wolfram hires exceptional high school students as research interns. Projects involve Mathematica, Wolfram Language, and increasingly AI/ML tools. Alumni have contributed to Wolfram|Alpha and Wolfram Language AI features.",
+      "format": "Remote Internship (Paid)"
+    },
+    {
+      "name": "Research Science Institute (RSI) — MIT",
+      "org": "Center for Excellence in Education / MIT",
+      "url": "https://www.cee.org/programs/research-science-institute",
+      "audience": "High School (rising seniors, US & international)",
+      "desc": "The most selective free research program in the US — MIT-hosted, fully funded, 6 weeks of original STEM research with MIT and Harvard faculty mentors. RSI alumni include 2+ Nobel laureates and dozens of Intel/Regeneron winners.",
+      "format": "In-Person Residential (Fully Funded)"
     }
   ]
 }
