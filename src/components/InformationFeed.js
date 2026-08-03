@@ -10,7 +10,6 @@ const PAPER_SOURCE = "preprint";
 const HIGH_QUALITY_SOURCES = ["industry-lab", "gov-research", "preprint"];
 const PAGE_SIZE = 10;
 
-// Theme → active class mapping
 const THEME_ACTIVE = {
   default: "brand-gradient text-white",
   blue:    "bg-blue-600 text-white",
@@ -18,7 +17,6 @@ const THEME_ACTIVE = {
   amber:   "bg-amber-500 text-white",
 };
 
-// Colors for sourceType badges
 const SOURCE_BADGE_COLORS = {
   "preprint":      "bg-blue-100 text-blue-700",
   "gov-research":  "bg-green-100 text-green-700",
@@ -41,7 +39,6 @@ function formatDate(iso, locale) {
 }
 
 function pickFeatured(items, n = 5) {
-  // Rotate every 2 days using an epoch-based seed
   const epoch = Math.floor(Date.now() / (2 * 86400000));
   const scored = items
     .filter((item) => item.tags?.length > 0)
@@ -55,7 +52,6 @@ function pickFeatured(items, n = 5) {
         else if (age < 86400000 * 10) score += 1;
       }
       if (item.tags?.length >= 2) score += 1;
-      // Add deterministic tiebreaker that rotates with epoch
       score += Math.sin(idx * 2.7 + epoch) * 0.49;
       return { item, score };
     });
@@ -82,6 +78,39 @@ function Paginator({ page, total, pageSize, onPage, activeClass }) {
   );
 }
 
+function ArticleCard({ item, idx, isPaper, tr, locale, tg }) {
+  const badgeColor = SOURCE_BADGE_COLORS[item.sourceType] || "bg-gray-100 text-gray-600";
+  const sourceTypeLabel = () => {
+    const f = SOURCE_TYPES.find((s) => s.id === item.sourceType);
+    return f ? f.label : null;
+  };
+  return (
+    <li className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}>
+      <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-muted mb-1.5">
+          <span className="font-medium text-brand-end">{item.source}</span>
+          {item.pubDate && <span>· {formatDate(item.pubDate, locale)}</span>}
+          {item.sourceType && (
+            <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColor}`}>
+              {SOURCE_TYPES.find((s) => s.id === item.sourceType)?.label ?? item.sourceType}
+            </span>
+          )}
+        </div>
+        <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>{tr(item.title)}</h3>
+        {item.summary && <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>{item.summary}</p>}
+        {item.tags?.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {item.tags.slice(0, 4).map((tagId) => {
+              const found = ALL_TAGS.find((t) => t.id === tagId);
+              return found ? <Tag key={tagId}>{tg(tagId)}</Tag> : null;
+            })}
+          </div>
+        )}
+      </a>
+    </li>
+  );
+}
+
 export default function InformationFeed({ items, theme = "default" }) {
   const activeClass = THEME_ACTIVE[theme] ?? THEME_ACTIVE.default;
   const t = useTranslations("information");
@@ -94,6 +123,11 @@ export default function InformationFeed({ items, theme = "default" }) {
   const [activeSource, setActiveSource] = useState(null);
   const [page, setPage] = useState(1);
   const [translatedTitles, setTranslatedTitles] = useState({});
+
+  // Search state
+  const [searchInput, setSearchInput] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchPage, setSearchPage] = useState(1);
 
   const availableSources = useMemo(() =>
     SOURCE_TYPES.filter((s) => s.id !== PAPER_SOURCE && items.some((item) => item.sourceType === s.id)),
@@ -133,17 +167,59 @@ export default function InformationFeed({ items, theme = "default" }) {
     return true;
   }), [items, activeTag, activeSource]);
 
+  // Search across ALL items (title + summary + source)
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const keywords = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    return items.filter((item) => {
+      const haystack = `${item.title ?? ""} ${item.summary ?? ""} ${item.source ?? ""}`.toLowerCase();
+      return keywords.every((kw) => haystack.includes(kw));
+    });
+  }, [items, searchQuery]);
+
   useEffect(() => { setPage(1); }, [activeTag, activeSource]);
 
   const featured = useMemo(() => pickFeatured(items), [items]);
   const paged = useMemo(() => filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [filtered, page]);
-  const sourceTypeLabel = (st2) => { const f = SOURCE_TYPES.find((s) => s.id === st2); return f ? st(f.id) : null; };
+  const searchPaged = useMemo(() =>
+    searchResults.slice((searchPage - 1) * PAGE_SIZE, searchPage * PAGE_SIZE),
+    [searchResults, searchPage]
+  );
   const tr = (title) => translatedTitles[title] || title;
+
+  function handleSearch(e) {
+    e.preventDefault();
+    setSearchQuery(searchInput.trim());
+    setSearchPage(1);
+  }
+
+  function clearSearch() {
+    setSearchInput("");
+    setSearchQuery("");
+    setSearchPage(1);
+  }
+
+  // Highlight keyword matches in text
+  function highlight(text) {
+    if (!searchQuery) return text;
+    const keywords = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    let result = text;
+    keywords.forEach((kw) => {
+      const re = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
+      result = result.replace(re, "**$1**");
+    });
+    // Convert **...** to <mark>
+    return result.split(/\*\*(.*?)\*\*/).map((part, i) =>
+      i % 2 === 1
+        ? <mark key={i} className="bg-yellow-200 text-yellow-900 rounded px-0.5">{part}</mark>
+        : part
+    );
+  }
 
   return (
     <div>
-      {/* Featured */}
-      {featured.length > 0 && !activeTag && !activeSource && (
+      {/* Featured Picks — hidden while searching */}
+      {featured.length > 0 && !activeTag && !activeSource && !searchQuery && (
         <div className="mb-8 rounded-2xl border border-red-100 bg-red-50/50 p-4">
           <p className="text-xs font-semibold uppercase tracking-wider text-red-500 mb-3">Featured Picks</p>
           <ol className="space-y-2">
@@ -181,7 +257,7 @@ export default function InformationFeed({ items, theme = "default" }) {
 
       {/* Topic filter */}
       {availableTags.length > 0 && (
-        <div className="mb-6 flex flex-wrap gap-2">
+        <div className="mb-5 flex flex-wrap gap-2">
           <FilterChip active={!activeTag} onClick={() => setActiveTag(null)} subtle activeClass={activeClass}>{t("allTopics")}</FilterChip>
           {availableTags.map((tag) => (
             <FilterChip key={tag.id} active={activeTag === tag.id}
@@ -190,44 +266,126 @@ export default function InformationFeed({ items, theme = "default" }) {
         </div>
       )}
 
-      {filtered.length === 0 ? (
-        <p className="text-sm text-muted">{t("empty")}</p>
+      {/* Search box */}
+      <form onSubmit={handleSearch} className="mb-6 flex gap-2">
+        <div className="relative flex-1">
+          <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input
+            type="text"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Escape") clearSearch(); }}
+            placeholder="Search articles by keyword…"
+            className="w-full rounded-xl border border-border bg-background pl-9 pr-4 py-2 text-sm focus:outline-none focus:border-blue-400 transition-colors"
+          />
+        </div>
+        <button type="submit"
+          className="rounded-xl bg-blue-600 text-white px-4 py-2 text-sm font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+          Search
+        </button>
+        {searchQuery && (
+          <button type="button" onClick={clearSearch}
+            className="rounded-xl card-surface text-muted px-3 py-2 text-sm hover:text-foreground transition-colors">
+            Clear
+          </button>
+        )}
+      </form>
+
+      {/* Search Results */}
+      {searchQuery ? (
+        <div>
+          <p className="mb-4 text-xs text-muted">
+            {searchResults.length === 0
+              ? <>No articles found for <strong>"{searchQuery}"</strong></>
+              : <><strong className="text-foreground">{searchResults.length}</strong> article{searchResults.length !== 1 ? "s" : ""} matching <strong>"{searchQuery}"</strong></>
+            }
+          </p>
+          {searchResults.length > 0 && (
+            <>
+              <ul className="space-y-3">
+                {searchPaged.map((item, idx) => {
+                  const isPaper = item.sourceType === PAPER_SOURCE;
+                  const badgeColor = SOURCE_BADGE_COLORS[item.sourceType] || "bg-gray-100 text-gray-600";
+                  return (
+                    <li key={item.link || idx} className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                        <div className="flex flex-wrap items-center gap-2 text-xs text-muted mb-1.5">
+                          <span className="font-medium text-brand-end">{item.source}</span>
+                          {item.pubDate && <span>· {formatDate(item.pubDate, locale)}</span>}
+                          {item.sourceType && (
+                            <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColor}`}>
+                              {SOURCE_TYPES.find((s) => s.id === item.sourceType)?.label ?? item.sourceType}
+                            </span>
+                          )}
+                        </div>
+                        <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>
+                          {highlight(tr(item.title))}
+                        </h3>
+                        {item.summary && (
+                          <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>
+                            {highlight(item.summary)}
+                          </p>
+                        )}
+                        {item.tags?.length > 0 && (
+                          <div className="mt-2 flex flex-wrap gap-1.5">
+                            {item.tags.slice(0, 4).map((tagId) => {
+                              const found = ALL_TAGS.find((t) => t.id === tagId);
+                              return found ? <Tag key={tagId}>{tg(tagId)}</Tag> : null;
+                            })}
+                          </div>
+                        )}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+              <Paginator page={searchPage} total={searchResults.length} pageSize={PAGE_SIZE} onPage={setSearchPage} activeClass={activeClass} />
+            </>
+          )}
+        </div>
       ) : (
-        <>
-          <p className="mb-3 text-xs text-muted">{filtered.length} items</p>
-          <ul className="space-y-3">
-            {paged.map((item, idx) => {
-              const isPaper = item.sourceType === PAPER_SOURCE;
-              const badgeColor = SOURCE_BADGE_COLORS[item.sourceType] || "bg-gray-100 text-gray-600";
-              return (
-                <li key={item.link || idx} className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}>
-                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
-                    <div className="flex flex-wrap items-center gap-2 text-xs text-muted mb-1.5">
-                      <span className="font-medium text-brand-end">{item.source}</span>
-                      {item.pubDate && <span>· {formatDate(item.pubDate, locale)}</span>}
-                      {item.sourceType && (
-                        <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColor}`}>
-                          {sourceTypeLabel(item.sourceType)}
-                        </span>
-                      )}
-                    </div>
-                    <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>{tr(item.title)}</h3>
-                    {item.summary && <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>{item.summary}</p>}
-                    {item.tags?.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-1.5">
-                        {item.tags.slice(0, 4).map((tagId) => {
-                          const found = ALL_TAGS.find((t) => t.id === tagId);
-                          return found ? <Tag key={tagId}>{tg(tagId)}</Tag> : null;
-                        })}
+        /* Normal filtered list */
+        filtered.length === 0 ? (
+          <p className="text-sm text-muted">{t("empty")}</p>
+        ) : (
+          <>
+            <p className="mb-3 text-xs text-muted">{filtered.length} items</p>
+            <ul className="space-y-3">
+              {paged.map((item, idx) => {
+                const isPaper = item.sourceType === PAPER_SOURCE;
+                const badgeColor = SOURCE_BADGE_COLORS[item.sourceType] || "bg-gray-100 text-gray-600";
+                return (
+                  <li key={item.link || idx} className={`card-surface rounded-xl p-4 ${isPaper ? "border-l-2 border-l-blue-400" : ""}`}>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                      <div className="flex flex-wrap items-center gap-2 text-xs text-muted mb-1.5">
+                        <span className="font-medium text-brand-end">{item.source}</span>
+                        {item.pubDate && <span>· {formatDate(item.pubDate, locale)}</span>}
+                        {item.sourceType && (
+                          <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColor}`}>
+                            {SOURCE_TYPES.find((s) => s.id === item.sourceType)?.label ?? item.sourceType}
+                          </span>
+                        )}
                       </div>
-                    )}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} activeClass={activeClass} />
-        </>
+                      <h3 className={`text-base font-semibold leading-snug ${isPaper ? "text-blue-900" : ""}`}>{tr(item.title)}</h3>
+                      {item.summary && <p className={`mt-1 text-sm text-muted ${isPaper ? "line-clamp-3" : "line-clamp-2"}`}>{item.summary}</p>}
+                      {item.tags?.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {item.tags.slice(0, 4).map((tagId) => {
+                            const found = ALL_TAGS.find((t) => t.id === tagId);
+                            return found ? <Tag key={tagId}>{tg(tagId)}</Tag> : null;
+                          })}
+                        </div>
+                      )}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+            <Paginator page={page} total={filtered.length} pageSize={PAGE_SIZE} onPage={setPage} activeClass={activeClass} />
+          </>
+        )
       )}
     </div>
   );
