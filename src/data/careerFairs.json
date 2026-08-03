@@ -1,0 +1,222 @@
+{
+  "seasons": [
+    {
+      "id": "fall",
+      "label": "Fall Recruiting",
+      "period": "Aug – Nov",
+      "subtitle": "秋招 · Primary hiring cycle — most companies recruit here",
+      "color": "amber",
+      "tip": "Fall is the main season. Apply online the same week you meet a recruiter — applications go stale fast."
+    },
+    {
+      "id": "spring",
+      "label": "Spring Recruiting",
+      "period": "Jan – Apr",
+      "subtitle": "春招 · Second cycle — smaller class, less competition",
+      "color": "green",
+      "tip": "Spring fairs have fewer companies but also fewer students. Easier to get face time with recruiters."
+    }
+  ],
+  "fairs": [
+    {
+      "id": "gatech-fall",
+      "season": "fall",
+      "university": "Georgia Institute of Technology",
+      "logo": "https://www.google.com/s2/favicons?domain=gatech.edu&sz=128",
+      "fairName": "GT Fall Career Fair",
+      "dates": "Sep 16–17, 2026",
+      "location": "Atlanta, GA — McCamish Pavilion",
+      "format": "In-Person",
+      "size": "350+ companies",
+      "aiCompanies": ["Google", "Microsoft", "Meta", "Amazon", "NVIDIA", "Apple", "Lockheed Martin", "Delta Air Lines"],
+      "url": "https://career.gatech.edu/career-fairs",
+      "tip": "Largest engineering career fair in the US. Arrive early — lines form before doors open. Wear comfortable shoes; you'll walk miles."
+    },
+    {
+      "id": "uiuc-fall",
+      "season": "fall",
+      "university": "University of Illinois Urbana-Champaign",
+      "logo": "https://www.google.com/s2/favicons?domain=illinois.edu&sz=128",
+      "fairName": "UIUC Engineering Career Fair",
+      "dates": "Sep 9–10, 2026",
+      "location": "Champaign, IL — State Farm Center",
+      "format": "In-Person",
+      "size": "300+ companies",
+      "aiCompanies": ["Amazon", "Google", "Microsoft", "NVIDIA", "Qualcomm", "IBM", "Caterpillar", "Deere & Co"],
+      "url": "https://go.illinoistech.edu/careerfair",
+      "tip": "Schedule changes fast — check the app the morning of. Priority lines move quickly; use UIUC career fair app to track booth wait times."
+    },
+    {
+      "id": "cmu-fall",
+      "season": "fall",
+      "university": "Carnegie Mellon University",
+      "logo": "https://www.google.com/s2/favicons?domain=cmu.edu&sz=128",
+      "fairName": "CMU Fall Career Fair",
+      "dates": "Sep 18, 2026",
+      "location": "Pittsburgh, PA — Wiegand Gymnasium",
+      "format": "In-Person",
+      "size": "150+ companies",
+      "aiCompanies": ["Google DeepMind", "OpenAI", "Anthropic", "Meta AI", "Two Sigma", "Jane Street", "Citadel"],
+      "url": "https://www.cmu.edu/career/students-and-alumni/career-fairs/",
+      "tip": "CMU's fair skews heavily toward AI/ML and quant finance. Recruiters here know what MCTS and transformers are — come ready to go deep technically."
+    },
+    {
+      "id": "mit-fall",
+      "season": "fall",
+      "university": "Massachusetts Institute of Technology",
+      "logo": "https://www.google.com/s2/favicons?domain=mit.edu&sz=128",
+      "fairName": "MIT Fall Career Fair",
+      "dates": "Oct 7–8, 2026",
+      "location": "Cambridge, MA — Johnson Athletic Center",
+      "format": "In-Person",
+      "size": "200+ companies",
+      "aiCompanies": ["Anthropic", "OpenAI", "Google", "Microsoft", "Tesla", "Waymo", "Draper Laboratory"],
+      "url": "https://capd.mit.edu/career-fairs/",
+      "tip": "Research teams from AI labs attend MIT specifically to recruit. Bring a one-page research summary if you have any ML project or paper — it opens different conversations."
+    },
+    {
+      "id": "stanford-fall",
+      "season": "fall",
+      "university": "Stanford University",
+      "logo": "https://www.google.com/s2/favicons?domain=stanford.edu&sz=128",
+      "fairName": "Stanford Engineering Career Fair",
+      "dates": "Oct 14, 2026",
+      "location": "Stanford, CA — Arrillaga Alumni Center",
+      "format": "In-Person",
+      "size": "120+ companies",
+      "aiCompanies": ["Google", "Apple", "Tesla", "Stripe", "Palantir", "Scale AI", "Cohere"],
+      "url": "https://beam.stanford.edu/career-fairs",
+      "tip": "Stanford's fair is medium-sized but the recruiter-to-student ratio is excellent. Many Bay Area startups send their CTO, not just a recruiter — great for non-traditional conversations."
+    },
+    {
+      "id": "berkeley-fall",
+      "season": "fall",
+      "university": "UC Berkeley",
+      "logo": "https://www.google.com/s2/favicons?domain=berkeley.edu&sz=128",
+      "fairName": "EECS Career Fair",
+      "dates": "Sep 23, 2026",
+      "location": "Berkeley, CA — Bechtel Engineering Center",
+      "format": "In-Person",
+      "size": "120+ companies",
+      "aiCompanies": ["Google", "Meta", "NVIDIA", "Databricks", "Cloudflare", "Figma", "Notion"],
+      "url": "https://career.berkeley.edu/fair/",
+      "tip": "EECS-only fair means every company there wants CS/ML talent. Much more targeted than a general university fair. Databricks and other data infra companies recruit heavily here."
+    },
+    {
+      "id": "ucsd-fall",
+      "season": "fall",
+      "university": "UC San Diego",
+      "logo": "https://www.google.com/s2/favicons?domain=ucsd.edu&sz=128",
+      "fairName": "UCSD Fall Career Fair",
+      "dates": "Oct 2, 2026",
+      "location": "La Jolla, CA — Price Center Ballroom",
+      "format": "In-Person",
+      "size": "130+ companies",
+      "aiCompanies": ["Qualcomm", "Google", "Amazon", "ServiceNow", "Teradata", "ViaSat"],
+      "url": "https://career.ucsd.edu/for-students/fairs.html",
+      "tip": "Qualcomm and defense/telecom companies have a strong presence unique to UCSD — valuable if you're interested in embedded AI or on-device ML."
+    },
+    {
+      "id": "virtual-fall",
+      "season": "fall",
+      "university": "Multi-University Virtual",
+      "logo": "https://cdn.simpleicons.org/zoom/2D8CFF",
+      "fairName": "Handshake Fall Virtual Fair",
+      "dates": "Oct 20–21, 2026",
+      "location": "Online — Handshake Platform",
+      "format": "Virtual",
+      "size": "500+ companies",
+      "aiCompanies": ["Amazon", "Microsoft", "Google", "IBM", "Salesforce", "Oracle", "Deloitte"],
+      "url": "https://joinhandshake.com/",
+      "tip": "Virtual fairs let you reach companies not recruiting at your school. Schedule 10-min slots in advance — drop-ins rarely get quality time. Dress professionally even on video."
+    },
+    {
+      "id": "gatech-spring",
+      "season": "spring",
+      "university": "Georgia Institute of Technology",
+      "logo": "https://www.google.com/s2/favicons?domain=gatech.edu&sz=128",
+      "fairName": "GT Spring Career Fair",
+      "dates": "Feb 18–19, 2027",
+      "location": "Atlanta, GA — McCamish Pavilion",
+      "format": "In-Person",
+      "size": "250+ companies",
+      "aiCompanies": ["Google", "Microsoft", "NVIDIA", "Boeing", "Raytheon", "ExxonMobil"],
+      "url": "https://career.gatech.edu/career-fairs",
+      "tip": "Spring at GT is still one of the biggest in the country. Many companies who filled tech headcount in fall return in spring for engineering and operations roles."
+    },
+    {
+      "id": "mit-spring",
+      "season": "spring",
+      "university": "Massachusetts Institute of Technology",
+      "logo": "https://www.google.com/s2/favicons?domain=mit.edu&sz=128",
+      "fairName": "MIT Spring Career Fair",
+      "dates": "Mar 4, 2027",
+      "location": "Cambridge, MA — Johnson Athletic Center",
+      "format": "In-Person",
+      "size": "120+ companies",
+      "aiCompanies": ["NASA JPL", "Anthropic", "DeepMind", "Two Sigma", "Moderna", "Genentech"],
+      "url": "https://capd.mit.edu/career-fairs/",
+      "tip": "Spring at MIT draws biotech and govtech companies that don't attend the fall fair. If you're interested in AI for science (drug discovery, climate modeling), spring is the right fair."
+    },
+    {
+      "id": "cmu-spring",
+      "season": "spring",
+      "university": "Carnegie Mellon University",
+      "logo": "https://www.google.com/s2/favicons?domain=cmu.edu&sz=128",
+      "fairName": "CMU Spring Career Fair",
+      "dates": "Feb 26, 2027",
+      "location": "Pittsburgh, PA — Cohon University Center",
+      "format": "In-Person",
+      "size": "100+ companies",
+      "aiCompanies": ["Scale AI", "Cohere", "Waymo", "Aurora", "Argo AI alumni startups"],
+      "url": "https://www.cmu.edu/career/students-and-alumni/career-fairs/",
+      "tip": "CMU spring skews toward AI startups and autonomous vehicle companies — smaller and scrappier than the fall fair, but excellent for finding research-focused roles."
+    },
+    {
+      "id": "berkeley-spring",
+      "season": "spring",
+      "university": "UC Berkeley",
+      "logo": "https://www.google.com/s2/favicons?domain=berkeley.edu&sz=128",
+      "fairName": "Berkeley Spring Career Fair",
+      "dates": "Mar 11, 2027",
+      "location": "Berkeley, CA — MLK Jr. Student Union",
+      "format": "In-Person",
+      "size": "100+ companies",
+      "aiCompanies": ["LinkedIn", "Lyft", "Snap", "Pinterest", "Rippling", "Airtable"],
+      "url": "https://career.berkeley.edu/fair/",
+      "tip": "Berkeley spring has a strong consumer tech and product-focused company mix. Good fair if you're exploring PM or product analytics roles alongside SWE."
+    },
+    {
+      "id": "virtual-spring",
+      "season": "spring",
+      "university": "Multi-University Virtual",
+      "logo": "https://cdn.simpleicons.org/zoom/2D8CFF",
+      "fairName": "Handshake Spring Virtual Fair",
+      "dates": "Mar 17–18, 2027",
+      "location": "Online — Handshake Platform",
+      "format": "Virtual",
+      "size": "400+ companies",
+      "aiCompanies": ["Amazon", "Deloitte AI", "Accenture AI", "PwC", "EY", "Capital One"],
+      "url": "https://joinhandshake.com/",
+      "tip": "Consulting and finance companies doing AI transformation work recruit heavily at spring virtual fairs. Worth attending if you're open to AI strategy or analyst roles."
+    }
+  ],
+  "prepTips": [
+    {
+      "label": "30-Second Elevator Pitch",
+      "detail": "Prepare a crisp intro: name, school, major, one project, one goal. Practice it out loud until it sounds natural, not rehearsed. Recruiters hear hundreds of pitches — clarity and energy stand out."
+    },
+    {
+      "label": "Research Before You Go",
+      "detail": "Look up each company's careers page and current open roles the night before. At the booth, mention the specific role by name. 'I saw your ML infrastructure team is hiring' beats 'I'm interested in tech jobs.'"
+    },
+    {
+      "label": "Follow Up the Same Day",
+      "detail": "Email or LinkedIn message within 24 hours — reference something specific from your conversation. 'Great talking about your work on recommendation systems' is far more memorable than a generic note."
+    },
+    {
+      "label": "Apply Online in Parallel",
+      "detail": "Meeting a recruiter at a fair does not replace the online application. Submit your application the same evening. Write the recruiter's name in the referral field if the form has one."
+    }
+  ]
+}

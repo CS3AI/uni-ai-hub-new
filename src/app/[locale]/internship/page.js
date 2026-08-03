@@ -5,6 +5,8 @@ import Tag from "@/components/Tag";
 import InternshipList from "@/components/InternshipList";
 import PeerDebriefs from "@/components/PeerDebriefs";
 import ReferralAccordion from "@/components/ReferralAccordion";
+import CareerFairs from "@/components/CareerFairs";
+import careerFairsData from "@/data/careerFairs.json";
 import { getInternshipListings } from "@/lib/internships";
 
 export const revalidate = 21600;
@@ -178,6 +180,18 @@ export default async function InternshipPage({ params }) {
               </div>
             ))}
           </div>
+        </Section>
+
+        {/* Career Fairs */}
+        <Section title="University Career Fairs">
+          <p className="mb-4 text-sm text-muted">
+            Recruiting seasons at top US universities — meet AI/ML teams from Google, Microsoft, Meta, OpenAI, and 300+ companies in person. Click any fair to see attending companies and insider tips.
+          </p>
+          <CareerFairs
+            fairs={careerFairsData.fairs}
+            seasons={careerFairsData.seasons}
+            prepTips={careerFairsData.prepTips}
+          />
         </Section>
 
         {/* Peer Interview Debriefs */}
