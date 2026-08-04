@@ -15,7 +15,7 @@ export default async function InformationPage({ params }) {
   setRequestLocale(locale);
   const t = await getTranslations("information");
 
-  const items = await getInformationFeed({ revalidate: 43200, limit: 200 });
+  const items = await getInformationFeed({ revalidate: 43200, limit: 600 });
 
   return (
     <div className="min-h-screen bg-blue-50">
