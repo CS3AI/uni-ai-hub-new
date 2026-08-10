@@ -10,7 +10,7 @@ export function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Uni AI Hub | University High School AI For Good Club",
+  title: "Uni AI Hub | University High School AI For Good @Uni Club",
   description:
     "A one-stop hub for AI industry news, university & company courses, and internship opportunities.",
   manifest: "/manifest.json",
