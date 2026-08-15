@@ -407,7 +407,6 @@ function StartupFundingTab() {
         return (
           <div key={section.title}>
             <div className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 mb-3 ${sc.header}`}>
-              <span className="text-lg">{section.emoji}</span>
               <h2 className="font-semibold text-sm">{section.title}</h2>
             </div>
             <div className="space-y-2">
@@ -458,9 +457,8 @@ function StartupFundingTab() {
         <h2 className="font-semibold text-sm text-amber-900 mb-3">💬 Founder Tips</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {FOUNDER_TIPS.map((ft, i) => (
-            <div key={i} className="flex gap-2 text-xs text-amber-800 leading-relaxed">
-              <span className="text-base shrink-0">{ft.icon}</span>
-              <span>{ft.tip}</span>
+            <div key={i} className="text-xs text-amber-800 leading-relaxed">
+<span>{ft.tip}</span>
             </div>
           ))}
         </div>
