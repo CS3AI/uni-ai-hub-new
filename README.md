@@ -9,7 +9,7 @@
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com)
 [![8 Languages](https://img.shields.io/badge/Languages-8-green?style=flat-square)](#internationalization)
 
-Built by the AI Club at **University High School (Irvine, CA)** — no login required.
+Built by the **AI For Good @Uni Club** at University High School (Irvine, CA) — no login required.
 
 </div>
 
@@ -33,9 +33,10 @@ Uni AI Hub aggregates real-time industry news, curated learning resources, live 
 
 ### 📰 Information — AI Industry News
 
-Auto-aggregated from 20+ sources including arXiv, Anthropic, Google DeepMind, OpenAI, Hugging Face, MIT CSAIL, IEEE, TechCrunch, and VentureBeat. Refreshes every **12 hours** via ISR.
+Auto-aggregated from **52 RSS/Atom sources** including arXiv (cs.AI, cs.LG, cs.CL, cs.CV, cs.NE, stat.ML), Anthropic, Google DeepMind, OpenAI, Hugging Face, MIT CSAIL, IEEE, TechCrunch, WIRED, MIT Technology Review, Papers with Code, and more. Refreshes every **12 hours** via ISR.
 
-- Up to 200 articles with dynamic source and topic filters (empty categories are hidden automatically)
+- Up to **600 articles** with dynamic source and topic filters (empty categories are hidden automatically)
+- **Keyword search** — search across title, summary, and source; results are highlighted and paginated
 - **Featured Picks** rotates every 48 h using a deterministic epoch-based seed — consistent recommendations, no database needed
 - Paginated 10 per page
 
@@ -55,7 +56,7 @@ Seven sections accessible via a **sticky horizontal tab bar** with active scroll
 | **Summer Schools** | Stanford HAI/AIMI, UC Berkeley AI4ALL, MIT PRIMES, CMU SAMS, NVIDIA DLI, Google CSRMP |
 | **Research Programs** | Spirit AI, RSI (MIT), PRIMES-USA, Regeneron STS, Simons Summer Research, UCSB RMP |
 
-All entries include difficulty level, format tags, and direct links.
+All entries include difficulty level, format tags, and direct links. Content is **auto-updated weekly** every Monday.
 
 ---
 
@@ -66,6 +67,17 @@ All entries include difficulty level, format tags, and direct links.
 **Referral Opportunities** — insider tips and timing windows for 8 companies:
 Google · Microsoft · Meta · Tesla · Waymo · OpenAI · Blizzard Entertainment · Rivian
 
+**University Career Fairs** — 68 fairs across 4 recruitment seasons covering the top 50 US universities:
+
+| Season | Color | Coverage |
+|---|---|---|
+| Fall | Amber | Major fall recruiting season (Aug–Oct) |
+| Spring | Green | Spring recruiting cycle (Jan–Mar) |
+| Summer | Blue | Summer internship fairs (Apr–Jun) |
+| Winter | Purple | Winter/holiday recruiting (Nov–Dec) |
+
+Each fair shows dates, format (in-person/virtual/hybrid), expected size, featured AI companies, and insider tips. Includes a career fair prep checklist.
+
 **Section A — Resume & Outreach Templates**
 AI/CS resume structure, professor cold-email frameworks, and industry referral request scripts.
 
@@ -75,13 +87,13 @@ Month-by-month milestones (Sep–Aug) for planning internship cycles a year in a
 **Section C — Tech Interview & Portfolio Tips**
 GitHub portfolio management, the Think Out Loud coding interview method, and the STAR behavioral framework with worked examples.
 
-**Peer Interview Debriefs** — anonymous community feed for sharing interview experiences. Data stored in `localStorage` — zero server cost, instant submission.
+**Peer Interview Debriefs** — anonymous community feed for sharing interview experiences.
 
 ---
 
 ### 🌍 Opportunity — Global Navigation
 
-Four tabs covering the full opportunity spectrum:
+Five tabs covering the full opportunity spectrum:
 
 **Global Challenges** — 8 competitions with inline difficulty/type/requirement tags:
 WAICY · IOAI · APEX AI Championship · Google Solution Challenge · Technovation Girls · The Earth Prize · Regeneron ISEF (AI) · ITU AI for Good Youth Summit
@@ -93,6 +105,17 @@ WAICY · IOAI · APEX AI Championship · Google Solution Challenge · Technovati
 **Talks & Events** — 9 conferences with attendance guidance:
 TED AI · NeurIPS · Google I/O · Stanford HAI Salon · SXSW EDU · CES · NVIDIA GTC · Fortune Brainstorm AI · AI Summit
 
+**Startup Funding** — 18 curated funding sources for high school and college student founders, organized in four sections:
+
+| Section | Highlights |
+|---|---|
+| Student Accelerators & Funds | Y Combinator ($500K), Dorm Room Fund (0% equity), Contrary Capital, 1517 Fund, Pear VC |
+| Pitch Competitions | Diamond Challenge (HS), Conrad Challenge, MassChallenge, TechCrunch Battlefield ($100K) |
+| Government Grants | NSF I-Corps ($50K, 0% equity), SBIR Phase I ($275K), DOE programs |
+| University Incubators | Berkeley SkyDeck, Stanford StartX (0% equity), MIT delta v, Harvard iLab |
+
+Each entry shows funding amount, equity taken, eligibility, and a direct application link. Includes a Founder Tips panel for student entrepreneurs.
+
 ---
 
 ### 🏠 Homepage Features
@@ -101,7 +124,7 @@ TED AI · NeurIPS · Google I/O · Stanford HAI Salon · SXSW EDU · CES · NVID
 - Grade · Tech Area · Industry Area · Coding Level
 - Returns up to 6 ranked recommendations with colored type badges
 
-**YCM Weekly Intel Digest** — hand-curated weekly briefing in four categories (Top News, Research Papers, Internships, Courses). Each item has a 50–100 word editorial note. Auto-translated in non-English modes via Google Translate API.
+**YCM Weekly Intel Digest** — hand-curated weekly briefing in four categories (Top News, Research Papers, Internships, Courses). Each item has a 50–100 word editorial note. Auto-translated in non-English modes via Google Translate API. **Updated automatically every Monday.**
 
 **Peer Profiles** — coming soon section for UHS students who landed top internships, summer programs, or competition wins.
 
@@ -120,7 +143,6 @@ TED AI · NeurIPS · Google I/O · Stanford HAI Salon · SXSW EDU · CES · NVID
 | Database | Supabase (shared comments + reaction counts) |
 | Data freshness | ISR — 12 h (news) · 6 h (internships) · 10 min (courses) |
 | View counters | counterapi.dev (page views, unique visitors, school count) |
-| User content | `localStorage` (interview debriefs, draft comments) |
 | Auto-translation | Google Translate free API (non-English static content) |
 
 ---
@@ -148,11 +170,12 @@ src/
 │   ├── page.js              # Homepage
 │   ├── information/page.js  # News feed (12 h ISR)
 │   ├── courses/page.js      # 7-section learning hub
-│   ├── internship/page.js   # Live jobs + career prep
-│   └── opportunity/page.js  # Challenges, open source, events
+│   ├── internship/page.js   # Live jobs + career prep + career fairs
+│   └── opportunity/page.js  # Challenges, open source, events, startup funding
 ├── components/
-│   ├── InformationFeed.js   # Filter chips + pagination
+│   ├── InformationFeed.js   # Filter chips + keyword search + pagination
 │   ├── InternshipList.js    # Search, pagination, skill tag inference
+│   ├── CareerFairs.js       # 4-season career fair accordion (68 fairs, top 50 universities)
 │   ├── OpportunityMatch.js  # 4-selector recommender
 │   ├── CourseTabs.js        # Sticky tab nav with IntersectionObserver
 │   ├── WeeklyDigest.js      # Curated weekly briefing
@@ -163,9 +186,10 @@ src/
 ├── data/
 │   ├── activities.json      # Opportunities, open source, events, global challenges
 │   ├── courses.json         # All courses, lectures, conferences, programs
-│   └── digest.json          # Weekly digest content
+│   ├── careerFairs.json     # 68 career fairs across 4 seasons, top 50 US universities
+│   └── digest.json          # Weekly digest content (auto-updated every Monday)
 ├── lib/
-│   ├── feeds.js             # RSS/API feed sources
+│   ├── feeds.js             # 52 RSS/Atom feed sources
 │   └── internships.js       # Internship data fetcher
 ├── messages/                # 8 locale JSON files
 └── public/logos/            # 24+ organization logos (universities, companies, orgs)
@@ -190,12 +214,13 @@ Open [http://localhost:3000](http://localhost:3000). The site works fully withou
 
 ## Contributing
 
-Maintained by the UHS AI Club. All contributions welcome:
+Maintained by the **AI For Good @Uni Club**. All contributions welcome:
 
 | What | How |
 |---|---|
 | Add a course or resource | Edit `src/data/courses.json` or `src/data/activities.json` and open a PR |
 | Add an internship source | Update `src/lib/feeds.js` |
+| Add a career fair | Edit `src/data/careerFairs.json` |
 | Add a language | Copy `messages/en.json`, translate, add the locale to `next-intl` config |
 | Bug reports / feature ideas | Open a [GitHub Issue](https://github.com/CS3AI/uni-ai-hub-new/issues) |
 
@@ -203,19 +228,21 @@ Maintained by the UHS AI Club. All contributions welcome:
 
 ## Development Log
 
-| Date | Version | Milestone |
-|---|---|---|
-| Jun 22 | v1 | Initial framework setup |
-| Jun 23 | v2 | 8-language internationalization |
-| Jun 24 | v3–v5 | Information feed, university courses, logo, view counter |
-| Jun 25 | v6–v8 | YCM Weekly Intel Digest, AI Opportunity Match |
-| Jun 27 | v9–v12 | Opportunity board launched |
-| Jun 28 | v13–v16 | Topic filters, pagination, lecture section, layout polish |
-| Jun 29 | v17–v20 | Interview prep, Peer Profiles, Peer Debriefs, Feedback Wall, skill tags |
-| Jun 30 | v21–v22 | UI refinements, ISR tuning, expanded university & volunteer content |
-| Jul 1 | v23–v24 | Courses horizontal tab nav, OpportunityMatch dual-interest selectors |
-| Jul 9 | v25–v26 | Logo overhaul — 24 high-quality local logos for universities, companies & orgs |
-| Jul 10 | v27 | Feedback Wall emoji counts migrated to Supabase (globally shared across all users) |
+| Date | Milestone |
+|---|---|
+| Jun 22 | Initial framework setup |
+| Jun 23 | 8-language internationalization; language support optimization |
+| Jun 24 | Information feed expanded; university courses added; logo placed; view counter added |
+| Jun 25 | YCM Weekly Intel Digest launched (Top 5 News, Top 3 Papers, Top 3 Internships, Top Courses with 50–100 word editorial notes); AI Opportunity Match added |
+| Jun 27 | Opportunity board launched |
+| Jun 28 | Topic filter chips and pagination; online lecture section; layout and color polish |
+| Jun 29 | Interview prep sections (resume, portfolio, STAR); Peer Profiles; Peer Interview Debriefs; Feedback Wall; research summer schools; prerequisite tags on internships |
+| Jun 30 | UI refinements; ISR tuning; expanded university and volunteer content |
+| Jul 1 | Courses horizontal tab nav; OpportunityMatch dual-interest selectors |
+| Jul 9–10 | Logo overhaul — 24 high-quality local logos; Feedback Wall emoji counts migrated to Supabase (globally shared real-time counts) |
+| Aug 2 | Courses and Weekly Digest auto-updated to current week; Information keyword search added; University Career Fairs module launched on Internship board |
+| Aug 3 | Information articles expanded to 600 (52 RSS sources); Career Fairs expanded to 4 seasons (summer + winter added), 68 fairs covering top 50 US universities |
+| Aug 14 | Startup Funding tab added to Opportunity board (18 programs: accelerators, pitch competitions, government grants, university incubators) |
 
 ---
 
