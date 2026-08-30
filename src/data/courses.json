@@ -1790,7 +1790,7 @@
     {
       "name": "Spirit AI High School Research Program",
       "org": "Spirit AI",
-      "url": "",
+      "url": "https://spiritai.org/",
       "audience": "High School",
       "desc": "One of the few mentored AI research programs designed specifically for high schoolers. Real publication potential.",
       "format": "Remote Research Mentorship"
@@ -1862,7 +1862,7 @@
     {
       "name": "Microsoft Research — Internship (MSRI)",
       "org": "Microsoft Research",
-      "url": "https://www.microsoft.com/en-us/research/academic-program/research-internship/",
+      "url": "https://www.microsoft.com/en-us/research/academic-program/undergraduate-research-internship-computing/",
       "audience": "PhD Students / Exceptional Undergrads",
       "desc": "Microsoft Research internships are a direct path to some of the most impactful AI research in industry. Labs include MSR Cambridge, MSR Redmond, MSR Asia — many papers published from MSRI lead to top-tier publications.",
       "format": "In-Person Research (Paid)"
@@ -1876,9 +1876,9 @@
       "format": "Remote 1-on-1 Mentorship (Paid)"
     },
     {
-      "name": "Aether Research — AI Research Program for High Schoolers",
-      "org": "Aether Research",
-      "url": "https://aetherresearch.org/",
+      "name": "Algoverse AI Research — High School Program",
+      "org": "Algoverse AI Research",
+      "url": "https://algoverseairesearch.org/",
       "audience": "High School",
       "desc": "A mentored AI research program run by graduate students at top universities. Combines curriculum in ML fundamentals with original research projects. Strong track record of student papers accepted at AI conferences.",
       "format": "Remote Mentorship Program"
@@ -1894,7 +1894,7 @@
     {
       "name": "Johns Hopkins Applied Physics Lab (APL) — SEAP",
       "org": "Johns Hopkins APL / US Department of Defense",
-      "url": "https://www.jhuapl.edu/stem/programs/seap",
+      "url": "https://www.onr.navy.mil/education-outreach/k-12-programs/seap",
       "audience": "High School (US citizens)",
       "desc": "SEAP places high school students in cutting-edge research at JHU APL, which conducts AI research for national defense, space exploration, and healthcare. Paid 8-week program — one of the best-funded HS research experiences in the US.",
       "format": "In-Person Research (DoD Funded)"
@@ -1934,7 +1934,7 @@
     {
       "name": "Wolfram Research Internship",
       "org": "Wolfram Research",
-      "url": "https://www.wolfram.com/company/careers/internships/",
+      "url": "https://education.wolfram.com/summer-research-high-school/",
       "audience": "High School / Undergraduate",
       "desc": "Wolfram hires exceptional high school students as research interns. Projects involve Mathematica, Wolfram Language, and increasingly AI/ML tools. Alumni have contributed to Wolfram|Alpha and Wolfram Language AI features.",
       "format": "Remote Internship (Paid)"

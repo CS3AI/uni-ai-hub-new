@@ -63,7 +63,7 @@ export default async function InternshipPage({ params }) {
     {
       company: "Meta",
       logo: "https://cdn.simpleicons.org/meta/0082FB",
-      url: "https://www.metacareers.com/students/",
+      url: "https://www.metacareers.com/careerprograms/students/",
       note: ir("metaNote"),
       workDesc: "ML infrastructure at trillion-parameter scale, Instagram recommendation systems, WhatsApp AI, Meta AI (Llama), VR/AR scene understanding, or the Reality Labs research division.",
       timeline: "Applications open September–November for summer. Meta University for high school juniors/seniors opens January–March. AI Research Scientist Intern applications are rolling.",
