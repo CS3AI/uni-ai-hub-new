@@ -75,7 +75,7 @@
         {
           "code": "CS189",
           "title": "Introduction to Machine Learning",
-          "url": "https://people.eecs.berkeley.edu/~jrs/189/",
+          "url": "https://eecs189.org/",
           "level": "Intermediate",
           "format": "Open Course Materials",
           "desc": "Rigorous introduction to ML theory — SVMs, neural networks, and dimensionality reduction. Assumes strong linear algebra and probability."
@@ -332,7 +332,7 @@
         {
           "code": "COS 484",
           "title": "Natural Language Processing",
-          "url": "https://cos484.github.io/",
+          "url": "https://nlp.cs.princeton.edu/cos484/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "NLP fundamentals — text classification, language models, sequence labeling, and neural approaches to language understanding."
@@ -362,7 +362,7 @@
         {
           "code": "CS 5740",
           "title": "Natural Language Processing",
-          "url": "https://www.cs.cornell.edu/courses/cs5740/",
+          "url": "https://nlp.cornell.edu/courses/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "NLP covering parsing, semantics, machine translation, and neural language models with strong theoretical grounding."
@@ -430,7 +430,7 @@
         {
           "code": "CS 4649",
           "title": "Robot Intelligence",
-          "url": "https://www.cc.gatech.edu/classes/AY2021/cs4649_spring/",
+          "url": "https://catalog.gatech.edu/coursesaz/cs/",
           "level": "Intermediate",
           "format": "Open Course Materials",
           "desc": "Robot intelligence — planning, perception, and learning algorithms for autonomous robotic systems."
@@ -444,7 +444,7 @@
         {
           "code": "DS-GA 1008",
           "title": "Deep Learning (Yann LeCun)",
-          "url": "https://atcold.github.io/NYU-DLSP21/",
+          "url": "https://atcold.github.io/pytorch-Deep-Learning/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "Deep learning by Yann LeCun (inventor of CNNs). Covers energy-based models, transformers, and self-supervised learning — full lectures on YouTube."
@@ -482,7 +482,7 @@
         {
           "code": "CS 547",
           "title": "Deep Learning",
-          "url": "https://deep.cs.illinois.edu/",
+          "url": "https://courses.grainger.illinois.edu/cs547/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "Deep learning seminar covering the latest research in neural architectures, training methods, and applications."
@@ -512,7 +512,7 @@
         {
           "code": "CPSC 477",
           "title": "Natural Language Processing",
-          "url": "https://cpsc.yale.edu/",
+          "url": "http://nlp.cs.yale.edu/cpsc477/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "NLP covering syntax, semantics, and neural approaches to language understanding and text generation."
@@ -534,7 +534,7 @@
         {
           "code": "COMS 4771",
           "title": "Machine Learning",
-          "url": "https://www.cs.columbia.edu/~amueller/comsw4771/",
+          "url": "https://www.cs.columbia.edu/~verma/classes/ml/index.html",
           "level": "Intermediate",
           "format": "Open Course Materials",
           "desc": "Core ML: regression, classification, Bayesian methods, and neural networks with solid theoretical grounding."
@@ -542,7 +542,7 @@
         {
           "code": "COMS W4995",
           "title": "Applied Machine Learning",
-          "url": "https://www.cs.columbia.edu/~djhsu/coms4995-s20/",
+          "url": "https://www.cs.columbia.edu/~amueller/courses",
           "level": "Intermediate",
           "format": "Open Course Materials",
           "desc": "Applied ML with hands-on projects — data preprocessing, model evaluation, ensemble methods, and deployment pipelines."
@@ -602,7 +602,7 @@
         {
           "code": "CSC 2547",
           "title": "Topics in Machine Learning",
-          "url": "https://www.cs.toronto.edu/~cmaddis/courses/sta414_w23/",
+          "url": "https://learning.cs.toronto.edu/",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "Graduate ML seminar covering frontier research in deep learning, generative models, and AI safety."
@@ -624,7 +624,7 @@
         {
           "code": "263-3210",
           "title": "Deep Learning",
-          "url": "https://da.inf.ethz.ch/teaching/2023/DeepLearning/",
+          "url": "https://ml.inf.ethz.ch/education.html",
           "level": "Advanced",
           "format": "Open Course Materials",
           "desc": "ETH's flagship deep learning course taught by world-class researchers. Covers architectures, optimization, and state-of-the-art applications."
@@ -1149,7 +1149,7 @@
       "name": "NYU Deep Learning (Yann LeCun & Alfredo Canziani)",
       "speaker": "Yann LeCun & Alfredo Canziani",
       "org": "New York University · YouTube",
-      "url": "https://atcold.github.io/NYU-DLSP21/",
+      "url": "https://atcold.github.io/pytorch-Deep-Learning/",
       "topic": "Energy-Based Models, Self-Supervised Learning, Graph Neural Networks",
       "level": "Advanced",
       "format": "Free Online Lecture Series",
