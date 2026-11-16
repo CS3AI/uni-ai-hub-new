@@ -1,90 +1,90 @@
 {
-  "week": "2026-10-26",
-  "weekLabel": "Week of October 26 – November 1, 2026",
+  "week": "2026-11-16",
+  "weekLabel": "Week of November 16 – November 22, 2026",
   "news": [
     {
       "rank": 1,
-      "title": "Oracle and Google Bring Google TPUs to Oracle Cloud Infrastructure",
-      "source": "Oracle (AI World announcement)",
-      "url": "https://www.oracle.com/es/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/",
-      "commentary": "Oracle and Google announced that Google's TPUs will be offered on Oracle Cloud Infrastructure starting in 2027, with agentic, long-context, and multi-step reasoning workloads called out as targets. For students, the takeaway is that AI hardware is no longer an Nvidia-only story: companies now hedge across chip families, so engineers who understand portable frameworks and performance tradeoffs will be valuable. If you're learning PyTorch, start noticing how code maps onto different accelerators. That skill is exactly what infrastructure teams hire interns to help with, and the fast.ai course below builds the foundation."
+      "title": "Jensen Huang Steps Down as Nvidia CEO; Colette Kress Named Interim CEO",
+      "source": "Nvidia (SEC filing)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+      "commentary": "Nvidia disclosed on November 12 that Jensen Huang resigned as president, CEO and board member effective immediately, with CFO Colette Kress serving as interim CEO and Harvey Jones becoming the first board chair. Q3 earnings are due November 17, so expect scrutiny. For students, the lesson is that AI's biggest company is still a human organization facing leadership change. Watch how demand for GPUs holds up, because that drives hiring for the AI infrastructure and performance-engineering internships. Learning CUDA basics or PyTorch performance tuning remains a smart, durable bet regardless of who runs the company."
     },
     {
       "rank": 2,
-      "title": "Akamai Launches AI Inference Service and Agent Execution Environment",
-      "source": "Akamai Newsroom",
-      "url": "https://www.akamai.com/newsroom/press-release/akamai-launches-ai-inference-service-and-agent-execution-environment",
-      "commentary": "Akamai introduced two beta products: Akamai Inference, a managed model-serving service, and Agent Sandbox, an isolated runtime for running code that AI agents write, with outbound blocking and isolation controls by default. The interesting part is the premise: if agents write code, someone has to contain it. Security and sandboxing are quietly becoming core AI engineering problems, not afterthoughts. If you're building agent projects for a club or science fair, practice running generated code in a restricted environment rather than on your own machine. It's a concrete, resume-worthy habit."
+      "title": "Google Opens Gemini 4 Carbon to Paying Developers and Ultra Subscribers",
+      "source": "Google Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
+      "commentary": "Reporting says Gemini 4 Carbon opened November 10 to paying developers, businesses and Google AI Ultra subscribers after an October 28 preview limited to cyber defenders. A faster, cheaper sibling, Gemini 4 Hydrogen, followed and reaches free users, while Carbon stays off free and mid-tier consumer plans. The practical takeaway: frontier models now come in tiers, so learning to pick the right model for cost, speed and quality is a real engineering skill. Try building the same small project on two tiers and compare. That comparison habit looks great in an internship application and in the Google research roles listed below."
     },
     {
       "rank": 3,
-      "title": "GitHub Adds Copilot Automations in Visual Studio Code",
-      "source": "GitHub Changelog",
-      "url": "https://github.blog/changelog/2026-10-28-create-and-manage-copilot-automations-in-visual-studio-code",
-      "commentary": "GitHub's changelog dated October 28 describes creating and managing Copilot Automations directly inside Visual Studio Code, continuing its push toward agents that work on a schedule or trigger instead of waiting for a prompt. The practical lesson for students is that the unit of work is shifting from writing a single function to supervising an assistant that handles recurring tasks. Learn to review diffs critically, write clear task descriptions, and decide what to automate. Those judgment skills transfer to any internship, such as the Capital One AI engineering program featured below, where agentic workflows are part of the job."
+      "title": "Anthropic Releases Claude Fable 5.2 and Mythos 5.2",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "commentary": "Anthropic released Claude Fable 5.2 to all users, with Mythos 5.2 offered to vetted cybersecurity and life-science organizations. Coverage lists pricing of $8 per million input tokens and $40 per million output tokens, and Anthropic says that in testing the models designed three working electronic devices and solved two open black-hole physics problems. Treat vendor claims as claims until independent evaluations appear. The skill worth building is reading benchmark and safety claims critically. If you want a project, write a small evaluation harness that tests a model on tasks you care about instead of trusting headlines."
     },
     {
       "rank": 4,
-      "title": "SK Telecom Publishes AI Governance Report and Treats AI Agents as a Managed Workforce",
-      "source": "Money Today (mt.co.kr)",
-      "url": "https://www.mt.co.kr/en/tech/2026/10/26/2026102608473288201",
-      "commentary": "SK Telecom released its first AI Governance Report and, per coverage of it, is considering AI agents as a new form of labor: each agent gets an employee ID, a recorded role and supervisor, and monitoring of its status and token use, with more autonomous agents requiring a senior human supervisor. Whether or not that framing catches on, it shows companies need people who can govern AI, not only build it. If policy, ethics, or operations interest you as much as coding, this is a real career lane. Pair technical coursework with writing and risk-assessment practice."
+      "title": "OpenAI Launches ChatGPT Wallet So AI Agents Can Shop and Check Out",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "commentary": "On November 13 OpenAI launched ChatGPT Wallet, letting personal agents find products, fill a basket and complete checkout. It was built with American Express, Mastercard and Visa, uses tokenized cards so the agent never sees real numbers, and requires face or fingerprint approval for each purchase. It is limited to US Pro subscribers aged 18 and up. This is a clear example of agents moving from chat to real actions, and security design is the hard part. Students curious about AI careers should study agent permissions, authentication and failure handling, areas where employers badly need talent."
     },
     {
       "rank": 5,
-      "title": "NVIDIA Signals a Possible Recurring Software Charge for Agent Infrastructure",
-      "source": "AI Agent Store (weekly roundup)",
-      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
-      "commentary": "According to this week's roundup, NVIDIA CEO Jensen Huang discussed a possible annual software license of about $2,000 per GPU for software that runs AI agents; NVIDIA hasn't said which products would be covered or when it would start, so treat it as a pricing signal, not a launch. The bigger idea is that value is moving up the stack from chips to software that orchestrates agents. For students, that means open-source tools and cost-aware engineering matter. Learn to compare options and estimate compute costs; interviewers increasingly ask about tradeoffs, not just accuracy."
+      "title": "Thinking Machines Releases Inkling 2 Small Weights Under Apache 2.0",
+      "source": "Thinking Machines",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "commentary": "Thinking Machines opened the weights of Inkling 2 Small on November 12 under Apache 2.0, a week after launching it closed-weight and after external safety testing and red-teaming. It is a mixture-of-experts model with 594 billion total parameters, 17 billion active per token, image input, and NVFP4 and MXFP8 checkpoints. Open weights matter for students because you can study and fine-tune real frontier-scale systems instead of only calling an API. Pair this with the fast.ai course below to learn how models are trained and deployed, then try a small fine-tuning experiment on a smaller open model."
     }
   ],
   "papers": [
     {
       "rank": 1,
-      "title": "Language Models Learn to Improve Language Models",
-      "source": "arXiv (2610.23344, submitted Oct 16, 2026)",
-      "url": "https://arxiv.org/abs/2610.23344",
-      "commentary": "The authors propose LM2LM, which uses reinforcement learning to train a model to generate useful proposals for improving other language models, scored by a frozen model that predicts gains from real experiment records. Across eight development environments, the abstract reports their approach lets Qwen3.8-27B beat GPT-6-sol even when that model sees 300 real experimental records, at 33% lower data-generation cost. Read the abstract and introduction first; you don't need every equation. It's a good window into automated AI research, a trend worth understanding before you choose a research internship or lab to join."
+      "title": "When Should Diffusion Language Models Reconsider Their Commitments?",
+      "source": "arXiv:2611.11551",
+      "url": "https://arxiv.org/abs/2611.11551",
+      "commentary": "This paper introduces PURL, a training framework for masked diffusion language models that combines parallel generation with selective token revision, so the model can go back and edit earlier choices. The authors report relative accuracy gains of up to 47.4 percent on logic puzzles, math reasoning and code generation at matched budgets, plus up to 8x fewer scheduled decoding rounds. They also find edits help more as context accumulates. For students, it shows that language models need not generate strictly left to right. Reading the abstract and intro is accessible, and it ties nicely to the deep learning foundations covered in the courses below."
     },
     {
       "rank": 2,
-      "title": "Language Models as AI Research World Models",
-      "source": "arXiv (2610.12235, submitted Oct 8, 2026)",
-      "url": "https://arxiv.org/abs/2610.12235",
-      "commentary": "This paper tests whether language models can predict the outcomes of candidate experiments, using more than 2,600 experimental records from nine research environments that consumed over 171,000 H100 GPU-hours. Real experimental knowledge improved predictions for unseen interventions, and experience from other environments reduced selection regret by 78% in one case. It is the companion to the paper above, so read them together. The student lesson: good research depends on cheap, reliable ways to decide what to try next, and data from past experiments is itself a valuable resource. Keep organized experiment logs in your own projects."
+      "title": "Explaining and interrupting collective misalignment in language model systems",
+      "source": "arXiv:2611.11724",
+      "url": "https://arxiv.org/abs/2611.11724",
+      "commentary": "Edoardo Chidichimo proposes Collective Dependence Analysis for multi-agent LLM systems, finding the fewest message removals that interrupt a policy violation. In controlled cases, selected removals cut violations from 93 percent to 6 percent, and it matched a frontier LLM judge's result with half the deletions. The author notes limits: unfamiliar tasks are hard to explain and removals can disrupt correct decisions. This matters as agent products like shopping wallets spread, because failures can emerge from groups of agents rather than one model. If AI safety interests you, this is a concrete example of interpretability work you could reproduce in a student project."
     },
     {
       "rank": 3,
-      "title": "Large Language Models Extend Known Research But Do Not Create New Research Directions",
-      "source": "arXiv (2610.17439, submitted Oct 12, 2026)",
-      "url": "https://arxiv.org/abs/2610.17439",
-      "commentary": "The authors separate two kinds of novelty, distance from existing work and whether a hypothesis opens a new direction, and introduce an orthogonal novelty score. Comparing 26.9 million human-authored papers with 524,308 LLM-generated hypotheses, they find LLM ideas are further away from existing work but have a 15 to 23 percent lower median score for direction. It's a useful counterweight to hype from the first two papers. For students, the message is encouraging: asking original questions remains a human advantage, so spend time developing taste and curiosity alongside technical skills."
+      "title": "Language Models Can Benefit from Domain-Specific Inductive Biases",
+      "source": "arXiv:2611.03756",
+      "url": "https://arxiv.org/abs/2611.03756",
+      "commentary": "This NeurIPS 2026 position paper trains small language models from scratch and swaps standard activation functions for learned splines tuned on particular datasets. Tuned variants improved training efficiency or generalization on all seven datasets tested, but gains were often domain-specific: designs tuned on FineWeb did well on TinyStories, while ones tuned on mathematics did poorly on natural language. The authors argue for domain-specific strategies rather than a few general architectures. The takeaway for students is that small, controlled experiments can still produce publishable ideas. You do not need a giant cluster, which makes this a great model for a first research project."
     }
   ],
   "internships": [
     {
       "rank": 1,
-      "title": "AIMI Summer Research Internship (Summer 2027)",
-      "company": "Stanford Center for AI in Medicine & Imaging (AIMI)",
-      "location": "Stanford AIMI Center, Palo Alto, CA",
-      "url": "https://aimi.stanford.edu/education/summer-research-internship",
-      "commentary": "This is the pick for high schoolers: Stanford's page says the program offers mentored, hands-on research with real-world health data at the intersection of AI and medicine. The Summer 2027 application opens November 10, 2026 with a deadline of February 1, 2027, and a free online info session for students and parents runs November 10 from 5 to 6 PM Pacific. The page doesn't state pay, length, or whether work is in person, so check the details. Start drafting your statement now and attend the info session; early preparation is the easiest edge."
+      "title": "Future Leaders in Public Service Internship (AI placements, Summer 2027)",
+      "company": "Partnership for Public Service",
+      "location": "Government agencies nationwide (format not stated)",
+      "url": "https://gogovernment.org/wp-content/uploads/2026/07/Future-Leaders-Agency-One-Pager-AI-Summer-2027.pdf",
+      "commentary": "This Partnership for Public Service one-pager lists a 10 to 12 week summer 2027 internship at local, state or federal agencies, with AI-related placements. Its timeline says the student application closes November 27, so act this week. Requirements include U.S. citizenship, enrollment in an accredited program, sophomore or rising sophomore status for undergraduates, and a 2.5 GPA minimum. Stipends are funded by university partners. If you care about how AI is actually governed and deployed, public-sector experience is rare and valuable. Verify details on the official program site before applying, since the PDF is written for agency partners."
     },
     {
       "rank": 2,
-      "title": "Current Master's, AI Engineering Internship Program - Summer 2027",
-      "company": "Capital One",
-      "location": "New York, NY / San Jose, CA / McLean, VA",
-      "url": "https://www.capitalonecareers.com/job/new-york/current-master-s-ai-engineering-internship-program-summer-2027/31238/100341360880",
-      "commentary": "Aimed at current Master's students, this twelve-week paid internship has interns prototype AI products, build agentic workflows, and work on fine-tuning, inference optimization, and evaluation using PyTorch and AWS. Requirements include at least six months of AI/ML experience and of Python, Go, Scala, or Java. The posting notes the company will not sponsor new work authorization for the role, and no deadline is stated. Undergraduates can still use it as a map of skills employers want: agent frameworks, evaluation, and deployment. Build a small project in each area now."
+      "title": "2027 Applied Science Internship (Undergrad, Frontier AI & Robotics)",
+      "company": "Amazon",
+      "location": "United States",
+      "url": "https://www.amazon.jobs/en/jobs/10564599/2027-applied-science-internship-united-states-undergrad-student-science-recruiting-frontier-ai-robotics",
+      "commentary": "Amazon's undergraduate applied science internship, tied to Frontier AI and Robotics, was posted September 30 according to a guide that is itself dated, so confirm the posting is still open on Amazon's site. Applied science roles typically reward solid math, Python and some project evidence over fancy titles. This week's news about agents that can shop and act in the world shows why robotics and agent teams are growing. Build one or two real projects, such as a small reinforcement learning or computer vision demo, and put them on GitHub before applying. Apply early, since rolling postings can close once filled."
     },
     {
       "rank": 3,
-      "title": "AI Research Scientist - Intern [2027 Summer]",
-      "company": "Two Sigma",
-      "location": "New York, NY",
-      "url": "https://careers.twosigma.com/careers/JobDetail/New-York-New-York-United-States-AI-Research-Scientist-Intern-2027-Summer/14096",
-      "commentary": "A roughly ten-week research internship open only to PhD students or Master's students with work experience in their penultimate year, listing base weekly pay of $5,000 for MS and $5,500 for PhD. Responsibilities include writing code, running experiments, and building techniques for understanding how financial data affects the world; preferred skills include PyTorch or TensorFlow, deep learning, and conference-level research. It's out of reach for most readers today, but it shows what a research track looks like. If that appeals, aim for publications and strong statistics and Python fundamentals during college."
+      "title": "Student Researcher, BS/MS, Winter-Summer 2027",
+      "company": "Google",
+      "location": "See posting for locations",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/131518356678156998-student-researcher-bsms-wintersummer-2027",
+      "commentary": "Google lists a Student Researcher role for BS and MS students with start dates between January and August 2027. A third-party guide pointed to it, so check the posting for current status, location and requirements. Research positions like this favor candidates who can read papers critically and reproduce results, which is why this week's arXiv picks matter. Try implementing a small idea from one of them and write a clear README on what worked and what did not. With Gemini 4 now tiered across Carbon and Hydrogen, expect model efficiency and evaluation to be hot topics for researchers like you."
     }
   ],
   "courses": [
@@ -93,14 +93,14 @@
       "title": "Practical Deep Learning for Coders",
       "institution": "fast.ai",
       "url": "https://course.fast.ai/",
-      "commentary": "A free course whose only stated prerequisites are about a year of coding experience, preferably Python, and high school math; the page says no university math is needed because it teaches the calculus and linear algebra you use. Part 1 covers vision, NLP, tabular data, collaborative filtering, and deployment with PyTorch and fastai, and Part 2 goes deeper into Stable Diffusion foundations. It is the best on-ramp for high schoolers because you build working models in the first lesson. Use free Kaggle notebooks for GPUs, and finish a personal project to show on applications."
+      "commentary": "fast.ai's free course, taught by Jeremy Howard, has nine lessons of around 90 minutes each and covers computer vision, NLP, tabular data, random forests, collaborative filtering and deployment using PyTorch, fastai and Hugging Face. It is top-down: you train a working model in the first lesson and learn the theory afterward, which keeps motivation high for high schoolers. After seeing this week's open-weights releases, this course gives you the practical foundation to fine-tune and deploy your own models. Finish it, then publish two projects. That portfolio speaks louder than a certificate when applying for internships."
     },
     {
       "rank": 2,
-      "title": "LLM Course",
-      "institution": "Hugging Face",
-      "url": "https://huggingface.co/learn/llm-course",
-      "commentary": "Hugging Face's free, ad-free course covers transformers, fine-tuning, tokenizers, building demos, curating datasets, fine-tuning large language models, and a newer chapter on reasoning models. It requires good Python knowledge and recommends taking an introductory deep learning course first, such as fast.ai above. The page suggests about 6 to 8 hours per week per chapter. With this week's papers on LLM-driven research and agents in the news, this is the practical way to understand what's under the hood. Fine-tune a small model and publish a demo; that portfolio piece speaks louder than a certificate."
+      "title": "Machine Learning Specialization",
+      "institution": "DeepLearning.AI and Stanford Online",
+      "url": "https://www.deeplearning.ai/courses/machine-learning-specialization/",
+      "commentary": "Taught by Andrew Ng and listed as beginner level, this specialization covers supervised learning, neural networks with TensorFlow, decision trees, clustering, recommenders and reinforcement learning using NumPy and scikit-learn. The page says it was updated September 2, 2026, and estimates three, four and three weeks for the three courses at five hours per week. Auditing is free but certificates need a paid membership, so decide whether you need the credential. It builds the math intuition behind papers like this week's arXiv picks, making it a strong companion to fast.ai's more hands-on approach for students aiming at research internships."
     }
   ]
 }
